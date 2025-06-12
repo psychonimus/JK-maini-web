@@ -1,0 +1,88 @@
+ 
+
+const navbar = document.getElementById("navbar");
+let lastScrollTop = 0;
+
+// ✅ Ensure correct class on initial load
+window.addEventListener("DOMContentLoaded", () => {
+  if (window.scrollY === 0) {
+    navbar.classList.add("transparent");
+    navbar.classList.remove("solid", "hidden");
+  }
+});
+
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+
+  if (scrollTop === 0) {
+    navbar.classList.add("transparent");
+    navbar.classList.remove("solid", "hidden");
+  } else {
+    if (scrollTop > lastScrollTop) {
+      // Scrolling down
+      navbar.classList.add("hidden");
+    } else {
+      // Scrolling up
+      navbar.classList.remove("hidden");
+      navbar.classList.remove("transparent");
+      navbar.classList.add("solid");
+    }
+  }
+
+  lastScrollTop = scrollTop;
+});
+
+
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            effect: "fade",
+            loop : true,
+            autoplay: {
+                delay: 15000,
+                disableOnInteraction: false,
+              },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+
+
+          function toggleMegaMenu(event) {
+            if (window.innerWidth < 992) {
+                event.preventDefault();
+                const megaMenu = event.currentTarget.nextElementSibling;
+                megaMenu.classList.toggle('show');
+                const plusIcon = event.currentTarget.querySelector('span');
+                plusIcon.textContent = megaMenu.classList.contains('show') ? '-' : '+';
+            }
+        }
+
+        function toggleAccordion(header) {
+            if (window.innerWidth < 992) {
+                const ul = header.nextElementSibling;
+                if (!ul) return; // Guard clause if ul doesn't exist
+
+                const isActive = header.classList.contains('active');
+
+                // Close all other accordions in the same mega-menu
+                const parentMegaMenu = header.closest('.mega-menu');
+                const allHeaders = parentMegaMenu.querySelectorAll('h4');
+                const allUls = parentMegaMenu.querySelectorAll('ul');
+
+                allHeaders.forEach(h => h.classList.remove('active'));
+                allUls.forEach(u => u.classList.remove('active'));
+
+                if (!isActive) {
+                    header.classList.add('active');
+                    ul.classList.add('active');
+                }
+            }
+        }
+
+
+
