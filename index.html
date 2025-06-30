@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png">
+
 </head>
 
 <body>
@@ -68,7 +70,7 @@
                                 <div class="mega-menu-column">
                                     <h4 onclick="toggleAccordion(this)">About Us</h4>
                                     <ul>
-                                        <li><a href="about.html#raymond-group">Raymond Group</a></li>
+                                        <li><a href="about.html">Raymond Group</a></li>
                                         <li><a href="about.html#jk-maini">About US</a></li>
                                         <li><a href="about.html#leadership">Leadership</a></li>
                                         <li><a href="about.html#global-presence">Global Footprints</a></li>
@@ -142,13 +144,13 @@
                     <li class="nav-item has-mega-menu">
                         <a class="nav-link d-flex justify-content-between" href="sectors.html"
                             onclick="toggleMegaMenu(event)">
-                            Product Solutions/Sectors
+                            Sectors
                             <span class="d-lg-none">+</span>
                         </a>
                         <div class="mega-menu">
                             <div class="mega-menu-content">
                                 <div class="mega-menu-column d-none d-lg-block">
-                                    <h4 onclick="toggleAccordion(this)">Product Solutions/Sectors</h4>
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
 
                                 </div>
                                 <div class="mega-menu-column">
@@ -250,7 +252,7 @@
                                     <h4 onclick="toggleAccordion(this)">Resources</h4>
                                     <ul>
                                         <li><a href="resources.html">Brochure</a></li>
-                                        <li><a href="#">Blogs</a></li>
+                                        <li><a href="resources.html#blogs">Blogs</a></li>
                                         <!-- <li><a href="#">White Papers</a></li> -->
                                     </ul>
                                 </div>
@@ -282,7 +284,7 @@
                     </div>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-headset me-2"></i> Enquiry</a>
+                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i> Enquiry</a>
                     </li>
 
                 </ul>
@@ -356,11 +358,9 @@
 
                         <div class="swiper-slide">
                             <video playsinline loop autoplay muted preload="metadata"
-                                class="bg-video videoDesktop d-none d-md-block"
-                                src="./assets/images/20.mp4"></video>
+                                class="bg-video videoDesktop d-none d-md-block" src="./assets/images/20.mp4"></video>
                             <video playsinline loop autoplay muted preload="metadata"
-                                class="videoMobile d-block d-md-none"
-                                src="./assets/images/20-mobile.mp4"></video>
+                                class="videoMobile d-block d-md-none" src="./assets/images/20-mobile.mp4"></video>
                             <div class="container swiper-content">
                                 <div class="col-md-10">
                                     <h1>Imagined by minds, perfected by machines</h1>
@@ -422,10 +422,12 @@
                                 meeting the highest quality standards — from airframe parts to structural assemblies.
                             </p>
                             <div class="d-flex justify-content-center">
-                                <button>
-                                    Learn More
-                                    <i class="fa fa-arrow-right ms-2"></i>
-                                </button>
+                                <a href="aerospace.html" style="text-decoration: none;">
+                                    <button>
+                                        Learn More
+                                        <i class="fa fa-arrow-right ms-2"></i>
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1137,12 +1139,14 @@
                             <div class="row">
                                 <div class="col-md-8">
                                     <div class="image-cover" style="height: 200px;">
-                                        <img src="./assets/images/plants/chiplun-plant/chiplun-plant (1).jpeg" alt="" class="popup-image">
+                                        <img src="./assets/images/plants/chiplun-plant/chiplun-plant (1).jpeg" alt=""
+                                            class="popup-image">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="image-cover" style="height: 200px;">
-                                        <img src="./assets/images/plants/chiplun-plant/chiplun-plant (2).jpeg" alt="" class="popup-image">
+                                        <img src="./assets/images/plants/chiplun-plant/chiplun-plant (2).jpeg" alt=""
+                                            class="popup-image">
                                     </div>
                                 </div>
                             </div>
@@ -1150,18 +1154,19 @@
                                 <div class="col-md-4">
                                     <div class="d-flex flex-column gap-4 justify-content-between">
                                         <div class="image-cover" style="height: 250px;">
-                                            <img src="./assets/images/plants/chiplun-plant/chiplun-plant (3).jpeg" alt=""
-                                                class="popup-image">
+                                            <img src="./assets/images/plants/chiplun-plant/chiplun-plant (3).jpeg"
+                                                alt="" class="popup-image">
                                         </div>
                                         <div class="image-cover" style="height: 125px;">
-                                            <img src="./assets/images/plants/chiplun-plant/chiplun-plant (4).jpeg" alt=""
-                                                class="popup-image">
+                                            <img src="./assets/images/plants/chiplun-plant/chiplun-plant (4).jpeg"
+                                                alt="" class="popup-image">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="image-cover" style="height: 400px;">
-                                        <img src="./assets/images/plants/chiplun-plant/chiplun-plant (5).png" alt="" class="popup-image">
+                                        <img src="./assets/images/plants/chiplun-plant/chiplun-plant (5).png" alt=""
+                                            class="popup-image">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -1240,7 +1245,8 @@
                             <p>Stay updated with stories from the shop floor to the frontlines of innovation. Our blog
                                 covers industry insights, engineering breakthroughs, company milestones, and thought
                                 leadership in the world of precision manufacturing.</p>
-                            <a href="careers.html"><i class="fa-solid fa-arrow-right me-2"></i>Read our blogs</a>
+                            <a href="resources.html#blogs"><i class="fa-solid fa-arrow-right me-2"></i>Read our
+                                blogs</a>
                         </div>
                     </div>
                 </div>
@@ -1255,10 +1261,44 @@
             <p class="mb-4">Whether you're looking for custom-engineered solutions or want to explore how our
                 capabilities align with your needs, we're here to help.</p>
             <div class="d-flex justify-content-center">
-                <button class="hero-button">Get Started</button>
+                <button class="hero-button" onclick="openPopup()">Get Started</button>
             </div>
         </div>
     </section>
+
+    <div id="popupOverlay" class="popup-overlay">
+        <div class="right-form p-4">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div>
+                <h2>Get in Touch</h2>
+                <p>Tell us what you’re building — we’ll show you how to get there, faster and smarter.
+                    Response guaranteed within 24 hours.</p>
+            </div>
+            <form action="" class="mt-4">
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="First Name">
+                    <input class="my-3" type="text" placeholder="Last Name">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Company">
+                    <input class="my-3" type="text" placeholder="Email Address">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Phone No.">
+                    <input class="my-3" type="text" placeholder="Industry">
+                </div>
+                <div class="form-group">
+                    <textarea name="" id="" placeholder="I want to know more about"></textarea>
+
+                </div>
+                <!-- <div class="d-flex gap-3">
+                    <input type="checkbox" name="" id="t&c" class="w-auto">
+                    <label class="w-auto" for="t&c">I agree to the terms and conditions*</label>
+                </div> -->
+                <button class="hero-button mt-4">Submit</button>
+            </form>
+        </div>
+    </div>
 
 
 
@@ -1352,7 +1392,7 @@
                     <ul class="list-unstyled">
                         <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> 123 Industrial Area, City</li>
                         <li class="mb-2"><i class="fa-solid fa-phone me-2"></i><a style="text-decoration: none;"
-                                href="tel:+911234567890">+91 1234567890</a></li>
+                                href="tel:+912261527998">+91 2261527998</a></li>
                         <li class="mb-2"><i class="fa-solid fa-envelope me-2"></i><a style="text-decoration: none;"
                                 href="mailto:info@ringplusaqua.co.in">info@ringplusaqua.co.in</a></li>
                         <!-- <li class="mb-2"><i class="fa-solid fa-clock me-2"></i> Mon - Sat: 9:00 AM - 6:00 PM</li> -->
@@ -1392,11 +1432,6 @@
             </div>
         </div>
     </footer>
-
-
-
-
-
 
 
 

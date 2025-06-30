@@ -84,5 +84,20 @@ window.addEventListener("scroll", () => {
             }
         }
 
+        function openPopup() {
+          document.getElementById("popupOverlay").style.display = "flex";
+      }
+
+      function closePopup() {
+          document.getElementById("popupOverlay").style.display = "none";
+      }
+
+      window.onclick = function (event) {
+          const popup = document.getElementById("popupOverlay");
+          if (event.target == popup) {
+              popup.style.display = "none";
+          }
+      }
+
 
 
