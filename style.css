@@ -1509,13 +1509,6 @@ background: linear-gradient(265deg, rgba(255, 203, 4, 1) 0%, rgba(244, 129, 32, 
   }
 }
 
-
-
-
-
-
-
-
 .popup-overlay {
     position: fixed;
     top: 0;
@@ -1541,5 +1534,14 @@ background: linear-gradient(265deg, rgba(255, 203, 4, 1) 0%, rgba(244, 129, 32, 
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+.grey-bg{
+  background-color: #F7F8FC;
+  border-radius: 20px;
+  border: 2px solid #FFD700;
+}
+.awards img{
+  border-radius: 20px;
 }
 
