@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png">
-    
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png">
+
 </head>
 
 <body>
@@ -28,9 +28,7 @@
                                 class="fa-solid fa-phone-volume me-2"></i>
                             +91 2261527998</a>
                     </li>
-                    <!-- <li class="nav-item ms-2">
-                        <a class="nav-link" href="#">Mon - Fri 9:00 - 19:00</a>
-                    </li> -->
+
 
                 </ul>
             </div>
@@ -39,10 +37,9 @@
                     <li class="nav-item ms-2    ">
                         <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
                     </li>
-                    <li class="nav-item ms-2    ">
+                    <li class="nav-item ms-2 ">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -114,8 +111,8 @@
                                     <h4 onclick="toggleAccordion(this)">Business Verticals</h4>
                                     <ul>
                                         <li><a href="automobile.html">Automobile</a></li>
-                                        <li><a href="aerospace.html">Aerospace</a></li>
                                         <li><a href="toolsAndHardware.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace.html">Aerospace</a></li>
                                         <!-- <li><a href="#">Global Footprints</a></li>  -->
                                     </ul>
                                 </div>
@@ -141,9 +138,48 @@
                         </div>
                     </li>
 
-                    <li class="nav-item has-mega-menu">
-                        <a class="nav-link d-flex justify-content-between" href="sectors.html"
-                            onclick="toggleMegaMenu(event)">
+                    <li class="nav-item has-mega-menu d-none d-lg-block sector-laptop">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Sectors
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <!-- <h4 onclick="toggleAccordion(this)">Sectors</h4> -->
+                                    <ul>
+                                        <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <!-- <h4 onclick="toggleAccordion(this)"></h4> -->
+                                    <ul>
+
+                                        <li><a href="industrial-hydraulics.html">Industrial Hydraulics</a></li>
+                                        <li><a href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
+                                        <li><a href="locomotive-sector.html">Locomotive</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <!-- <h4 onclick="toggleAccordion(this)"></h4> -->
+                                    <ul>
+                                        <li><a href="agriculture-sector.html">Agriculture</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu d-block d-lg-none sector-mobile">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
                             Sectors
                             <span class="d-lg-none">+</span>
                         </a>
@@ -157,31 +193,15 @@
                                     <h4 onclick="toggleAccordion(this)">Sectors</h4>
                                     <ul>
                                         <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
                                         <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
                                         <li><a href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
-
-
-                                        <!-- <li><a href="#">Tools and Hardware</a></li> -->
-                                        <!-- <li><a href="#">Global Footprints</a></li>  -->
-                                    </ul>
-                                </div>
-                                <div class="mega-menu-column">
-                                    <!-- <h4 onclick="toggleAccordion(this)">Sustainability</h4> -->
-                                    <ul>
-                                        <!-- <li><a href="#">Electric & Hybrid</a></li> -->
                                         <li><a href="industrial-hydraulics.html">Industrial Hydraulics</a></li>
-                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
                                         <li><a href="locomotive-sector.html">Locomotive</a></li>
-
-                                    </ul>
-                                </div>
-                                <div class="mega-menu-column">
-                                    <!-- <h4 onclick="toggleAccordion(this)">Recognition</h4> -->
-                                    <ul>
                                         <li><a href="agriculture-sector.html">Agriculture</a></li>
-                                        <li><a href="electronics-sector.html">Electronics</a></li>
                                     </ul>
                                 </div>
+
                             </div>
                         </div>
                     </li>
@@ -284,7 +304,8 @@
                     </div>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-headset me-2"></i> Enquiry</a>
+                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
+                            Enquiry</a>
                     </li>
 
                 </ul>
@@ -300,19 +321,20 @@
                 <p class="mt-2">Discover more about our offerings, values, and achievements by downloading our latest
                     brochure. Get all the information you need in one convenient document.</p>
             </div>
+
             <div class="row my-4">
                 <div class="col-md-6">
                     <div class="csr-img">
                         <div class="swiper brochure-swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="./assets/images/bs-1.png" alt="" style="width: 100%;">
+                                    <img src="./assets/images/brochure-preview-1.png" alt="" style="width: 100%;">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="./assets/images/bs-2.png" alt="" style="width: 100%;">
+                                    <img src="./assets/images/brochure-preview-2.png" alt="" style="width: 100%;">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="./assets/images/bs-3.png" alt="" style="width: 100%;">
+                                    <img src="./assets/images/brochure-preview-3.png" alt="" style="width: 100%;">
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -322,11 +344,12 @@
                 <div class="col-md-6">
                     <div class="brochure-content">
                         <div class="header">
-                            <h6 class="section-title">JK Maini Global Aerospace</h6>
-                            <h2>Powering progress with precision engineering</h2>
-                            <p class="mt-2">Our company brochure provides a comprehensive overview of our capabilities,
-                                services, and commitment to excellence. Download it to explore how JK Maini Global
-                                Aerospace delivers innovative solutions and drives industry progress.</p>
+                            <h6 class="section-title">JK Maini Precision Products</h6>
+                            <h2>Your Vision – Our Precision</h2>
+                            <p class="mt-2">Enriched with 50 years of legacy in precision component manufacturing with
+                                trusted and time tested capabilities to deliver high precision components to a diverse
+                                segment of automotive, aerospace, locomotive, hydraulics, power tools and defence.
+                                Preferred by 35+ customers across 25+ countries. We deliver values always.</p>
                         </div>
                         <ul class="list-unstyled custom-icon-list mt-4">
                             <li class="mb-2">
@@ -351,74 +374,16 @@
                             </li>
                         </ul>
                         <div class="">
-                            <button class="hero-button d-flex align-items-center">
-                                <i class="fa-solid fa-download me-2"></i>Download Brochure
-                            </button>
+                            <a href="./assets/images/brochure/MPP_Brochure_Final.pdf" target="_blank" style="text-decoration: none;">
+                                <button class="hero-button d-flex align-items-center">
+                                    <i class="fa-solid fa-download me-2"></i>Download Brochure
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row my-4">
-
-                <div class="col-md-6">
-                    <div class="brochure-content">
-                        <div class="header">
-                            <h6 class="section-title">JK Maini Global Aerospace</h6>
-                            <h2>Powering progress with precision engineering</h2>
-                            <p class="mt-2">Our company brochure provides a comprehensive overview of our capabilities,
-                                services, and commitment to excellence. Download it to explore how JK Maini Global
-                                Aerospace delivers innovative solutions and drives industry progress.</p>
-                        </div>
-                        <ul class="list-unstyled custom-icon-list mt-4">
-                            <li class="mb-2">
-                                <i class="fa-solid fa-industry text-danger me-2"></i>
-                                Precision parts manufacturing
-                            </li>
-                            <li class="mb-2">
-                                <i class="fa-solid fa-users text-danger me-2"></i>
-                                Electric mobility solutions
-                            </li>
-                            <li class="mb-2">
-                                <i class="fa-solid fa-lightbulb text-danger me-2"></i>
-                                Interoperable energy infrastructure via battery swapping
-                            </li>
-                            <li class="mb-2">
-                                <i class="fa-solid fa-globe text-danger me-2"></i>
-                                Industrial storage systems
-                            </li>
-                            <li class="mb-2">
-                                <i class="fa-solid fa-globe text-danger me-2"></i>
-                                Plastic and composites
-                            </li>
-                        </ul>
-                        <div class="">
-                            <button class="hero-button d-flex align-items-center">
-                                <i class="fa-solid fa-download me-2"></i>Download Brochure
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="csr-img">
-                        <div class="swiper brochure-swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="./assets/images/bs-1.png" alt="" style="width: 100%;">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="./assets/images/bs-2.png" alt="" style="width: 100%;">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="./assets/images/bs-3.png" alt="" style="width: 100%;">
-                                </div>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -436,15 +401,18 @@
                     <div class="topics-container">
                         <a href="beyond-automation.html">
                             <div class="topic-card">
-                                <div class="card-image" style="background-image: url(./assets/images/blog-cover-1.png);">
+                                <div class="card-image"
+                                    style="background-image: url(./assets/images/blog-cover-1.png);">
                                     <div class="card-info">
                                         <h3>Beyond Automation</h3>
-                                        <p class="subtitle">How Industry 4.0 is Redefining Precision Component Manufacturing
+                                        <p class="subtitle">How Industry 4.0 is Redefining Precision Component
+                                            Manufacturing
                                         </p>
                                     </div>
                                     <div class="card-description">
                                         <p>
-                                            The convergence of cyber-physical systems in Industry 4.0 isn’t just automating
+                                            The convergence of cyber-physical systems in Industry 4.0 isn’t just
+                                            automating
                                             factories—it’s transforming precision manufacturing into a hyper-connected,
                                             data-driven ecosystem. For sectors like aerospace, medical devices, and
                                             automotive, where micron-level accuracy is non-negotiable, this revolution
@@ -462,7 +430,8 @@
                     <div class="topics-container">
                         <a href="ai-powered-predictive-maintainance.html">
                             <div class="topic-card">
-                                <div class="card-image" style="background-image: url(./assets/images/blog-cover-2.png);">
+                                <div class="card-image"
+                                    style="background-image: url(./assets/images/blog-cover-2.png);">
                                     <div class="card-info">
                                         <h3>AI-Powered Predictive Maintenance</h3>
                                         <p class="subtitle">Ending Unplanned Downtime in Precision <br>Machining</p>
@@ -470,7 +439,8 @@
                                     <div class="card-description">
                                         <p>
                                             Unplanned machine tool failures cost manufacturers $50B annually. Reactive
-                                            maintenance is obsolete—AI-driven predictive maintenance (PdM) now offers 95%+
+                                            maintenance is obsolete—AI-driven predictive maintenance (PdM) now offers
+                                            95%+
                                             accuracy in forecasting failures before they disrupt production.
                                         </p>
                                     </div>

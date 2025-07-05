@@ -27,9 +27,7 @@
                                 class="fa-solid fa-phone-volume me-2"></i>
                             +91 2261527998</a>
                     </li>
-                    <!-- <li class="nav-item ms-2">
-                        <a class="nav-link" href="#">Mon - Fri 9:00 - 19:00</a>
-                    </li> -->
+                    
 
                 </ul>
             </div>
@@ -38,10 +36,9 @@
                     <li class="nav-item ms-2    ">
                         <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
                     </li>
-                    <li class="nav-item ms-2    ">
+                    <li class="nav-item ms-2 ">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -113,8 +110,8 @@
                                     <h4 onclick="toggleAccordion(this)">Business Verticals</h4>
                                     <ul>
                                         <li><a href="automobile.html">Automobile</a></li>
-                                        <li><a href="aerospace.html">Aerospace</a></li>
                                         <li><a href="toolsAndHardware.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace.html">Aerospace</a></li>
                                         <!-- <li><a href="#">Global Footprints</a></li>  -->
                                     </ul>
                                 </div>
@@ -140,9 +137,48 @@
                         </div>
                     </li>
 
-                    <li class="nav-item has-mega-menu">
-                        <a class="nav-link d-flex justify-content-between" href="sectors.html"
-                            onclick="toggleMegaMenu(event)">
+                    <li class="nav-item has-mega-menu d-none d-lg-block sector-laptop">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Sectors
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <!-- <h4 onclick="toggleAccordion(this)">Sectors</h4> -->
+                                    <ul>
+                                        <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <!-- <h4 onclick="toggleAccordion(this)"></h4> -->
+                                    <ul>
+
+                                        <li><a href="industrial-hydraulics.html">Industrial Hydraulics</a></li>
+                                        <li><a href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
+                                        <li><a href="locomotive-sector.html">Locomotive</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <!-- <h4 onclick="toggleAccordion(this)"></h4> -->
+                                    <ul>
+                                        <li><a href="agriculture-sector.html">Agriculture</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu d-block d-lg-none sector-mobile">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
                             Sectors
                             <span class="d-lg-none">+</span>
                         </a>
@@ -156,31 +192,15 @@
                                     <h4 onclick="toggleAccordion(this)">Sectors</h4>
                                     <ul>
                                         <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
                                         <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
                                         <li><a href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
-
-
-                                        <!-- <li><a href="#">Tools and Hardware</a></li> -->
-                                        <!-- <li><a href="#">Global Footprints</a></li>  -->
-                                    </ul>
-                                </div>
-                                <div class="mega-menu-column">
-                                    <!-- <h4 onclick="toggleAccordion(this)">Sustainability</h4> -->
-                                    <ul>
-                                        <!-- <li><a href="#">Electric & Hybrid</a></li> -->
                                         <li><a href="industrial-hydraulics.html">Industrial Hydraulics</a></li>
-                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
                                         <li><a href="locomotive-sector.html">Locomotive</a></li>
-
-                                    </ul>
-                                </div>
-                                <div class="mega-menu-column">
-                                    <!-- <h4 onclick="toggleAccordion(this)">Recognition</h4> -->
-                                    <ul>
                                         <li><a href="agriculture-sector.html">Agriculture</a></li>
-                                        <li><a href="electronics-sector.html">Electronics</a></li>
                                     </ul>
                                 </div>
+
                             </div>
                         </div>
                     </li>
@@ -283,7 +303,8 @@
                     </div>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-headset me-2"></i> Enquiry</a>
+                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
+                            Enquiry</a>
                     </li>
 
                 </ul>
@@ -495,131 +516,7 @@
         </div>
     </section>
 
-    <section class="products my-5">
-        <div class="container">
-            <div class="header text-center">
-                <h6 class="section-title">Electric and Hybrid Products</h6>
-                <h2>Industry Specific Products
-                </h2>
-            </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="product-card h-100 text-center">
-                        <div class="d-flex flex-column justify-content-between">
-                            <div>
-                                <img src="./assets/images/EV-parts/SUPPORT BRACKET.png" class="img-fluid" alt="">
-                                <h5>SUPPORT BRACKET</h5>
-
-                            </div>
-                            <!-- <div><a href="">Explore Products <i class="fa-solid fa-arrow-right ms-2"></i></a></div> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="product-card h-100 text-center">
-                        <img src="./assets/images/EV-parts/BLDC HUB COVER.png" class="img-fluid" alt="">
-                        <h5>BLDC HUB COVER
-                        </h5>
-
-                        <!-- <a href="">Explore Products <i class="fa-solid fa-arrow-right ms-2"></i></a> -->
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="product-card h-100 text-center">
-                        <img src="./assets/images/EV-parts/SAND COVER.png" class="img-fluid" alt="">
-                        <h5>SAND COVER
-                        </h5>
-
-                        <!-- <a href="">Explore Products <i class="fa-solid fa-arrow-right ms-2"></i></a> -->
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="product-card h-100 text-center">
-                        <img src="./assets/images/EV-parts/BLDC HUB COVER (2).png" class="img-fluid" alt="">
-                                <h5>BLDC HUB COVER
-                                </h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="product-card h-100 text-center">
-                        <div class="d-flex flex-column justify-content-between">
-                            <div>
-                                <img src="./assets/images/EV-parts/SPIDER.png" class="img-fluid" alt="">
-                                <h5>SPIDER
-                                </h5>
-
-                            </div>
-                            <!-- <div><a href="">Explore Products <i class="fa-solid fa-arrow-right ms-2"></i></a></div> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="product-card h-100 text-center">
-                        <img src="./assets/images/EV-parts/BLDC MOTOR SHAFT.png" class="img-fluid" alt="">
-                        <h5>BLDC MOTOR SHAFT
-
-                        </h5>
-
-                        <!-- <a href="">Explore Products <i class="fa-solid fa-arrow-right ms-2"></i></a> -->
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="product-card h-100 text-center">
-                        <img src="./assets/images/EV-parts/LEVER ARM.png" class="img-fluid" alt="">
-                        <h5>LEVER ARM
-
-                        </h5>
-
-                        <!-- <a href="">Explore Products <i class="fa-solid fa-arrow-right ms-2"></i></a> -->
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="product-card h-100 text-center">
-                        <img src="./assets/images/EV-parts/PARK PAWL.png" class="img-fluid" alt="">
-                                <h5>PARK PAWL
-
-                                </h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="product-card h-100 text-center">
-                        <div class="d-flex flex-column justify-content-between">
-                            <div>
-                                <img src="./assets/images/EV-parts/INPUT SHAFT.png" class="img-fluid" alt="">
-                                <h5>INPUT SHAFT
-
-                                </h5>
-
-                            </div>
-                            <!-- <div><a href="">Explore Products <i class="fa-solid fa-arrow-right ms-2"></i></a></div> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="product-card h-100 text-center">
-                        <img src="./assets/images/EV-parts/TRANSMISSION.png" class="img-fluid" alt="">
-                        <h5>TRANSMISSION
-
-                        </h5>
-
-                        <!-- <a href="">Explore Products <i class="fa-solid fa-arrow-right ms-2"></i></a> -->
-                    </div>
-                </div>
-                
-            </div>
-           
-        </div>
-
-
-
-        </div>
-    </section>
+    
 
 
 

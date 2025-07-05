@@ -27,9 +27,7 @@
                                 class="fa-solid fa-phone-volume me-2"></i>
                             +91 2261527998</a>
                     </li>
-                    <!-- <li class="nav-item ms-2">
-                        <a class="nav-link" href="#">Mon - Fri 9:00 - 19:00</a>
-                    </li> -->
+                    
 
                 </ul>
             </div>
@@ -38,10 +36,9 @@
                     <li class="nav-item ms-2    ">
                         <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
                     </li>
-                    <li class="nav-item ms-2    ">
+                    <li class="nav-item ms-2 ">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -113,8 +110,8 @@
                                     <h4 onclick="toggleAccordion(this)">Business Verticals</h4>
                                     <ul>
                                         <li><a href="automobile.html">Automobile</a></li>
-                                        <li><a href="aerospace.html">Aerospace</a></li>
                                         <li><a href="toolsAndHardware.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace.html">Aerospace</a></li>
                                         <!-- <li><a href="#">Global Footprints</a></li>  -->
                                     </ul>
                                 </div>
@@ -140,9 +137,48 @@
                         </div>
                     </li>
 
-                    <li class="nav-item has-mega-menu">
-                        <a class="nav-link d-flex justify-content-between" href="sectors.html"
-                            onclick="toggleMegaMenu(event)">
+                    <li class="nav-item has-mega-menu d-none d-lg-block sector-laptop">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Sectors
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <!-- <h4 onclick="toggleAccordion(this)">Sectors</h4> -->
+                                    <ul>
+                                        <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <!-- <h4 onclick="toggleAccordion(this)"></h4> -->
+                                    <ul>
+
+                                        <li><a href="industrial-hydraulics.html">Industrial Hydraulics</a></li>
+                                        <li><a href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
+                                        <li><a href="locomotive-sector.html">Locomotive</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <!-- <h4 onclick="toggleAccordion(this)"></h4> -->
+                                    <ul>
+                                        <li><a href="agriculture-sector.html">Agriculture</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu d-block d-lg-none sector-mobile">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
                             Sectors
                             <span class="d-lg-none">+</span>
                         </a>
@@ -156,31 +192,15 @@
                                     <h4 onclick="toggleAccordion(this)">Sectors</h4>
                                     <ul>
                                         <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
                                         <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
                                         <li><a href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
-
-
-                                        <!-- <li><a href="#">Tools and Hardware</a></li> -->
-                                        <!-- <li><a href="#">Global Footprints</a></li>  -->
-                                    </ul>
-                                </div>
-                                <div class="mega-menu-column">
-                                    <!-- <h4 onclick="toggleAccordion(this)">Sustainability</h4> -->
-                                    <ul>
-                                        <!-- <li><a href="#">Electric & Hybrid</a></li> -->
                                         <li><a href="industrial-hydraulics.html">Industrial Hydraulics</a></li>
-                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
                                         <li><a href="locomotive-sector.html">Locomotive</a></li>
-
-                                    </ul>
-                                </div>
-                                <div class="mega-menu-column">
-                                    <!-- <h4 onclick="toggleAccordion(this)">Recognition</h4> -->
-                                    <ul>
                                         <li><a href="agriculture-sector.html">Agriculture</a></li>
-                                        <li><a href="electronics-sector.html">Electronics</a></li>
                                     </ul>
                                 </div>
+
                             </div>
                         </div>
                     </li>
@@ -283,7 +303,8 @@
                     </div>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-headset me-2"></i> Enquiry</a>
+                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
+                            Enquiry</a>
                     </li>
 
                 </ul>
@@ -383,39 +404,89 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="award-card p-4">
-                                <img src="./assets/images/award-1.png" alt="">
-                                <h4 class="mt-3">Most Reviewd App development company</h4>
-                                <p>Award by manifest for the most number of client reviews</p>
+                                <img src="./assets/images/certifications/AEO.png" alt="">
+                                <h4 class="mt-3">AEO Indian Customs</h4>
+                                <!-- <p>Award by manifest for the most number of client reviews</p> -->
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="award-card p-4">
-                                <img src="./assets/images/award-1.png" alt="">
-                                <h4 class="mt-3">Most Reviewd App development company</h4>
-                                <p>Award by manifest for the most number of client reviews</p>
+                                <img src="./assets/images/certifications/AS9100D certified.png" alt="">
+                                <h4 class="mt-3">AS9100D</h4>
+                                <!-- <p>Award by manifest for the most number of client reviews</p> -->
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="award-card p-4">
-                                <img src="./assets/images/award-2.png" alt="">
-                                <h4 class="mt-3">Most Reviewd App development company</h4>
-                                <p>Award by manifest for the most number of client reviews</p>
+                                <img src="./assets/images/certifications/bureau-veritas.png" alt="">
+                                <h4 class="mt-3">Bureau Veritas</h4>
+                                <!-- <p>Award by manifest for the most number of client reviews</p> -->
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="award-card p-4">
-                                <img src="./assets/images/award-3.png" alt="">
-                                <h4 class="mt-3">Most Reviewd App development company</h4>
-                                <p>Award by manifest for the most number of client reviews</p>
+                                <img src="./assets/images/certifications/IATF-16949.png" alt="">
+                                <h4 class="mt-3">IATF-16949</h4>
+                                <!-- <p>Award by manifest for the most number of client reviews</p> -->
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="award-card p-4">
-                                <img src="./assets/images/award-4.png" alt="">
-                                <h4 class="mt-3">Most Reviewd App development company</h4>
-                                <p>Award by manifest for the most number of client reviews</p>
+                                <img src="./assets/images/certifications/ISO-14001.png" alt="">
+                                <h4 class="mt-3">ISO-14001</h4>
+                                <!-- <p>Award by manifest for the most number of client reviews</p> -->
                             </div>
                         </div>
+                        <div class="swiper-slide">
+                            <div class="award-card p-4">
+                                <img src="./assets/images/certifications/ISO-18001.png" alt="">
+                                <h4 class="mt-3">ISO-18001</h4>
+                                <!-- <p>Award by manifest for the most number of client reviews</p> -->
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="award-card p-4">
+                                <img src="./assets/images/certifications/ISO-45001.png" alt="">
+                                <h4 class="mt-3">ISO-45001</h4>
+                                <!-- <p>Award by manifest for the most number of client reviews</p> -->
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="award-card p-4">
+                                <img src="./assets/images/certifications/ISO-9001.png" alt="">
+                                <h4 class="mt-3">ISO-9001</h4>
+                                <!-- <p>Award by manifest for the most number of client reviews</p> -->
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="award-card p-4">
+                                <img src="./assets/images/certifications/Nadcap.png" alt="">
+                                <h4 class="mt-3">Nadcap</h4>
+                                <!-- <p>Award by manifest for the most number of client reviews</p> -->
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-slide">
+                            <div class="award-card p-4">
+                                <img src="./assets/images/certifications/SA-8000 (2).png" alt="">
+                                <h4 class="mt-3">SA-8000</h4>
+                                
+                            </div>
+                        </div> -->
+                        <div class="swiper-slide">
+                            <div class="award-card p-4">
+                                <img src="./assets/images/certifications/SA-8000.png" alt="">
+                                <h4 class="mt-3">SA-8000</h4>
+                                <!-- <p>Award by manifest for the most number of client reviews</p> -->
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="award-card p-4">
+                                <img src="./assets/images/certifications/TUV-bord.png" alt="">
+                                <h4 class="mt-3">TUV-board</h4>
+                                <!-- <p>Award by manifest for the most number of client reviews</p> -->
+                            </div>
+                        </div>
+                        
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -435,6 +506,161 @@
                     delivering world-class solutions has earned us recognition from industry leaders, partners, and
                     global organizations.</p>
             </div>
+
+            <div class="row mt-5 grey-bg p-4">
+
+                <div class="col-md-6">
+                    <div class="csr-img">
+                        <div class="swiper csr-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d-flex justify-content-center">
+                                    <img src="./assets/images/awards/EEPC export qulality award.png" alt=""
+                                        style="width: 100%;">
+                                </div>
+                                <div class="swiper-slide d-flex justify-content-center">
+                                    <img src="./assets/images/awards/EEPC award.png" alt="" style="width: 100%;" class="popup-image">
+                                </div>
+                                <div class="swiper-slide d-flex justify-content-center">
+                                    <img src="./assets/images/awards/EEPC.png" alt="" style="width: 60%;" class="popup-image">
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="csr-text mt-4">
+                        <h6 class="section-title"><i class="fas fa-trophy" style="color: #FFD700; margin-right: 8px;"></i>EEPC India Quality Awards – Gold Winner</h6>
+                        <!-- <h3>Excellence in Export – Large Turnover Category</h3> -->
+                        <ul>
+                            <li>
+                                <h5><strong>Category</strong> : Medium Organization
+                                </h5>
+                            </li>
+                            <li>
+                                <h5><strong>Presented by</strong> : EEPC India | Date: 18 February 2025 | Venue: New
+                                    Delhi
+                                </h5>
+                            </li>
+
+                        </ul>
+                        <p>
+                            We are proud to announce that <strong>Ring Plus Aqua Ltd.</strong> has been honored with the
+                            prestigious <strong>Gold
+                                Award</strong> at the <strong>4th Edition of the EEPC India Quality Awards</strong>,
+                            under the <strong>Medium Organization
+                                Category.</strong>
+                            This national recognition by <strong>EEPC India (Engineering Export Promotion
+                                Council)</strong> celebrates
+                            our unwavering commitment to quality excellence, global competitiveness, and best-in-class
+                            manufacturing practices. The award is a testament to our robust systems, continuous
+                            improvement culture, and customer-first mindset that guide our export quality initiatives.
+                            Receiving this accolade among India’s most respected engineering exporters underscores our
+                            relentless pursuit of precision, consistency, and innovation across global markets.
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mt-5 p-4 grey-bg">
+
+                <div class="col-md-6">
+                    <div class="csr-text mt-4">
+                        <h6 class="section-title"><i class="fas fa-trophy" style="color: #FFD700; margin-right: 8px;"></i>ACMA Export Excellence Awards</h6>
+                        <!-- <h3>Skoda Auto Commendation for Supply Chain Excellence</h3> -->
+
+                        <p>We are honored to announce that <strong>Ring Plus Aqua Ltd. (RPAL)</strong> has been
+                            recognized with the
+                            <strong>Silver Award for Excellence in Export</strong> at the prestigious <strong>ACMA
+                                Excellence Awards 2024</strong>.
+                        </p>
+                        <p>Presented by the <strong>Automotive Component Manufacturers Association of India</strong>,
+                            this accolade
+                            celebrates our strong export performance, global market presence, and unwavering commitment
+                            to delivering precision-engineered components to leading international OEMs and Tier 1
+                            suppliers.</p>
+                        <p>The award was presented by <strong>Mr. Vinod Aggarwal, MD and CEO of VE Commercial Vehicles
+                                Ltd.</strong> (a
+                            <strong>Volvo Group and Eicher Motors JV</strong> ) and <strong>former President of
+                                SIAM</strong> (Society of Indian Automobile
+                            Manufacturers).
+                        </p>
+                        <p>This recognition reaffirms RPAL’s role as a key contributor to India's global mobility
+                            leadership, driven by advanced manufacturing, sustainable practices, and customer-centric
+                            innovation.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="csr-img">
+                        <div class="swiper csr-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/awards/ACMA Award _ Export Excellence.png" alt=""
+                                        style="width: 100%;" class="popup-image">
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mt-5 p-4 grey-bg">  
+
+                <div class="col-md-6">
+                    <div class="csr-img">
+                        <div class="swiper csr-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/awards/Felicitation by VW Team.png" alt=""
+                                        style="width: 100%;" class="popup-image">
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="csr-text mt-4">
+                        <h6 class="section-title"><i class="fas fa-trophy" style="color: #FFD700; margin-right: 8px;"></i>Recognized for Agility in Crisis</h6>
+                        <h3>Skoda Auto Commendation for Supply Chain Excellence</h3>
+
+                        <p>
+                            In a testament to our commitment to operational resilience and global supply chain
+                            excellence, <strong>J K Maini (formerly Ring Plus Aqua Ltd.)</strong> was recognized by
+                            <strong>SKODA Auto Volkswagen
+                                India</strong> for swiftly stepping in during a critical supply disruption.
+                        </p>
+                        <p>In August, catastrophic floods in Slovenia halted production at a key European supplier of
+                            ring gears for dual-mass flywheels—essential components in internal combustion engine (ICE)
+                            vehicles. Faced with a potential production bottleneck impacting brands like Audi, ŠKODA,
+                            Porsche, and Volkswagen, the procurement teams at ŠKODA Auto turned to trusted Indian
+                            partners.</p>
+                        <!-- <p>Through rapid collaboration and dedication, J K Maini ramped up capacity and restored supply
+                            continuity within weeks. Our ability to <strong>mobilize teams, scale operations, and
+                                maintain
+                                quality standards under pressure</strong> was instrumental in safeguarding ŠKODA’s
+                            global production
+                            commitments.</p>
+                        <p>This acknowledgment from SKODA Auto highlights our <strong>strategic agility, reliability,
+                                and role
+                                as a globally trusted partner in precision engineering.</strong></p> -->
+                    </div>
+                </div>
+
+                
+
+            </div>
+
             <div class="row mt-5 grey-bg p-4">
                 <div class="col-md-6">
                     <div class="csr-text mt-4">
@@ -588,112 +814,6 @@
                     <div class="csr-img">
                         <div class="swiper csr-swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide d-flex justify-content-center">
-                                    <img src="./assets/images/awards/EEPC export qulality award.png" alt=""
-                                        style="width: 100%;">
-                                </div>
-                                <div class="swiper-slide d-flex justify-content-center">
-                                    <img src="./assets/images/awards/EEPC award.png" alt="" style="width: 100%;" class="popup-image">
-                                </div>
-                                <div class="swiper-slide d-flex justify-content-center">
-                                    <img src="./assets/images/awards/EEPC.png" alt="" style="width: 60%;" class="popup-image">
-                                </div>
-
-
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="csr-text mt-4">
-                        <h6 class="section-title"><i class="fas fa-trophy" style="color: #FFD700; margin-right: 8px;"></i>EEPC India Quality Awards – Gold Winner</h6>
-                        <!-- <h3>Excellence in Export – Large Turnover Category</h3> -->
-                        <ul>
-                            <li>
-                                <h5><strong>Category</strong> : Medium Organization
-                                </h5>
-                            </li>
-                            <li>
-                                <h5><strong>Presented by</strong> : EEPC India | Date: 18 February 2025 | Venue: New
-                                    Delhi
-                                </h5>
-                            </li>
-
-                        </ul>
-                        <p>
-                            We are proud to announce that <strong>Ring Plus Aqua Ltd.</strong> has been honored with the
-                            prestigious <strong>Gold
-                                Award</strong> at the <strong>4th Edition of the EEPC India Quality Awards</strong>,
-                            under the <strong>Medium Organization
-                                Category.</strong>
-                            This national recognition by <strong>EEPC India (Engineering Export Promotion
-                                Council)</strong> celebrates
-                            our unwavering commitment to quality excellence, global competitiveness, and best-in-class
-                            manufacturing practices. The award is a testament to our robust systems, continuous
-                            improvement culture, and customer-first mindset that guide our export quality initiatives.
-                            Receiving this accolade among India’s most respected engineering exporters underscores our
-                            relentless pursuit of precision, consistency, and innovation across global markets.
-
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row mt-5 p-4 grey-bg">
-
-                <div class="col-md-6">
-                    <div class="csr-text mt-4">
-                        <h6 class="section-title"><i class="fas fa-trophy" style="color: #FFD700; margin-right: 8px;"></i>Recognized for Agility in Crisis</h6>
-                        <h3>Skoda Auto Commendation for Supply Chain Excellence</h3>
-
-                        <p>
-                            In a testament to our commitment to operational resilience and global supply chain
-                            excellence, <strong>J K Maini (formerly Ring Plus Aqua Ltd.)</strong> was recognized by
-                            <strong>SKODA Auto Volkswagen
-                                India</strong> for swiftly stepping in during a critical supply disruption.
-                        </p>
-                        <p>In August, catastrophic floods in Slovenia halted production at a key European supplier of
-                            ring gears for dual-mass flywheels—essential components in internal combustion engine (ICE)
-                            vehicles. Faced with a potential production bottleneck impacting brands like Audi, ŠKODA,
-                            Porsche, and Volkswagen, the procurement teams at ŠKODA Auto turned to trusted Indian
-                            partners.</p>
-                        <!-- <p>Through rapid collaboration and dedication, J K Maini ramped up capacity and restored supply
-                            continuity within weeks. Our ability to <strong>mobilize teams, scale operations, and
-                                maintain
-                                quality standards under pressure</strong> was instrumental in safeguarding ŠKODA’s
-                            global production
-                            commitments.</p>
-                        <p>This acknowledgment from SKODA Auto highlights our <strong>strategic agility, reliability,
-                                and role
-                                as a globally trusted partner in precision engineering.</strong></p> -->
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="csr-img">
-                        <div class="swiper csr-swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="./assets/images/awards/Felicitation by VW Team.png" alt=""
-                                        style="width: 100%;" class="popup-image">
-                                </div>
-
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row mt-5 grey-bg p-4">
-
-                <div class="col-md-6">
-                    <div class="csr-img">
-                        <div class="swiper csr-swiper">
-                            <div class="swiper-wrapper">
                                 <div class="swiper-slide d-flex justify-content-center align-items-center">
                                     <img src="./assets/images/awards/EEPC Export Excellence Award.png" alt=""
                                         style="width: 100%;" class="popup-image">
@@ -748,72 +868,11 @@
                     </div>
                 </div>
 
-            </div>
-
-            <div class="row mt-5 p-4 grey-bg">
-
-                <div class="col-md-6">
-                    <div class="csr-text mt-4">
-                        <h6 class="section-title"><i class="fas fa-trophy" style="color: #FFD700; margin-right: 8px;"></i>ACMA Export Excellence Awards</h6>
-                        <!-- <h3>Skoda Auto Commendation for Supply Chain Excellence</h3> -->
-
-                        <p>We are honored to announce that <strong>Ring Plus Aqua Ltd. (RPAL)</strong> has been
-                            recognized with the
-                            <strong>Silver Award for Excellence in Export</strong> at the prestigious <strong>ACMA
-                                Excellence Awards 2024</strong>.
-                        </p>
-                        <p>Presented by the <strong>Automotive Component Manufacturers Association of India</strong>,
-                            this accolade
-                            celebrates our strong export performance, global market presence, and unwavering commitment
-                            to delivering precision-engineered components to leading international OEMs and Tier 1
-                            suppliers.</p>
-                        <p>The award was presented by <strong>Mr. Vinod Aggarwal, MD and CEO of VE Commercial Vehicles
-                                Ltd.</strong> (a
-                            <strong>Volvo Group and Eicher Motors JV</strong> ) and <strong>former President of
-                                SIAM</strong> (Society of Indian Automobile
-                            Manufacturers).
-                        </p>
-                        <p>This recognition reaffirms RPAL’s role as a key contributor to India's global mobility
-                            leadership, driven by advanced manufacturing, sustainable practices, and customer-centric
-                            innovation.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="csr-img">
-                        <div class="swiper csr-swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="./assets/images/awards/ACMA Award _ Export Excellence.png" alt=""
-                                        style="width: 100%;" class="popup-image">
-                                </div>
-
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            </div>        
 
             <div class="row mt-5 grey-bg p-4">
 
-                <div class="col-md-6">
-                    <div class="csr-img">
-                        <div class="swiper csr-swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide d-flex justify-content-center align-items-center">
-                                    <img src="./assets/images/awards/Award by Schaeffler for Innovation & Value.png"
-                                        alt="" style="width: 100%;" class="popup-image">
-                                </div>
-
-
-
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="col-md-6">
                     <div class="csr-text mt-4">
                         <h6 class="section-title"><i class="fas fa-trophy" style="color: #FFD700; margin-right: 8px;"></i>Innovation & Value Creation Award – Schaeffler India</h6>
@@ -849,11 +908,40 @@
                         </p>
                     </div>
                 </div>
+                <div class="col-md-6">
+                    <div class="csr-img">
+                        <div class="swiper csr-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/awards/Award by Schaeffler for Innovation & Value.png"
+                                        alt="" style="width: 100%;" class="popup-image">
+                                </div>
+
+
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
             <div class="row mt-5 p-4 grey-bg">
+                <div class="col-md-6">
+                    <div class="csr-img">
+                        <div class="swiper csr-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/awards/Suzuki motors award.png" alt=""
+                                        style="width: 100%;" class="popup-image">
+                                </div>
 
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-6">
                     <div class="csr-text mt-4">
                         <h6 class="section-title"><i class="fas fa-trophy" style="color: #FFD700; margin-right: 8px;"></i>Certificate of Appreciation </h6>
@@ -884,41 +972,13 @@
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="csr-img">
-                        <div class="swiper csr-swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="./assets/images/awards/Suzuki motors award.png" alt=""
-                                        style="width: 100%;" class="popup-image">
-                                </div>
-
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
+                
 
             </div>
 
             <div class="row mt-5 grey-bg p-4">
 
-                <div class="col-md-6">
-                    <div class="csr-img">
-                        <div class="swiper csr-swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide d-flex justify-content-center align-items-center">
-                                    <img src="./assets/images/awards/"
-                                        alt="" style="width: 100%;" class="popup-image">
-                                </div>
-
-
-
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="col-md-6">
                     <div class="csr-text mt-4">
                         <h6 class="section-title"><i class="fas fa-trophy" style="color: #FFD700; margin-right: 8px;"></i>ACMA Excellence Awards 2024</h6>
@@ -968,10 +1028,43 @@
                         </p>
                     </div>
                 </div>
+                <div class="col-md-6">
+                    <div class="csr-img">
+                        <div class="swiper csr-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/awards/"
+                                        alt="" style="width: 100%;" class="popup-image">
+                                </div>
+
+
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
             <div class="row mt-5 p-4 grey-bg">
+
+               
+
+                <div class="col-md-6">
+                    <div class="csr-img">
+                        <div class="swiper csr-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/awards/EEPC india green award.png" alt=""
+                                        style="width: 100%;" class="popup-image">
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="col-md-6">
                     <div class="csr-text mt-4">
@@ -1003,21 +1096,6 @@
 
                             <strong>Sustainability isn’t just a goal—it’s how we manufacture the future.</strong>
                         </p> -->
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="csr-img">
-                        <div class="swiper csr-swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="./assets/images/awards/EEPC india green award.png" alt=""
-                                        style="width: 100%;" class="popup-image">
-                                </div>
-
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
                     </div>
                 </div>
 

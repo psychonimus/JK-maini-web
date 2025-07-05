@@ -26,9 +26,7 @@
                                 class="fa-solid fa-phone-volume me-2"></i>
                             +91 2261527998</a>
                     </li>
-                    <!-- <li class="nav-item ms-2">
-                        <a class="nav-link" href="#">Mon - Fri 9:00 - 19:00</a>
-                    </li> -->
+                    
 
                 </ul>
             </div>
@@ -37,10 +35,9 @@
                     <li class="nav-item ms-2    ">
                         <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
                     </li>
-                    <li class="nav-item ms-2    ">
+                    <li class="nav-item ms-2 ">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -112,8 +109,8 @@
                                     <h4 onclick="toggleAccordion(this)">Business Verticals</h4>
                                     <ul>
                                         <li><a href="automobile.html">Automobile</a></li>
-                                        <li><a href="aerospace.html">Aerospace</a></li>
                                         <li><a href="toolsAndHardware.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace.html">Aerospace</a></li>
                                         <!-- <li><a href="#">Global Footprints</a></li>  -->
                                     </ul>
                                 </div>
@@ -139,9 +136,48 @@
                         </div>
                     </li>
 
-                    <li class="nav-item has-mega-menu">
-                        <a class="nav-link d-flex justify-content-between" href="sectors.html"
-                            onclick="toggleMegaMenu(event)">
+                    <li class="nav-item has-mega-menu d-none d-lg-block sector-laptop">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Sectors
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <!-- <h4 onclick="toggleAccordion(this)">Sectors</h4> -->
+                                    <ul>
+                                        <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <!-- <h4 onclick="toggleAccordion(this)"></h4> -->
+                                    <ul>
+
+                                        <li><a href="industrial-hydraulics.html">Industrial Hydraulics</a></li>
+                                        <li><a href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
+                                        <li><a href="locomotive-sector.html">Locomotive</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <!-- <h4 onclick="toggleAccordion(this)"></h4> -->
+                                    <ul>
+                                        <li><a href="agriculture-sector.html">Agriculture</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu d-block d-lg-none sector-mobile">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
                             Sectors
                             <span class="d-lg-none">+</span>
                         </a>
@@ -155,31 +191,15 @@
                                     <h4 onclick="toggleAccordion(this)">Sectors</h4>
                                     <ul>
                                         <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
                                         <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
                                         <li><a href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
-
-
-                                        <!-- <li><a href="#">Tools and Hardware</a></li> -->
-                                        <!-- <li><a href="#">Global Footprints</a></li>  -->
-                                    </ul>
-                                </div>
-                                <div class="mega-menu-column">
-                                    <!-- <h4 onclick="toggleAccordion(this)">Sustainability</h4> -->
-                                    <ul>
-                                        <!-- <li><a href="#">Electric & Hybrid</a></li> -->
                                         <li><a href="industrial-hydraulics.html">Industrial Hydraulics</a></li>
-                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
                                         <li><a href="locomotive-sector.html">Locomotive</a></li>
-
-                                    </ul>
-                                </div>
-                                <div class="mega-menu-column">
-                                    <!-- <h4 onclick="toggleAccordion(this)">Recognition</h4> -->
-                                    <ul>
                                         <li><a href="agriculture-sector.html">Agriculture</a></li>
-                                        <li><a href="electronics-sector.html">Electronics</a></li>
                                     </ul>
                                 </div>
+
                             </div>
                         </div>
                     </li>
@@ -282,7 +302,8 @@
                     </div>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-headset me-2"></i> Enquiry</a>
+                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
+                            Enquiry</a>
                     </li>
 
                 </ul>

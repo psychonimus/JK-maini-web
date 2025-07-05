@@ -1545,3 +1545,46 @@ background: linear-gradient(265deg, rgba(255, 203, 4, 1) 0%, rgba(244, 129, 32, 
   border-radius: 20px;
 }
 
+.mute-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.csr-title h5{
+  border-left: 4px solid var(--primary);
+  padding-left: 10px;
+}
+.csr-swiper .img-box{
+  height: 350px;
+  overflow: hidden;
+  /* background-color: red; */
+  border-radius: 20px;
+  transition: 0.5s all ease;
+  border: 2px solid #a5a5a5;
+}
+.csr-swiper .img-box img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.csr-swiper .img-box img:hover{
+  scale: 1.03;
+}
+.swiper-navigation-button{
+  background-color: #fff;
+  border-radius: 30px;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 25px !important;
+  font-weight: 600;
+  color: var(--accent);
+}

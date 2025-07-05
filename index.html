@@ -28,9 +28,7 @@
                                 class="fa-solid fa-phone-volume me-2"></i>
                             +91 2261527998</a>
                     </li>
-                    <!-- <li class="nav-item ms-2">
-                        <a class="nav-link" href="#">Mon - Fri 9:00 - 19:00</a>
-                    </li> -->
+                    
 
                 </ul>
             </div>
@@ -39,10 +37,9 @@
                     <li class="nav-item ms-2    ">
                         <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
                     </li>
-                    <li class="nav-item ms-2    ">
+                    <li class="nav-item ms-2 ">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -114,8 +111,8 @@
                                     <h4 onclick="toggleAccordion(this)">Business Verticals</h4>
                                     <ul>
                                         <li><a href="automobile.html">Automobile</a></li>
-                                        <li><a href="aerospace.html">Aerospace</a></li>
                                         <li><a href="toolsAndHardware.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace.html">Aerospace</a></li>
                                         <!-- <li><a href="#">Global Footprints</a></li>  -->
                                     </ul>
                                 </div>
@@ -141,9 +138,48 @@
                         </div>
                     </li>
 
-                    <li class="nav-item has-mega-menu">
-                        <a class="nav-link d-flex justify-content-between" href="sectors.html"
-                            onclick="toggleMegaMenu(event)">
+                    <li class="nav-item has-mega-menu d-none d-lg-block sector-laptop">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Sectors
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <!-- <h4 onclick="toggleAccordion(this)">Sectors</h4> -->
+                                    <ul>
+                                        <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <!-- <h4 onclick="toggleAccordion(this)"></h4> -->
+                                    <ul>
+
+                                        <li><a href="industrial-hydraulics.html">Industrial Hydraulics</a></li>
+                                        <li><a href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
+                                        <li><a href="locomotive-sector.html">Locomotive</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <!-- <h4 onclick="toggleAccordion(this)"></h4> -->
+                                    <ul>
+                                        <li><a href="agriculture-sector.html">Agriculture</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu d-block d-lg-none sector-mobile">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
                             Sectors
                             <span class="d-lg-none">+</span>
                         </a>
@@ -157,31 +193,15 @@
                                     <h4 onclick="toggleAccordion(this)">Sectors</h4>
                                     <ul>
                                         <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
                                         <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
                                         <li><a href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
-
-
-                                        <!-- <li><a href="#">Tools and Hardware</a></li> -->
-                                        <!-- <li><a href="#">Global Footprints</a></li>  -->
-                                    </ul>
-                                </div>
-                                <div class="mega-menu-column">
-                                    <!-- <h4 onclick="toggleAccordion(this)">Sustainability</h4> -->
-                                    <ul>
-                                        <!-- <li><a href="#">Electric & Hybrid</a></li> -->
                                         <li><a href="industrial-hydraulics.html">Industrial Hydraulics</a></li>
-                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
                                         <li><a href="locomotive-sector.html">Locomotive</a></li>
-
-                                    </ul>
-                                </div>
-                                <div class="mega-menu-column">
-                                    <!-- <h4 onclick="toggleAccordion(this)">Recognition</h4> -->
-                                    <ul>
                                         <li><a href="agriculture-sector.html">Agriculture</a></li>
-                                        <li><a href="electronics-sector.html">Electronics</a></li>
                                     </ul>
                                 </div>
+
                             </div>
                         </div>
                     </li>
@@ -284,7 +304,8 @@
                     </div>
 
                     <li class="nav-item">
-                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i> Enquiry</a>
+                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
+                            Enquiry</a>
                     </li>
 
                 </ul>
@@ -305,21 +326,17 @@
 
                         <div class="swiper-slide">
                             <video playsinline loop autoplay muted preload="metadata"
-                                class="bg-video videoDesktop d-none d-md-block" src="./assets/images/Jk Mini Logo Animation.mp4"></video>
+                                class="bg-video videoDesktop d-none d-md-block"
+                                src="./assets/images/Jk Mini Logo Animation + Music Full.mp4"></video>
                             <video playsinline loop autoplay muted preload="metadata"
-                                class="videoMobile d-block d-md-none" src="./assets/images/Jk Mini Logo Animation.mp4"></video>
+                                class="videoMobile d-block d-md-none"
+                                src="./assets/images/Jk Mini Logo Animation + Music Full.mp4"></video>
                             <div class="container swiper-content">
-                                <!-- <div class="col-md-10">
-                                    <h1>Powering Machines That Move the World</h1>
-                                    <p>Delivering the strength behind innovation and mobility.</p>
-                                    <a style="text-decoration: none;" href="automobile.html"><button
-                                            class="hero-button">
 
-                                            Explore More
-                                        </button></a>
-                                </div> -->
                             </div>
                         </div>
+
+
 
                         <div class="swiper-slide">
                             <video playsinline loop autoplay muted preload="metadata"
@@ -432,6 +449,27 @@
                     <div class="card text-center">
                         <div class="card-body">
                             <div class="mb-3">
+                                <img src="./assets/images/Tools and hardware 1.png" alt="Tools and Hardware">
+                            </div>
+                            <h4 class="card-title mb-2">Tools & Hardware</h4>
+                            <h6>Craftsmanship That Empowers Professionals</h6>
+                            <p class="card-text">We manufacture high-performance files, cutting and power tools built
+                                for industrial reliability — trusted across India and global markets.</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="toolsAndHardware.html" style="text-decoration: none;">
+                                    <button>
+                                        Learn More
+                                        <i class="fa fa-arrow-right ms-2"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="mb-3">
                                 <img src="./assets/images/Aerospace 1.png" alt="Aerospace Solutions">
                             </div>
                             <h4 class="card-title mb-2">Aerospace Solutions</h4>
@@ -450,30 +488,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <img src="./assets/images/Tools and hardware 1.png" alt="Tools and Hardware">
-                            </div>
-                            <h4 class="card-title mb-2">Tools & Hardware</h4>
-                            <h6>Craftsmanship That Empowers Professionals</h6>
-                            <p class="card-text">We manufacture high-performance files, cutting and power tools built
-                                for industrial reliability — trusted across India and global markets.</p>
-                            <div class="d-flex justify-content-center">
-                                <a href="toolsAndHardware.html" style="text-decoration: none;">
-                                    <button>
-                                        Learn More
-                                        <i class="fa fa-arrow-right ms-2"></i>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
+
 
     <section class="foreword py-5">
         <div class="container">
@@ -564,8 +583,8 @@
                             our components are built to exacting standards, ensuring consistent quality, durability, and
                             reliability. Every part we produce is a testament to our engineering excellence and
                             commitment to precision.</p>
-                        <div class="d-flex align-items-center justify-content-center gap-2"><a href="">Learn More</a> <i
-                                class="fa-solid fa-arrow-right"></i></div>
+                        <!-- <div class="d-flex align-items-center justify-content-center gap-2"><a href="">Learn More</a> <i
+                                class="fa-solid fa-arrow-right"></i></div> -->
                     </div>
                 </div>
                 <div class="col-md-4 p-3">
@@ -577,9 +596,9 @@
                             standards. Leveraging cutting-edge technology and robust quality controls, we deliver parts
                             engineered for strength, safety, and uncompromising performance in the most extreme
                             conditions.</p>
-                        <div class="d-flex align-items-center justify-content-center gap-2"><a href="">Explore Now</a>
+                        <!-- <div class="d-flex align-items-center justify-content-center gap-2"><a href="">Explore Now</a>
                             <i class="fa-solid fa-arrow-right"></i>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="col-md-4 p-3">
@@ -591,9 +610,9 @@
                             functional performance, manufacturability, and cost-efficiency, we bring together
                             engineering expertise and modern tools to create components that are production-ready from
                             day one.</p>
-                        <div class="d-flex align-items-center justify-content-center gap-2"><a href="">Enquire Now</a>
+                        <!-- <div class="d-flex align-items-center justify-content-center gap-2"><a href="">Enquire Now</a>
                             <i class="fa-solid fa-arrow-right"></i>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -1018,6 +1037,275 @@
                     </div>
                 </div>
 
+                <div class="swiper-slide">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="img-container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/Robert Maroday.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="test-content py-3">
+                                    <div class="test-box px-4 py-3">
+                                        <div class="quote-and-ratings d-flex justify-content-between">
+                                            <div class="quotes">
+                                                <img src="./assets/images/quotes.png" alt="">
+                                            </div>
+                                            <!-- <div class="rating">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="test-text text-start px-4">
+                                        <p class="mt-0">
+                                            "We developed a great partnership with J.K. Files over the past 40 years. JK
+                                            Files quality products & services has helped us in growing our business in
+                                            Latin Americas.
+                                            I truly admire our long-standing business partnership.
+                                            "
+                                        </p>
+
+                                    </div>
+                                    <div class="px-4">
+                                        <div class="nameandposition text-start">
+                                            <h4 class="m-0">Robert Maroday</h3>
+                                                <p>Business Partner, Central America</h5>
+                                                    <!-- <div class="social-icons mt-3">
+                                                <a href="https://www.linkedin.com/in/gautam-singhania" target="_blank"
+                                                    aria-label="LinkedIn" class="me-2" style="color: #0A66C2; font-size: 1.5rem;">
+                                                    <i class="fab fa-linkedin"></i>
+                                                </a>
+                    
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="img-container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/Carlos Debbe.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="test-content py-3">
+                                    <div class="test-box px-4 py-3">
+                                        <div class="quote-and-ratings d-flex justify-content-between">
+                                            <div class="quotes">
+                                                <img src="./assets/images/quotes.png" alt="">
+                                            </div>
+                                            <!-- <div class="rating">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="test-text text-start px-4">
+                                        <p class="mt-0">
+                                            "After using JK Files for several years now, I've found their professional
+                                            and positive approach to any requirements outstanding, with the product
+                                            always meeting specifications and dimensions. I would recommend JK Files &
+                                            Engineering Ltd. as a first-class Hand Tools supplier to anyone.
+                                            "
+                                        </p>
+
+                                    </div>
+                                    <div class="px-4">
+                                        <div class="nameandposition text-start">
+                                            <h4 class="m-0">Carlos Debbe</h3>
+                                                <p>Business Partner, Central America</h5>
+                                                    <!-- <div class="social-icons mt-3">
+                                                <a href="https://www.linkedin.com/in/gautam-singhania" target="_blank"
+                                                    aria-label="LinkedIn" class="me-2" style="color: #0A66C2; font-size: 1.5rem;">
+                                                    <i class="fab fa-linkedin"></i>
+                                                </a>
+                    
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="img-container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/Nitin shah.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="test-content py-3">
+                                    <div class="test-box px-4 py-3">
+                                        <div class="quote-and-ratings d-flex justify-content-between">
+                                            <div class="quotes">
+                                                <img src="./assets/images/quotes.png" alt="">
+                                            </div>
+                                            <!-- <div class="rating">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="test-text text-start px-4">
+                                        <p class="mt-0">
+                                            "We have been associated with JK Files for many years now. Have worked on
+                                            several projects together, the JK Files team has time and again proven
+                                            themselves to be innovative, professional, and extremely thorough with their
+                                            knowledge of Files and Tools. And all combined with their agility, the JK
+                                            team is always a pleasure to deal with.
+                                            "
+                                        </p>
+
+                                    </div>
+                                    <div class="px-4">
+                                        <div class="nameandposition text-start">
+                                            <h4 class="m-0">Nitin Shah</h3>
+                                                <p>Business Partner, India</h5>
+                                                    <!-- <div class="social-icons mt-3">
+                                                <a href="https://www.linkedin.com/in/gautam-singhania" target="_blank"
+                                                    aria-label="LinkedIn" class="me-2" style="color: #0A66C2; font-size: 1.5rem;">
+                                                    <i class="fab fa-linkedin"></i>
+                                                </a>
+                    
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="img-container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/kalpesh shah.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="test-content py-3">
+                                    <div class="test-box px-4 py-3">
+                                        <div class="quote-and-ratings d-flex justify-content-between">
+                                            <div class="quotes">
+                                                <img src="./assets/images/quotes.png" alt="">
+                                            </div>
+                                            <!-- <div class="rating">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="test-text text-start px-4">
+                                        <p class="mt-0">
+                                            "I wanted to take this opportunity to thank the team at JK Files for their
+                                            fantastic work. JK team has always demonstrated great professionalism while
+                                            performing the job. would especially like to emphasize on the quality,
+                                            timeliness, accuracy, marketing efforts, and enthusiasm of the team.Our
+                                            success has been based on our cherished partnership from the very beginning.
+                                            This association with JK Files is precious for us and we look forward to
+                                            work together in the coming years ahead
+                                            "
+                                        </p>
+
+                                    </div>
+                                    <div class="px-4">
+                                        <div class="nameandposition text-start">
+                                            <h4 class="m-0">Kalpesh Shah</h3>
+                                                <p>Business Partner, Africa</h5>
+                                                    <!-- <div class="social-icons mt-3">
+                                                <a href="https://www.linkedin.com/in/gautam-singhania" target="_blank"
+                                                    aria-label="LinkedIn" class="me-2" style="color: #0A66C2; font-size: 1.5rem;">
+                                                    <i class="fab fa-linkedin"></i>
+                                                </a>
+                    
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="img-container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/Rakesh gupta.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="test-content py-3">
+                                    <div class="test-box px-4 py-3">
+                                        <div class="quote-and-ratings d-flex justify-content-between">
+                                            <div class="quotes">
+                                                <img src="./assets/images/quotes.png" alt="">
+                                            </div>
+                                            <!-- <div class="rating">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="test-text text-start px-4">
+                                        <p class="mt-0">
+                                            "Despite the challenging environment due to COVID-19, the JK team was always
+                                            ready to help us by visiting our premises whenever we needed them.
+                                            We sincerely thank you for your kind support. I look forward to many more
+                                            years of successful cooperation between us.
+                                            "
+                                        </p>
+
+                                    </div>
+                                    <div class="px-4">
+                                        <div class="nameandposition text-start">
+                                            <h4 class="m-0">Rakesh Gupta</h3>
+                                                <p>Business Partner, India</h5>
+                                                    <!-- <div class="social-icons mt-3">
+                                                <a href="https://www.linkedin.com/in/gautam-singhania" target="_blank"
+                                                    aria-label="LinkedIn" class="me-2" style="color: #0A66C2; font-size: 1.5rem;">
+                                                    <i class="fab fa-linkedin"></i>
+                                                </a>
+                    
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
             <div class="swiper-pagination"></div>
@@ -1359,7 +1647,7 @@
                         <i class="fa-solid fa-envelope-open mb-3"></i>
                         <h3>Drop us a Line</h3>
                         <p>You can contact us by filling in this form any time you need professional support.</p>
-                        <a href="">Fill Our Form</a>
+                        <a onclick="openPopup()" href="javascript:void(0)">Fill Our Form</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -1452,9 +1740,8 @@
     </footer>
 
 
-
     <script>
-        const popup = document.getElementById("imagePopup");
+         const popup = document.getElementById("imagePopup");
         const popupImg = document.getElementById("popupImg");
         const images = document.querySelectorAll(".popup-image");
         const closeBtn = document.querySelector(".close-popup");
@@ -1520,6 +1807,12 @@
         });
 
     </script>
+
+
+
+
+
+
 
 
 </body>

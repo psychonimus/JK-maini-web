@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png">
-    
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png">
+
 </head>
 
 <body>
@@ -27,9 +27,7 @@
                                 class="fa-solid fa-phone-volume me-2"></i>
                             +91 2261527998</a>
                     </li>
-                    <!-- <li class="nav-item ms-2">
-                        <a class="nav-link" href="#">Mon - Fri 9:00 - 19:00</a>
-                    </li> -->
+
 
                 </ul>
             </div>
@@ -38,10 +36,9 @@
                     <li class="nav-item ms-2    ">
                         <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
                     </li>
-                    <li class="nav-item ms-2    ">
+                    <li class="nav-item ms-2 ">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -113,8 +110,8 @@
                                     <h4 onclick="toggleAccordion(this)">Business Verticals</h4>
                                     <ul>
                                         <li><a href="automobile.html">Automobile</a></li>
-                                        <li><a href="aerospace.html">Aerospace</a></li>
                                         <li><a href="toolsAndHardware.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace.html">Aerospace</a></li>
                                         <!-- <li><a href="#">Global Footprints</a></li>  -->
                                     </ul>
                                 </div>
@@ -140,9 +137,48 @@
                         </div>
                     </li>
 
-                    <li class="nav-item has-mega-menu">
-                        <a class="nav-link d-flex justify-content-between" href="sectors.html"
-                            onclick="toggleMegaMenu(event)">
+                    <li class="nav-item has-mega-menu d-none d-lg-block sector-laptop">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Sectors
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <!-- <h4 onclick="toggleAccordion(this)">Sectors</h4> -->
+                                    <ul>
+                                        <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <!-- <h4 onclick="toggleAccordion(this)"></h4> -->
+                                    <ul>
+
+                                        <li><a href="industrial-hydraulics.html">Industrial Hydraulics</a></li>
+                                        <li><a href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
+                                        <li><a href="locomotive-sector.html">Locomotive</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <!-- <h4 onclick="toggleAccordion(this)"></h4> -->
+                                    <ul>
+                                        <li><a href="agriculture-sector.html">Agriculture</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu d-block d-lg-none sector-mobile">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
                             Sectors
                             <span class="d-lg-none">+</span>
                         </a>
@@ -156,31 +192,15 @@
                                     <h4 onclick="toggleAccordion(this)">Sectors</h4>
                                     <ul>
                                         <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
                                         <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
                                         <li><a href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
-
-
-                                        <!-- <li><a href="#">Tools and Hardware</a></li> -->
-                                        <!-- <li><a href="#">Global Footprints</a></li>  -->
-                                    </ul>
-                                </div>
-                                <div class="mega-menu-column">
-                                    <!-- <h4 onclick="toggleAccordion(this)">Sustainability</h4> -->
-                                    <ul>
-                                        <!-- <li><a href="#">Electric & Hybrid</a></li> -->
                                         <li><a href="industrial-hydraulics.html">Industrial Hydraulics</a></li>
-                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
                                         <li><a href="locomotive-sector.html">Locomotive</a></li>
-
-                                    </ul>
-                                </div>
-                                <div class="mega-menu-column">
-                                    <!-- <h4 onclick="toggleAccordion(this)">Recognition</h4> -->
-                                    <ul>
                                         <li><a href="agriculture-sector.html">Agriculture</a></li>
-                                        <li><a href="electronics-sector.html">Electronics</a></li>
                                     </ul>
                                 </div>
+
                             </div>
                         </div>
                     </li>
@@ -283,7 +303,8 @@
                     </div>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-headset me-2"></i> Enquiry</a>
+                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
+                            Enquiry</a>
                     </li>
 
                 </ul>
@@ -324,30 +345,30 @@
 
     <section class="foundations my-5">
         <div class="container">
-        <div class="text-center mb-5">
-            <h6 class="section-title">Our Foundations</h6>
-            <h2>Working Together for a Better Tomorrow</h2>
-        </div>
-        <div class="row justify-content-center align-items-center">
-            <div class="col-md-4 text-center">
-                <div class="foundation-logo p-4">
-                    <img src="./assets/images/Maini-samaj.png" alt="Foundation 1" class="img-fluid">
-                    <!-- <h4 class="mt-3">Raymond Foundation</h4> -->
+            <div class="text-center mb-5">
+                <h6 class="section-title">Our Foundations</h6>
+                <h2>Working Together for a Better Tomorrow</h2>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-4 text-center">
+                    <div class="foundation-logo p-4">
+                        <img src="./assets/images/Maini-samaj.png" alt="Foundation 1" class="img-fluid">
+                        <!-- <h4 class="mt-3">Raymond Foundation</h4> -->
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="foundation-logo p-4">
+                        <img src="./assets/images/sandeep&gitanjali.png" alt="Foundation 2" class="img-fluid">
+                        <!-- <h4 class="mt-3">JK Maini Foundation</h4> -->
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="foundation-logo p-4">
+                        <img src="./assets/images/gramothan-foundation.png" alt="Foundation 3" class="img-fluid">
+                        <!-- <h4 class="mt-3">Maini Foundation</h4> -->
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 text-center">
-                <div class="foundation-logo p-4">
-                    <img src="./assets/images/sandeep&gitanjali.png" alt="Foundation 2" class="img-fluid">
-                    <!-- <h4 class="mt-3">JK Maini Foundation</h4> -->
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="foundation-logo p-4">
-                    <img src="./assets/images/gramothan-foundation.png" alt="Foundation 3" class="img-fluid">
-                    <!-- <h4 class="mt-3">Maini Foundation</h4> -->
-                </div>
-            </div>
-        </div>
         </div>
     </section>
 
@@ -368,35 +389,39 @@
                         <h4 class="mb-4">Rural Development & Environment</h4>
                     </div>
                     <div class="col-md-3">
-                        <div class="p-3 num-data text-center" style="border-top: 3px solid var(--accent); border-left: none;">
+                        <div class="p-3 num-data text-center"
+                            style="border-top: 3px solid var(--accent); border-left: none;">
                             <img src="./assets/images/solar-panel.png" alt="">
-                            <h4 class="mt-2 section-title">Organic Farming
+                            <h4 class="mt-2 section-title">Afforestation
                             </h4>
-                            
+
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="p-3 num-data text-center" style="border-top: 3px solid var(--accent); border-left: none;">
+                        <div class="p-3 num-data text-center"
+                            style="border-top: 3px solid var(--accent); border-left: none;">
                             <img src="./assets/images/paperless-factory.png" alt="">
-                            <h4 class="mt-2 section-title">Sahaya Kendra
+                            <h4 class="mt-2 section-title">Rehabilitation & Sheltercare
                             </h4>
-                            
+
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="p-3 num-data text-center" style="border-top: 3px solid var(--accent); border-left: none;">
+                        <div class="p-3 num-data text-center"
+                            style="border-top: 3px solid var(--accent); border-left: none;">
                             <img src="./assets/images/transportation.png" alt="">
-                            <h4 class="mt-2 section-title">Micro- financing  
+                            <h4 class="mt-2 section-title">Swatcha Bharat Abhiyan
                             </h4>
-                            
+
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="p-3 num-data text-center" style="border-top: 3px solid var(--accent); border-left: none;">
+                        <div class="p-3 num-data text-center"
+                            style="border-top: 3px solid var(--accent); border-left: none;">
                             <img src="./assets/images/auto-lightning.png" alt="">
-                            <h4 class="mt-2 section-title">Skill Development
+                            <h4 class="mt-2 section-title">Solarization
                             </h4>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -405,41 +430,44 @@
                     <div class="text-center">
                         <h4 class="mb-4">Wellness & Health</h4>
                     </div>
-                    <div class="col-md-3">
-                        <div class="p-3 num-data text-center" style="border-top: 3px solid var(--accent); border-left: none;">
+                    <div class="col-md-4">
+                        <div class="p-3 num-data text-center"
+                            style="border-top: 3px solid var(--accent); border-left: none;">
                             <img src="./assets/images/solar-panel.png" alt="">
-                            <h4 class="mt-2 section-title">Health Camps Promoting
+                            <h4 class="mt-2 section-title">Installation of life saving equipments
                             </h4>
-                            
+
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="p-3 num-data text-center" style="border-top: 3px solid var(--accent); border-left: none;">
+                    <div class="col-md-4">
+                        <div class="p-3 num-data text-center"
+                            style="border-top: 3px solid var(--accent); border-left: none;">
                             <img src="./assets/images/paperless-factory.png" alt="">
-                            <h4 class="mt-2 section-title">Wellness
+                            <h4 class="mt-2 section-title">Revamp of Maternity & Child health center
                             </h4>
-                            
+
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="p-3 num-data text-center" style="border-top: 3px solid var(--accent); border-left: none;">
+                    <div class="col-md-4">
+                        <div class="p-3 num-data text-center"
+                            style="border-top: 3px solid var(--accent); border-left: none;">
                             <img src="./assets/images/transportation.png" alt="">
-                            <h4 class="mt-2 section-title">Ayurveda Health Checkups 
+                            <h4 class="mt-2 section-title">Upgraded SNCU with advanced neonatal equipment
                             </h4>
-                            
+
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <!-- <div class="col-md-3">
                         <div class="p-3 num-data text-center" style="border-top: 3px solid var(--accent); border-left: none;">
                             <img src="./assets/images/auto-lightning.png" alt="">
                             <h4 class="mt-2 section-title">Festival & Sports camp
                             </h4>
                             
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
-                <div class="row my-3 justify-content-center">
+                <!-- <div class="row my-3 justify-content-center">
                     <div class="text-center">
                         <h4 class="mb-4">Education</h4>
                     </div>
@@ -460,147 +488,873 @@
                         </div>
                     </div>
                     
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
-
-
-
 
     <section class="csr my-5" id="csr">
-        <div class="container mt-5">
+        <div class="container">
             <div class="text-center mt-5">
-                <h6 class="section-title">CSR Focus Areas</h6>
-                <h2>Making an Impact Where It Matters Most</h2>
+                <h6 class="section-title">Our CSR Initiatives</h6>
+                <h2>Precision in Purpose. Commitment to Community.</h2>
+                <p>Partnering with the Rotary Club of Nashik, RPAL has undertaken various impactful CSR projects in
+                    healthcare, rural development, environmental sustainability, and infrastructure enhancement. Here’s
+                    a snapshot of our ongoing contribution</p>
             </div>
-            <div class="row mt-5">
-                <div class="col-md-6">
-                    <div class="csr-text mt-4">
-                        <h2>Digital X-ray Machine ICU Civil Hospital, Nashik </h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu
-                            consectetur cursus, nisl erat dictum erat, nec dictum sem urna at leo. Etiam euismod, urna
-                            eu
-                            tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam nisl nunc eu nisl.
-                        </p>
-                    </div>
+
+            <div class="life-saving-equipment">
+                <div class="csr-title mt-5">
+                    <h5 class="section-title">1. Installation of Life-Saving Equipment</h5>
+                    <h3>Bringing Modern Healthcare Closer to All</h3>
+                    <p>We supported critical hospitals in Nashik with advanced medical equipment to strengthen public
+                        health
+                        systems and save lives.
+                    </p>
                 </div>
-                <div class="col-md-6">
-                    <div class="csr-img">
-                        <div class="swiper csr-swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="./assets/images/CSR-1.png" alt="" style="width: 100%;">
+                <div class="table">
+                    <div class="table-responsive">
+                        <table class="table table-bordered align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col">Equipment</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Beneficiaries</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Digital X-ray machine</td>
+                                    <td>1</td>
+                                    <td>Civil Hospital Nashik</td>
+                                </tr>
+                                <tr>
+                                    <td>Smart Bubble C-PAP machine</td>
+                                    <td>1</td>
+                                    <td>BYTCO, Nashik Municipal Hospital</td>
+                                </tr>
+                                <tr>
+                                    <td>Bed Side Pulse Oximeters</td>
+                                    <td>6</td>
+                                    <td>Civil Hospital Nashik</td>
+                                </tr>
+                                <tr>
+                                    <td>Anesthesia Workstation & Vaporizer</td>
+                                    <td>1</td>
+                                    <td>Guruji Rugnalaya, Nashik</td>
+                                </tr>
+                                <tr>
+                                    <td>Oxygen Concentrators (5L)</td>
+                                    <td>3</td>
+                                    <td>Sinnar Gramin Rugnalaya</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <p><strong class="section-title">Impact</strong>: Empowered public hospitals with essential devices to
+                    improve patient care, especially for critical cases and neonatal units.</p>
+                <p><strong class="section-title">Approx. Benificieries</strong>: 4,120</p>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h4 style="border-left: 4px solid #000; padding-left: 10px;">Digital X-ray Machine At ICU of
+                            Civil Hospital, Nashik
+                        </h4>
+                        <div class="csr-img">
+                            <div class="swiper csr-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/CSR/life-saving-euipments/CSR-1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/life-saving-euipments/rotery-club.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/life-saving-euipments/xray-1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/life-saving-euipments/xray-2.png" alt="">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <img src="./assets/images/CSR-1-2.png" alt="" style="width: 100%;">
-                                </div>
+                                <div class="swiper-button-next swiper-navigation-button"></div>
+                                <div class="swiper-button-prev swiper-navigation-button"></div>
+                                <!-- <div class="swiper-pagination"></div> -->
                             </div>
-                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 style="border-left: 4px solid #000; padding-left: 10px;">Smart Bubble C-PAP Machine At BYTCO
+                            Hospital, Nashik
+
+                        </h4>
+                        <div class="csr-img">
+                            <div class="swiper csr-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/CSR/life-saving-euipments/smart-bubble-1.jpg"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/life-saving-euipments/smart-bubble-2.jpg"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/life-saving-euipments/smart-bubble-3.jpg"
+                                                alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-button-next swiper-navigation-button"></div>
+                                <div class="swiper-button-prev swiper-navigation-button"></div>
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h4 style="border-left: 4px solid #000; padding-left: 10px;">Bed Side Pulse Oximeters At Civil
+                            Hospital,<br>Nashik
+                        </h4>
+                        <div class="csr-img">
+                            <div class="swiper csr-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/CSR/life-saving-euipments/Pulse-Oximeters-1.jpg"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/life-saving-euipments/Pulse-Oximeters-2.jpg"
+                                                alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-button-next swiper-navigation-button"></div>
+                                <div class="swiper-button-prev swiper-navigation-button"></div>
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 style="border-left: 4px solid #000; padding-left: 10px;">Anesthesia Workstation & Vaporizer
+                            at Guruji Hospital, Nashik
+                        </h4>
+                        <div class="csr-img">
+                            <div class="swiper csr-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/CSR/life-saving-euipments/anesthesia-1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/life-saving-euipments/anesthesia-2.png" alt="">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="swiper-button-next swiper-navigation-button"></div>
+                                <div class="swiper-button-prev swiper-navigation-button"></div>
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h4 style="border-left: 4px solid #000; padding-left: 10px;">Oxygen Concentrators (3 nos.) at
+                            Sinnar Gramin Rugnalaya, Sinnar
+
+                        </h4>
+                        <div class="csr-img">
+                            <div class="swiper csr-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/CSR/life-saving-euipments/oxygen-concentrators.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/life-saving-euipments/oxygen-concentrators-2.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/life-saving-euipments/oxygen-concentrators-3.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-button-next swiper-navigation-button"></div>
+                                <div class="swiper-button-prev swiper-navigation-button"></div>
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
-            <div class="row mt-5">
+            <div class="solar-street-light-installation">
+                <div class="csr-title mt-5">
+                    <h5 class="section-title">2. Solar Street Light Installations in Tribal Areas</h5>
+                    <h3>Lighting Up Lives in Remote Regions</h3>
+                    <p>Installed solar-powered lights to ensure safety and visibility in underserved areas.</p>
+                </div>
+                <div class="table">
+                    <div class="table-responsive">
+                        <table class="table table-bordered align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col">Location</th>
+                                    <th scope="col">Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Pimpalgaon Ghadga (Sinnar-Ghoti Road)</td>
+                                    <td>23</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Kolgaonmal & Eklaahre (Sinnar)</td>
+                                    <td>4</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Peth Taluka</td>
+                                    <td>3</td>
+                                    
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
 
-                <div class="col-md-6">
-                    <div class="csr-img">
-                        <div class="swiper csr-swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="./assets/images/CSR-2.png" alt="" style="width: 100%;">
+                </div>
+                <p><strong class="section-title">Impact</strong>: Enhanced rural safety and reduced dependency on grid electricity for 17 tribal hamlets.</p>
+                <p><strong class="section-title">Approx. Benificieries</strong>: 6,700</p>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h4 style="border-left: 4px solid #000; padding-left: 10px;">Pimpalgaon Ghadga (Sinnar-Ghoti Road)
+                        </h4>
+                        <div class="csr-img">
+                            <div class="swiper csr-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/CSR/solar-installation/Pimpalgaon-1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/solar-installation/Pimpalgaon-2.png" alt="">
+                                        </div>
+                                    </div>
+                                    
                                 </div>
-                                <div class="swiper-slide">
-                                    <img src="./assets/images/CSR2-1.png" alt="" style="width: 100%;">
-                                </div>
+                                <div class="swiper-button-next swiper-navigation-button"></div>
+                                <div class="swiper-button-prev swiper-navigation-button"></div>
+                                <!-- <div class="swiper-pagination"></div> -->
                             </div>
-                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 style="border-left: 4px solid #000; padding-left: 10px;">Kolgaonmal & Eklaahre (Sinnar)
+
+                        </h4>
+                        <div class="csr-img">
+                            <div class="swiper csr-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/CSR/solar-installation/Pimpalgaon-3.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/solar-installation/Pimpalgaon-4.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+                                <div class="swiper-button-next swiper-navigation-button"></div>
+                                <div class="swiper-button-prev swiper-navigation-button"></div>
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="csr-text mt-4">
-                        <h2>Dense Forest Development at Sinnar</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu
-                            consectetur cursus, nisl erat dictum erat, nec dictum sem urna at leo. Etiam euismod, urna
-                            eu
-                            tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam nisl nunc eu nisl.
-                        </p>
-                    </div>
-                </div>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h4 style="border-left: 4px solid #000; padding-left: 10px;">Peth Taluka
+                        </h4>
+                        <div class="csr-img">
+                            <div class="swiper csr-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/CSR/solar-installation/Pimpalgaon-5.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/solar-installation/Pimpalgaon-6.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/solar-installation/Pimpalgaon-7.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/solar-installation/Pimpalgaon-8.png"
+                                                alt="">
+                                        </div>
+                                    </div>
 
+                                </div>
+                                <div class="swiper-button-next swiper-navigation-button"></div>
+                                <div class="swiper-button-prev swiper-navigation-button"></div>
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
             </div>
 
-            <div class="row mt-5">
-
-                <div class="col-md-6">
-                    <div class="csr-text mt-4">
-                        <h2>Revamp of Maternity & Child Health Centre at BYTCO Hospital, Nashik
-                        </h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu
-                            consectetur cursus, nisl erat dictum erat, nec dictum sem urna at leo. Etiam euismod, urna
-                            eu
-                            tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam nisl nunc eu nisl.
-                        </p>
-                    </div>
+            <div class="healthcare">
+                <div class="csr-title mt-5">
+                    <h5 class="section-title">3. Healthcare Infrastructure Revamp</h5>
+                    <h3>Strengthening Foundations of Maternal & Child Health</h3>
+                    <ul>
+                        <li>Revamped Maternity & Child Health Centre at BYTCO and Nashik Civil Hospitals.</li>
+                        <li>Upgraded SNCU (Special Neonatal Care Unit) by adding new equipment.</li>
+                    </ul>
+                    <p><strong>Impact</strong>: Improved neonatal survival rates and maternal care facilities for underprivileged patients.</p>
+                    <p><strong>Approx Benificieries</strong>: 5100</p>
                 </div>
+                
+                <p><strong class="section-title">Impact</strong>: Enhanced rural safety and reduced dependency on grid electricity for 17 tribal hamlets.</p>
+                <p><strong class="section-title">Approx. Benificieries</strong>: 6,700</p>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h4 style="border-left: 4px solid #000; padding-left: 10px;">Revamp of Maternity & Child Health Centre at BYTCO Hospital, Nashik
 
-                <div class="col-md-6">
-                    <div class="csr-img">
-                        <div class="swiper csr-swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="./assets/images/CSR-3.png" alt="" style="width: 100%;">
+                        </h4>
+                        <div class="csr-img">
+                            <div class="swiper csr-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/CSR/healthcare/healthcare.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/healthcare/healthcare-2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/healthcare/healthcare-3.png" alt="">
+                                        </div>
+                                    </div>
+                                    
                                 </div>
-                                <div class="swiper-slide">
-                                    <img src="./assets/images/CSR-3-2.png" alt="" style="width: 100%;">
-                                </div>
+                                <div class="swiper-button-next swiper-navigation-button"></div>
+                                <div class="swiper-button-prev swiper-navigation-button"></div>
+                                <!-- <div class="swiper-pagination"></div> -->
                             </div>
-                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 style="border-left: 4px solid #000; padding-left: 10px;">Improve facility of SNCU (Special Neonatal Care Unit ) at Civil Hospital, Nashik
+
+
+                        </h4>
+                        <div class="csr-img">
+                            <div class="swiper csr-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/CSR/healthcare/healthcare-4.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/healthcare/healthcare-5.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/healthcare/healthcare-6.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+                                <div class="swiper-button-next swiper-navigation-button"></div>
+                                <div class="swiper-button-prev swiper-navigation-button"></div>
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h4 style="border-left: 4px solid #000; padding-left: 10px;">Donation of Various Medical Equipment's to Civil Hospital, Sinnar + Nashik
+
+                        </h4>
+                        <div class="csr-img">
+                            <div class="swiper csr-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/CSR/healthcare/healthcare-7.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/healthcare/healthcare-8.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/healthcare/healthcare-9.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+                                <div class="swiper-button-next swiper-navigation-button"></div>
+                                <div class="swiper-button-prev swiper-navigation-button"></div>
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
             </div>
 
-            <div class="row mt-5">
-
-                <div class="col-md-6">
-                    <div class="csr-img">
-                        <div class="swiper csr-swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="./assets/images/CSR-4.png" alt="" style="width: 100%;">
+            <div class="Forest-Development">
+                <div class="csr-title mt-5">
+                    <h5 class="section-title">4. Forest Development </h5>
+                    <h3>Greening the Future</h3>
+                    <ul>
+                        <li>Supported forest development efforts inSinnar region (FY23 completion).</li>
+                        <li>Focused on afforestation, biodiversity, and carbon footprint reduction.</li>
+                    </ul>
+                    <p><strong>Impact</strong>: Improved neonatal survival rates and maternal care facilities for underprivileged patients.</p>
+                    <p><strong>Approx Benificieries</strong>: 10,000</p>
+                </div>
+                
+                <p><strong class="section-title">Impact</strong>: Long-term ecological balance and greener communities.</p>
+                <p><strong class="section-title">Approx. Benificieries</strong>: 6,700</p>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h4 style="border-left: 4px solid #000; padding-left: 10px;">Dense Forest (घनवन) – Ganesh Van - Development at Sinnar 
+                        </h4>
+                        <div class="csr-img">
+                            <div class="swiper csr-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/CSR/forest/forest-1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-3.png" alt="">
+                                        </div>
+                                    </div>
+                                    
                                 </div>
-
+                                <div class="swiper-button-next swiper-navigation-button"></div>
+                                <div class="swiper-button-prev swiper-navigation-button"></div>
+                                <!-- <div class="swiper-pagination"></div> -->
                             </div>
-                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 style="border-left: 4px solid #000; padding-left: 10px;">Dense Forest (घनवन) – Ganesh Van at Sinnar 
+                        </h4>
+                        <div class="csr-img">
+                            <div class="swiper csr-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/CSR/forest/forest-4.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-5.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-6.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-7.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-8.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-9.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+                                <div class="swiper-button-next swiper-navigation-button"></div>
+                                <div class="swiper-button-prev swiper-navigation-button"></div>
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="csr-text mt-4">
-                        <h2>Installed 30 Solar Street Lights - 17 Tribal Hamlets
-                        </h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu
-                            consectetur cursus, nisl erat dictum erat, nec dictum sem urna at leo. Etiam euismod, urna
-                            eu
-                            tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam nisl nunc eu nisl.
-                        </p>
+
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h4 style="border-left: 4px solid #000; padding-left: 10px;">Dense Forest (घनवन) – Ambica Van at STICE, Musalgaon - Sinnar 
+                        </h4>
+                        <div class="csr-img">
+                            <div class="swiper csr-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/CSR/forest/forest-10.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-11.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-12.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-13.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-14.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-15.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+                                <div class="swiper-button-next swiper-navigation-button"></div>
+                                <div class="swiper-button-prev swiper-navigation-button"></div>
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div class="collaborative-impact">
+                <div class="csr-title mt-5">
+                    <h5 class="section-title">5. Collaborative Impact</h5>
+                    
+                    <p>All initiatives were executed in partnership with the Rotary Club of Nashik, ensuring community reach, sustainability, and transparency.</p>
+                    <ul>
+                        <li>All the above will be followed by respective images.</li>
+                        <li>Over All Beneficiaries: 25,920+</li>
+                    </ul>
+                </div>
+                
+                <p><strong class="section-title">Impact</strong>: Long-term ecological balance and greener communities.</p>
+                <p><strong class="section-title">Approx. Benificieries</strong>: 6,700</p>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h4 style="border-left: 4px solid #000; padding-left: 10px;">Dense Forest (घनवन) – Ganesh Van - Development at Sinnar 
+                        </h4>
+                        <div class="csr-img">
+                            <div class="swiper csr-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/CSR/forest/forest-1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-3.png" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="swiper-button-next swiper-navigation-button"></div>
+                                <div class="swiper-button-prev swiper-navigation-button"></div>
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 style="border-left: 4px solid #000; padding-left: 10px;">Dense Forest (घनवन) – Ganesh Van at Sinnar 
+                        </h4>
+                        <div class="csr-img">
+                            <div class="swiper csr-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/CSR/forest/forest-4.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-5.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-6.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-7.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-8.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-9.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+                                <div class="swiper-button-next swiper-navigation-button"></div>
+                                <div class="swiper-button-prev swiper-navigation-button"></div>
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
+                        </div>
                     </div>
                 </div>
 
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h4 style="border-left: 4px solid #000; padding-left: 10px;">Dense Forest (घनवन) – Ambica Van at STICE, Musalgaon - Sinnar 
+                        </h4>
+                        <div class="csr-img">
+                            <div class="swiper csr-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/CSR/forest/forest-10.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-11.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-12.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-13.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-14.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <img class="popup-image"
+                                                src="./assets/images/csr/forest/forest-15.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+                                <div class="swiper-button-next swiper-navigation-button"></div>
+                                <div class="swiper-button-prev swiper-navigation-button"></div>
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
             </div>
-
-
         </div>
     </section>
+
+
+
+
+
 
     <section class="contact-footer">
         <!-- <div class="container py-3">
@@ -732,6 +1486,36 @@
         </div>
     </footer>
 
+    <div class="image-popup" id="imagePopup">
+        <span class="close-popup">&times;</span>
+        <img src="" alt="Popup Image" id="popupImg">
+    </div>
+
+    <script>
+        const popup = document.getElementById("imagePopup");
+        const popupImg = document.getElementById("popupImg");
+        const images = document.querySelectorAll(".popup-image");
+        const closeBtn = document.querySelector(".close-popup");
+
+        images.forEach(img => {
+            img.addEventListener("click", () => {
+                popupImg.src = img.src;
+                popup.style.display = "flex";
+            });
+        });
+
+        closeBtn.addEventListener("click", () => {
+            popup.style.display = "none";
+        });
+
+        // Close when clicking outside the image
+        popup.addEventListener("click", e => {
+            if (e.target === popup) {
+                popup.style.display = "none";
+            }
+        });
+    </script>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
         integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
@@ -751,6 +1535,10 @@
             pagination: {
                 el: ".swiper-pagination",
                 dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
         });
 
