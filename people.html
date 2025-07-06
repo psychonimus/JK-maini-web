@@ -206,7 +206,7 @@
                     </li>
 
                     <li class="nav-item has-mega-menu">
-                        <a class="nav-link d-flex justify-content-between" href="people.html"
+                        <a class="nav-link d-flex justify-content-between active" href="people.html"
                             onclick="toggleMegaMenu(event)">
                             People
                             <span class="d-lg-none">+</span>
@@ -303,7 +303,7 @@
                     </div>
 
                     <li class="nav-item">
-                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
+                        <a class="nav-link" onclick="openPopup()" href="javascript:void(0)"><i class="fa-solid fa-headset me-2"></i>
                             Enquiry</a>
                     </li>
 
@@ -340,9 +340,9 @@
                         <div class="container swiper-content">
                             <div class="col-md-10">
                                 <h1>Fueled by Passion. Driven by People.</h1>
-                                <p>Our strength lies in our people. Every innovation, every solution, and every customer
+                                <!-- <p>Our strength lies in our people. Every innovation, every solution, and every customer
                                     success story begins with a team that leads with heart, thinks with purpose, and
-                                    acts with integrity. Together, we don’t just work—we create impact.</p>
+                                    acts with integrity. Together, we don’t just work—we create impact.</p> -->
                                 <button class="hero-button">
                                     About Us
                                 </button>
@@ -356,9 +356,9 @@
                         <div class="container swiper-content">
                             <div class="col-md-10">
                                 <h1>Fueled by Passion. Driven by People.</h1>
-                                <p>Our strength lies in our people. Every innovation, every solution, and every customer
+                                <!-- <p>Our strength lies in our people. Every innovation, every solution, and every customer
                                     success story begins with a team that leads with heart, thinks with purpose, and
-                                    acts with integrity. Together, we don’t just work—we create impact.</p>
+                                    acts with integrity. Together, we don’t just work—we create impact.</p> -->
                                 <button class="hero-button">
                                     About Us
                                 </button>
@@ -1020,6 +1020,40 @@
             </div>
         </div>
     </section>
+
+    <div id="popupOverlay" class="popup-overlay">
+        <div class="right-form p-4">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div>
+                <h2>Get in Touch</h2>
+                <p>Tell us what you’re building — we’ll show you how to get there, faster and smarter.
+                    Response guaranteed within 24 hours.</p>
+            </div>
+            <form action="" class="mt-4">
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="First Name">
+                    <input class="my-3" type="text" placeholder="Last Name">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Company">
+                    <input class="my-3" type="text" placeholder="Email Address">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Phone No.">
+                    <input class="my-3" type="text" placeholder="Industry">
+                </div>
+                <div class="form-group">
+                    <textarea name="" id="" placeholder="I want to know more about"></textarea>
+
+                </div>
+                <!-- <div class="d-flex gap-3">
+                    <input type="checkbox" name="" id="t&c" class="w-auto">
+                    <label class="w-auto" for="t&c">I agree to the terms and conditions*</label>
+                </div> -->
+                <button class="hero-button mt-4">Submit</button>
+            </form>
+        </div>
+    </div>
 
     <section class="contact-footer">
         <!-- <div class="container py-3">

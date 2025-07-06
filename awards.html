@@ -248,7 +248,7 @@
                         </div>
                     </li>
                     <li class="nav-item has-mega-menu">
-                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                        <a class="nav-link d-flex justify-content-between active" href="#" onclick="toggleMegaMenu(event)">
                             Beyond Business
                             <span class="d-lg-none">+</span>
                         </a>
@@ -564,6 +564,59 @@
                     </div>
                 </div>
 
+            </div>
+            
+            <div class="row mt-5 p-4 grey-bg">
+
+                <div class="col-md-6">
+                    <div class="csr-text mt-4">
+                        <h6 class="section-title"><i class="fas fa-trophy" style="color: #FFD700; margin-right: 8px;"></i>EEPC India Green Awards </h6>
+                        <h3>Certificate of Appreciation</h3>
+                        <ul>
+                            <li>
+                                <h5><strong>Category</strong> : Medium Enterprise</h5>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h5><strong>Awarded by</strong> : Engineering Export Promotion Council (EEPC) India</h5>
+                            </li>
+                        </ul>
+
+
+                        <p>Ring Plus Aqua Ltd. was honored with a <strong>Certificate of Appreciation</strong> at the <strong>EEPC India Green
+                            Awards</strong>, recognizing our proactive commitment to sustainability and green manufacturing
+                            practices in the <strong>Medium Enterprise</strong> category.</p>
+                        <p>This award reflects our ongoing efforts in integrating <strong>environmentally responsible processes</strong>,
+                            reducing our carbon footprint, and promoting eco-conscious operations across our value
+                            chain. Our presentation at the awards platform showcased innovative practices in energy
+                            efficiency, waste management, and sustainable resource utilization—reinforcing our pledge to
+                            build a cleaner, greener future.</p>
+                        <!-- <p>We are inspired by this recognition and remain focused on achieving the <strong>Platinum award</strong> in
+                            upcoming editions by continuously raising the bar for sustainability in the manufacturing
+                            sector.
+
+                            <strong>Sustainability isn’t just a goal—it’s how we manufacture the future.</strong>
+                        </p> -->
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="csr-img">
+                        <div class="swiper csr-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/awards/EEPC india green award.png" alt=""
+                                        style="width: 100%;" class="popup-image">
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+
+                
             </div>
 
             <div class="row mt-5 p-4 grey-bg">
@@ -1033,8 +1086,8 @@
                         <div class="swiper csr-swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide d-flex justify-content-center align-items-center">
-                                    <img src="./assets/images/awards/"
-                                        alt="" style="width: 100%;" class="popup-image">
+                                    <img src="./assets/images/awards/ACMA Excellence Awards 2024 striving.png"
+                                        alt="" style="width: 80%;" class="popup-image">
                                 </div>
 
 
@@ -1047,59 +1100,7 @@
 
             </div>
 
-            <div class="row mt-5 p-4 grey-bg">
-
-               
-
-                <div class="col-md-6">
-                    <div class="csr-img">
-                        <div class="swiper csr-swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="./assets/images/awards/EEPC india green award.png" alt=""
-                                        style="width: 100%;" class="popup-image">
-                                </div>
-
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="csr-text mt-4">
-                        <h6 class="section-title"><i class="fas fa-trophy" style="color: #FFD700; margin-right: 8px;"></i>EEPC India Green Awards </h6>
-                        <h3>Certificate of Appreciation</h3>
-                        <ul>
-                            <li>
-                                <h5><strong>Category</strong> : Medium Enterprise</h5>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <h5><strong>Awarded by</strong> : Engineering Export Promotion Council (EEPC) India</h5>
-                            </li>
-                        </ul>
-
-
-                        <p>Ring Plus Aqua Ltd. was honored with a <strong>Certificate of Appreciation</strong> at the <strong>EEPC India Green
-                            Awards</strong>, recognizing our proactive commitment to sustainability and green manufacturing
-                            practices in the <strong>Medium Enterprise</strong> category.</p>
-                        <p>This award reflects our ongoing efforts in integrating <strong>environmentally responsible processes</strong>,
-                            reducing our carbon footprint, and promoting eco-conscious operations across our value
-                            chain. Our presentation at the awards platform showcased innovative practices in energy
-                            efficiency, waste management, and sustainable resource utilization—reinforcing our pledge to
-                            build a cleaner, greener future.</p>
-                        <!-- <p>We are inspired by this recognition and remain focused on achieving the <strong>Platinum award</strong> in
-                            upcoming editions by continuously raising the bar for sustainability in the manufacturing
-                            sector.
-
-                            <strong>Sustainability isn’t just a goal—it’s how we manufacture the future.</strong>
-                        </p> -->
-                    </div>
-                </div>
-
-            </div>
+           
 
 
         </div>
@@ -1112,7 +1113,39 @@
 
 
 
+    <div id="popupOverlay" class="popup-overlay">
+        <div class="right-form p-4">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div>
+                <h2>Get in Touch</h2>
+                <p>Tell us what you’re building — we’ll show you how to get there, faster and smarter.
+                    Response guaranteed within 24 hours.</p>
+            </div>
+            <form action="" class="mt-4">
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="First Name">
+                    <input class="my-3" type="text" placeholder="Last Name">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Company">
+                    <input class="my-3" type="text" placeholder="Email Address">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Phone No.">
+                    <input class="my-3" type="text" placeholder="Industry">
+                </div>
+                <div class="form-group">
+                    <textarea name="" id="" placeholder="I want to know more about"></textarea>
 
+                </div>
+                <!-- <div class="d-flex gap-3">
+                    <input type="checkbox" name="" id="t&c" class="w-auto">
+                    <label class="w-auto" for="t&c">I agree to the terms and conditions*</label>
+                </div> -->
+                <button class="hero-button mt-4">Submit</button>
+            </form>
+        </div>
+    </div>
 
 
 

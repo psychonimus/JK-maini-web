@@ -138,7 +138,7 @@
                     </li>
 
                     <li class="nav-item has-mega-menu d-none d-lg-block sector-laptop">
-                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                        <a class="nav-link d-flex justify-content-between active" href="#" onclick="toggleMegaMenu(event)">
                             Sectors
                             <span class="d-lg-none">+</span>
                         </a>
@@ -365,6 +365,7 @@
                             Each component undergoes rigorous testing and validation to ensure it meets the exacting 
                             standards of the aerospace industry.
                         </p>
+                        <button class="hero-button" onclick="openPopup()">Request a Catalog</button>
 
                     </div>
                 </div>
@@ -377,94 +378,37 @@
         </div>
     </section>
 
-    <section class="facility-cards my-4">
-        <div class="container">
-            <div class="header">
-                <h2>Automotive and Industrial Applications
-                </h2>
-                <p>With an inventory of over 750 stock keeping units (SKUs) across ring gears, flexplates, and water
-                    pump
-                    bearings, JK Maini caters to a wide range of automotive and industrial applications, including:
-                </p>
-            </div>
-            <div class="facilities-grid">
-                <div class="facility-card">
-                    <img src="./assets/images/passanger-vehicle.png" alt="Design Engineering">
-                    <div class="overlay">
-                        <div class="facility-title">Passenger and commercial vehicles (PV & CV)
-                        </div>
-                        <a href="#" class="explore-btn">Explore Now</a>
-                    </div>
-                </div>
-
-                <div class="facility-card">
-                    <img src="./assets/images/construction-equipment.png" alt="Tool & Die">
-                    <div class="overlay">
-                        <div class="facility-title">Construction and mining equipment</div>
-                        <a href="#" class="explore-btn">Explore Now</a>
-                    </div>
-                </div>
-
-                <div class="facility-card">
-                    <img src="./assets/images/agriculture-equipments.png" alt="Forging">
-                    <div class="overlay">
-                        <div class="facility-title">Agricultural tractors</div>
-                        <a href="#" class="explore-btn">Explore Now</a>
-                    </div>
-                </div>
-
-                <div class="facility-card">
-                    <img src="./assets/images/industrial-power-generators.png" alt="Testing">
-                    <div class="overlay">
-                        <div class="facility-title">Industrial power generators</div>
-                        <a href="#" class="explore-btn">Explore Now</a>
-                    </div>
-                </div>
-
-                <div class="facility-card">
-                    <img src="./assets/images/lawn-tools.png" alt="Testing">
-                    <div class="overlay">
-                        <div class="facility-title">Lawn and garden equipment</div>
-                        <a href="#" class="explore-btn">Explore Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+   
 
     <section class="numbers my-5 py-5">
         <div class="container">
             <div class="d-flex gap-2">
                 <div class="number-card text-center">
                     <img class="mb-2" src="./assets/images/product-sku.png" alt="Product SKUs">
-                    <h2>750+</h2>
-                    <p>PRODUCT SKUs</p>
+                    <h2>90%</h2>
+                    <p>Export-driven business</p>
                 </div>
                 <div class="number-card text-center">
                     <img class="mb-2" src="./assets/images/ring-gears.png" alt="Ring Gears">
-                    <h2>8 Mn+</h2>
-                    <p>RING GEAR</p>
+                    <h2>10+</h2>
+                    <p>Countries</p>
                 </div>
                 <div class="number-card text-center">
                     <img class="mb-2" src="./assets/images/total-plants.png" alt="plants">
-                    <h2>3</h2>
-                    <p>PLANTS</p>
+                    <h2>7</h2>
+                    <p>Decades of experience</p>
                 </div>
                 <div class="number-card text-center">
                     <img class="mb-2" src="./assets/images/warehouse-colored.jpg" alt="warehouses">
-                    <h2>5</h2>
-                    <p>WAREHOUSES</p>
+                    <h2>500+</h2>
+                    <p>Products</p>
                 </div>
                 <div class="number-card text-center">
                     <img class="mb-2" src="./assets/images/customers.png" alt="customers">
-                    <h2>100+</h2>
-                    <p>CUSTOMERS</p>
+                    <h2>10+</h2>
+                    <p>Industry Segments</p>
                 </div>
-                <div class="number-card text-center">
-                    <img class="mb-2" src="./assets/images/countries.png" alt="countries">
-                    <h2>18+</h2>
-                    <p>COUNTRIES</p>
-                </div>
+
             </div>
         </div>
     </section>
@@ -527,7 +471,39 @@
     </section> -->
 
 
+    <div id="popupOverlay" class="popup-overlay">
+        <div class="right-form p-4">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div>
+                <h2>Get in Touch</h2>
+                <p>Tell us what you’re building — we’ll show you how to get there, faster and smarter.
+                    Response guaranteed within 24 hours.</p>
+            </div>
+            <form action="" class="mt-4">
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="First Name">
+                    <input class="my-3" type="text" placeholder="Last Name">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Company">
+                    <input class="my-3" type="text" placeholder="Email Address">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Phone No.">
+                    <input class="my-3" type="text" placeholder="Industry">
+                </div>
+                <div class="form-group">
+                    <textarea name="" id="" placeholder="I want to know more about"></textarea>
 
+                </div>
+                <!-- <div class="d-flex gap-3">
+                    <input type="checkbox" name="" id="t&c" class="w-auto">
+                    <label class="w-auto" for="t&c">I agree to the terms and conditions*</label>
+                </div> -->
+                <button class="hero-button mt-4">Submit</button>
+            </form>
+        </div>
+    </div>
 
 
 

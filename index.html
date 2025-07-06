@@ -28,7 +28,7 @@
                                 class="fa-solid fa-phone-volume me-2"></i>
                             +91 2261527998</a>
                     </li>
-                    
+
 
                 </ul>
             </div>
@@ -163,14 +163,14 @@
 
                                         <li><a href="industrial-hydraulics.html">Industrial Hydraulics</a></li>
                                         <li><a href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
-                                        <li><a href="locomotive-sector.html">Locomotive</a></li>
+                                        <li ><a style="color: #dadada;" href="locomotive-sector.html">Locomotive</a></li>
 
                                     </ul>
                                 </div>
                                 <div class="mega-menu-column">
                                     <!-- <h4 onclick="toggleAccordion(this)"></h4> -->
                                     <ul>
-                                        <li><a href="agriculture-sector.html">Agriculture</a></li>
+                                        <li><a style="color: #dadada;" href="agriculture-sector.html">Agriculture</a></li>
 
                                     </ul>
                                 </div>
@@ -288,6 +288,13 @@
                             </div>
                         </div>
                     </li>
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Investor Relation
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        
+                    </li>
 
                 </ul>
                 <ul class="navbar-nav ms-md-auto">
@@ -304,7 +311,8 @@
                     </div>
 
                     <li class="nav-item">
-                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
+                        <a class="nav-link" onclick="openPopup()" href="javascript:void(0)"><i
+                                class="fa-solid fa-headset me-2"></i>
                             Enquiry</a>
                     </li>
 
@@ -1741,7 +1749,7 @@
 
 
     <script>
-         const popup = document.getElementById("imagePopup");
+        const popup = document.getElementById("imagePopup");
         const popupImg = document.getElementById("popupImg");
         const images = document.querySelectorAll(".popup-image");
         const closeBtn = document.querySelector(".close-popup");
