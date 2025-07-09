@@ -346,7 +346,7 @@
     <section class="about-auto my-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="header">
                         <h6 class="section-title">JK Maini</h6>
                         <h2>Driving Precision and Innovation in the Global Auto Components Industry
@@ -369,7 +369,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="image-container">
                         <img src="./assets/images/about-auto.png" style="width: 100%;" alt="">
                     </div>
@@ -389,12 +389,13 @@
                 </p>
             </div>
             <div class="facilities-grid">
-                <div class="facility-card">
+                <div class="facility-card first-card">
                     <img src="./assets/images/passanger-vehicle.png" alt="Design Engineering">  
                     <div class="overlay">
                         <div class="facility-title">Passenger and commercial vehicles (PV & CV)
                         </div>
                         <!-- <a href="#" class="explore-btn">Explore Now</a> -->
+                        <!-- style="grid-column: span 2;" -->
                     </div>
                 </div>
 
@@ -422,7 +423,7 @@
                     </div>
                 </div>
 
-                <div class="facility-card">
+                <div class="facility-card" >
                     <img src="./assets/images/lawn-tools.png" alt="Testing">
                     <div class="overlay">
                         <div class="facility-title">Lawn and garden equipment</div>
@@ -435,38 +436,43 @@
 
     <section class="numbers my-5 py-5">
         <div class="container">
-            <div class="d-flex gap-2">
-                <div class="number-card text-center">
-                    <img class="mb-2" src="./assets/images/product-sku.png" alt="Product SKUs">
-                    <h2>2000+</h2>
-                    <p>PRODUCT SKUs</p>
+            <div class="row">
+                <div class="col-lg-6 d-flex justify-content-around">
+                    <div class="number-card text-center">
+                        <img class="mb-2" src="./assets/images/product-sku.png" alt="Product SKUs">
+                        <h2>2000+</h2>
+                        <p>PRODUCT SKUs</p>
+                    </div>
+                    <div class="number-card text-center">
+                        <img class="mb-2" src="./assets/images/ring-gears.png" alt="Ring Gears">
+                        <h2>10 Mn+</h2>
+                        <p>RING GEAR</p>
+                    </div>
+                    <div class="number-card text-center">
+                        <img class="mb-2" src="./assets/images/total-plants.png" alt="plants">
+                        <h2>13</h2>
+                        <p>PLANTS</p>
+                    </div>
                 </div>
-                <div class="number-card text-center">
-                    <img class="mb-2" src="./assets/images/ring-gears.png" alt="Ring Gears">
-                    <h2>10 Mn+</h2>
-                    <p>RING GEAR</p>
-                </div>
-                <div class="number-card text-center">
-                    <img class="mb-2" src="./assets/images/total-plants.png" alt="plants">
-                    <h2>13</h2>
-                    <p>PLANTS</p>
-                </div>
-                <div class="number-card text-center">
-                    <img class="mb-2" src="./assets/images/warehouse-colored.jpg" alt="warehouses">
-                    <h2>17</h2>
-                    <p>WAREHOUSES</p>
-                </div>
-                <div class="number-card text-center">
-                    <img class="mb-2" src="./assets/images/customers.png" alt="customers">
-                    <h2>100+</h2>
-                    <p>CUSTOMERS</p>
-                </div>
-                <div class="number-card text-center">
-                    <img class="mb-2" src="./assets/images/countries.png" alt="countries">
-                    <h2>18+</h2>
-                    <p>COUNTRIES</p>
+                <div class="col-lg-6 d-flex justify-content-around mt-3 mt-lg-0">
+                    <div class="number-card text-center">
+                        <img class="mb-2" src="./assets/images/warehouse-colored.jpg" alt="warehouses">
+                        <h2>17</h2>
+                        <p>WAREHOUSES</p>
+                    </div>
+                    <div class="number-card text-center">
+                        <img class="mb-2" src="./assets/images/customers.png" alt="customers">
+                        <h2>100+</h2>
+                        <p>CUSTOMERS</p>
+                    </div>
+                    <div class="number-card text-center">
+                        <img class="mb-2" src="./assets/images/countries.png" alt="countries">
+                        <h2>18+</h2>
+                        <p>COUNTRIES</p>
+                    </div>
                 </div>
             </div>
+            
         </div>
     </section>
 
@@ -588,7 +594,8 @@
             </div>
 
             <div class="tab-buttons mt-4">
-                <button class="tab-btn active" data-tab="commercial">Commercial Vehicles</button>
+                <button class="tab-btn active" data-tab="commercial">Commercial Vehicles
+                </button>
                 <button class="tab-btn" data-tab="passenger">Passenger Vehicles</button>
                 <button class="tab-btn" data-tab="ev">Electric & Hybrid Vehicles</button>
                 <button class="tab-btn" data-tab="industrial-hydraulics">Industrail Hydraulics</button>
@@ -602,15 +609,15 @@
                         reliability.</p>
 
                     <div class="row">
-                        <div class="col-md-3">
-                            <div class="sub-tab-buttons d-flex flex-column mt-4">
+                        <div class="col-12">
+                            <div class="sub-tab-buttons d-flex mt-4 gap-4">
                                 <button class="sub-tab-btn active" data-subtab="engine">Engine</button>
                                 <button class="sub-tab-btn" data-subtab="chasis">Steering Chasis Filters</button>
                                 <button class="sub-tab-btn" data-subtab="fuel-injection">Fuel Injection</button>
                                 <button class="sub-tab-btn" data-subtab="transmission">Transmission</button>
                             </div>
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-12">
                             <div class="sub-tab-content active" id="engine">
                                 <div class="d-flex flex-wrap justify-content-between">
                                     <div class="flex-basis-30 part-img-container overlay-container">
@@ -1002,17 +1009,20 @@
                     <p>Precision components designed for high-load, long-cycle performance. Supporting trucks, buses,
                         and industrial fleets with robust gears, shafts, and drivetrain parts built for uptime and
                         reliability.</p> -->
-
+                        <h2>Engineered for Endurance. Built to Haul Heavy Duty.</h2>
+                        <p>Precision components designed for high-load, long-cycle performance. Supporting trucks, buses,
+                            and industrial fleets with robust gears, shafts, and drivetrain parts built for uptime and
+                            reliability.</p>
                     <div class="row">
-                        <div class="col-md-3">
-                            <div class="sub-tab-buttons d-flex flex-column mt-4">
+                        <div class="col-12">
+                            <div class="sub-tab-buttons d-flex mt-4 gap-4">
                                 <button class="sub-tab-btn active" data-subtab="pv-engine">Engine</button>
                                 <button class="sub-tab-btn" data-subtab="pv-chasis">Steering Chasis Filters</button>
                                 <button class="sub-tab-btn" data-subtab="pv-fuel-injection">Fuel Injection</button>
                                 <button class="sub-tab-btn" data-subtab="pv-transmission">Transmission</button>
                             </div>
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-12">
                             <div class="sub-tab-content active" id="pv-engine">
                                 <div class="d-flex flex-wrap justify-content-between">
                                     <div class="flex-basis-30 part-img-container overlay-container">
@@ -1225,19 +1235,19 @@
 
             <div class="tab-content my-5" id="ev">
                 <div class="header">
-                    <!-- <h2>Engineered for Endurance. Built to Haul Heavy Duty.</h2>
+                    <h2>Engineered for Endurance. Built to Haul Heavy Duty.</h2>
                     <p>Precision components designed for high-load, long-cycle performance. Supporting trucks, buses,
                         and industrial fleets with robust gears, shafts, and drivetrain parts built for uptime and
-                        reliability.</p> -->
+                        reliability.</p>
 
                     <div class="row">
-                        <div class="col-md-3">
-                            <div class="sub-tab-buttons d-flex flex-column mt-4">
+                        <div class="col-12">
+                            <div class="sub-tab-buttons d-flex mt-4 gap-4">
                                 <button class="sub-tab-btn active" data-subtab="ev-motor&battery">Motor & Battery Pack</button>
                                 <button class="sub-tab-btn" data-subtab="ev-transmission">Transmission</button>
                             </div>
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-12">
                             <div class="sub-tab-content active" id="ev-motor&battery">
                                 <div class="d-flex flex-wrap justify-content-between">
                                     <div class="flex-basis-30 part-img-container overlay-container">
@@ -1336,10 +1346,11 @@
 
             <div class="tab-content my-5" id="industrial-hydraulics">
                 <div class="header">
-                    <!-- <h2>Engineered for Endurance. Built to Haul Heavy Duty.</h2>
+                    <h2>Engineered for Endurance. Built to Haul Heavy Duty.</h2>
                     <p>Precision components designed for high-load, long-cycle performance. Supporting trucks, buses,
                         and industrial fleets with robust gears, shafts, and drivetrain parts built for uptime and
-                        reliability.</p> -->
+                        reliability.</p>
+                    
 
                     <div class="row">
                         
@@ -1567,6 +1578,38 @@
             </div>
         </div>
     </footer>
+
+    <div class="image-popup" id="imagePopup">
+        <span class="close-popup">&times;</span>
+        <img src="" alt="Popup Image" id="popupImg" style="background-color: #fff;">
+    </div>
+
+
+
+    <script>
+        const popup = document.getElementById("imagePopup");
+        const popupImg = document.getElementById("popupImg");
+        const images = document.querySelectorAll(".popup-image");
+        const closeBtn = document.querySelector(".close-popup");
+
+        images.forEach(img => {
+            img.addEventListener("click", () => {
+                popupImg.src = img.src;
+                popup.style.display = "flex";
+            });
+        });
+
+        closeBtn.addEventListener("click", () => {
+            popup.style.display = "none";
+        });
+
+        // Close when clicking outside the image
+        popup.addEventListener("click", e => {
+            if (e.target === popup) {
+                popup.style.display = "none";
+            }
+        });
+    </script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
