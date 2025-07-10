@@ -115,6 +115,15 @@ body {
   color: var(--primary) !important;
 }
 
+@media(min-width : 330px) and (max-width : 395px){
+  .nav-link{
+    font-size: 12px;
+  }
+  .navbar-brand{
+    width: 76%;
+  }
+}
+
 .vid-container {
   height: 100vh;
   overflow-y: hidden;
@@ -1513,13 +1522,14 @@ body {
   /* border-bottom: 2px solid #ccc; */
   margin-bottom: 20px;
   gap: 10px;
-  
+  overflow-x: scroll;
 }
 .tab-buttons button{
   height: 80px;
   border-radius: 10px;
   padding: 12px;
   flex: 1;
+  white-space: nowrap;
 }
 .tab-buttons button.active{
   flex: 1;
@@ -1614,6 +1624,23 @@ body {
   flex: 0 0 calc(33.333% - 1rem);
   /* 3 in a row with spacing */
   /* margin-bottom: 1rem; */
+}
+.flex-basis-30 {
+  flex: 0 0 calc(33.333% - 1rem);
+}
+
+@media (max-width: 991.98px) {
+  .flex-basis-30 {
+    flex: 0 0 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .flex-basis-30 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
 .event-details h3 {
@@ -1928,10 +1955,11 @@ body {
 
 .sub-tab-btn{
   border-radius: 30px;
-  
+  white-space: nowrap;
 }
 .sub-tab-buttons{
   border:none;
+  /* overflow-x: scroll; */
 }
 .sub-tab-btn.active{
   border:3px solid var(--accent)
