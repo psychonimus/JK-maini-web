@@ -1964,3 +1964,113 @@ body {
 .sub-tab-btn.active{
   border:3px solid var(--accent)
 }
+.location-card{
+  
+  background-color: #F7F8FC;
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.10), 0 1.5px 4px 0 rgba(0,0,0,0.08);
+  border-radius: 15px;
+}
+.location-card.active{
+  border: 4px solid var(--accent);
+  background-color: #fff;
+}
+
+
+.info-card {
+  background-color: #F7F8FC;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.20);
+  border-left: 3px solid var(--accent);
+}
+
+.icon-box {
+  background-color: var(--accent);
+  color: white;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.info-text .label {
+  font-size: 13px;
+  color: #525252;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+/* .info-text .value {
+  font-weight: 600;
+  color: #000;
+} */
+
+
+.loader {
+  width: 44.8px;
+  height: 44.8px;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50% 50% 0 50%;
+  background: #0000;
+  background-image: radial-gradient(circle 11.2px at 50% 50%,#0000 94%, #ff4747);
+}
+
+.loader:after {
+  animation: pulse-ytk0dhmd 1s infinite;
+  transform: perspective(336px) translateZ(0px);
+}
+
+@keyframes pulse-ytk0dhmd {
+  to {
+    transform: perspective(336px) translateZ(168px);
+    opacity: 0;
+  }
+}
+
+.accordion-button{
+  background: var(--accent);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+    margin: 20px 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.accordion-button h4{
+  margin-bottom: 0px;
+}
+.accordion-button:not(.collapsed){
+  background: var(--accent);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+    margin: 20px 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.accordion-item:last-of-type .accordion-button.collapsed{
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+.accordion-item{
+  border: none;
+}
+.accordion-button::after{
+  filter: brightness(100);
+}
