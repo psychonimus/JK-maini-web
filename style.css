@@ -1544,10 +1544,7 @@ body {
   transition: background-color 0.3s;
 }
 
-.tab-buttons button.active,
-.sub-tab-buttons button.active {
-  
-}
+
 
 .tab-content,
 .sub-tab-content {
