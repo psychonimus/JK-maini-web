@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png">
+
+</head>
+
+
+<body>
+
+    <nav id="navbar" class="navbar navbar-expand-lg bg-transparent fixed-top flex-column">
+        <div class="container d-flex justify-content-between">
+            <div class="meta-header-left">
+                <ul class="navbar-nav-left" style="padding-left: 0px;">
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" aria-current="page" href="tel:+912261527998"> <i
+                                class="fa-solid fa-phone-volume me-2"></i>
+                            +91 2261527998</a>
+                    </li>
+                    
+
+                </ul>
+            </div>
+            <div class="meta-header-right">
+                <ul class="navbar-nav-right">
+                    <li class="nav-item dropdown ms-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Careers
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="careersDropdown">
+                            <li><a class="dropdown-item" target="_blank" href="https://psychonimus.github.io/jk-maini-auto/careers.html">Automobile</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://anjalipophale.github.io/aersopace/careers.html">Aerospace</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-2 ">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img style="width: 220px;" class="img-fluid"
+                    src="./assets/images/jk-maini-logo.svg" alt="JK Maini Precision Technology"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-md-2">
+                    <li class="nav-item active has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="./about.html"
+                            onclick="toggleMegaMenu(event)">
+                            Company
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Company</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">About Us</h4>
+                                    <ul>
+                                        <li><a href="about.html#raymond-group">Raymond Group</a></li>
+                                        <li><a href="about.html#about-jk-maini">About US</a></li>
+                                        <li><a href="about.html#vmv">Vision Mission & Values</a></li>
+                                        <li><a href="about.html#global-presence">Global Footprints</a></li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Sustainability</h4>
+                                    <ul>
+                                        <li><a href="#">Environmental Impact</a></li>
+                                        <li><a href="#">Social Responsibility</a></li>
+                                        <li><a href="#">Green Initiatives</a></li>
+                                        <li><a href="#">Reports</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Recognition</h4>
+                                    <ul>
+                                        <li><a href="#">Awards</a></li>
+                                        <li><a href="#">Certifications</a></li>
+                                        <li><a href="#">Press Coverage</a></li>
+                                        <li><a href="#">Testimonials</a></li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+
+                        <a class="nav-link d-flex justify-content-between" href="#"
+                            onclick="toggleMegaMenu(event)">Businesses
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Businesses</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Business Verticals</h4>
+                                    <ul>
+                                        <li><a href="automotive-industrial-&-beyond.html">Automotive Industrial & Beyond</a></li>
+                                        <li><a href="toolsAndHardware.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace.html">Aerospace</a></li>
+                                        <!-- <li><a href="#">Global Footprints</a></li>  -->
+                                    </ul>
+                                </div>
+                                <!-- <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Sustainability</h4>
+                                    <ul>
+                                        <li><a href="#">Environmental Impact</a></li>
+                                        <li><a href="#">Social Responsibility</a></li>
+                                        <li><a href="#">Green Initiatives</a></li>
+                                        <li><a href="#">Reports</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Recognition</h4>
+                                    <ul>
+                                        <li><a href="#">Awards</a></li>
+                                        <li><a href="#">Certifications</a></li>
+                                        <li><a href="#">Press Coverage</a></li>
+                                        <li><a href="#">Testimonials</a></li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- <li class="nav-item has-mega-menu d-none d-lg-block sector-laptop">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Sectors
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    
+                                    <ul>
+                                        <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    
+                                    <ul>
+
+                                        <li><a href="off-highway.html">Off Highway & Industrial Applications</a></li>
+                                        <li><a style="color: #dadada;" href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
+                                        <li><a style="color: #dadada;" href="locomotive-sector.html">Locomotive</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    
+                                    <ul>
+                                        <li><a style="color: #dadada;" href="agriculture-sector.html">Agriculture</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li> -->
+
+                    <!-- <li class="nav-item has-mega-menu d-block d-lg-none sector-mobile">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Sectors
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+                                    <ul>
+                                        <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
+                                        <li><a href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
+                                        <li><a href="off-highway.html">Off Highway & Industrial Applications</a></li>
+                                        <li><a href="locomotive-sector.html">Locomotive</a></li>
+                                        <li><a href="agriculture-sector.html">Agriculture</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li> -->
+
+                    <!-- <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="people.html"
+                            onclick="toggleMegaMenu(event)">
+                            People
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">People</h4>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">People</h4>
+                                    <ul>
+                                        <li><a href="people.html">Life at JK Maini</a></li>
+                                        <li><a href="people.html#employee-test">Employee Testimonials</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li> -->
+                    <!-- <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Beyond Business
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Beyond Business</h4>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Purpose & Progress</h4>
+                                    <ul>
+                                        <li><a href="sustainability.html">Sustainability</a></li>
+                                        <li><a href="awards.html">Awards</a></li>
+                                        <li><a href="csr.html">CSR</a></li>
+                                        <li><a href="events.html">News & Events</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Resources</h4>
+                                    <ul>
+                                        <li><a href="resources.html">Brochure</a></li>
+                                        <li><a href="resources.html#blogs">Blogs</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li> -->
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Investor Relation
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-md-auto">
+                    <!-- <div class="group me-2">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+
+                        <input id="query" class="input" type="search" placeholder="Search..." name="searchbar" />
+                    </div> -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
+                            Enquiry</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="container-fluid p-0 hero-section">
+        <div class="carousel">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-image">
+                            <img src="./assets/images/career-banner.png" alt="">
+                        </div>
+                        <div class="container swiper-content">
+                            <div class="col-md-10">
+                                <h1>Build the Future With Us</h1>
+                                <p>Join a legacy of innovation, precision, & purpose in advanced <br>manufacturing</p>
+                                <button class="hero-button">
+                                    About Us
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="careers-hero">
+        <div class="container">
+            <h1>Dream Big. Work Bold. Join Us</h1>
+            <p>
+                At JK Maini, we believe in empowering our people to grow, innovate, and make a
+                difference.<br>
+                Explore our current openings and see what our employees have to say about working with us!
+            </p>
+        </div>
+    </section>
+
+    <section class="openings-section">
+        <div class="container">
+            <h2 class="section-title">Current Openings</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="job-card">
+                        <div class="job-title">Internship</div>
+                        <div class="job-meta"><i class="fa-solid fa-location-dot me-1"></i> Thane, India &nbsp; |
+                            &nbsp; <i class="fa-solid fa-briefcase me-1"></i> Internship</div>
+                        <div class="job-desc">
+                            To expand the  Hand Tools product range, expand business into industrial and Automotive
+                            segment and grow HT business in Hardware distribution channel  
+                        </div>
+                        <a href="jd-internship.html" style="text-decoration: none;">
+                            <button class="apply-btn">Apply
+                                Now</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="job-card">
+                        <div class="job-title">Product Manager - Hand Tools</div>
+                        <div class="job-meta"><i class="fa-solid fa-location-dot me-1"></i> Thane, India &nbsp; |
+                            &nbsp; <i class="fa-solid fa-briefcase me-1"></i> Full Time</div>
+                        <div class="job-desc">
+                            To expand the  Hand Tools product range, expand business into industrial and Automotive
+                            segment and grow HT business in Hardware distribution channel  
+                        </div>
+                        <a href="jd-product-manager-handtools.html" style="text-decoration: none;">
+                            <button class="apply-btn">Apply
+                                Now</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="job-card">
+                        <div class="job-title">Lead E-Commerce</div>
+                        <div class="job-meta"><i class="fa-solid fa-location-dot me-1"></i> Thane, India &nbsp; |
+                            &nbsp; <i class="fa-solid fa-briefcase me-1"></i> Full Time</div>
+                        <div class="job-desc">
+                            We’re seeking a results-driven e-commerce manager to join our team. The person will lead our
+                            e-commerce operations and strategy.
+                        </div>
+                        <a href="jd-lead-ecommerce.html" style="text-decoration: none;">
+                            <button class="apply-btn">Apply
+                                Now</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="job-card">
+                        <div class="job-title">Assistant Manager / Deputy Manager (Auto)</div>
+                        <div class="job-meta"><i class="fa-solid fa-location-dot me-1"></i> Bangalore, India &nbsp; |
+                            &nbsp; <i class="fa-solid fa-briefcase me-1"></i> Full Time</div>
+                        <div class="job-desc">
+                            The Key Account Manager is responsible for building long-term, value-driven relationships
+                            with key clients to drive customer satisfaction
+                        </div>
+                        <a href="jd-assistant-manager-deputy-manager-auto.html" style="text-decoration: none;">
+                            <button class="apply-btn">Apply
+                                Now</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="job-card">
+                        <div class="job-title">Key Account Sales Engineer (Auto)</div>
+                        <div class="job-meta"><i class="fa-solid fa-location-dot me-1"></i> Bangalore, India &nbsp; |
+                            &nbsp; <i class="fa-solid fa-briefcase me-1"></i> Full Time</div>
+                        <div class="job-desc">
+                            The Key Account Sales Engineer is responsible for ensuring smooth order processing, customer
+                            engagement, and seamless coordination
+                        </div>
+                        <a href="jd-key-account-sales-engineer-auto.html" style="text-decoration: none;">
+                            <button class="apply-btn">Apply
+                                Now</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="job-card">
+                        <div class="job-title">Key Account Manager - Marketing (Aero) </div>
+                        <div class="job-meta"><i class="fa-solid fa-location-dot me-1"></i> Bangalore, India &nbsp; |
+                            &nbsp; <i class="fa-solid fa-briefcase me-1"></i> Full Time</div>
+                        <div class="job-desc">
+                            The Key Account Manager – Aerospace is responsible for driving strategic business growth by
+                            securing new and existing customer orders
+                        </div>
+                        <a href="jd-key-account-manager-marketing-aero.html" style="text-decoration: none;">
+                            <button class="apply-btn">Apply
+                                Now</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="job-card">
+                        <div class="job-title">Key Account Manager - Sales (Aero)</div>
+                        <div class="job-meta"><i class="fa-solid fa-location-dot me-1"></i> Bangalore, India &nbsp; |
+                            &nbsp; <i class="fa-solid fa-briefcase me-1"></i> Full Time</div>
+                        <div class="job-desc">
+                            The Sales Support Associate is responsible for ensuring smooth order processing, accurate
+                            SAP order booking
+                        </div>
+                        <a href="jd-key-account-manager-sales-aero.html" style="text-decoration: none;">
+                            <button class="apply-btn">Apply
+                                Now</button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center mt-4">
+                <span>Didn't find a suitable opening? <a href="mailto:hr@jkmaini.com"
+                        style="color:#1a237e;font-weight:500;">Send us your resume</a> and we'll get in touch!</span>
+            </div>
+        </div>
+    </section>
+
+    <div id="popupOverlay" class="popup-overlay">
+        <div class="right-form p-4">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div>
+                <h2>Get in Touch</h2>
+                <p>Tell us what you’re building — we’ll show you how to get there, faster and smarter.
+                    Response guaranteed within 24 hours.</p>
+            </div>
+            <form action="" class="mt-4">
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="First Name">
+                    <input class="my-3" type="text" placeholder="Last Name">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Company">
+                    <input class="my-3" type="text" placeholder="Email Address">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Phone No.">
+                    <input class="my-3" type="text" placeholder="Industry">
+                </div>
+                <div class="form-group">
+                    <textarea name="" id="" placeholder="I want to know more about"></textarea>
+
+                </div>
+                <!-- <div class="d-flex gap-3">
+                    <input type="checkbox" name="" id="t&c" class="w-auto">
+                    <label class="w-auto" for="t&c">I agree to the terms and conditions*</label>
+                </div> -->
+                <button class="hero-button mt-4">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- <section class="employee-test">
+        <div class="container py-5">
+            <div class="text-center">
+                <h6 class="section-title">Emplyee Testimonials</h6>
+                <h2>Hear what drives our people, straight from those shaping our success</h2>
+
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="test-card h-100 shadow-sm p-4">
+                        <div class="card-box">
+                            <p class="card-text mt-3">"JK Maini has given me the opportunity to grow and learn every
+                                day. The
+                                supportive environment and team spirit make it a great place to work!"</p>
+
+                            <div class="d-flex gap-3 align-items-center">
+                                <img src="./assets/images/employee1.png" alt="Employee 1" class="rounded-circle"
+                                    width="80" height="80">
+                                <div>
+                                    <h5 class="card-title mt-3">Amit Sharma</h5>
+                                    <p class="text-muted ">Production Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="test-card h-100 shadow-sm p-4">
+                        <div class="card-box">
+                            <p class="card-text mt-3">"JK Maini has given me the opportunity to grow and learn every
+                                day. The
+                                supportive environment and team spirit make it a great place to work!"</p>
+
+                            <div class="d-flex gap-3 align-items-center">
+                                <img src="./assets/images/employee1.png" alt="Employee 1" class="rounded-circle"
+                                    width="80" height="80">
+                                <div>
+                                    <h5 class="card-title mt-3">Amit Sharma</h5>
+                                    <p class="text-muted ">Production Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="test-card h-100 shadow-sm p-4">
+                        <div class="card-box">
+                            <p class="card-text mt-3">"JK Maini has given me the opportunity to grow and learn every
+                                day. The
+                                supportive environment and team spirit make it a great place to work!"</p>
+
+                            <div class="d-flex gap-3 align-items-center">
+                                <img src="./assets/images/employee1.png" alt="Employee 1" class="rounded-circle"
+                                    width="80" height="80">
+                                <div>
+                                    <h5 class="card-title mt-3">Amit Sharma</h5>
+                                    <p class="text-muted ">Production Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section> -->
+    <section class="contact-footer">
+        
+        <div class="line"></div>
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-location-dot mb-3"></i>
+                        <h3>Our Offices</h3>
+                        <p>View our locations and find contact details to our nearest office.</p>
+                        <a href="contact.html#office-locations">Explore Our Locations</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-envelope-open mb-3"></i>
+                        <h3>Drop us a Line</h3>
+                        <p>You can contact us by filling in this form any time you need professional support.</p>
+                        <a onclick="openPopup()" href="javascript:void(0)">Fill Our Form</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-headset mb-3"></i>
+                        <h3>Support</h3>
+                        <!-- <p>Learn more about us and find resources that will help you with all of our products</p> -->
+                        <p>Connect with us and know more about our products. Call our support executive.</p>
+                        <a href="">Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="pt-5 main-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info Column -->
+                <div class="col-md-4 mb-4">
+                    <a href="index.html"><img style="width: 220px;" class="img-fluid"
+                            src="./assets/images/jk-maini-logo.svg" alt="JK Maini Precision Technology"></a>
+
+                    <p class="mb-1"> 
+                        
+                        <strong>CIN :</strong> U25933MH2024PLC417852
+                    </p>
+                    <p  class="mb-1">
+                        <strong>Email :</strong>
+                        <a href="mailto:info@ringplusaqua.co.in" class="text-decoration-none text-dark">info@ringplusaqua.co.in</a>
+                    </p>
+                    <p  class="mb-1">
+                        <strong>Address :</strong>
+                        C/O Raymond Ltd, Jekegram Pokharan Road No. 1, Jekegram, Thane, Maharashtra, India, 400606
+                    </p>
+                    <p  class="mb-1">
+                        <strong>Phone :</strong>
+                        <a href="tel:+912261527998" class="text-decoration-none text-dark">+91
+                            2261527998</a>
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-md-4 mb-4 quick-links">
+                    <h5 class="mb-3 section-title">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a target="_blank" href="https://psychonimus.github.io/jk-maini-auto/"
+                                class="text-decoration-none">Jk Maini Precision Technology</a></li>
+                        <li class="mb-2"><a target="_blank" href="https://jksuperdrive.com/"
+                                class="text-decoration-none">JK Files and Engineering Ltd.</a></li>
+                        <li class="mb-2"><a target="_blank" href="https://anjalipophale.github.io/aersopace/index.html"
+                                class="text-decoration-none">JK Maini Global Aerospace Ltd.</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Contact Info Column -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3 section-title">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> 123 Industrial Area, City</li>
+                        <li class="mb-2"><i class="fa-solid fa-phone me-2"></i><a style="text-decoration: none;"
+                                href="tel:+912261527998">+91 2261527998</a></li>
+                        <li class="mb-2"><i class="fa-solid fa-envelope me-2"></i><a style="text-decoration: none;"
+                                href="mailto:info@ringplusaqua.co.in">info@ringplusaqua.co.in</a></li>
+                        <!-- <li class="mb-2"><i class="fa-solid fa-clock me-2"></i> Mon - Sat: 9:00 AM - 6:00 PM</li> -->
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="col-md-3 mb-4">
+                    <!-- <h5 class="mb-3 section-title">Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates and news.</p>
+                    <form class="mt-3">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn newsletter-btn" type="submit">Subscribe</button>
+                        </div>
+                    </form> -->
+                </div>
+            </div>
+        </div>
+        <div class="copyright py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <p class="m-0">© 2025 JK Maini Precision Technology Limited. All rights
+                            reserved.   ∙   Privacy 
+                             ∙   Terms of Use   ∙   Site Map</p>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="social-links">
+                            <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        function toggleMegaMenu(event) {
+            if (window.innerWidth < 992) {
+                event.preventDefault();
+                const megaMenu = event.currentTarget.nextElementSibling;
+                megaMenu.classList.toggle('show');
+                const plusIcon = event.currentTarget.querySelector('span');
+                plusIcon.textContent = megaMenu.classList.contains('show') ? '-' : '+';
+            }
+        }
+
+        function toggleAccordion(header) {
+            if (window.innerWidth < 992) {
+                const ul = header.nextElementSibling;
+                if (!ul) return; // Guard clause if ul doesn't exist
+
+                const isActive = header.classList.contains('active');
+
+                // Close all other accordions in the same mega-menu
+                const parentMegaMenu = header.closest('.mega-menu');
+                const allHeaders = parentMegaMenu.querySelectorAll('h4');
+                const allUls = parentMegaMenu.querySelectorAll('ul');
+
+                allHeaders.forEach(h => h.classList.remove('active'));
+                allUls.forEach(u => u.classList.remove('active'));
+
+                if (!isActive) {
+                    header.classList.add('active');
+                    ul.classList.add('active');
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lenis@1.3.7/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

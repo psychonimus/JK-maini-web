@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png">
+
+</head>
+
+<body>
+
+    <nav id="navbar" class="navbar navbar-expand-lg bg-transparent fixed-top flex-column">
+        <div class="container d-flex justify-content-between">
+            <div class="meta-header-left">
+                <ul class="navbar-nav-left" style="padding-left: 0px;">
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" aria-current="page" href="tel:+912261527998"> <i
+                                class="fa-solid fa-phone-volume me-2"></i>
+                            +91 2261527998</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="meta-header-right">
+                <ul class="navbar-nav-right">
+                    <li class="nav-item dropdown ms-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Careers
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="careersDropdown">
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://psychonimus.github.io/jk-maini-auto/careers.html">Automobile</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://anjalipophale.github.io/aersopace/careers.html">Aerospace</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-2 ">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img style="width: 220px;" class="img-fluid"
+                    src="./assets/images/jk-maini-logo.svg" alt="JK Maini Precision Technology"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-md-2">
+                    <li class="nav-item  has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between active" href="./about.html"
+                            onclick="toggleMegaMenu(event)">
+                            Company
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Company</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">About Us</h4>
+                                    <ul>
+                                        <li><a href="about.html#raymond-group">Raymond Group</a></li>
+                                        <li><a href="about.html#about-jk-maini">About US</a></li>
+                                        <li><a href="about.html#vmv">Vision Mission & Values</a></li>
+                                        <li><a href="about.html#global-presence">Global Footprints</a></li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Sustainability</h4>
+                                    <ul>
+                                        <li><a href="#">Environmental Impact</a></li>
+                                        <li><a href="#">Social Responsibility</a></li>
+                                        <li><a href="#">Green Initiatives</a></li>
+                                        <li><a href="#">Reports</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Recognition</h4>
+                                    <ul>
+                                        <li><a href="#">Awards</a></li>
+                                        <li><a href="#">Certifications</a></li>
+                                        <li><a href="#">Press Coverage</a></li>
+                                        <li><a href="#">Testimonials</a></li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+
+                        <a class="nav-link d-flex justify-content-between" href="#"
+                            onclick="toggleMegaMenu(event)">Businesses
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Businesses</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Business Verticals</h4>
+                                    <ul>
+                                        <li><a href="automotive-industrial-&-beyond.html">Automotive Industrial & Beyond</a></li>
+                                        <li><a href="toolsAndHardware.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace.html">Aerospace</a></li>
+                                        <!-- <li><a href="#">Global Footprints</a></li>  -->
+                                    </ul>
+                                </div>
+                                <!-- <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Sustainability</h4>
+                                    <ul>
+                                        <li><a href="#">Environmental Impact</a></li>
+                                        <li><a href="#">Social Responsibility</a></li>
+                                        <li><a href="#">Green Initiatives</a></li>
+                                        <li><a href="#">Reports</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Recognition</h4>
+                                    <ul>
+                                        <li><a href="#">Awards</a></li>
+                                        <li><a href="#">Certifications</a></li>
+                                        <li><a href="#">Press Coverage</a></li>
+                                        <li><a href="#">Testimonials</a></li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- <li class="nav-item has-mega-menu d-none d-lg-block sector-laptop">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Sectors
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    
+                                    <ul>
+                                        <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    
+                                    <ul>
+
+                                        <li><a href="off-highway.html">Off Highway & Industrial
+                                                Applications</a></li>
+                                        <li><a style="color: #dadada;" href="electric-and-hybrid-sector.html">Electric &
+                                                Hybrid</a></li>
+                                        <li><a style="color: #dadada;" href="locomotive-sector.html">Locomotive</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    
+                                    <ul>
+                                        <li><a style="color: #dadada;" href="agriculture-sector.html">Agriculture</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li> -->
+
+                    <!-- <li class="nav-item has-mega-menu d-block d-lg-none sector-mobile">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Sectors
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+                                    <ul>
+                                        <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
+                                        <li><a href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
+                                        <li><a href="off-highway.html">Off Highway & Industrial Applications</a></li>
+                                        <li><a href="locomotive-sector.html">Locomotive</a></li>
+                                        <li><a href="agriculture-sector.html">Agriculture</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li> -->
+
+                    <!-- <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="people.html"
+                            onclick="toggleMegaMenu(event)">
+                            People
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">People</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">People</h4>
+                                    <ul>
+                                        <li><a href="people.html">Life at JK Maini</a></li>
+                                        
+                                        <li><a href="people.html#employee-test">Employee Testimonials</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </li> -->
+                    <!-- <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Beyond Business
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Beyond Business</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Purpose & Progress</h4>
+                                    <ul>
+                                        <li><a href="sustainability.html">Sustainability</a></li>
+                                        <li><a href="awards.html">Awards</a></li>
+                                        <li><a href="csr.html">CSR</a></li>
+                                        <li><a href="events.html">News & Events</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Resources</h4>
+                                    <ul>
+                                        <li><a href="resources.html">Brochure</a></li>
+                                        <li><a href="resources.html#blogs">Blogs</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </li> -->
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Investor Relation
+                            <span class="d-lg-none">+</span>
+                        </a>
+
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav ms-md-auto">
+                    
+
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
+                            Enquiry</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="video-section">
+        <div class="container-fluid p-0 hero-section vid-container">
+            <div class="carousel">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-image">
+                                <img src="./assets/images/about-banner.png" alt="">
+                            </div>
+                            <div class="container swiper-content">
+                                <div class="col-md-10">
+                                    <h1>Crafting Excellence Since 1965</h1>
+                                    <p>Our strength lies in our people. Every innovation, every solution, and every
+                                        customer
+                                        success story begins with a team that leads with heart, thinks with purpose, and
+                                        acts with integrity. Together, we don’t just work—we create impact.</p>
+                                    <a href="people.html" style="text-decoration: none;">
+                                        <button class="hero-button">
+                                            Explore
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="raymond-group mt-0 mb-5 mt-lg-5 " id="raymond-group">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex">
+                    <div class="text-start mt-5 mt-lg-0">
+                        <img class="mb-2" src="./assets/images/raymond-group-logo.png" alt="" style="width: 20%;">
+                        <h6 class="section-title">Raymond Group</h6>
+                        <h2>A Legacy Woven with Excellence</h2>
+                        <p>One of India’s most respected names in branded fabric and fashion retail. Incorporated in
+                            1925, Raymond has built a legacy of excellence in textile manufacturing, with an impressive
+                            capacity to produce 31 million meters of wool and wool-blended fabrics.
+                            <br><br>
+
+                            The Group owns a distinguished portfolio of apparel brands including Raymond, Premium
+                            Apparel, Raymond Made to Measure, Ethnix, Park Avenue Woman, ColorPlus, Kamasutra, and Parx.
+                            These brands are available through our exclusive retail chain, The Raymond Shop (TRS), which
+                            has a strong presence with over 700 stores across more than 200 cities in India and
+                            overseas.
+                        </p>
+                        <p>As a group, Raymond is involved in numerous businesses and has a portfolio of well-known
+                            brands in Textiles, Apparel, Denim, Consumer Care, Engineering and Real Estate.</p>
+                        <a href="https://www.raymond.in/" target="_blank" style="text-decoration: none;">
+                            <button class="hero-button">
+                                Explore Raymond
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="img-container">
+                        <img src="./assets/images/raymond-group.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="business-verticals my-5" id="about-jk-maini">
+        <div class="container p-4 vertical-bg">
+            <div class="row">
+
+                <!-- <div class="col-md-6">
+                    <div class="img-container">
+                        <img src="./assets/images/jk-maini-group.png" alt="">
+                    </div>
+                </div> -->
+                <div class="col-12 d-flex">
+                    <div class="text-center mt-2">
+                        <h6 class="section-title">About JK Maini Group</h6>
+                        <h2>Delivering Precision. Powering Industry. Enabling Progress</h2>
+                        <!-- <p>JK Maini is the new powerhouse in precision manufacturing formed by the strategic merger
+                            of three industry leaders:
+
+                        </p>
+
+
+                        <p>
+                            Raymond Engineering (now known as J K Maini Precision Technology) is the convergence of
+                            three industry powerhouses <strong>Maini Precision Products Ltd., Ring Plus Aqua
+                                Ltd.</strong>, and <strong>JK Files Ltd.</strong> each with a
+                            deep-rooted legacy in precision manufacturing, engineering excellence, and global quality
+                            standards.</p>
+
+                        <p>This strategic integration brings together decades of specialized expertise, world-class
+                            manufacturing capabilities, and innovation-driven cultures to form one unified entity with a
+                            bold vision to <strong>engineer the future of mobility, infrastructure, and industrial
+                                growth.</strong></p>
+                        <p>Backed by the trust and legacy of the Raymond Group, this new engineering powerhouse is
+                            primed to deliver advanced solutions across automotive, aerospace, industrial, and tooling
+                            sectors. With cutting-edge infrastructure, future-ready technologies, and a relentless focus
+                            on quality, Raymond Engineering is not just keeping pace with change it is shaping it.</p> -->
+
+                        <p class="text-center">
+                            JK Maini is a new force in precision manufacturing, born from the strategic integration of
+                            three industry leaders: Maini Precision
+                            Products Ltd., Ring Plus Aqua Ltd., and JK Files Ltd.
+                            Together, these businesses bring decades of proven expertise in precision engineering,
+                            world-class manufacturing, and global quality
+                            standards. This powerful consolidation has created a unified entity with the scale,
+                            capabilities, and vision to drive the future of mobility,
+                            infrastructure, and industrial advancement.
+                            Backed by the strength and legacy of the Raymond Group, JK Maini is positioned to deliver
+                            advanced solutions across automotive,
+                            industrial, aerospace, and tooling sectors. With cutting-edge infrastructure, future-ready
+                            technologies, and a relentless commitment
+                            to quality, JK Maini is not just adapting to change, it’s engineering what’s next.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-12">
+                    <div class="merger-img d-flex justify-content-center">
+                        <img class="img-fluid" src="./assets/images/merger.png" alt="" style="width: 100%;">
+                    </div>
+                </div>
+                <!-- <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="mb-3 text-center">
+                                <img src="./assets/images/jk-super-drive.png" alt="Jk files and Engineering"
+                                    style="width: 80%;">
+                            </div>
+                            <h5 class="card-title section-title">JK Files & Engineering Limited</h5>
+                            
+                            <div class="d-flex justify-content-center mt-3">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="mb-3 text-center">
+                                <img src="./assets/images/ring-plus-aqua.png" alt="Ring Plus Aqua limited"
+                                    style="width: 80%;">
+                            </div>
+                            <h5 class="card-title mb-2 section-title">Ring Plus Aqua Limited</h5>
+                            
+                            <div class="d-flex justify-content-center mt-3">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="mb-3 text-center">
+                                <img src="./assets/images/Maini Precision.png" alt="Maini Precision"
+                                    style="width: 80%;">
+                            </div>
+                            <h5 class="card-title mb-2 section-title"> Maini Precision Products Limited</h5>
+                            
+                            <div class="d-flex justify-content-center mt-3">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="text-center mt-4">
+                <!-- <p>Together, we bring decades of expertise in precision components, motion systems, and industrial
+                    tools, now aligned under one unified vision J K Maini Precision Technology.</p>
+                <p>As a proud part of the <strong>Raymond Group legacy</strong>, J K Maini Precision Technology is built
+                    on the foundation of
+                    craftsmanship,
+                    innovation, and quality. Our integrated capabilities now span across passenger and commercial
+                    vehicle components, industrial tooling, powertrain systems, and more.</p> -->
+                <p class="text-center">
+                    A Complete Precision Engineering Partner for the World’s Leading Industries.
+                    Three industry leaders, Maini Precision Products, Ring Plus Aqua, and JK Files, now come together
+                    as JK Maini Precision
+                    Technology to form a unified powerhouse in precision engineering.
+                    Backed by the legacy of the Raymond Group, we deliver end-to-end solutions across precision
+                    components, motion systems,
+                    powertrain technologies, engineering and industrial tooling, serving the world’s most demanding
+                    sectors like automotive, off
+                    highway, industrial, railways, power tools and other critical manufacturing sectors.
+                    With a complete ecosystem of capabilities, a future-focused vision, and decades of expertise, JK
+                    Maini is built to deliver precision
+                    where it matters, driving performance, reliability, and progress at scale.
+                </p>
+                <h4 class="highlight-shimmer">Three Legacies. One Purpose. Powering Precision Forward.
+                </h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="whoweare" id="vmv">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h6 class="section-title">Who We Are</h6>
+                <h2>Vision, Mission &amp; Values</h2>
+                <p class="text-muted">At JK Maini, our foundation is built on a clear vision, a purposeful mission, and
+                    unwavering values that guide every step we take.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Vision -->
+                <div class="col-md-4">
+                    <div class="card h-100 ">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <i class="fas fa-eye fa-2x text-danger"></i>
+                            </div>
+                            <h4 class="card-title mb-3">Our Vision</h4>
+                            <p class="card-text">We envision ourselves as best in class end to end engineering solution
+                                providers offering technologically advanced innovative solutions through high
+                                performance employees in a sustainable manner</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mission -->
+                <div class="col-md-4">
+                    <div class="card h-100 ">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <i class="fas fa-bullseye fa-2x text-danger"></i>
+                            </div>
+                            <h4 class="card-title mb-3">Our Mission</h4>
+                            <p class="card-text">To deliver superior products and solutions through a passionate team,
+                                customer-centric approach, and a commitment to quality, integrity, and sustainable
+                                growth.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Values -->
+                <div class="col-md-4">
+                    <div class="card h-100 ">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <i class="fas fa-hand-holding-heart fa-2x text-danger"></i>
+                            </div>
+                            <h4 class="card-title mb-3">Our Values</h4>
+                            <p class="card-text">Our core values center on integrity, quality, and innovation. We build
+                                transparent, trust-based relationships, deliver with uncompromising standards, and
+                                foster a diverse, inclusive culture. Our focus on sustainability drives long-lasting,
+                                eco-conscious solutions, while our goal of stakeholder delight ensures we consistently
+                                exceed expectations and create meaningful value.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="leadership my-5" id="leadership">
+        <div class="text-center mb-5">
+            <h6 class="section-title">Leadership That Inspires </h6>
+            <h2>We are a Mosaic that thrives on challenges</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="img-container text-center">
+                        <img src="./assets/images/leader-2.png" alt="">
+                    </div>
+                    <div class="leader-content text-center mt-2">
+                        <h3>Thirumal</h3>
+                        <h6>President Auto Business</h6>
+                        <div class="leader-social mt-3">
+                            <a href="https://www.linkedin.com/in/balasubramanian-v-67784819/" target="_blank"
+                                class="me-2" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin fa-lg text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="img-container text-center">
+                        <img src="./assets/images/Parag Khare.png" alt="">
+                    </div>
+                    <div class="leader-content text-center mt-2">
+                        <h3>Parag Khare</h3>
+                        <h6>Chief Business Officer, T&H Business</h6>
+                        <div class="leader-social mt-3">
+                            <a href="https://www.linkedin.com/in/parag-khare-ab277054/" target="_blank" class="me-2"
+                                aria-label="LinkedIn">
+                                <i class="fab fa-linkedin fa-lg text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="img-container text-center">
+                        <img src="./assets/images/Navin Sharma.png" alt="">
+                    </div>
+                    <div class="leader-content text-center mt-2">
+                        <h3>Navin Sharma</h3>
+                        <h6>Group Chief Financial Officer</h6>
+                        <div class="leader-social mt-3">
+                            <a href="https://www.linkedin.com/in/canavinsharma/" target="_blank" class="me-2"
+                                aria-label="LinkedIn">
+                                <i class="fab fa-linkedin fa-lg text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="img-container text-center">
+                        <img src="./assets/images/leader-1.png" alt="">
+                    </div>
+                    <div class="leader-content text-center mt-2">
+                        <h3>Abhinav Gera</h3>
+                        <h6>Chief Human Resource Officer</h6>
+                        <div class="leader-social mt-3">
+                            <a href="https://www.linkedin.com/in/canavinsharma/" target="_blank" class="me-2"
+                                aria-label="LinkedIn">
+                                <i class="fab fa-linkedin fa-lg text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="global-presence mt-5" id="global-presence">
+        <div class="text-center">
+            <h6 class="section-title">Global Presence</h6>
+            <h2>Built Locally. Trusted Globally</h2>
+        </div>
+        <div class="img-container d-flex justify-content-center container-fluid">
+            <img src="./assets/images/Global-presence-map-parent.png" alt="">
+        </div>
+        <div class="legends mb-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 d-flex gap-3 justify-content-around">
+                        <div class="legend-item text-center">
+                            <img src="./assets/images/warehouse.png" alt="">
+                            <h5 class="mt-3">Warehouse</h5>
+
+                        </div>
+                        <div class="legend-item text-center">
+                            <img src="./assets/images/car.png" alt="">
+                            <h5 class="mt-3">Automotive</h5>
+
+                        </div>
+                        <div class="legend-item text-center">
+                            <img src="./assets/images/wrench.png" alt="">
+                            <h5 class="mt-3">Tools & Hardware</h5>
+
+                        </div>
+                        <div class="legend-item text-center">
+                            <img src="./assets/images/airplane.png" alt="">
+                            <h5 class="mt-3">Aerospace</h5>
+                        </div>
+                        <div class="legend-item text-center">
+                            <img src="./assets/images/manufacturing-unit.png" alt="">
+                            <h5 class="mt-3">Manufacturing Unit</h5>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-6 d-flex gap-3 justify-content-around">
+                        
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="popupOverlay" class="popup-overlay">
+        <div class="right-form p-4">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div>
+                <h2>Get in Touch</h2>
+                <p>Tell us what you’re building — we’ll show you how to get there, faster and smarter.
+                    Response guaranteed within 24 hours.</p>
+            </div>
+            <form action="" class="mt-4">
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="First Name">
+                    <input class="my-3" type="text" placeholder="Last Name">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Company">
+                    <input class="my-3" type="text" placeholder="Email Address">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Phone No.">
+                    <input class="my-3" type="text" placeholder="Industry">
+                </div>
+                <div class="form-group">
+                    <textarea name="" id="" placeholder="I want to know more about"></textarea>
+
+                </div>
+                <!-- <div class="d-flex gap-3">
+                    <input type="checkbox" name="" id="t&c" class="w-auto">
+                    <label class="w-auto" for="t&c">I agree to the terms and conditions*</label>
+                </div> -->
+                <button class="hero-button mt-4">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const popup = document.getElementById("imagePopup");
+        const popupImg = document.getElementById("popupImg");
+        const images = document.querySelectorAll(".popup-image");
+        const closeBtn = document.querySelector(".close-popup");
+
+        images.forEach(img => {
+            img.addEventListener("click", () => {
+                popupImg.src = img.src;
+                popup.style.display = "flex";
+            });
+        });
+
+        closeBtn.addEventListener("click", () => {
+            popup.style.display = "none";
+        });
+
+        // Close when clicking outside the image
+        popup.addEventListener("click", e => {
+            if (e.target === popup) {
+                popup.style.display = "none";
+            }
+        });
+    </script>
+
+    <section class="contact-footer">
+
+        <div class="line"></div>
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-location-dot mb-3"></i>
+                        <h3>Our Offices</h3>
+                        <p>View our locations and find contact details to our nearest office.</p>
+                        <a href="contact.html#office-locations">Explore Our Locations</a>   
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-envelope-open mb-3"></i>
+                        <h3>Drop us a Line</h3>
+                        <p>You can contact us by filling in this form any time you need professional support.</p>
+                        <a onclick="openPopup()" href="javascript:void(0)">Fill Our Form</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-headset mb-3"></i>
+                        <h3>Support</h3>
+                        <!-- <p>Learn more about us and find resources that will help you with all of our products</p> -->
+                        <p>Connect with us and know more about our products. Call our support executive.</p>
+                        <a href="">Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="pt-5 main-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info Column -->
+                <div class="col-md-4 mb-4">
+                    <a href="index.html"><img style="width: 220px;" class="img-fluid"
+                            src="./assets/images/jk-maini-logo.svg" alt="JK Maini Precision Technology"></a>
+
+                    <p class="mb-1"> 
+                        
+                        <strong>CIN :</strong> U25933MH2024PLC417852
+                    </p>
+                    <p  class="mb-1">
+                        <strong>Email :</strong>
+                        <a href="mailto:info@ringplusaqua.co.in" class="text-decoration-none text-dark">info@ringplusaqua.co.in</a>
+                    </p>
+                    <p  class="mb-1">
+                        <strong>Address :</strong>
+                        C/O Raymond Ltd, Jekegram Pokharan Road No. 1, Jekegram, Thane, Maharashtra, India, 400606
+                    </p>
+                    <p  class="mb-1">
+                        <strong>Phone :</strong>
+                        <a href="tel:+912261527998" class="text-decoration-none text-dark">+91
+                            2261527998</a>
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-md-4 mb-4 quick-links">
+                    <h5 class="mb-3 section-title">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a target="_blank" href="https://psychonimus.github.io/jk-maini-auto/"
+                                class="text-decoration-none">Jk Maini Precision Technology</a></li>
+                        <li class="mb-2"><a target="_blank" href="https://jksuperdrive.com/"
+                                class="text-decoration-none">JK Files and Engineering Ltd.</a></li>
+                        <li class="mb-2"><a target="_blank" href="https://anjalipophale.github.io/aersopace/index.html"
+                                class="text-decoration-none">JK Maini Global Aerospace Ltd.</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Contact Info Column -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3 section-title">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> 123 Industrial Area, City</li>
+                        <li class="mb-2"><i class="fa-solid fa-phone me-2"></i><a style="text-decoration: none;"
+                                href="tel:+912261527998">+91 2261527998</a></li>
+                        <li class="mb-2"><i class="fa-solid fa-envelope me-2"></i><a style="text-decoration: none;"
+                                href="mailto:info@ringplusaqua.co.in">info@ringplusaqua.co.in</a></li>
+                        <!-- <li class="mb-2"><i class="fa-solid fa-clock me-2"></i> Mon - Sat: 9:00 AM - 6:00 PM</li> -->
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="col-md-3 mb-4">
+                    <!-- <h5 class="mb-3 section-title">Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates and news.</p>
+                    <form class="mt-3">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn newsletter-btn" type="submit">Subscribe</button>
+                        </div>
+                    </form> -->
+                </div>
+            </div>
+        </div>
+        <div class="copyright py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <p class="m-0">© 2025 JK Maini Precision Technology Limited. All rights
+                            reserved.   ∙   Privacy 
+                             ∙   Terms of Use   ∙   Site Map</p>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="social-links">
+                            <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/lenis@1.3.7/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png">
+
+</head>
+
+<body>
+
+    <nav id="navbar" class="navbar navbar-expand-lg bg-transparent fixed-top flex-column">
+        <div class="container d-flex justify-content-between">
+            <div class="meta-header-left">
+                <ul class="navbar-nav-left" style="padding-left: 0px;">
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" aria-current="page" href="tel:+912261527998"> <i
+                                class="fa-solid fa-phone-volume me-2"></i>
+                            +91 2261527998</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="meta-header-right">
+                <ul class="navbar-nav-right">
+                    <li class="nav-item dropdown ms-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Careers
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="careersDropdown">
+                            <li><a class="dropdown-item" target="_blank" href="https://psychonimus.github.io/jk-maini-auto/careers.html">Automobile</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://anjalipophale.github.io/aersopace/careers.html">Aerospace</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-2 ">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img style="width: 220px;" class="img-fluid"
+                    src="./assets/images/jk-maini-logo.svg" alt="JK Maini Precision Technology"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-md-2">
+                    <li class="nav-item active has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="./about.html"
+                            onclick="toggleMegaMenu(event)">
+                            Company
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Company</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">About Us</h4>
+                                    <ul>
+                                        <li><a href="about.html#raymond-group">Raymond Group</a></li>
+                                        <li><a href="about.html#about-jk-maini">About US</a></li>
+                                        <li><a href="about.html#vmv">Vision Mission & Values</a></li>
+                                        <li><a href="about.html#global-presence">Global Footprints</a></li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Sustainability</h4>
+                                    <ul>
+                                        <li><a href="#">Environmental Impact</a></li>
+                                        <li><a href="#">Social Responsibility</a></li>
+                                        <li><a href="#">Green Initiatives</a></li>
+                                        <li><a href="#">Reports</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Recognition</h4>
+                                    <ul>
+                                        <li><a href="#">Awards</a></li>
+                                        <li><a href="#">Certifications</a></li>
+                                        <li><a href="#">Press Coverage</a></li>
+                                        <li><a href="#">Testimonials</a></li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+
+                        <a class="nav-link d-flex justify-content-between" href="#"
+                            onclick="toggleMegaMenu(event)">Businesses
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Businesses</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Business Verticals</h4>
+                                    <ul>
+                                        <li><a href="automotive-industrial-&-beyond.html">Automotive Industrial & Beyond</a></li>
+                                        <li><a href="toolsAndHardware.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace.html">Aerospace</a></li>
+                                        <!-- <li><a href="#">Global Footprints</a></li>  -->
+                                    </ul>
+                                </div>
+                                <!-- <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Sustainability</h4>
+                                    <ul>
+                                        <li><a href="#">Environmental Impact</a></li>
+                                        <li><a href="#">Social Responsibility</a></li>
+                                        <li><a href="#">Green Initiatives</a></li>
+                                        <li><a href="#">Reports</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Recognition</h4>
+                                    <ul>
+                                        <li><a href="#">Awards</a></li>
+                                        <li><a href="#">Certifications</a></li>
+                                        <li><a href="#">Press Coverage</a></li>
+                                        <li><a href="#">Testimonials</a></li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--
+                    <li class="nav-item has-mega-menu d-none d-lg-block sector-laptop">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Sectors
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <ul>
+                                        <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <ul>
+                                        <li><a href="off-highway.html">Off Highway & Industrial Applications</a></li>
+                                        <li><a style="color: #dadada;" style="color: #dadada;" href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
+                                        <li><a style="color: #dadada;" style="color: #dadada;" href="locomotive-sector.html">Locomotive</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <ul>
+                                        <li><a style="color: #dadada;" style="color: #dadada;" href="agriculture-sector.html">Agriculture</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu d-block d-lg-none sector-mobile">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Sectors
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+                                    <ul>
+                                        <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
+                                        <li><a href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
+                                        <li><a href="off-highway.html">Off Highway & Industrial Applications</a></li>
+                                        <li><a href="locomotive-sector.html">Locomotive</a></li>
+                                        <li><a href="agriculture-sector.html">Agriculture</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between active" href="people.html"
+                            onclick="toggleMegaMenu(event)">
+                            People
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">People</h4>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">People</h4>
+                                    <ul>
+                                        <li><a href="people.html">Life at JK Maini</a></li>
+                                        <li><a href="people.html#employee-test">Employee Testimonials</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Beyond Business
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Beyond Business</h4>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Purpose & Progress</h4>
+                                    <ul>
+                                        <li><a href="sustainability.html">Sustainability</a></li>
+                                        <li><a href="awards.html">Awards</a></li>
+                                        <li><a href="csr.html">CSR</a></li>
+                                        <li><a href="events.html">News & Events</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Resources</h4>
+                                    <ul>
+                                        <li><a href="resources.html">Brochure</a></li>
+                                        <li><a href="resources.html#blogs">Blogs</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    -->
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Investor Relation
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-md-auto">
+                    <!-- <div class="group me-2">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+
+                        <input id="query" class="input" type="search" placeholder="Search..." name="searchbar" />
+                    </div> -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="openPopup()" href="javascript:void(0)"><i class="fa-solid fa-headset me-2"></i>
+                            Enquiry</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid p-0 hero-section">
+        <div class="carousel">
+            <div class="swiper people-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-image">
+                            <img src="./assets/images/peopleBg.png" alt="">
+                        </div>
+                        <div class="container swiper-content">
+                            <div class="col-md-10">
+                                <h1>Fueled by Passion. Driven by People.</h1>
+                                <!-- <p>Our strength lies in our people. Every innovation, every solution, and every customer
+                                    success story begins with a team that leads with heart, thinks with purpose, and
+                                    acts with integrity. Together, we don’t just work—we create impact.</p> -->
+                                <button class="hero-button">
+                                    About Us
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-image">
+                            <img src="./assets/images/people-bg-2.png" alt="">
+                        </div>
+                        <div class="container swiper-content">
+                            <div class="col-md-10">
+                                <h1>Fueled by Passion. Driven by People.</h1>
+                                <!-- <p>Our strength lies in our people. Every innovation, every solution, and every customer
+                                    success story begins with a team that leads with heart, thinks with purpose, and
+                                    acts with integrity. Together, we don’t just work—we create impact.</p> -->
+                                <button class="hero-button">
+                                    About Us
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-image">
+                            <img src="./assets/images/people-bg-3.png" alt="">
+                        </div>
+                        <div class="container swiper-content">
+                            <div class="col-md-10">
+                                <h1>Fueled by Passion. Driven by People.</h1>
+                                <!-- <p>Our strength lies in our people. Every innovation, every solution, and every customer
+                                    success story begins with a team that leads with heart, thinks with purpose, and
+                                    acts with integrity. Together, we don’t just work—we create impact.</p> -->
+                                <button class="hero-button">
+                                    About Us
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <section class="gallary mt-5" id="life-at-jk-maini">
+        <div class="container-fluid">
+            <div class="text-center">
+                <h6 class="section-title">Team Life</h6>
+                <h2>Life at JK Maini</h2>
+
+            </div>
+
+            <div class="container-fluid">
+                <div class="photos">
+                    <div class="photo_items">
+                        <img src="./assets/images/people/20240814_161924.jpg">
+                        <img src="./assets/images/people/20240814_173537.jpg">
+                        <img src="./assets/images/people/20241004_162159.jpg">
+                        
+                        <img src="./assets/images/people/20241029_171929.jpg">
+                        <img src="./assets/images/people/20241224_144856.jpg">
+                        <img src="./assets/images/people/20241224_173425.jpg">
+                        <img src="./assets/images/people/IMG-20241029-WA0011.jpg">
+                        <img src="./assets/images/people/IMG-20250308-WA0103.jpg">
+                        <img src="./assets/images/people/IMG-20250318-WA0000.jpg">
+                        
+                        <img src="./assets/images/people/IMG_1503.PNG">
+                        <img src="./assets/images/people/IMG_1504.PNG">
+                        <img src="./assets/images/people/IMG_5585.jpg">
+
+
+
+                    </div>
+                    <div class="photo_items">
+                        <img src="./assets/images/people/20240814_161924.jpg">
+                        <img src="./assets/images/people/20240814_173537.jpg">
+                        <img src="./assets/images/people/20241004_162159.jpg">
+                        
+                        <img src="./assets/images/people/20241029_171929.jpg">
+                        <img src="./assets/images/people/20241224_144856.jpg">
+                        <img src="./assets/images/people/20241224_173425.jpg">
+                        <img src="./assets/images/people/IMG-20241029-WA0011.jpg">
+                        <img src="./assets/images/people/IMG-20250308-WA0103.jpg">
+                        <img src="./assets/images/people/IMG-20250318-WA0000.jpg">
+                        
+                        <img src="./assets/images/people/IMG_1503.PNG">
+                        <img src="./assets/images/people/IMG_1504.PNG">
+                        <img src="./assets/images/people/IMG_5585.jpg">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section> -->
+
+    <section class="festivals my-5">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title">Team Life</h6>
+                <h2>Life at JK Maini</h2>
+
+            </div>
+
+            <div class="row my-5">
+                <div class="col-md-6 Christmas">
+                    <div class="event-details">
+                        <h3>Christmas</h3>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/christmans/20241224_144856.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/christmans/20241224_153058.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/christmans/20241224_161450.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/christmans/20241224_173425.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/christmans/20241224_173446.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/christmans/20241224_173502.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 sports-mania">
+                    <div class="event-details">
+                        <h3>Sports Mania</h3>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/sports/20250117_172210.jpg" class="img-fluid popup-image"
+                                alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/sports/IMG-20250117-WA0011.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/sports/IMG-20250117-WA0013.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/sports/IMG-20250207-WA0011.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/sports/IMG-20250214-WA0004.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/sports/IMG-20250217-WA0003.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-md-6 diwali">
+                    <div class="event-details">
+                        <h3>Diwali Celebration</h3>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/diwali/20241029_164216.jpg" class="img-fluid popup-image"
+                                alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/diwali/20241029_171929.jpg" class="img-fluid popup-image"
+                                alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/diwali/IMG-20241029-WA0009.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/diwali/IMG-20241029-WA0012.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/diwali/IMG-20241029-WA0013.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/diwali/IMG-20241029-WA0014.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 Navratri">
+                    <div class="event-details">
+                        <h3>Navratri</h3>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/navratri/20241004_162159.jpg" class="img-fluid popup-image"
+                                alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/navratri/20241004_163357.jpg" class="img-fluid popup-image"
+                                alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/navratri/20241004_164950.jpg" class="img-fluid popup-image"
+                                alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/navratri/20241004_165214.jpg" class="img-fluid popup-image"
+                                alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/navratri/Dhanashree Shetye.jpeg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/navratri/RPAL- Blue.jpeg" class="img-fluid popup-image"
+                                alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-md-6 ganesh-chaturthi">
+                    <div class="event-details ">
+                        <h3>Ganesh Chaturthi</h3>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/ganesh-chaturthi/IMG_1500.PNG"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/ganesh-chaturthi/IMG_1502.PNG"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/ganesh-chaturthi/IMG_1503.PNG"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/ganesh-chaturthi/IMG_1504.PNG"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/ganesh-chaturthi/IMG_1505.PNG"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/ganesh-chaturthi/IMG_1506.PNG"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 Independence">
+                    <div class="event-details">
+                        <h3>Independence Day</h3>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/independance-day/20240814_161924.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/independance-day/20240814_172800.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/independance-day/20240814_173536.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/independance-day/IMG_5585.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/independance-day/IMG_5600.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/independance-day/IMG_5610.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-md-6 Womens">
+                    <div class="event-details">
+                        <h3>Womens Day</h3>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/womens day/IMG20250308135634.png"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/womens day/IMG-20250308-WA0105.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/womens day/IMG20250308132208.png"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/womens day/IMG20250308134842.png"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/womens day/IMG20250308134900.png"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+
+                        <div class="flex-basis-30 fest-img-container">
+                            <img src="./assets/images/people/womens day/IMG-20250308-WA0060.jpg"
+                                class="img-fluid popup-image" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="employee-test" id="employee-test">
+        <div class="container py-5">
+            <div class="text-center">
+                <h6 class="section-title">Voices Behind the Vision</h6>
+                <h2>Hear what drives our people, straight from those shaping our success</h2>
+
+            </div>
+            <!-- <div class="row justify-content-center mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="test-card h-100 shadow-sm p-4">
+                        <div class="card-box">
+                            <p class="card-text mt-3">"Being part of the Raymond Group legacy gives me immense pride. At
+                                our manufacturing unit, precision isn’t just a process—it’s a mindset. I’ve seen
+                                innovation meet consistency every single day."</p>
+
+                            <div class="d-flex gap-3 align-items-center">
+                                <img src="./assets/images/employee1.png" alt="Employee 1" class="rounded-circle"
+                                    width="80" height="80">
+                                <div>
+                                    <h5 class="card-title mt-3">Rajesh Patil</h5>
+                                    <p class="text-muted ">Head – Production</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="test-card h-100 shadow-sm p-4">
+                        <div class="card-box">
+                            <p class="card-text mt-3">"What I value most here is the focus on detail and the drive for
+                                zero-defect quality. It’s a place where every employee is empowered to take ownership of
+                                excellence."
+                            </p>
+
+                            <div class="d-flex gap-3 align-items-center">
+                                <img src="./assets/images/employee1.png" alt="Employee 1" class="rounded-circle"
+                                    width="80" height="80">
+                                <div>
+                                    <h5 class="card-title mt-3">Priya Nair</h5>
+                                    <p class="text-muted ">Sr. Executive – Quality Assurance</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="test-card h-100 shadow-sm p-4">
+                        <div class="card-box">
+                            <p class="card-text mt-3">"As someone starting my career, working with advanced tools and
+                                learning from experienced mentors has been an incredible journey. Every day brings
+                                something new."</p>
+
+                            <div class="d-flex gap-3 align-items-center">
+                                <img src="./assets/images/employee1.png" alt="Employee 1" class="rounded-circle"
+                                    width="80" height="80">
+                                <div>
+                                    <h5 class="card-title mt-3">Rohit Shinde</h5>
+                                    <p class="text-muted ">CNC Operator</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="row justify-content-center mt-4">
+
+                <div class="col-md-4 mb-4">
+                    <div class="test-card shadow-sm p-4 h-100">
+                        <div class="card-box d-flex flex-column h-100">
+                            <p class="card-text flex-grow-1">"Being part of a legacy like the Raymond Group comes with a
+                                deep
+                                sense of responsibility—to uphold decades of trust while constantly innovating for the
+                                future. At our core, we are precision-driven, purpose-led, and customer-obsessed. Every
+                                solution we deliver reflects our commitment to quality, performance, and long-term value
+                                for our clients across the globe"</p>
+
+                            <div class="d-flex gap-3 align-items-center mt-4">
+                                <img src="./assets/images/Nandakishore D.png" alt="Employee 1" class="rounded-circle"
+                                    width="80" height="80">
+                                <div>
+                                    <h5 class="mb-0">Nandakishore D.</h5>
+                                    <p class="text-muted mb-0 small ">Chief Sales & Marketing Officer, T&H</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="test-card shadow-sm p-4 h-100">
+                        <div class="card-box d-flex flex-column h-100">
+                            <p class="card-text flex-grow-1">
+                                "Joining this organization has been a transformative experience.
+                                As Chief Strategy and Marketing Officer, I’ve had the privilege of working alongside a
+                                team that blends precision engineering with bold innovation. What truly sets us apart is
+                                our commitment to quality, smart manufacturing, and building lasting partnerships. We're
+                                not just shaping components—we're shaping the future of global manufacturing."
+                            </p>
+
+                            <div class="d-flex gap-3 align-items-center mt-4">
+                                <img src="./assets/images/sharan-mehta.jpg" alt="Employee 1" class="rounded-circle"
+                                    width="80" height="80">
+                                <div>
+                                    <h5 class="mb-0">Sharan Mehta</h5>
+                                    <p class="text-muted mb-0 small">Chief Strategy & Marketing Officer, Bengaluru BU
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="test-card shadow-sm p-4 h-100">
+                        <div class="card-box d-flex flex-column h-100">
+                            <p class="card-text flex-grow-1">"What stands out in my journey with the company is our
+                                strong culture of discipline, cost-consciousness, and continuous improvement. Leading
+                                operations here means working with a team committed to quality, innovation, and
+                                excellence. We don’t just manufacture components—we engineer reliability and build
+                                trust. With robust in-house design and a focus on concurrent engineering, we collaborate
+                                with customers from concept to production, delivering performance that consistently
+                                exceeds expectations."</p>
+
+                            <div class="d-flex gap-3 align-items-center mt-4">
+                                <img src="./assets/images/Kamlakar.png" alt="Employee 1" class="rounded-circle"
+                                    width="80" height="80">
+                                <div>
+                                    <h5 class="mb-0">Kamlakar Tak</h5>
+                                    <p class="text-muted mb-0 small">Chief Operations Officer, Nashik BU</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> -->
+
+            <div class="row justify-content-center mt-4">
+
+                <!-- <div class="col-md-4 mb-4">
+                    <div class="test-card shadow-sm p-4 h-100">
+                        <div class="card-box d-flex flex-column h-100">
+                            <p class="card-text flex-grow-1">"Over the past decade, I’ve had the privilege to grow with
+                                this
+                                organization—adapting to changing market dynamics and building lasting, trust-driven
+                                relationships with clients across industries. As Chief Sales & Marketing Officer, I’ve
+                                seen how our commitment to precision, quality, and customer success truly sets us apart.
+                                We don’t just deliver components—we forge partnerships that endure."</p>
+
+                            <div class="d-flex gap-3 align-items-center mt-4">
+                                <img src="./assets/images/sachin-kotwal.jpg" alt="Employee 1" class="rounded-circle"
+                                    width="80" height="80">
+                                <div>
+                                    <h5 class="mb-0">Sachin Kotwal</h5>
+                                    <p class="text-muted mb-0 small ">Chief Sales & Marketing Officer, Nashik BU</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-md-4 mb-4">
+                    <div class="test-card shadow-sm p-4 h-100">
+                        <div class="card-box d-flex flex-column h-100">
+                            <p class="card-text flex-grow-1">"Working at JKMPTL has been an incredible journey. I feel
+                                supported, challenged, and empowered to grow both personally and professionally. The
+                                collaborative environment and emphasis on innovation make it a truly rewarding place to
+                                work Designation: Lead Strategy, T&H business"</p>
+
+                            <div class="d-flex gap-3 align-items-center mt-4">
+                                <img src="./assets/images/faiz.png" alt="Employee 1" class="rounded-circle" width="80"
+                                    height="80">
+                                <div>
+                                    <h5 class="mb-0">Faiz Abdullah</h5>
+                                    <p class="text-muted mb-0 small ">Lead Strategy, T&H business</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="test-card shadow-sm p-4 h-100">
+                        <div class="card-box d-flex flex-column h-100">
+                            <p class="card-text flex-grow-1">"Being a Lead Recruiter here has been an incredibly
+                                rewarding
+                                journey. Every day brings new challenges and opportunities to connect talented
+                                individuals with roles where they can truly thrive. We believe not just in hiring, but
+                                in nurturing careers and building a culture of growth, collaboration, and trust. I take
+                                immense pride in shaping teams that are driving real impact, and in turn, I’ve grown
+                                both personally and professionally."</p>
+
+                            <div class="d-flex gap-3 align-items-center mt-4">
+                                <img src="./assets/images/Banupriya Chelladurai.png" alt="Employee 1"
+                                    class="rounded-circle" width="80" height="80">
+                                <div>
+                                    <h5 class="mb-0">Banupriya Chelladurai</h5>
+                                    <p class="text-muted mb-0 small">Lead Recruitment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="test-card shadow-sm p-4 h-100">
+                        <div class="card-box d-flex flex-column h-100">
+                            <p class="card-text flex-grow-1">"At JK Maini Precision Technology Ltd, I’ve had the
+                                opportunity to
+                                drive marketing initiatives that are deeply aligned with innovation, precision, and
+                                engineering excellence. What truly sets this organization apart is the collaborative
+                                culture and the freedom to think beyond boundaries. Being part of a team that’s shaping
+                                future-ready solutions makes each day both challenging and fulfilling."</p>
+
+                            <div class="d-flex gap-3 align-items-center mt-4">
+                                <img src="./assets/images/sameedha rasam.jpeg" alt="Employee 1" class="rounded-circle"
+                                    width="80" height="80">
+                                <div>
+                                    <h5 class="mb-0">Sameedha Rasam</h5>
+                                    <p class="text-muted mb-0 small">Lead Marketing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row justify-content-center mt-4">
+
+                
+                <div class="col-md-4 mb-4">
+                    <div class="test-card shadow-sm p-4 h-100">
+                        <div class="card-box d-flex flex-column h-100">
+                            <p class="card-text flex-grow-1">"Leading strategic projects here has been a rewarding
+                                experience.
+                                Every initiative is driven by a clear vision: to enhance precision, efficiency, and
+                                long-term value for our clients. It's a place where ideas take shape and impact the
+                                future of manufacturing."</p>
+
+                            <div class="d-flex gap-3 align-items-center mt-4">
+                                <img src="./assets/images/Sagar-Chaugule.jpeg" alt="Employee 1" class="rounded-circle"
+                                    width="80" height="80">
+                                <div>
+                                    <h5 class="mb-0">Sagar Chaugule</h5>
+                                    <p class="text-muted mb-0 small">In Charge Strategic Projects of Manufacturing
+                                        Engineering</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="test-card shadow-sm p-4 h-100">
+                        <div class="card-box d-flex flex-column h-100">
+                            <p class="card-text flex-grow-1">"Every day in product engineering is a hands-on lesson in
+                                precision, problem-solving, and purpose. What I enjoy most is the freedom to experiment,
+                                improve, and see my work come to life on the shop floor and eventually in machines and
+                                systems that matter. It’s more than a job it’s craftsmanship with impact."</p>
+
+                            <div class="d-flex gap-3 align-items-center mt-4">
+                                <img src="./assets/images/taiba-mulani.jpeg" alt="Employee 1" class="rounded-circle"
+                                    width="80" height="80">
+                                <div>
+                                    <h5 class="mb-0">Taiba Mulani</h5>
+                                    <p class="text-muted mb-0 small">Team Member - Product Engineering</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="test-card shadow-sm p-4 h-100">
+                        <div class="card-box d-flex flex-column h-100">
+                            <p class="card-text flex-grow-1">"Working in the Materials team at J K Maini has been a
+                                journey of
+                                continuous learning and ownership. Every day brings a new challenge from managing vendor
+                                relationships to ensuring just-in-time availability for high-precision manufacturing.
+                                What makes this role meaningful is not just the scale we operate at, but the trust the
+                                organization places in its people."</p>
+
+                            <div class="d-flex gap-3 align-items-center mt-4">
+                                <img src="./assets/images/Aditya Tembhekar.jpeg" alt="Employee 1" class="rounded-circle"
+                                    width="80" height="80">
+                                <div>
+                                    <h5 class="mb-0">Aditya Tembhekar</h5>
+                                    <p class="text-muted mb-0 small">Team member - Material</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row justify-content-center justify-content-md-start mt-4">
+
+                
+                <div class="col-md-4 mb-4">
+                    <div class="test-card shadow-sm p-4 h-100">
+                        <div class="card-box d-flex flex-column h-100">
+                            <p class="card-text flex-grow-1">"As a Sales Support Executive, I may not be on the
+                                frontlines but
+                                I play a key role in making every customer interaction smooth, timely, and informed.
+                                It’s fulfilling to be part of a team that values precision not just in products, but in
+                                processes and communication. Here, every detail matters—and that’s what makes us trusted
+                                by customers worldwide"</p>
+
+                            <div class="d-flex gap-3 align-items-center mt-4">
+                                <img src="./assets/images/jyoti-chilka.jpeg" alt="Employee 1" class="rounded-circle"
+                                    width="80" height="80">
+                                <div>
+                                    <h5 class="mb-0">Jyoti Chilka</h5>
+                                    <p class="text-muted mb-0 small">Team Sales Support-Domestic</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="popupOverlay" class="popup-overlay">
+        <div class="right-form p-4">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div>
+                <h2>Get in Touch</h2>
+                <p>Tell us what you’re building — we’ll show you how to get there, faster and smarter.
+                    Response guaranteed within 24 hours.</p>
+            </div>
+            <form action="" class="mt-4">
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="First Name">
+                    <input class="my-3" type="text" placeholder="Last Name">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Company">
+                    <input class="my-3" type="text" placeholder="Email Address">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Phone No.">
+                    <input class="my-3" type="text" placeholder="Industry">
+                </div>
+                <div class="form-group">
+                    <textarea name="" id="" placeholder="I want to know more about"></textarea>
+
+                </div>
+                <!-- <div class="d-flex gap-3">
+                    <input type="checkbox" name="" id="t&c" class="w-auto">
+                    <label class="w-auto" for="t&c">I agree to the terms and conditions*</label>
+                </div> -->
+                <button class="hero-button mt-4">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <section class="get-in-touch-section py-5 text-center">
+        <div class="container">
+            <h6 class="section-title">Be the Next Voice.</h6>
+            <h2>Inspired by their stories? Now it’s your turn.</h2>
+            
+            <div class="d-flex justify-content-center">
+                <a href="careers.html" style="text-decoration: none;">
+                    <button class="hero-button">Apply Now</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-footer">
+        
+        <div class="line"></div>
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-location-dot mb-3"></i>
+                        <h3>Our Offices</h3>
+                        <p>View our locations and find contact details to our nearest office.</p>
+                        <a href="contact.html#office-locations">Explore Our Locations</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-envelope-open mb-3"></i>
+                        <h3>Drop us a Line</h3>
+                        <p>You can contact us by filling in this form any time you need professional support.</p>
+                        <a onclick="openPopup()" href="javascript:void(0)">Fill Our Form</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-headset mb-3"></i>
+                        <h3>Support</h3>
+                        <!-- <p>Learn more about us and find resources that will help you with all of our products</p> -->
+                        <p>Connect with us and know more about our products. Call our support executive.</p>
+                        <a href="">Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="pt-5 main-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info Column -->
+                <div class="col-md-4 mb-4">
+                    <a href="index.html"><img style="width: 220px;" class="img-fluid"
+                            src="./assets/images/jk-maini-logo.svg" alt="JK Maini Precision Technology"></a>
+
+                    <p class="mb-1"> 
+                        
+                        <strong>CIN :</strong> U25933MH2024PLC417852
+                    </p>
+                    <p  class="mb-1">
+                        <strong>Email :</strong>
+                        <a href="mailto:info@ringplusaqua.co.in" class="text-decoration-none text-dark">info@ringplusaqua.co.in</a>
+                    </p>
+                    <p  class="mb-1">
+                        <strong>Address :</strong>
+                        C/O Raymond Ltd, Jekegram Pokharan Road No. 1, Jekegram, Thane, Maharashtra, India, 400606
+                    </p>
+                    <p  class="mb-1">
+                        <strong>Phone :</strong>
+                        <a href="tel:+912261527998" class="text-decoration-none text-dark">+91
+                            2261527998</a>
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-md-4 mb-4 quick-links">
+                    <h5 class="mb-3 section-title">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a target="_blank" href="https://psychonimus.github.io/jk-maini-auto/"
+                                class="text-decoration-none">Jk Maini Precision Technology</a></li>
+                        <li class="mb-2"><a target="_blank" href="https://jksuperdrive.com/"
+                                class="text-decoration-none">JK Files and Engineering Ltd.</a></li>
+                        <li class="mb-2"><a target="_blank" href="https://anjalipophale.github.io/aersopace/index.html"
+                                class="text-decoration-none">JK Maini Global Aerospace Ltd.</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Contact Info Column -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3 section-title">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> 123 Industrial Area, City</li>
+                        <li class="mb-2"><i class="fa-solid fa-phone me-2"></i><a style="text-decoration: none;"
+                                href="tel:+912261527998">+91 2261527998</a></li>
+                        <li class="mb-2"><i class="fa-solid fa-envelope me-2"></i><a style="text-decoration: none;"
+                                href="mailto:info@ringplusaqua.co.in">info@ringplusaqua.co.in</a></li>
+                        <!-- <li class="mb-2"><i class="fa-solid fa-clock me-2"></i> Mon - Sat: 9:00 AM - 6:00 PM</li> -->
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="col-md-3 mb-4">
+                    <!-- <h5 class="mb-3 section-title">Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates and news.</p>
+                    <form class="mt-3">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn newsletter-btn" type="submit">Subscribe</button>
+                        </div>
+                    </form> -->
+                </div>
+            </div>
+        </div>
+        <div class="copyright py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <p class="m-0">© 2025 JK Maini Precision Technology Limited. All rights
+                            reserved.   ∙   Privacy 
+                             ∙   Terms of Use   ∙   Site Map</p>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="social-links">
+                            <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="image-popup" id="imagePopup">
+        <span class="close-popup">&times;</span>
+        <img src="" alt="Popup Image" id="popupImg">
+    </div>
+
+
+
+    <script>
+        function toggleMegaMenu(event) {
+            if (window.innerWidth < 992) {
+                event.preventDefault();
+                const megaMenu = event.currentTarget.nextElementSibling;
+                megaMenu.classList.toggle('show');
+                const plusIcon = event.currentTarget.querySelector('span');
+                plusIcon.textContent = megaMenu.classList.contains('show') ? '-' : '+';
+            }
+        }
+
+        function toggleAccordion(header) {
+            if (window.innerWidth < 992) {
+                const ul = header.nextElementSibling;
+                if (!ul) return; // Guard clause if ul doesn't exist
+
+                const isActive = header.classList.contains('active');
+
+                // Close all other accordions in the same mega-menu
+                const parentMegaMenu = header.closest('.mega-menu');
+                const allHeaders = parentMegaMenu.querySelectorAll('h4');
+                const allUls = parentMegaMenu.querySelectorAll('ul');
+
+                allHeaders.forEach(h => h.classList.remove('active'));
+                allUls.forEach(u => u.classList.remove('active'));
+
+                if (!isActive) {
+                    header.classList.add('active');
+                    ul.classList.add('active');
+                }
+            }
+        }
+    </script>
+
+    <script>
+        const popup = document.getElementById("imagePopup");
+        const popupImg = document.getElementById("popupImg");
+        const images = document.querySelectorAll(".popup-image");
+        const closeBtn = document.querySelector(".close-popup");
+
+        images.forEach(img => {
+            img.addEventListener("click", () => {
+                popupImg.src = img.src;
+                popup.style.display = "flex";
+            });
+        });
+
+        closeBtn.addEventListener("click", () => {
+            popup.style.display = "none";
+        });
+
+        // Close when clicking outside the image
+        popup.addEventListener("click", e => {
+            if (e.target === popup) {
+                popup.style.display = "none";
+            }
+        });
+    </script>
+    <script src="https://unpkg.com/lenis@1.3.7/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        var swiper2 = new Swiper(".people-swiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+
+        });
+    </script>
+
+
+</body>
+
+
+
+</html>

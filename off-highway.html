@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Hydraulics</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png">
+
+</head>
+
+<body>
+
+
+    <nav id="navbar" class="navbar navbar-expand-lg bg-transparent fixed-top flex-column">
+        <div class="container d-flex justify-content-between">
+            <div class="meta-header-left">
+                <ul class="navbar-nav-left" style="padding-left: 0px;">
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" aria-current="page" href="tel:+912261527998"> <i
+                                class="fa-solid fa-phone-volume me-2"></i>
+                            +91 2261527998</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="meta-header-right">
+                <ul class="navbar-nav-right">
+                    <li class="nav-item dropdown ms-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Careers
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="careersDropdown">
+                            <li><a class="dropdown-item" target="_blank" href="https://psychonimus.github.io/jk-maini-auto/careers.html">Automobile</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://anjalipophale.github.io/aersopace/careers.html">Aerospace</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-2 ">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img style="width: 220px;" class="img-fluid"
+                    src="./assets/images/jk-maini-logo.svg" alt="JK Maini Precision Technology"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-md-2">
+                    <li class="nav-item active has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="./about.html"
+                            onclick="toggleMegaMenu(event)">
+                            Company
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Company</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">About Us</h4>
+                                    <ul>
+                                        <li><a href="about.html#raymond-group">Raymond Group</a></li>
+                                        <li><a href="about.html#about-jk-maini">About US</a></li>
+                                        <li><a href="about.html#vmv">Vision Mission & Values</a></li>
+                                        <li><a href="about.html#global-presence">Global Footprints</a></li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Sustainability</h4>
+                                    <ul>
+                                        <li><a href="#">Environmental Impact</a></li>
+                                        <li><a href="#">Social Responsibility</a></li>
+                                        <li><a href="#">Green Initiatives</a></li>
+                                        <li><a href="#">Reports</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Recognition</h4>
+                                    <ul>
+                                        <li><a href="#">Awards</a></li>
+                                        <li><a href="#">Certifications</a></li>
+                                        <li><a href="#">Press Coverage</a></li>
+                                        <li><a href="#">Testimonials</a></li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+
+                        <a class="nav-link d-flex justify-content-between" href="#"
+                            onclick="toggleMegaMenu(event)">Businesses
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Businesses</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Business Verticals</h4>
+                                    <ul>
+                                        <li><a href="automotive-industrial-&-beyond.html">Automotive Industrial & Beyond</a></li>
+                                        <li><a href="toolsAndHardware.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace.html">Aerospace</a></li>
+                                        <!-- <li><a href="#">Global Footprints</a></li>  -->
+                                    </ul>
+                                </div>
+                                <!-- <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Sustainability</h4>
+                                    <ul>
+                                        <li><a href="#">Environmental Impact</a></li>
+                                        <li><a href="#">Social Responsibility</a></li>
+                                        <li><a href="#">Green Initiatives</a></li>
+                                        <li><a href="#">Reports</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Recognition</h4>
+                                    <ul>
+                                        <li><a href="#">Awards</a></li>
+                                        <li><a href="#">Certifications</a></li>
+                                        <li><a href="#">Press Coverage</a></li>
+                                        <li><a href="#">Testimonials</a></li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--
+                    <li class="nav-item has-mega-menu d-none d-lg-block sector-laptop">
+                        <a class="nav-link d-flex justify-content-between active" href="#"
+                            onclick="toggleMegaMenu(event)">
+                            Sectors
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <ul>
+                                        <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <ul>
+                                        <li><a href="off-highway.html">Off Highway & Industrial Applications</a></li>
+                                        <li><a style="color: #dadada;" href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
+                                        <li><a style="color: #dadada;" href="locomotive-sector.html">Locomotive</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <ul>
+                                        <li><a style="color: #dadada;" href="agriculture-sector.html">Agriculture</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu d-block d-lg-none sector-mobile">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Sectors
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+                                    <ul>
+                                        <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
+                                        <li><a href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
+                                        <li><a href="off-highway.html">Off Highway & Industrial Applications</a></li>
+                                        <li><a href="locomotive-sector.html">Locomotive</a></li>
+                                        <li><a href="agriculture-sector.html">Agriculture</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="people.html"
+                            onclick="toggleMegaMenu(event)">
+                            People
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">People</h4>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">People</h4>
+                                    <ul>
+                                        <li><a href="people.html">Life at JK Maini</a></li>
+                                        <li><a href="people.html#employee-test">Employee Testimonials</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Beyond Business
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Beyond Business</h4>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Purpose & Progress</h4>
+                                    <ul>
+                                        <li><a href="sustainability.html">Sustainability</a></li>
+                                        <li><a href="awards.html">Awards</a></li>
+                                        <li><a href="csr.html">CSR</a></li>
+                                        <li><a href="events.html">News & Events</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Resources</h4>
+                                    <ul>
+                                        <li><a href="resources.html">Brochure</a></li>
+                                        <li><a href="resources.html#blogs">Blogs</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    -->
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Investor Relation
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-md-auto">
+                    <!-- <div class="group me-2">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+
+                        <input id="query" class="input" type="search" placeholder="Search..." name="searchbar" />
+                    </div> -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
+                            Enquiry</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid p-0 hero-section">
+        <div class="carousel">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-image">
+                            <img src="./assets/images/industrial-hydraulics-banner.png" alt="">
+                        </div>
+                        <div class="container swiper-content">
+                            <div class="text-center mt-5">
+                                <h1>Off Highway & Industrial Applications</h1>
+                                <p class="mt-3 mb-4">
+                                    Driving Precision Beyond Roads Into Industries That Move the World
+                                </p>
+                                <div class="d-flex justify-content-center">
+                                    <button class="hero-button d-flex align-items-center" onclick="openPopup()">
+                                        Let's talk
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="about-sector-section my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="py-5">
+                        <h6 class="section-title">Off Highway & Industrial Applications</h6>
+                        <h2>Engineered to Strengthen Every Industrial Process</h2>
+                        <p class="text-muted">
+                            From rugged construction equipment and forestry machinery to marine systems, power gensets,
+                            and automated industrial setups—today’s off-highway and industrial applications demand
+                            uncompromising reliability, precision, and durability.<br>
+
+                            These environments operate under extreme conditions—high pressure, fluctuating loads, and
+                            harsh terrains—where performance and safety are non-negotiable.<br>
+
+                            At the core of this performance lies precision manufacturing, enabling flawless production
+                            of mission-critical components like input shafts, valve blocks, and cylinder assemblies with
+                            micron-level tolerances and high-quality surface finishes.<br>
+
+                            Whether it's sustaining marine operations, optimizing energy systems, mechanizing forestry
+                            operations, or supporting remote construction projects, precision engineering ensures longer
+                            product life cycles, reduced downtime, and consistent system efficiency.<br>
+
+                            As industries evolve, so must the components that drive them. And we're delivering just
+                            that—with performance built to endure, across every application.
+                        </p>
+                        <button class="hero-button" onclick="openPopup()">Request a Catalog</button>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="img-container d-flex align-items-center">
+                        <img src="./assets/images/industrial-hydraulics-right.png"
+                            style="width: 100%; border-radius: 10px;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="popupOverlay" class="popup-overlay">
+        <div class="right-form p-4">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div>
+                <h2>Get in Touch</h2>
+                <p>Tell us what you’re building — we’ll show you how to get there, faster and smarter.
+                    Response guaranteed within 24 hours.</p>
+            </div>
+            <form action="" class="mt-4">
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="First Name">
+                    <input class="my-3" type="text" placeholder="Last Name">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Company">
+                    <input class="my-3" type="text" placeholder="Email Address">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Phone No.">
+                    <input class="my-3" type="text" placeholder="Industry">
+                </div>
+                <div class="form-group">
+                    <textarea name="" id="" placeholder="I want to know more about"></textarea>
+
+                </div>
+                <!-- <div class="d-flex gap-3">
+                    <input type="checkbox" name="" id="t&c" class="w-auto">
+                    <label class="w-auto" for="t&c">I agree to the terms and conditions*</label>
+                </div> -->
+                <button class="hero-button mt-4">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <section class="details">
+        <div class="container">
+            <h4>Our Expertise</h4>
+            <p>At JK Maini Precision Products, we specialize in delivering high-precision components tailored for the
+                demanding needs of the industrial and hydraulics sector. Our core product portfolio includes bearing
+                housings, pressure plates, wheel forks, brake plates, ELSD housings, bearing journals, cradles, and door
+                assembly child parts, along with precision-engineered power tool parts, drill bits, and reamers.</p>
+            <p>We work with a range of high-grade materials including alloy steels, stainless steels, and aluminum
+                alloys, capable of withstanding high-pressure and high-stress environments. Our manufacturing processes
+                support tight tolerances (as low as ±5 microns) and are optimized for both low-volume prototyping and
+                high-volume serial production.</p>
+
+            <h4>Industry Standards and Compliance</h4>
+            <p>We ensure full compliance with globally recognized quality and process standards such as IATF 16949 and
+                ISO 9001, with a strong emphasis on process validation, traceability, and zero-defect delivery. Our
+                capabilities make us a trusted partner for OEMs and Tier 1 suppliers in the industrial and hydraulics
+                space worldwide.</p>
+        </div>
+    </section>
+
+    <section class="trusted-by my-5" style="background-color: #F7F8FC;">
+        <div class="container">
+            <div class="pt-5 pb-2 text-center">
+                <h6 class="section-title">Trusted By</h6>
+                <h2>Built for the World’s Toughest Machines, Thousands of Products, Global OEMs, Multi-Plant Strength.</h2>
+
+            </div>
+
+        </div>
+        <div class="container-fluid">
+            <div class="logos">
+                <div class="logo_items">
+                    <img src="./assets/images/clients/Industrial-hydraulics/allison-transmission.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/BEML.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/briggs-stratton.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/CAT.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/cummins.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/DEUTZ.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/Generac.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/JCB.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/kirloskar.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/Kohler.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/Liebherr.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/Linamar.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/mitsubishi-motors.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/mtu.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/waukesha.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/yanmar.png" alt="">
+
+                </div>
+                <div class="logo_items">
+                    <img src="./assets/images/clients/Industrial-hydraulics/allison-transmission.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/BEML.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/briggs-stratton.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/CAT.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/cummins.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/DEUTZ.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/Generac.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/JCB.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/kirloskar.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/Kohler.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/Liebherr.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/Linamar.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/mitsubishi-motors.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/mtu.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/waukesha.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/yanmar.png" alt="">
+
+                </div>
+                <div class="logo_items">
+                    <img src="./assets/images/clients/Industrial-hydraulics/allison-transmission.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/BEML.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/briggs-stratton.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/CAT.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/cummins.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/DEUTZ.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/Generac.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/JCB.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/kirloskar.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/Kohler.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/Liebherr.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/Linamar.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/mitsubishi-motors.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/mtu.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/waukesha.png" alt="">
+                    <img src="./assets/images/clients/Industrial-hydraulics/yanmar.png" alt="">
+
+                </div>
+
+            </div>
+        </div>
+        <section class="numbers py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex justify-content-around mx-lg-0 px-lg-0">
+                        <div class="number-card text-center">
+                            <img class="mb-2" src="./assets/images/product-sku.png" alt="Product SKUs">
+                            <h2>2000+</h2>
+                            <p>PRODUCT SKUs</p>
+                        </div>
+                        <div class="number-card text-center">
+                            <img class="mb-2" src="./assets/images/ring-gears.png" alt="Ring Gears">
+                            <h2>10 Mn+</h2>
+                            <p>RING GEAR</p>
+                        </div>
+                        <div class="number-card text-center">
+                            <img class="mb-2" src="./assets/images/total-plants.png" alt="plants">
+                            <h2>13</h2>
+                            <p>PLANTS</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-around mt-3 mt-lg-0 mx-lg-0 px-lg-0">
+                        <div class="number-card text-center">
+                            <img class="mb-2" src="./assets/images/warehouse-colored.jpg" alt="warehouses">
+                            <h2>17</h2>
+                            <p>WAREHOUSES</p>
+                        </div>
+                        <div class="number-card text-center">
+                            <img class="mb-2" src="./assets/images/customers.png" alt="customers">
+                            <h2>100+</h2>
+                            <p>CUSTOMERS</p>
+                        </div>
+                        <div class="number-card text-center">
+                            <img class="mb-2" src="./assets/images/countries.png" alt="countries">
+                            <h2>18+</h2>
+                            <p>COUNTRIES</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </section>
+
+
+
+
+    <section class="contact-footer">
+        
+        <div class="line"></div>
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-location-dot mb-3"></i>
+                        <h3>Our Offices</h3>
+                        <p>View our locations and find contact details to our nearest office.</p>
+                        <a href="contact.html#office-locations">Explore Our Locations</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-envelope-open mb-3"></i>
+                        <h3>Drop us a Line</h3>
+                        <p>You can contact us by filling in this form any time you need professional support.</p>
+                        <a onclick="openPopup()" href="javascript:void(0)">Fill Our Form</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-headset mb-3"></i>
+                        <h3>Support</h3>
+                        <!-- <p>Learn more about us and find resources that will help you with all of our products</p> -->
+                        <p>Connect with us and know more about our products. Call our support executive.</p>
+                        <a href="">Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="pt-5 main-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info Column -->
+                <div class="col-md-4 mb-4">
+                    <a href="index.html"><img style="width: 220px;" class="img-fluid"
+                            src="./assets/images/jk-maini-logo.svg" alt="JK Maini Precision Technology"></a>
+
+                    <p class="mb-1"> 
+                        
+                        <strong>CIN :</strong> U25933MH2024PLC417852
+                    </p>
+                    <p  class="mb-1">
+                        <strong>Email :</strong>
+                        <a href="mailto:info@ringplusaqua.co.in" class="text-decoration-none text-dark">info@ringplusaqua.co.in</a>
+                    </p>
+                    <p  class="mb-1">
+                        <strong>Address :</strong>
+                        C/O Raymond Ltd, Jekegram Pokharan Road No. 1, Jekegram, Thane, Maharashtra, India, 400606
+                    </p>
+                    <p  class="mb-1">
+                        <strong>Phone :</strong>
+                        <a href="tel:+912261527998" class="text-decoration-none text-dark">+91
+                            2261527998</a>
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-md-4 mb-4 quick-links">
+                    <h5 class="mb-3 section-title">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a target="_blank" href="https://psychonimus.github.io/jk-maini-auto/"
+                                class="text-decoration-none">Jk Maini Precision Technology</a></li>
+                        <li class="mb-2"><a target="_blank" href="https://jksuperdrive.com/"
+                                class="text-decoration-none">JK Files and Engineering Ltd.</a></li>
+                        <li class="mb-2"><a target="_blank" href="https://anjalipophale.github.io/aersopace/index.html"
+                                class="text-decoration-none">JK Maini Global Aerospace Ltd.</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Contact Info Column -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3 section-title">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> 123 Industrial Area, City</li>
+                        <li class="mb-2"><i class="fa-solid fa-phone me-2"></i><a style="text-decoration: none;"
+                                href="tel:+912261527998">+91 2261527998</a></li>
+                        <li class="mb-2"><i class="fa-solid fa-envelope me-2"></i><a style="text-decoration: none;"
+                                href="mailto:info@ringplusaqua.co.in">info@ringplusaqua.co.in</a></li>
+                        <!-- <li class="mb-2"><i class="fa-solid fa-clock me-2"></i> Mon - Sat: 9:00 AM - 6:00 PM</li> -->
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="col-md-3 mb-4">
+                    <!-- <h5 class="mb-3 section-title">Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates and news.</p>
+                    <form class="mt-3">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn newsletter-btn" type="submit">Subscribe</button>
+                        </div>
+                    </form> -->
+                </div>
+            </div>
+        </div>
+        <div class="copyright py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <p class="m-0">© 2025 JK Maini Precision Technology Limited. All rights
+                            reserved.   ∙   Privacy 
+                             ∙   Terms of Use   ∙   Site Map</p>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="social-links">
+                            <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Swiper -->
+
+    <script src="https://unpkg.com/lenis@1.3.7/dist/lenis.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        var swiper = new Swiper(".sectors-swiper", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+</body>
+
+</html>

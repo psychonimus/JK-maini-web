@@ -1,0 +1,1952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Maini</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <nav id="navbar" class="navbar navbar-expand-lg bg-transparent fixed-top flex-column">
+        <div class="container d-flex justify-content-between">
+            <div class="meta-header-left">
+                <ul class="navbar-nav-left" style="padding-left: 0px;">
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" aria-current="page" href="tel:+912261527998"> <i
+                                class="fa-solid fa-phone-volume me-2"></i>
+                            +91 2261527998</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="meta-header-right">
+                <ul class="navbar-nav-right">
+                    <li class="nav-item dropdown ms-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Careers
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="careersDropdown">
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://psychonimus.github.io/jk-maini-auto/careers.html">Automobile</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://anjalipophale.github.io/aersopace/careers.html">Aerospace</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-2 ">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img style="width: 220px;" class="img-fluid"
+                    src="./assets/images/jk-maini-logo.svg" alt="JK Maini Precision Technology"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-md-2">
+                    <li class="nav-item active has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="./about.html"
+                            onclick="toggleMegaMenu(event)">
+                            Company
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Company</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">About Us</h4>
+                                    <ul>
+                                        <li><a href="about.html#raymond-group">Raymond Group</a></li>
+                                        <li><a href="about.html#about-jk-maini">About US</a></li>
+                                        <li><a href="about.html#vmv">Vision Mission & Values</a></li>
+                                        <li><a href="about.html#global-presence">Global Footprints</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+
+                        <a class="nav-link d-flex justify-content-between" href="#"
+                            onclick="toggleMegaMenu(event)">Businesses
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Businesses</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Business Verticals</h4>
+                                    <ul>
+                                        <li><a href="automotive-industrial-&-beyond.html">Automotive Industrial & Beyond</a></li>
+                                        <li><a href="toolsAndHardware.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace.html">Aerospace</a></li>
+                                        <!-- <li><a href="#">Global Footprints</a></li>  -->
+                                    </ul>
+                                </div>
+
+                                <!-- <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Sustainability</h4>
+                                    <ul>
+                                        <li><a href="#">Environmental Impact</a></li>
+                                        <li><a href="#">Social Responsibility</a></li>
+                                        <li><a href="#">Green Initiatives</a></li>
+                                        <li><a href="#">Reports</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Recognition</h4>
+                                    <ul>
+                                        <li><a href="#">Awards</a></li>
+                                        <li><a href="#">Certifications</a></li>
+                                        <li><a href="#">Press Coverage</a></li>
+                                        <li><a href="#">Testimonials</a></li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
+                    </li>
+                    <!-- //////// -->
+                    <!-- <li class="nav-item has-mega-menu d-none d-lg-block sector-laptop">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Sectors
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    
+                                    <ul>
+                                        <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    
+                                    <ul>
+
+                                        <li><a href="off-highway.html">Off Highway & Industrial Applications</a></li>
+                                        <li><a style="color: #dadada;" href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
+                                        <li ><a style="color: #dadada;" href="locomotive-sector.html">Locomotive</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    
+                                    <ul>
+                                        <li><a style="color: #dadada;" href="agriculture-sector.html">Agriculture</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li> -->
+
+                    <!-- <li class="nav-item has-mega-menu d-block d-lg-none sector-mobile">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Sectors
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+                                    <ul>
+                                        <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
+                                        <li><a href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
+                                        <li><a href="off-highway.html">Off Highway & Industrial Applications</a></li>
+                                        <li><a href="locomotive-sector.html">Locomotive</a></li>
+                                        <li><a href="agriculture-sector.html">Agriculture</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li> -->
+
+                    <!-- <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="people.html"
+                            onclick="toggleMegaMenu(event)">
+                            People
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">People</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">People</h4>
+                                    <ul>
+                                        <li><a href="people.html">Life at JK Maini</a></li>
+                                        
+                                        <li><a href="people.html#employee-test">Employee Testimonials</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </li> -->
+                    <!-- <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Beyond Business
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Beyond Business</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Purpose & Progress</h4>
+                                    <ul>
+                                        <li><a href="sustainability.html">Sustainability</a></li>
+                                        <li><a href="awards.html">Awards</a></li>
+                                        <li><a href="csr.html">CSR</a></li>
+                                        <li><a href="events.html">News & Events</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Resources</h4>
+                                    <ul>
+                                        <li><a href="resources.html">Brochure</a></li>
+                                        <li><a href="resources.html#blogs">Blogs</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </li> -->
+
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between " href="#" onclick="toggleMegaMenu(event)">
+                            Investor Relation
+                            <span class="d-lg-none">+</span>
+                        </a>
+
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav ms-md-auto">
+                    <!-- <div class="group me-2">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+
+                        <input id="query" class="input" type="search" placeholder="Search..." name="searchbar" />
+                    </div> -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="openPopup()" href="javascript:void(0)"><i
+                                class="fa-solid fa-headset me-2"></i>
+                            Enquiry</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Add necessary JavaScript for hide/show on scroll -->
+
+
+    <!-- Add some padding to prevent content from hiding under navbar -->
+
+    <section class="video-section">
+        <div class="container-fluid p-0 vid-container">
+            <div class="carousel">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <video playsinline loop autoplay muted preload="metadata"
+                                class="bg-video videoDesktop d-none d-md-block"
+                                src="./assets/images/Jk Mini Logo Animation.webm"></video>
+                            <video playsinline loop autoplay muted preload="metadata"
+                                class="videoMobile d-block d-md-none"
+                                src="./assets/images/Jk Mini Logo Animation mobile.webm"></video>
+                            <div class="container swiper-content">
+
+                            </div>
+                        </div>
+
+
+
+                        <!-- <div class="swiper-slide">
+                            <video playsinline loop autoplay muted preload="metadata"
+                                class="bg-video videoDesktop d-none d-md-block" src="./assets/images/17.webm"></video>
+                            <video playsinline loop autoplay muted preload="metadata"
+                                class="videoMobile d-block d-md-none" src="./assets/images/17-mobile.webm"></video>
+                            <div class="container swiper-content">
+                                <div class="col-md-10">
+                                    <h1>Powering Innovations That Move the World</h1>
+                                    <p>Delivering the strength behind innovation and mobility.</p>
+                                    <a style="text-decoration: none;" href="automobile.html"><button
+                                            class="hero-button">
+
+                                            Explore More
+                                        </button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <video playsinline loop autoplay muted preload="metadata"
+                                class="bg-video videoDesktop d-none d-md-block" src="./assets/images/19.webm"></video>
+                            <video playsinline loop autoplay muted preload="metadata"
+                                class="videoMobile d-block d-md-none" src="./assets/images/19-mobile.webm"></video>
+                            <div class="container swiper-content">
+                                <div class="col-md-10">
+                                    <h1>Precision in Motion</h1>
+                                    <p>Because every intricate detail drives performance forward.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <video playsinline loop autoplay muted preload="metadata"
+                                class="bg-video videoDesktop d-none d-md-block" src="./assets/images/18.webm"></video>
+                            <video playsinline loop autoplay muted preload="metadata"
+                                class="videoMobile d-block d-md-none" src="./assets/images/18-mobile.webm"></video>
+                            <div class="container swiper-content">
+                                <div class="col-md-10">
+                                    <h1>Engineering Tomorrow, One Component at a Time</h1>
+                                    <p>Purposefully crafting the future with precision and intent.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <video playsinline loop autoplay muted preload="metadata"
+                                class="bg-video videoDesktop d-none d-md-block" src="./assets/images/20.webm"></video>
+                            <video playsinline loop autoplay muted preload="metadata"
+                                class="videoMobile d-block d-md-none" src="./assets/images/20-mobile.webm"></video>
+                            <div class="container swiper-content">
+                                <div class="col-md-10">
+                                    <h1>Imagined by minds, perfected by machines</h1>
+                                    <p>Where human expertise and advanced technology unite to achieve excellence.</p>
+                                    <a style="text-decoration: none;" href="about.html">
+                                        <button class="hero-button">
+                                            Navigate
+                                        </button></a>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="business-verticals">
+        <div class="container p-4 vertical-bg">
+            <div class="text-center">
+                <h6 class="section-title">Our Business Verticals</h6>
+                <h4>A strategic convergence of three business pillars, <br> delivering precision, sparking innovation,
+                    and powering future-ready growth</h4>
+            </div>
+            <div class="row  justify-content-between mt-4">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <img src="./assets/images/Automotive 1.png" alt="Automotive Components">
+                            </div>
+                            <h4 class="card-title mb-2">Automotive Components</h4>
+                            <h6>Engineering Precision for Performance</h6>
+                            <p class="card-text">A trusted OEM supplier of precision automotive components, delivering
+                                high-performance parts built to precise engineering standards</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="automobile.html" style="text-decoration: none;">
+                                    <button>
+                                        Learn More
+                                        <i class="fa fa-arrow-right ms-2"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <img src="./assets/images/Tools and hardware 1.png" alt="Tools and Hardware">
+                            </div>
+                            <h4 class="card-title mb-2">Tools & Hardware</h4>
+                            <h6>Craftsmanship That Empowers Professionals</h6>
+                            <p class="card-text">We manufacture high-performance files, cutting tools and power tools built
+                                for industrial reliability — trusted across India and global markets.</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="toolsAndHardware.html" style="text-decoration: none;">
+                                    <button>
+                                        Learn More
+                                        <i class="fa fa-arrow-right ms-2"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <img src="./assets/images/Aerospace 1.png" alt="Aerospace Solutions">
+                            </div>
+                            <h4 class="card-title mb-2">Aerospace Solutions</h4>
+                            <h6>Advanced Engineering for Critical Applications</h6>
+                            <p class="card-text">We deliver precision-machined components for aerospace and defense,
+                                meeting the highest quality standards — from airframe parts to structural assemblies.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <a href="aerospace.html" style="text-decoration: none;">
+                                    <button>
+                                        Learn More
+                                        <i class="fa fa-arrow-right ms-2"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+
+    <section class="foreword py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="content-wrapper pe-md-4">
+                        <!-- <h6 class="section-title">Foreword</h6> -->
+                        <h2 class="mb-4 quote-text">We lead with timeless values and a fearless vision for tomorrow</h2>
+                        <p class="mb-4" style="text-align: justify;">At the heart of our organization lies a commitment
+                            to innovation, integrity, and
+                            impact. As Director, I take immense pride in the work we do and the people who make it
+                            possible. Together, we are shaping a future defined by purpose and excellence, driven by
+                            values, fueled by vision.</p>
+
+                        <div class="nameandposition">
+                            <h3>Gautam Singhania</h3>
+                            <h5>Chairman & Managing Director, Raymond Group</h5>
+                            <div class="social-icons mt-3">
+                                <a href="https://www.linkedin.com/in/gautam-singhania-2a1962244/" target="_blank"
+                                    aria-label="LinkedIn" class="me-2" style="color: #0A66C2; font-size: 1.5rem;">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="image-wrapper">
+                        <img src="./assets/images/Gautam Singhania.png" alt="Gautam Singhania" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="image-wrapper">
+                        <img src="./assets/images/Gautam Maini.png" alt="Gautam Maini" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <div class="content-wrapper pe-md-4">
+                        <!-- <h6>Foreword</h6> -->
+                        <h2 class="mb-4 quote-text">We don’t just shape metal. We shape industries, partnerships, and
+                            futures.</h2>
+                        <p class="mb-4" style="text-align: justify;">At JK Maini, we believe precision is not just a
+                            measure, it
+                            is our mindset. For decades, we have earned the trust of the
+                            world’s most respected industries through engineering
+                            excellence, an unwavering commitment to quality, and a
+                            passion for innovation. Our people are at the heart of this
+                            journey, shaping solutions that move the world forward. As
+                            we look ahead, we remain steadfast in our mission: to lead
+                            with integrity, create with purpose, and deliver with precision
+                            today, tomorrow, and for generations to come.</p>
+
+                        <div class="nameandposition">
+                            <h3>Gautam Maini</h3>
+                            <h5>Managing Director
+                            </h5>
+                            <div class="social-icons mt-3">
+                                <a href="https://www.linkedin.com/in/gautam-maini-5110866/" target="_blank"
+                                    aria-label="LinkedIn" class="me-2" style="color: #0A66C2; font-size: 1.5rem;">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="services ">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title">Our Services</h6>
+                <h2>Comprehensive Engineering Solutions</h2>
+                <p>Discover the diverse range of services we offer, from precision manufacturing to cutting-edge
+                    automotive
+                    and aerospace innovations. Raymond Engineering delivers excellence tailored to your needs.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 p-3">
+                    <div class="service-box text-center">
+                        <img class="img-fluid mb-4" src="./assets/images/Group 35.png" alt="">
+                        <h3>Precision Manufacturing</h3>
+                        <p>We specialize in delivering ultra-precise, high-performance manufacturing solutions tailored
+                            to the most demanding industries. From automotive to industrial and consumer applications,
+                            our components are built to exacting standards, ensuring consistent quality, durability, and
+                            reliability. Every part we produce is a testament to our engineering excellence and
+                            commitment to precision.</p>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-4 p-3">
+                    <div class="service-box text-center">
+                        <img class="img-fluid mb-4" src="./assets/images/Group 36.png" alt="">
+                        <h3>Aerospace & Defence</h3>
+                        <p>When failure is not an option, precision matters most. Our advanced capabilities support the
+                            aerospace and defence sectors with mission-critical components that meet rigorous global
+                            standards. Leveraging cutting-edge technology and robust quality controls, we deliver parts
+                            engineered for strength, safety, and uncompromising performance in the most extreme
+                            conditions.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 p-3">
+                    <div class="service-box text-center">
+                        <img class="img-fluid mb-4" src="./assets/images/Group 37.png" alt="">
+                        <h3>Design & Development</h3>
+                        <p>Innovation starts at the drawing board. Our in-house design and development team collaborates
+                            closely with clients to turn concepts into manufacturable realities. With a focus on
+                            functional performance, manufacturability, and cost-efficiency, we bring together
+                            engineering expertise and modern tools to create components that are production-ready from
+                            day one.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="clients my-5">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title">Our Clients</h6>
+                <h2>Meet Our Global Clients</h2>
+
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="logos">
+                <div class="logo_items">
+                    <img src="./assets/images/clients/automobile/allison-transmission.png"
+                        alt="Allison Transmission logo">
+                    <img src="./assets/images/clients/automobile/arrow-engine.png" alt="Arrow Engine logo">
+                    <img src="./assets/images/clients/automobile/ashok-layland.png" alt="Ashok Leyland logo">
+                    <img src="./assets/images/clients/automobile/Audi.png" alt="Audi logo">
+                    <img src="./assets/images/clients/automobile/BEML.png" alt="BEML logo">
+                    <img src="./assets/images/clients/automobile/bharat-benz.png" alt="Bharat Benz logo">
+                    <img src="./assets/images/clients/automobile/BorgWarner.png" alt="BorgWarner logo">
+                    <img src="./assets/images/clients/automobile/BOSCH.png" alt="BOSCH logo">
+                    <img src="./assets/images/clients/automobile/briggs-stratton.png" alt="Briggs & Stratton logo">
+                    <img src="./assets/images/clients/automobile/CAT.png" alt="Caterpillar (CAT) logo">
+                    <img src="./assets/images/clients/automobile/CNH Industrial.png" alt="CNH Industrial logo">
+                    <img src="./assets/images/clients/automobile/CNH.png" alt="CNH logo">
+                    <img src="./assets/images/clients/automobile/cooper-corp.png" alt="Cooper Corporation logo">
+                    <img src="./assets/images/clients/automobile/cummins.png" alt="Cummins logo">
+                    <img src="./assets/images/clients/automobile/Daimler.png" alt="Daimler logo">
+                    <img src="./assets/images/clients/automobile/Danfoss.png" alt="Danfoss logo">
+                    <img src="./assets/images/clients/automobile/DEUTZ.png" alt="DEUTZ logo">
+                    <img src="./assets/images/clients/automobile/Eicher.png" alt="Eicher logo">
+                    <img src="./assets/images/clients/automobile/escorts.png" alt="Escorts logo">
+                    <img src="./assets/images/clients/automobile/FCA.png" alt="Fiat Chrysler Automobiles (FCA) logo">
+                    <img src="./assets/images/clients/automobile/force-motors.png" alt="Force Motors logo">
+                    <img src="./assets/images/clients/automobile/ford.png" alt="Ford logo">
+                    <img src="./assets/images/clients/automobile/Generac.png" alt="Generac logo">
+                    <img src="./assets/images/clients/automobile/GM.png" alt="General Motors (GM) logo">
+                    <img src="./assets/images/clients/automobile/Greaves.png" alt="Greaves logo">
+                    <img src="./assets/images/clients/automobile/Honda.png" alt="Honda logo">
+                    <img src="./assets/images/clients/automobile/hyundai.png" alt="Hyundai logo">
+                    <img src="./assets/images/clients/automobile/iveco.png" alt="Iveco logo">
+                    <img src="./assets/images/clients/automobile/JCB.png" alt="JCB logo">
+                    <img src="./assets/images/clients/automobile/johndeer.png" alt="John Deere logo">
+                    <img src="./assets/images/clients/automobile/KIA.png" alt="Kia logo">
+                    <img src="./assets/images/clients/automobile/kirloskar.png" alt="Kirloskar logo">
+                    <img src="./assets/images/clients/automobile/Kohler.png" alt="Kohler logo">
+                    <img src="./assets/images/clients/automobile/Liebherr.png" alt="Liebherr logo">
+                    <img src="./assets/images/clients/automobile/Linamar.png" alt="Linamar logo">
+                    <img src="./assets/images/clients/automobile/mahindra.png" alt="Mahindra logo">
+                    <img src="./assets/images/clients/automobile/Marelli.png" alt="Marelli logo">
+                    <img src="./assets/images/clients/automobile/maruti-suzuki.png" alt="Maruti Suzuki logo">
+                    <img src="./assets/images/clients/automobile/mercedes.png" alt="Mercedes-Benz logo">
+                    <img src="./assets/images/clients/automobile/metelli.png" alt="Metelli logo">
+                    <img src="./assets/images/clients/automobile/mitsubishi-motors.png" alt="Mitsubishi Motors logo">
+                    <img src="./assets/images/clients/automobile/mtu.png" alt="MTU logo">
+                    <img src="./assets/images/clients/automobile/Muhlhoff-Umformtechnik.png"
+                        alt="Muhlhoff Umformtechnik logo">
+                    <img src="./assets/images/clients/automobile/navistar.png" alt="Navistar logo">
+                    <img src="./assets/images/clients/automobile/Nissan.png" alt="Nissan logo">
+                    <img src="./assets/images/clients/automobile/Parker.png" alt="Parker logo">
+                    <img src="./assets/images/clients/automobile/Perardi.png" alt="Perardi logo">
+                    <img src="./assets/images/clients/automobile/pierburg.png" alt="Pierburg logo">
+                    <img src="./assets/images/clients/automobile/porsche.png" alt="Porsche logo">
+                    <img src="./assets/images/clients/automobile/PSA.png" alt="PSA Group logo">
+                    <img src="./assets/images/clients/automobile/punch power train.png" alt="Punch Powertrain logo">
+                    <img src="./assets/images/clients/automobile/renault.png" alt="Renault logo">
+                    <img src="./assets/images/clients/automobile/Rheinmetall.png" alt="Rheinmetall logo">
+                    <img src="./assets/images/clients/automobile/saleri.png" alt="Saleri logo">
+                    <img src="./assets/images/clients/automobile/SAME.png" alt="SAME logo">
+                    <img src="./assets/images/clients/automobile/schaeffler.png" alt="Schaeffler logo">
+                    <img src="./assets/images/clients/automobile/skoda.png" alt="Škoda logo">
+                    <img src="./assets/images/clients/automobile/sml-izuzu.png" alt="SML Isuzu logo">
+                    <img src="./assets/images/clients/automobile/sogefi-group.png" alt="Sogefi Group logo">
+                    <img src="./assets/images/clients/automobile/sonalika.png" alt="Sonalika logo">
+                    <img src="./assets/images/clients/automobile/stallantis.png" alt="Stellantis logo">
+                    <img src="./assets/images/clients/automobile/Stanley Black and Decker.png"
+                        alt="Stanley Black & Decker logo">
+                    <img src="./assets/images/clients/automobile/swaraj.png" alt="Swaraj logo">
+                    <img src="./assets/images/clients/automobile/TAFE.png" alt="TAFE logo">
+                    <img src="./assets/images/clients/automobile/Tata.png" alt="Tata logo">
+                    <img src="./assets/images/clients/automobile/TBK.png" alt="TBK logo">
+                    <img src="./assets/images/clients/automobile/toyota.png" alt="Toyota logo">
+                    <img src="./assets/images/clients/automobile/TVHL.png" alt="TVHL logo">
+                    <img src="./assets/images/clients/automobile/UD trucks.png" alt="UD Trucks logo">
+                    <img src="./assets/images/clients/automobile/valeo.png" alt="Valeo logo">
+                    <img src="./assets/images/clients/automobile/VE-commercial-vehicles.png"
+                        alt="VE Commercial Vehicles logo">
+                    <img src="./assets/images/clients/automobile/volkswagen.png" alt="Volkswagen logo">
+                    <img src="./assets/images/clients/automobile/volvo.png" alt="Volvo logo">
+                    <img src="./assets/images/clients/automobile/waukesha.png" alt="Waukesha logo">
+                    <img src="./assets/images/clients/automobile/Woodward.png" alt="Woodward logo">
+                    <img src="./assets/images/clients/automobile/yanmar.png" alt="Yanmar logo">
+                    <img src="./assets/images/clients/aerospace/asco-aero.png" alt="Asco Aerospace logo">
+                    <img src="./assets/images/clients/aerospace/avio-aero.png" alt="Avio Aero logo">
+                    <img src="./assets/images/clients/aerospace/boeing.png" alt="Boeing logo">
+                    <img src="./assets/images/clients/aerospace/dassualt-aviation.png" alt="Dassault Aviation logo">
+                    <img src="./assets/images/clients/aerospace/Eaton.png" alt="Eaton Aerospace logo">
+                    <img src="./assets/images/clients/aerospace/famat.png" alt="FAMAT logo">
+                    <img src="./assets/images/clients/aerospace/General Electric.png"
+                        alt="General Electric Aerospace logo">
+                    <img src="./assets/images/clients/aerospace/Honeywell.png" alt="Honeywell Aerospace logo">
+                    <img src="./assets/images/clients/aerospace/hutchinson.png" alt="Hutchinson Aerospace logo">
+                    <img src="./assets/images/clients/aerospace/itp-aero.png" alt="ITP Aero logo">
+                    <img src="./assets/images/clients/aerospace/lisi.png" alt="LISI Aerospace logo">
+                    <img src="./assets/images/clients/aerospace/marshall.png" alt="Marshall Aerospace logo">
+                    <img src="./assets/images/clients/aerospace/Megallan.png" alt="Magellan Aerospace logo">
+                    <img src="./assets/images/clients/aerospace/oerlinkon.png" alt="Oerlikon Aerospace logo">
+                    <img src="./assets/images/clients/aerospace/parker-aero.png" alt="Parker Aerospace logo">
+                    <img src="./assets/images/clients/aerospace/pratt-and-whitney.png" alt="Pratt & Whitney logo">
+                    <img src="./assets/images/clients/aerospace/safran-helicopter.png"
+                        alt="Safran Helicopter Engines logo">
+                    <img src="./assets/images/clients/aerospace/safran-landing.png" alt="Safran Landing Systems logo">
+                    <img src="./assets/images/clients/aerospace/Safran.png" alt="Safran logo">
+                    <img src="./assets/images/clients/aerospace/snecma-hal.png" alt="Snecma HAL logo">
+
+                </div>
+                <!-- <div class="logo_items">
+                    <img src="./assets/images/clients/Avio Aero.png" alt="Avio Aero">
+                    <img src="./assets/images/clients/BorgWarner.png" alt="BorgWarner">
+                    <img src="./assets/images/clients/BOSCH.png" alt="BOSCH">
+                    <img src="./assets/images/clients/CNH Industrial.png" alt="CNH Industrial">
+                    <img src="./assets/images/clients/cummins.png" alt="cummins">
+                    <img src="./assets/images/clients/Danfoss.png" alt="Danfoss">
+                    <img src="./assets/images/clients/EATON.png" alt="EATON">
+                    <img src="./assets/images/clients/General Electric.png" alt="General Electric">
+                    <img src="./assets/images/clients/GM.png" alt="GM">
+                    <img src="./assets/images/clients/Honeywell.png" alt="Honeywell">
+                    <img src="./assets/images/clients/ITP Aero.png" alt="ITP Aero">
+                    <img src="./assets/images/clients/Marelli.png" alt="Marelli">
+                    <img src="./assets/images/clients/Parker.png" alt="Parker">
+                    <img src="./assets/images/clients/punch power train.png" alt="punch power train">
+                    <img src="./assets/images/clients/Rheinmetall.png" alt="Rheinmetall">
+                    <img src="./assets/images/clients/Safran.png" alt="Safran">
+                    <img src="./assets/images/clients/Snecma Hal.png" alt="Snecma Hal">
+                    <img src="./assets/images/clients/Stanley Black and Decker.png" alt="Stanley Black and Decker">
+                    <img src="./assets/images/clients/Toyota.png" alt="Toyota">
+                    <img src="./assets/images/clients/UD trucks.png" alt="UD trucks">
+                    <img src="./assets/images/clients/volvo.png" alt="volvo">
+                    <img src="./assets/images/clients/Woodward.png" alt="woodward">
+
+                </div> -->
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="business-verticals mt-5">
+        <div class="container vertical-bg">
+            <div class="text-center">
+                <h6 class="section-title">"JK Maini, Powering How the World Moves, Flies, and Builds, Today and
+                    Tomorrow.</h6>
+                <h4>Engineering What's Next. Advanced Solutions for
+                    Mobility, Aerospace, and Industry. Built on Innovation.
+                    Proven in Performance. Trusted by Leaders.</h4>
+            </div>
+            <div class="row  justify-content-between mt-2">
+                <div class="col-lg-6">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <img class="img-fluid" src="./assets/images/JKMPTL.png" alt="Automotive Components">
+                            </div>
+                            <h4 class="card-title mb-2">JK Maini Precision Technology Ltd.</h4>
+                            <!-- <h6>Engineering Precision for Performance</h6> -->
+                            <p class="card-text" style="text-align: justify;">JK Maini Precision technology limited has
+                                been at the forefront of precision
+                                engineering, enabling how the world moves and builds across industries.
+                                From high-performance automotive components to complex solutions for
+                                industrial, defense, and general engineering applications, our expertise
+                                drives progress where reliability and performance are non-negotiable.
+                                Trusted by global leaders. Chosen for precision. Built to deliver.
+                                Our solutions power critical systems across some of the world’s most demanding
+                                sectors — supporting everything from traditional mobility platforms to the evolving
+                                needs of manufacturing, infrastructure, and defense. With advanced facilities,
+                                robust processes, and an unwavering commitment to quality, we deliver precision
+                                at scale, with consistency our customers rely on.</p>
+                            <div class="d-flex justify-content-center">
+                                <a target="_blank" href="https://psychonimus.github.io/jk-maini-auto/index.html"
+                                    style="text-decoration: none;">
+                                    <button>
+                                        Visit Site
+                                        <i class="fa fa-arrow-right ms-2"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <img class="img-fluid" src="./assets/images/JKMGAL.png" alt="Tools and Hardware">
+                            </div>
+                            <h4 class="card-title mb-2">JK Maini Global Aerospace Ltd.</h4>
+                            <!-- <h6>Craftsmanship That Empowers Professionals</h6> -->
+                            <p class="card-text" style="text-align: justify;">JK Maini Global Aerospace Ltd. (JKMGAL)
+                                specializes in delivering highprecision components, complex assemblies, and
+                                mission-critical systems
+                                for the global aerospace and defense industries.
+                                Our solutions support the world’s most demanding platforms — from commercial
+                                and military aviation to defense systems operating in the most challenging
+                                environments. With advanced infrastructure, globally certified processes, and
+                                deep technical expertise, we enable performance, safety, and reliability at scale.
+                                We are trusted by OEMs, Tier 1s, and defense organizations worldwide for our
+                                unwavering focus on precision, consistency, and quality. From complex
+                                geometries to tight tolerances and advanced materials, we deliver with excellence
+                                — with precision, without compromise.</p>
+                            <div class="d-flex justify-content-center">
+                                <a target="_blank" href="https://anjalipophale.github.io/aersopace/index.html"
+                                    style="text-decoration: none;">
+                                    <button>
+                                        Visit Site
+                                        <i class="fa fa-arrow-right ms-2"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="testimonial-section">
+        <div class="container text-center">
+            <h6 class="section-title">Our Clients Testimonials</h6>
+            <h2>What Customers say about our services</h2>
+        </div>
+
+
+
+        <div class="swiper test-swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="img-container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/Sachin Kulkarni.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="test-content py-3">
+                                    <div class="test-box px-4 py-3">
+                                        <div class="quote-and-ratings d-flex justify-content-between">
+                                            <div class="quotes">
+                                                <img src="./assets/images/quotes.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="test-text text-start px-4">
+                                        <p class="mt-0">
+                                            "RPL rose to the occasion when we faced a critical global supply disruption.
+                                            In just six weeks, they developed and delivered over 100,000 high-quality
+                                            parts—helping avert a potential loss of 500,000 cars across Volkswagen Group
+                                            brands. Their agility, precision, and global readiness truly reflect the
+                                            strength of India’s supplier ecosystem."
+                                        </p>
+                                    </div>
+                                    <div class="px-4">
+                                        <div class="nameandposition text-start">
+                                            <h4 class="m-0">Sachin Kulkarni</h3>
+                                                <p>Executive Director corporate Procurement and member of Board, Skoda
+                                                    Auto Wolkswagong India</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="img-container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/Hrishikesh Kulkarni.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="test-content py-3">
+                                    <div class="test-box px-4 py-3">
+                                        <div class="quote-and-ratings d-flex justify-content-between">
+                                            <div class="quotes">
+                                                <img src="./assets/images/quotes.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="test-text text-start px-4">
+                                        <p class="mt-0">
+                                            "J K Maini has consistently demonstrated a zero-defect mindset and a
+                                            first-time-right approach—values that perfectly align with our expectations
+                                            at Valeo. Their marketing strength, backed by strong technical expertise and
+                                            flexible manufacturing capabilities, enabled a seamless product launch
+                                            within months. Even during critical moments—like the rapid six-week
+                                            development of a new gear when a major supplier failed—J K Maini stood up to
+                                            the occasion and delivered. Their state-of-the-art facility with a
+                                            single-piece flow and Industry 4.0 orientation further reflects their
+                                            commitment to innovation and excellence. We see them as a strategic partner
+                                            poised for global growth."
+                                        </p>
+                                    </div>
+                                    <div class="px-4">
+                                        <div class="nameandposition text-start">
+                                            <h4 class="m-0">Hrishikesh Kulkarni</h3>
+                                                <p>Group Purchasing and Exports Director, Valeo</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="img-container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/Girish DM.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="test-content py-3">
+                                    <div class="test-box px-4 py-3">
+                                        <div class="quote-and-ratings d-flex justify-content-between">
+                                            <div class="quotes">
+                                                <img src="./assets/images/quotes.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="test-text text-start px-4">
+                                        <p class="mt-0">
+                                            "Our journey with J K Maini spans over two and a half decades—and it has
+                                            been
+                                            nothing short of outstanding. From supplying critical components to Volvo’s
+                                            global engine plants across Europe, the U.S., Brazil, and India, to
+                                            consistently delivering excellence in new product development and quality, J
+                                            K Maini has proven to be a trusted and forward-thinking partner. What sets
+                                            them apart is their deep alignment with Volvo’s core values—especially
+                                            safety and quality. Their commitment to sustainability, adoption of Industry
+                                            4.0 practices, and world-class manufacturing infrastructure gives us immense
+                                            confidence in scaling this partnership further. With the merger, we see J K
+                                            Maini well-positioned to explore new frontiers and lead transformative
+                                            projects at a global scale."
+                                        </p>
+                                    </div>
+                                    <div class="px-4">
+                                        <div class="nameandposition text-start">
+                                            <h4 class="m-0">Girish DM</h3>
+                                                <p>VP, Volvo Group Truck Purchasing</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="img-container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/Angelo Bona.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="test-content py-3">
+                                    <div class="test-box px-4 py-3">
+                                        <div class="quote-and-ratings d-flex justify-content-between">
+                                            <div class="quotes">
+                                                <img src="./assets/images/quotes.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="test-text text-start px-4">
+                                        <p class="mt-0">
+                                            "Despite being a relatively new partner, we’ve always felt like a priority
+                                            with J K Maini. The level of attention, collaboration, and commitment shown
+                                            by their team—from traveling across Europe to understand our needs, to
+                                            aligning with our vision in India—reflects the spirit of true partnership.
+                                            The recent expansion, executed in just seven months, and their readiness to
+                                            seize emerging market opportunities further highlights their agility and
+                                            growth mindset. We deeply value this relationship and look forward to
+                                            growing together on a global scale."
+                                        </p>
+                                    </div>
+                                    <div class="px-4">
+                                        <div class="nameandposition text-start">
+                                            <h4 class="m-0">Angelo Bona</h3>
+                                                <p>GM and Board Member, Saleri India Pvt Ltd </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="img-container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/Prasad Mantri.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="test-content py-3">
+                                    <div class="test-box px-4 py-3">
+                                        <div class="quote-and-ratings d-flex justify-content-between">
+                                            <div class="quotes">
+                                                <img src="./assets/images/quotes.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="test-text text-start px-4">
+                                        <p class="mt-0">
+                                            "Our relationship with J K Maini spans over 25 years—beginning with small
+                                            orders and evolving into a strategic partnership that now supports a
+                                            significant portion of our flywheel business. Their consistent quality,
+                                            reliability, and timely delivery have been instrumental in our growth from
+                                            just-in-time to well-in-time operations. Ring Plus Aqua’s starter gears have
+                                            been a key enabler in expanding both our domestic and export offerings.
+                                            Their service has set a benchmark in our industry, and we look forward to
+                                            continuing this trusted collaboration as they enter an exciting new chapter
+                                            of growth."
+                                        </p>
+                                    </div>
+                                    <div class="px-4">
+                                        <div class="nameandposition text-start">
+                                            <h4 class="m-0">Prasad Mantri</h3>
+                                                <p>MD, Mantri Metallics</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="img-container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/Shrirang tambe.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="test-content py-3">
+                                    <div class="test-box px-4 py-3">
+                                        <div class="quote-and-ratings d-flex justify-content-between">
+                                            <div class="quotes">
+                                                <img src="./assets/images/quotes.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="test-text text-start px-4">
+                                        <p class="mt-0">
+                                            "Ring Plus Aqua has been a trusted partner for over 25 years. Their
+                                            consistent quality, reliability, and timely delivery have played a key role
+                                            in scaling our flywheel business and setting industry benchmarks. We value
+                                            this partnership and look forward to future growth together."
+                                        </p>
+                                    </div>
+                                    <div class="px-4">
+                                        <div class="nameandposition text-start">
+                                            <h4 class="m-0">Shrirang Tambe</h3>
+                                                <p>Head strategic purchasing, MTU India </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="img-container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/Robert Maroday.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="test-content py-3">
+                                    <div class="test-box px-4 py-3">
+                                        <div class="quote-and-ratings d-flex justify-content-between">
+                                            <div class="quotes">
+                                                <img src="./assets/images/quotes.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="test-text text-start px-4">
+                                        <p class="mt-0">
+                                            "We developed a great partnership with J.K. Files over the past 40 years. JK
+                                            Files quality products & services has helped us in growing our business in
+                                            Latin Americas.
+                                            I truly admire our long-standing business partnership.
+                                            "
+                                        </p>
+                                    </div>
+                                    <div class="px-4">
+                                        <div class="nameandposition text-start">
+                                            <h4 class="m-0">Robert Maroday</h3>
+                                                <p>Business Partner, Central America</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="img-container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/Carlos Debbe.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="test-content py-3">
+                                    <div class="test-box px-4 py-3">
+                                        <div class="quote-and-ratings d-flex justify-content-between">
+                                            <div class="quotes">
+                                                <img src="./assets/images/quotes.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="test-text text-start px-4">
+                                        <p class="mt-0">
+                                            "After using JK Files for several years now, I've found their professional
+                                            and positive approach to any requirements outstanding, with the product
+                                            always meeting specifications and dimensions. I would recommend JK Files &
+                                            Engineering Ltd. as a first-class Hand Tools supplier to anyone.
+                                            "
+                                        </p>
+                                    </div>
+                                    <div class="px-4">
+                                        <div class="nameandposition text-start">
+                                            <h4 class="m-0">Carlos Debbe</h3>
+                                                <p>Business Partner, Central America</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="img-container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/Nitin shah.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="test-content py-3">
+                                    <div class="test-box px-4 py-3">
+                                        <div class="quote-and-ratings d-flex justify-content-between">
+                                            <div class="quotes">
+                                                <img src="./assets/images/quotes.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="test-text text-start px-4">
+                                        <p class="mt-0">
+                                            "We have been associated with JK Files for many years now. Have worked on
+                                            several projects together, the JK Files team has time and again proven
+                                            themselves to be innovative, professional, and extremely thorough with their
+                                            knowledge of Files and Tools. And all combined with their agility, the JK
+                                            team is always a pleasure to deal with.
+                                            "
+                                        </p>
+                                    </div>
+                                    <div class="px-4">
+                                        <div class="nameandposition text-start">
+                                            <h4 class="m-0">Nitin Shah</h3>
+                                                <p>Business Partner, India</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="img-container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/kalpesh shah.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="test-content py-3">
+                                    <div class="test-box px-4 py-3">
+                                        <div class="quote-and-ratings d-flex justify-content-between">
+                                            <div class="quotes">
+                                                <img src="./assets/images/quotes.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="test-text text-start px-4">
+                                        <p class="mt-0">
+                                            "I wanted to take this opportunity to thank the team at JK Files for their
+                                            fantastic work. JK team has always demonstrated great professionalism while
+                                            performing the job. would especially like to emphasize on the quality,
+                                            timeliness, accuracy, marketing efforts, and enthusiasm of the team.Our
+                                            success has been based on our cherished partnership from the very beginning.
+                                            This association with JK Files is precious for us and we look forward to
+                                            work together in the coming years ahead
+                                            "
+                                        </p>
+                                    </div>
+                                    <div class="px-4">
+                                        <div class="nameandposition text-start">
+                                            <h4 class="m-0">Kalpesh Shah</h3>
+                                                <p>Business Partner, Africa</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="img-container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/Rakesh gupta.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="test-content py-3">
+                                    <div class="test-box px-4 py-3">
+                                        <div class="quote-and-ratings d-flex justify-content-between">
+                                            <div class="quotes">
+                                                <img src="./assets/images/quotes.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="test-text text-start px-4">
+                                        <p class="mt-0">
+                                            "Despite the challenging environment due to COVID-19, the JK team was always
+                                            ready to help us by visiting our premises whenever we needed them.
+                                            We sincerely thank you for your kind support. I look forward to many more
+                                            years of successful cooperation between us.
+                                            "
+                                        </p>
+                                    </div>
+                                    <div class="px-4">
+                                        <div class="nameandposition text-start">
+                                            <h4 class="m-0">Rakesh Gupta</h3>
+                                                <p>Business Partner, India</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section> -->
+
+    <!-- <section class="plant-photos mb-5">
+        <div class="container">
+            <div>
+                <h6 class="section-title ms-2">Our Plants</h6>
+
+            </div>
+            <div class="swiper plant-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="container">
+                            
+                            <h2>Flex plates, ring gears and bearings manufacturing unit</h2>
+                            
+                        </div>
+
+                        <div class="container bento-grid">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="image-cover" style="height: 200px;">
+                                        <img src="./assets/images/plants/IMG-20250520-WA0006.jpg" alt=""
+                                            class="popup-image">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="image-cover" style="height: 200px;">
+                                        <img src="./assets/images/plants/IMG-20250520-WA0007.jpg" alt=""
+                                            class="popup-image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4">
+                                    <div class="d-flex flex-column gap-4 justify-content-between">
+                                        <div class="image-cover" style="height: 250px;">
+                                            <img src="./assets/images/plants/IMG-20250520-WA0005.jpg" alt=""
+                                                class="popup-image">
+                                        </div>
+                                        <div class="image-cover" style="height: 125px;">
+                                            <img src="./assets/images/plants/IMG-20250520-WA0025.jpg" alt=""
+                                                class="popup-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="image-cover" style="height: 400px;">
+                                        <img src="./assets/images/plants/IMG-20250520-WA0009.jpg" alt=""
+                                            class="popup-image">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="d-flex flex-column gap-4 justify-content-between">
+                                        <div class="image-cover" style="height: 250px;">
+                                            <img src="./assets/images/plants/IMG-20250520-WA0014.jpg" alt=""
+                                                class="popup-image">
+                                        </div>
+                                        <div class="image-cover" style="height: 125px;">
+                                            <img src="./assets/images/plants/IMG-20250520-WA0010.jpg" alt=""
+                                                class="popup-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <h2>Precision Auto Components Manufacturing Unit</h2>
+
+                        </div>
+
+                        <div class="container bento-grid">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="image-cover" style="height: 200px;">
+                                        <img src="./assets/images/plants/bengaluru/plant-img (3).jpg" alt=""
+                                            class="popup-image">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="image-cover" style="height: 200px;">
+                                        <img src="./assets/images/plants/bengaluru/plant-img (2).jpg" alt=""
+                                            class="popup-image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4">
+                                    <div class="d-flex flex-column gap-4 justify-content-between">
+                                        <div class="image-cover" style="height: 250px;">
+                                            <img src="./assets/images/plants/bengaluru/plant-img (1).jpg" alt=""
+                                                class="popup-image">
+                                        </div>
+                                        <div class="image-cover" style="height: 125px;">
+                                            <img src="./assets/images/plants/bengaluru/plant-img (4).jpg" alt=""
+                                                class="popup-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="image-cover" style="height: 400px;">
+                                        <img src="./assets/images/plants/bengaluru/plant-img (5).jpg" alt=""
+                                            class="popup-image">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="d-flex flex-column gap-4 justify-content-between">
+                                        <div class="image-cover" style="height: 250px;">
+                                            <img src="./assets/images/plants/bengaluru/plant-img (6).jpg" alt=""
+                                                class="popup-image">
+                                        </div>
+                                        <div class="image-cover" style="height: 125px;">
+                                            <img src="./assets/images/plants/bengaluru/plant-img (7).jpg" alt=""
+                                                class="popup-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <h2>Tools and Hardware Manufacturing Unit</h2>
+
+                        </div>
+
+                        <div class="container bento-grid">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="image-cover" style="height: 200px;">
+                                        <img src="./assets/images/plants/chiplun-plant/chiplun-plant (1).jpeg" alt=""
+                                            class="popup-image">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="image-cover" style="height: 200px;">
+                                        <img src="./assets/images/plants/chiplun-plant/chiplun-plant (2).jpeg" alt=""
+                                            class="popup-image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4">
+                                    <div class="d-flex flex-column gap-4 justify-content-between">
+                                        <div class="image-cover" style="height: 250px;">
+                                            <img src="./assets/images/plants/chiplun-plant/chiplun-plant (3).jpeg"
+                                                alt="" class="popup-image">
+                                        </div>
+                                        <div class="image-cover" style="height: 125px;">
+                                            <img src="./assets/images/plants/chiplun-plant/chiplun-plant (4).jpeg"
+                                                alt="" class="popup-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="image-cover" style="height: 400px;">
+                                        <img src="./assets/images/plants/chiplun-plant/chiplun-plant (5).png" alt=""
+                                            class="popup-image">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="d-flex flex-column gap-4 justify-content-between">
+                                        <div class="image-cover" style="height: 250px;">
+                                            <img src="./assets/images/plants/chiplun-plant/chiplun-plant (6).png" alt=""
+                                                class="popup-image">
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-navigation-button"></div>
+                <div class="swiper-button-prev swiper-navigation-button"></div>
+                
+
+            </div>
+
+
+
+        </div>
+    </section> -->
+
+    <div class="image-popup" id="imagePopup">
+        <span class="close-popup">&times;</span>
+        <img src="" alt="Popup Image" id="popupImg">
+    </div>
+
+    <section class="explore-more mt-5 py-5">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title">Explore More</h6>
+                <h2>Discover how we build a better tomorrow, through sustainable practices, empowering careers,
+                    and innovations that make a difference.
+                </h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6 mt-md-0">
+                    <div class="explore-card">
+                        <img src="./assets/images/sustainability.png" alt="">
+                        <div class="p-3">
+                            <h2>Sustainability</h2>
+                            <p>At JK Maini, sustainability isn’t an initiative, it’s engineered into
+                                everything we do. From optimizing resources to minimizing
+                                environmental impact, we are committed to responsible innovation,
+                                cleaner manufacturing, and building a more sustainable supply
+                                chain.
+                                We engineer with purpose, delivering precision today while
+                                protecting the world for tomorrow.
+                            </p>
+                            <a href="sustainability.html"><i class="fa-solid fa-arrow-right me-2"></i>Explore our
+                                sustainability
+                                efforts</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-3 mt-md-0">
+                    <div class="explore-card">
+                        <img src="./assets/images/careers.png" alt="">
+                        <div class="p-3">
+                            <h2>Career</h2>
+                            <p>Precision is built by people, those who challenge limits,
+                                innovate with purpose, and deliver with excellence.
+                                Across engineering, design, operations, and beyond,
+                                we offer opportunities where talent is valued, ideas are
+                                encouraged, and careers are built to last.
+                                Shape the future of manufacturing. Build your future
+                                with us.
+
+                            </p>
+                            <a href="careers.html"><i class="fa-solid fa-arrow-right me-2"></i>Explore job
+                                opportunities</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4 mt-3 mt-lg-0">
+                    <div class="explore-card">
+                        <img src="./assets/images/blogs.png" alt="">
+                        <div class="p-3">
+                            <h2>Blogs</h2>
+                            <p>Stay updated with stories from the shop floor to the frontlines of innovation. Our blog
+                                covers industry insights, engineering breakthroughs, company milestones, and thought
+                                leadership in the world of precision manufacturing.</p>
+                            <a href="resources.html#blogs"><i class="fa-solid fa-arrow-right me-2"></i>Read our
+                                blogs</a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="our-journey-zigzag py-5" id="our journey" data-aos="fade-up">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title">Our Journey</h6>
+            </div>
+
+            <div class="timeline-zigzag mt-3">
+
+                <!-- 2024 -->
+                <div class="timeline-row right" data-aos="fade-left">
+                    <div class="content-box">
+                        <div class="year">2025</div>
+                        <h3>Group Entity Setup & New Plant Inauguration at Sinnar</h3>
+
+
+                    </div>
+                </div>
+
+                <!-- 2022 -->
+                <div class="timeline-row left" data-aos="fade-right">
+                    <div class="content-box">
+                        <div class="year">2024</div>
+                        <h3>Raymond Group acquired 59.25% of MPP.
+                        </h3>
+
+
+                    </div>
+                </div>
+
+
+                <!-- 2021 -->
+                <div class="timeline-row right" data-aos="fade-left">
+                    <div class="content-box">
+                        <div class="year">2021</div>
+                        <h3>Change of name from JK files to JK files and Engg.
+                        </h3>
+
+
+                    </div>
+                </div>
+
+                <!-- 2018 -->
+                <div class="timeline-row left" data-aos="fade-right">
+                    <div class="content-box">
+                        <div class="year">2012</div>
+                        <h3>New Plant setup of plant in Vapi, Gujarat for Files.
+                        </h3>
+
+
+                    </div>
+                </div>
+
+                <!-- 2012 -->
+                <div class="timeline-row right" data-aos="fade-left">
+                    <div class="content-box">
+                        <div class="year">2009</div>
+                        <h3>Developed Design C Engineering capabilities.
+                        </h3>
+
+                    </div>
+                </div>
+
+                <!-- 2004 -->
+                <div class="timeline-row left" data-aos="fade-right">
+                    <div class="content-box">
+                        <div class="year">2005</div>
+                        <h3>Raymond Group acquired Ring Plus Aqua.
+                        </h3>
+
+                    </div>
+                </div>
+
+                <div class="timeline-row right" data-aos="fade-left">
+                    <div class="content-box">
+                        <div class="year">1994</div>
+                        <h3>1st in India to supply to GM,USA.
+                        </h3>
+
+                    </div>
+                </div>
+                <div class="timeline-row left" data-aos="fade-right">
+                    <div class="content-box">
+                        <div class="year">1984</div>
+                        <h3>1st in India to supply to Bosch Germany.
+                        </h3>
+
+                    </div>
+                </div>
+
+                <div class="timeline-row right" data-aos="fade-left">
+                    <div class="content-box">
+                        <div class="year">1977</div>
+                        <h3>Commenced Production for Files (name was Hindustan files limited till 2009)
+
+                        </h3>
+
+                    </div>
+                </div>
+                <div class="timeline-row left" data-aos="fade-right">
+                    <div class="content-box">
+                        <div class="year">1973</div>
+                        <h3>MPP Incorporated
+                        </h3>
+
+                    </div>
+                </div>
+
+                <div class="timeline-row right" data-aos="fade-left">
+                    <div class="content-box">
+                        <div class="year">1965</div>
+                        <h3>JK Files Incorporated
+                        </h3>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="">
+        <div class="container">
+            <div class="text-center">
+                <!-- <h6 class="section-title">Certifications</h6> -->
+            </div>
+
+            <div class="cert-grid d-flex gap-5 text-center mt-4">
+                <div class="cert text-center">
+                    <img src="./assets/images/new-certs/AS9100D.png" alt="">
+                </div>
+                <div class="cert text-center">
+                    <img src="./assets/images/new-certs/IATF-2016.png" alt="">
+                </div>
+                <div class="cert text-center">
+                    <img src="./assets/images/new-certs/ISO-14001.png" alt="">
+                </div>
+                <div class="cert text-center">
+                    <img src="./assets/images/new-certs/ISO-45001.png" alt="">
+                </div>
+                <div class="cert text-center">
+                    <img src="./assets/images/new-certs/Nadcap.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="get-in-touch-section py-5 text-center">
+        <div class="container">
+            <h6 class="section-title">Get in Touch</h6>
+            <h2>Ready to Turn Your Manufacturing Vision into Reality?</h2>
+            <p class="mb-4">Whether you're looking for custom-engineered solutions or want to explore how our
+                capabilities align with your needs, we're here to help.</p>
+            <div class="d-flex justify-content-center">
+                <button class="hero-button" onclick="openPopup()">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="popupOverlay" class="popup-overlay">
+        <div class="right-form p-4">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div>
+                <h2>Get in Touch</h2>
+                <p>Tell us what you’re building — we’ll show you how to get there, faster and smarter.
+                    Response guaranteed within 24 hours.</p>
+            </div>
+            <form action="" class="mt-4">
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="First Name">
+                    <input class="my-3" type="text" placeholder="Last Name">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Company">
+                    <input class="my-3" type="text" placeholder="Email Address">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Phone No.">
+                    <input class="my-3" type="text" placeholder="Industry">
+                </div>
+                <div class="form-group">
+                    <textarea name="" id="" placeholder="I want to know more about"></textarea>
+
+                </div>
+                <!-- <div class="d-flex gap-3">
+                    <input type="checkbox" name="" id="t&c" class="w-auto">
+                    <label class="w-auto" for="t&c">I agree to the terms and conditions*</label>
+                </div> -->
+                <button class="hero-button mt-4">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <section class="contact-footer">
+
+        <div class="line"></div>
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-location-dot mb-3"></i>
+                        <h3>Our Offices</h3>
+                        <p>View our locations and find contact details to our nearest office.</p>
+                        <a href="contact.html#office-locations">Explore Our Locations</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-envelope-open mb-3"></i>
+                        <h3>Drop us a Line</h3>
+                        <p>You can contact us by filling in this form any time you need professional support.</p>
+                        <a onclick="openPopup()" href="javascript:void(0)">Fill Our Form</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-headset mb-3"></i>
+                        <h3>Support</h3>
+                        <!-- <p>Learn more about us and find resources that will help you with all of our products</p> -->
+                        <p>Connect with us and know more about our products. Call our support executive.</p>
+                        <a href="">Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="pt-5 main-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info Column -->
+                <div class="col-md-4 mb-4">
+                    <a href="index.html"><img style="width: 220px;" class="img-fluid"
+                            src="./assets/images/jk-maini-logo.svg" alt="JK Maini Precision Technology"></a>
+
+                    <p class="mb-1">
+
+                        <strong>CIN :</strong> U25933MH2024PLC417852
+                    </p>
+                    <p class="mb-1">
+                        <strong>Email :</strong>
+                        <a href="mailto:info@ringplusaqua.co.in"
+                            class="text-decoration-none text-dark">info@ringplusaqua.co.in</a>
+                    </p>
+                    <p class="mb-1">
+                        <strong>Address :</strong>
+                        C/O Raymond Ltd, Jekegram Pokharan Road No. 1, Jekegram, Thane, Maharashtra, India, 400606
+                    </p>
+                    <p class="mb-1">
+                        <strong>Phone :</strong>
+                        <a href="tel:+912261527998" class="text-decoration-none text-dark">+91
+                            2261527998</a>
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-md-4 mb-4 quick-links">
+                    <h5 class="mb-3 section-title">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a target="_blank" href="https://psychonimus.github.io/jk-maini-auto/"
+                                class="text-decoration-none">Jk Maini Precision Technology</a></li>
+                        <li class="mb-2"><a target="_blank" href="https://jksuperdrive.com/"
+                                class="text-decoration-none">JK Files and Engineering Ltd.</a></li>
+                        <li class="mb-2"><a target="_blank" href="https://anjalipophale.github.io/aersopace/index.html"
+                                class="text-decoration-none">JK Maini Global Aerospace Ltd.</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Contact Info Column -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3 section-title">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> 123 Industrial Area, City</li>
+                        <li class="mb-2"><i class="fa-solid fa-phone me-2"></i><a style="text-decoration: none;"
+                                href="tel:+912261527998">+91 2261527998</a></li>
+                        <li class="mb-2"><i class="fa-solid fa-envelope me-2"></i><a style="text-decoration: none;"
+                                href="mailto:info@ringplusaqua.co.in">info@ringplusaqua.co.in</a></li>
+                        <!-- <li class="mb-2"><i class="fa-solid fa-clock me-2"></i> Mon - Sat: 9:00 AM - 6:00 PM</li> -->
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="col-md-3 mb-4">
+                    <!-- <h5 class="mb-3 section-title">Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates and news.</p>
+                    <form class="mt-3">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn newsletter-btn" type="submit">Subscribe</button>
+                        </div>
+                    </form> -->
+                </div>
+            </div>
+        </div>
+        <div class="copyright py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <p class="m-0">© 2025 JK Maini Precision Technology Limited. All rights
+                            reserved.   ∙   Privacy 
+                             ∙   Terms of Use   ∙   Site Map</p>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="social-links">
+                            <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        const popup = document.getElementById("imagePopup");
+        const popupImg = document.getElementById("popupImg");
+        const images = document.querySelectorAll(".popup-image");
+        const closeBtn = document.querySelector(".close-popup");
+
+        images.forEach(img => {
+            img.addEventListener("click", () => {
+                popupImg.src = img.src;
+                popup.style.display = "flex";
+            });
+        });
+
+        closeBtn.addEventListener("click", () => {
+            popup.style.display = "none";
+        });
+
+        // Close when clicking outside the image
+        popup.addEventListener("click", e => {
+            if (e.target === popup) {
+                popup.style.display = "none";
+            }
+        });
+    </script>
+
+
+    <!-- Initialize Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000 });</script>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://unpkg.com/lenis@1.3.7/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        var swiper = new Swiper(".test-swiper", {
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+
+        var swiper2 = new Swiper(".plant-swiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true,
+            autoplay: {
+                delay: 50000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+        });
+
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

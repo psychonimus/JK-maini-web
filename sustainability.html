@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png">
+
+</head>
+
+<body>
+
+    <nav id="navbar" class="navbar navbar-expand-lg bg-transparent fixed-top flex-column">
+        <div class="container d-flex justify-content-between">
+            <div class="meta-header-left">
+                <ul class="navbar-nav-left" style="padding-left: 0px;">
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" aria-current="page" href="tel:+912261527998"> <i
+                                class="fa-solid fa-phone-volume me-2"></i>
+                            +91 2261527998</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="meta-header-right">
+                <ul class="navbar-nav-right">
+                    <li class="nav-item dropdown ms-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Careers
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="careersDropdown">
+                            <li><a class="dropdown-item" target="_blank" href="https://psychonimus.github.io/jk-maini-auto/careers.html">Automobile</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://anjalipophale.github.io/aersopace/careers.html">Aerospace</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-2 ">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img style="width: 220px;" class="img-fluid"
+                    src="./assets/images/jk-maini-logo.svg" alt="JK Maini Precision Technology"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-md-2">
+                    <li class="nav-item active has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="./about.html"
+                            onclick="toggleMegaMenu(event)">
+                            Company
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Company</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">About Us</h4>
+                                    <ul>
+                                        <li><a href="about.html#raymond-group">Raymond Group</a></li>
+                                        <li><a href="about.html#about-jk-maini">About US</a></li>
+                                        <li><a href="about.html#vmv">Vision Mission & Values</a></li>
+                                        <li><a href="about.html#global-presence">Global Footprints</a></li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Sustainability</h4>
+                                    <ul>
+                                        <li><a href="#">Environmental Impact</a></li>
+                                        <li><a href="#">Social Responsibility</a></li>
+                                        <li><a href="#">Green Initiatives</a></li>
+                                        <li><a href="#">Reports</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Recognition</h4>
+                                    <ul>
+                                        <li><a href="#">Awards</a></li>
+                                        <li><a href="#">Certifications</a></li>
+                                        <li><a href="#">Press Coverage</a></li>
+                                        <li><a href="#">Testimonials</a></li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+
+                        <a class="nav-link d-flex justify-content-between" href="#"
+                            onclick="toggleMegaMenu(event)">Businesses
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Businesses</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Business Verticals</h4>
+                                    <ul>
+                                        <li><a href="automotive-industrial-&-beyond.html">Automotive Industrial & Beyond</a></li>
+                                        <li><a href="toolsAndHardware.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace.html">Aerospace</a></li>
+                                        <!-- <li><a href="#">Global Footprints</a></li>  -->
+                                    </ul>
+                                </div>
+                                <!-- <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Sustainability</h4>
+                                    <ul>
+                                        <li><a href="#">Environmental Impact</a></li>
+                                        <li><a href="#">Social Responsibility</a></li>
+                                        <li><a href="#">Green Initiatives</a></li>
+                                        <li><a href="#">Reports</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Recognition</h4>
+                                    <ul>
+                                        <li><a href="#">Awards</a></li>
+                                        <li><a href="#">Certifications</a></li>
+                                        <li><a href="#">Press Coverage</a></li>
+                                        <li><a href="#">Testimonials</a></li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--
+                    <li class="nav-item has-mega-menu d-none d-lg-block sector-laptop">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Sectors
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <ul>
+                                        <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <ul>
+                                        <li><a href="off-highway.html">Off Highway & Industrial Applications</a></li>
+                                        <li><a style="color: #dadada;" href="electric-and-hybrid-sector.html">Electric &
+                                                Hybrid</a></li>
+                                        <li><a style="color: #dadada;" href="locomotive-sector.html">Locomotive</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <ul>
+                                        <li><a style="color: #dadada;" href="agriculture-sector.html">Agriculture</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu d-block d-lg-none sector-mobile">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Sectors
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Sectors</h4>
+                                    <ul>
+                                        <li><a href="automobile-sector.html">Automobile</a></li>
+                                        <li><a href="tools-and-hardware-sector.html">Tools and Hardware</a></li>
+                                        <li><a href="aerospace-sector.html">Aerospace Defence</a></li>
+                                        <li><a href="electric-and-hybrid-sector.html">Electric & Hybrid</a></li>
+                                        <li><a href="off-highway.html">Off Highway & Industrial Applications</a></li>
+                                        <li><a href="locomotive-sector.html">Locomotive</a></li>
+                                        <li><a href="agriculture-sector.html">Agriculture</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="people.html"
+                            onclick="toggleMegaMenu(event)">
+                            People
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">People</h4>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">People</h4>
+                                    <ul>
+                                        <li><a href="people.html">Life at JK Maini</a></li>
+                                        <li><a href="people.html#employee-test">Employee Testimonials</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between active" href="#"
+                            onclick="toggleMegaMenu(event)">
+                            Beyond Business
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Beyond Business</h4>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Purpose & Progress</h4>
+                                    <ul>
+                                        <li><a href="sustainability.html">Sustainability</a></li>
+                                        <li><a href="awards.html">Awards</a></li>
+                                        <li><a href="csr.html">CSR</a></li>
+                                        <li><a href="events.html">News & Events</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Resources</h4>
+                                    <ul>
+                                        <li><a href="resources.html">Brochure</a></li>
+                                        <li><a href="resources.html#blogs">Blogs</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    -->
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Investor Relation
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-md-auto">
+                    <!-- <div class="group me-2">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+
+                        <input id="query" class="input" type="search" placeholder="Search..." name="searchbar" />
+                    </div> -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
+                            Enquiry</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0 hero-section">
+        <div class="carousel">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-image">
+                            <img src="./assets/images/sustainability-bg.png" alt="">
+                        </div>
+                        <div class="container swiper-content">
+                            <div class="text-center mt-5">
+                                <h1>Environmental, Social & Governance (ESG) </h1>
+                                <p class="mt-3 mb-4">
+                                    Precision with Purpose. Engineering a Sustainable Future.
+                                </p>
+                                <!-- <div class="d-flex justify-content-center">
+                                    <button class="hero-button d-flex align-items-center">
+                                        2025 Sustainability Report <i class="fa-solid fa-download ms-2"></i>
+                                    </button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <section class="sus-goals my-2" id="sus-goals">
+        <div class="container">
+            <div class="row">
+
+                <!-- <div class="col-md-6">
+                    <div class="right img-container">
+                        <img src="./assets/images/Sustaibility-score.png" alt="">
+                    </div>
+                </div> -->
+                <div class="col-12">
+                    <div class="left">
+                        <div class="text-center mt-5">
+                            <h6 class="section-title">Sustainability Goals</h6>
+                            <h2>Our Commitment to Sustainability</h2>
+                            <p>
+                                We are dedicated to building a future where business growth goes hand in hand with
+                                environmental stewardship and social responsibility. Our sustainability goals focus on
+                                reducing our carbon footprint, conserving water and energy, minimizing waste, and
+                                fostering a safe and inclusive workplace.<br><br>
+                                By embracing innovative technologies and responsible sourcing, we strive to create
+                                lasting value for our communities and the planet. Our journey is guided by transparency,
+                                accountability, and a passion for making a positive impact—today and for generations to
+                                come.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="env-Stew my-5 py-2" style="background-color: #F7F8FC;">
+        <div class="container">
+            <div class="left">
+                <div class="text-center mt-5">
+                    <h2 class="section-title">Environmental Stewardship</h2>
+                    <p>We are committed to reducing our environmental footprint through resource efficiency and
+                        sustainable operations.</p>
+
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="env-card text-center">
+                            <div class="env-card-icon mb-3">
+                                <i class="fas fa-recycle" style="font-size: 50px; color: var(--accent);"></i>
+
+                            </div>
+                            <h5 class="env-card-title">100% RO-treated water recycling</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="env-card text-center">
+                            <div class="env-card-icon mb-3">
+                                <i class="fas fa-solar-panel" style="font-size: 50px; color: var(--accent);"></i>
+                            </div>
+                            <h5 class="env-card-title">Installation of solar panels</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="env-card text-center">
+                            <div class="env-card-icon mb-3">
+                                <i class="fas fa-cloud-rain" style="font-size: 50px; color: var(--accent);"></i>
+                            </div>
+                            <h5 class="env-card-title">Rainwater harvesting system</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="env-card text-center">
+                            <div class="env-card-icon mb-3">
+                                <i class="fas fa-lightbulb" style="font-size: 50px; color: var(--accent);"></i>
+                            </div>
+                            <h5 class="env-card-title">High-efficiency LED lighting across facilities</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="env-card text-center">
+                            <div class="env-card-icon mb-3">
+                                <i class="fas fa-wind" style="font-size: 50px; color: var(--accent);"></i>
+                            </div>
+                            <h5 class="env-card-title">Air pollution control with scrubbers and blowers</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="env-card text-center">
+                            <div class="env-card-icon mb-3">
+                                <i class="fas fa-flask" style="font-size: 50px; color: var(--accent);"></i>
+                            </div>
+                            <h5 class="env-card-title">Responsible chemical disposal systems</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="impact-highlight p-4 my-4"
+                    style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-left: 4px solid var(--accent); border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h5 class="mb-2 d-flex "><strong class="section-title"
+                            style="color: var(--accent); font-size: 1.1em;">Impact :</strong>
+                        <ul class="d-flex gap-5">
+                            <li>Reduced water waste</li>
+                            <li>Lower
+                                carbon footprint</li>
+                            <li>improved energy efficiency</li>
+                        </ul>
+                    </h5>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gov-eth my-5">
+        <div class="container">
+            <div class="left">
+                <div class="text-center mt-5">
+                    <h2 class="section-title">Governance & Ethics</h2>
+                    <p>Integrity, compliance, and transparency are central to our operations.</p>
+
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="env-card text-center">
+                            <div class="env-card-icon mb-3">
+                                <i class="fas fa-handshake" style="font-size: 50px; color: var(--accent);"></i>
+                            </div>
+                            <h5 class="env-card-title">Ethical procurement and vendor management</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="env-card text-center">
+                            <div class="env-card-icon mb-3">
+                                <i class="fas fa-shield-alt" style="font-size: 50px; color: var(--accent);"></i>
+                            </div>
+                            <h5 class="env-card-title">Strong compliance with Industry <br> standards
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="env-card text-center">
+                            <div class="env-card-icon mb-3">
+                                <i class="fas fa-users" style="font-size: 50px; color: var(--accent);"></i>
+                            </div>
+                            <h5 class="env-card-title">Employee training and development programs</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4 justify-content-center">
+                    <div class="col-md-4">
+                        <div class="env-card text-center">
+                            <div class="env-card-icon mb-3">
+                                <i class="fas fa-hard-hat" style="font-size: 50px; color: var(--accent);"></i>
+                            </div>
+                            <h5 class="env-card-title">Workplace safety and quality <br>focus</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="env-card text-center">
+                            <div class="env-card-icon mb-3">
+                                <i class="fas fa-database" style="font-size: 50px; color: var(--accent);"></i>
+                            </div>
+                            <h5 class="env-card-title">Data integrity and responsible business practices</h5>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="impact-highlight p-4 my-4"
+                    style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-left: 4px solid var(--accent); border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h5 class="mb-2 d-flex"><strong class="section-title"
+                            style="color: var(--accent); font-size: 1.1em;">Impact :</strong>
+                        <ul class="d-flex gap-5">
+                            <li>Trusted partnerships</li>
+                            <li>Consistent Quality</li>
+                            <li>Culture of Accountability</li>
+                        </ul> ,
+                    </h5>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+        <div class="container">
+            <div class="left">
+                <div class="text-center mt-5">
+                    <h2 class="section-title">Certifications & Compliance</h2>
+                    <p>We maintain the highest standards of integrity, compliance, and transparency through our
+                        comprehensive sustainability certifications and accreditations.</p>
+
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-3">
+                        <div class="env-card text-center">
+                            <div class="env-card-icon mb-3">
+                                <img src="./assets/images/solar-panel.png" alt="Solar Power" width="80" height="80">
+                            </div>
+                            <h5 class="env-card-title">AS9100D Certified</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="env-card text-center">
+                            <div class="env-card-icon mb-3">
+                                <img src="./assets/images/solar-panel.png" alt="Solar Power" width="80" height="80">
+                            </div>
+                            <h5 class="env-card-title">NADCAP Accredited
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="env-card text-center">
+                            <div class="env-card-icon mb-3">
+                                <img src="./assets/images/solar-panel.png" alt="Solar Power" width="80" height="80">
+                            </div>
+                            <h5 class="env-card-title">REACH/RoHS Compliance</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="env-card text-center">
+                            <div class="env-card-icon mb-3">
+                                <img src="./assets/images/solar-panel.png" alt="Solar Power" width="80" height="80">
+                            </div>
+                            <h5 class="env-card-title">Commitment to SDGs</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="SG-journey my-5 pt-1">
+        <div class="container">
+            <div class="left">
+                <div class="text-start mt-5">
+                    <h2 class="section-title">SDG Journey & Goals</h2>
+                    <p>From Compliance to Commitment</p>
+
+                </div>
+                <div class="image-div">
+                    <img src="./assets/images/sg-journey.png" alt="" style="width: 100%;">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="fossil-fuel my-5 pt-1">
+        <div class="container">
+            <div class="left">
+                <div class="text-start mt-5">
+                    <h2 class="section-title">Sustainability in Action</h2>
+                    
+
+                </div>
+                <div class="image-div">
+                    <img src="./assets/images/fossil-fuel-reduction-journey.jpeg" alt="" style="width: 100%;">
+                </div>
+
+            </div>
+            <div class="co2-content ">
+                <p>At RPAL, sustainability begins with measurable action. As part of our commitment to reducing Scope 1
+                    GHG emissions, we have actively monitored and optimized ourdiesel and furnace oil consumption—two
+                    key contributors to our carbon footprint.</p>
+                <p>Over the past three fiscal years, we’ve made significant strides:
+                </p>
+
+                <ul>
+                    <li><strong>Diesel-related emissions</strong> dropped from <strong>5.00 tCO2e in FY23 to 4.71 in
+                            FY24</strong>, maintaining efficiency in FY25 at <strong>4.85</strong>, even with
+                        operational growth.
+                    </li>
+                    <li><strong>Furnace oil emissions</strong> were brought down from <strong>142.48 tCO2e to
+                            123.62</strong> in FY24—a reduction of over
+                        <strong>13%</strong>, before stabilizing at <strong>134.15</strong> in FY25 due to production
+                        scale-up.
+                    </li>
+                </ul>
+                <p>In parallel, we’ve consistently reduced <strong>emission intensity metrics:</strong></p>
+
+                <ul>
+                    <li>Diesel emissions per MT and revenue saw <strong>anotable decline</strong> in FY24.</li>
+                    <li>Furnace oil emissions per revenue dropped from <strong>4.58 to 3.39</strong>, reflecting our
+                        growing operational efficiency.</li>
+                </ul>
+                <p>These results demonstrate our proactive approach to fuel management and energy optimization—laying
+                    the groundwork for a transition to <strong>cleaner energy alternatives</strong> in the future.
+                </p>
+                <div class="impact-highlight p-4 my-4"
+                    style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-left: 4px solid var(--accent); border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h5 class="mb-2 d-flex"><strong class="section-title"
+                            style="color: var(--accent); font-size: 1.1em;">Our
+                            goal :</strong>
+                        <ul class="d-flex gap-5">
+                            <li>Lower carbon</li>
+                            <li>Higher efficiency</li>
+                            <li>Cleaner tomorrow</li>
+                        </ul>
+                    </h5>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="powering-progress my-5 pt-1">
+        <div class="container">
+            <div class="left">
+                <div class="text-start mt-5">
+                    <h2 class="section-title">Powering Progress with Cleaner Energy</h2>
+
+
+                </div>
+                <div class="image-div">
+                    <img src="./assets/images/powering-progress.jpeg" alt="" style="width: 100%;">
+                </div>
+
+            </div>
+            <div class="co2-content ">
+                <p>At RPAL, we recognize the environmental impact of electricity consumption and have taken deliberate
+                    steps to reduce ourScope 2 greenhouse gas emissions while increasing our reliance on renewable
+                    energy.</p>
+                <p>Over FY23 to FY25, we achieved:
+                </p>
+
+                <ul>
+                    <li>A reduction in <strong>purchased electricity emissions</strong> from <strong>0.16 tCO₂e to 0.14
+                            tCO₂e</strong>
+                    </li>
+                    <li>A significant drop in <strong>emission intensity per metric ton</strong> from <strong>0.63 to
+                            0.48</strong>, reflecting improved operational efficiency
+                    </li>
+                </ul>
+                <p>But our biggest leap came in FY25—when we transitioned from just 6% to 32% solar electricity usage,
+                    reducing our dependency on conventional grid power (MSEDCL) to68%.</p>
+                <p>Our commitment to responsible energy use continues to grow as we pursue greater renewable integration
+                    and lower emissions intensity across all operations.</p>
+
+
+                <div class="impact-highlight p-4 my-4"
+                    style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-left: 4px solid var(--accent); border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h5 class="mb-2 d-flex"><strong class="section-title"
+                            style="color: var(--accent); font-size: 1.1em;">Impact :</strong>
+                        <ul class="d-flex gap-5">
+                            <li>Cleaner operations</li>
+                            <li>Reduced carbon footprint</li>
+                            <li>Sustainable Energy Shift</li>
+                        </ul>
+                    </h5>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="cutting-carbon my-5 pt-1">
+        <div class="container">
+            <div class="left">
+                <div class="text-start mt-5">
+                    <h2 class="section-title">Cutting Carbon, Powering Change</h2>
+                    
+
+                </div>
+                <div class="image-div">
+                    <img src="./assets/images/cutting-carbon.jpeg" alt="" style="width: 100%;">
+                </div>
+
+            </div>
+            <div class="co2-content ">
+                <p>At RPAL, we are redefining precision with purpose. Our journey to reduce our carbon footprint has
+                    been marked by deliberate shifts in our energy mix and a steadfast focus on sustainability.</p>
+
+                <p>From FY21 to FY25, we scaled our green energy initiatives dramatically—from just142 MWH to 5,865 MWH
+                    in solar energy usage. At the same time, we reduced our dependency on conventional grid electricity
+                    (MSEDCL) and drove down ourCO₂ emissions intensity from 0.19 to 0.14 tCO₂e/RM MT Cons.
+                </p>
+
+
+
+                <p>Through sustained investments in solar power and smart energy optimization, RPAL is building
+                    acleaner, leaner manufacturing ecosystem—where environmental responsibility is engineered into every
+                    product.</p>
+
+
+
+                <div class="impact-highlight p-4 my-4"
+                    style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-left: 4px solid var(--accent); border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h5 class="mb-2 d-flex"><strong class="section-title"
+                            style="color: var(--accent); font-size: 1.1em;">Impact :</strong>
+                        <ul class="d-flex gap-5">
+                            <li>Green energy adoption increased</li>
+                            <li>Emissions intensity declined
+                            </li>
+                            <li>Sustainable growth achieved</li>
+                        </ul>
+                    </h5>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="esg-assurance my-5 pt-1">
+        <div class="container">
+            <div class="left">
+                <div class="text-start mt-5">
+                    <h2 class="section-title">ESG Assurance Backed by Global Standards</h2>
+                    
+
+                </div>
+                <div class="image-div">
+                    <img src="./assets/images/Sustaibility-score.png" alt="" style="width: 30%;">
+                </div>
+
+            </div>
+            <div class="co2-content ">
+                <p>Our commitment to responsible business practices is validated by independent assessments. We are
+                    proud to have achieved an84% score in the latest SAQ 5.0 CSR/Sustainability Results Report under
+                    theNQC Supplier Assurance program.</p>
+
+                <p>This marks a significant improvement from our previous SAQ 4.0 score of 74%, reflecting our
+                    continuous progress across key pillars such as:
+                </p>
+                <ul>
+                    <li>Environmental performance
+                    </li>
+                    <li>Labor and human rights
+                    </li>
+                    <li>Ethics and governance
+                    </li>
+                    <li>Supply chain transparency
+                    </li>
+                    <li>Responsible sourcing
+                    </li>
+                </ul>
+                
+                <p>We view sustainability not just as compliance, but as a strategic advantage—creating long-term value
+                    for our customers, communities, and planet.</p>
+
+
+
+                    <div class="impact-highlight p-4 my-4"
+                    style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-left: 4px solid var(--accent); border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h5 class="mb-2 d-flex"><strong class="section-title"
+                            style="color: var(--accent); font-size: 1.1em;">Impact :</strong>
+                        <ul class="d-flex gap-5">
+                            <li>Top-tier ESG compliance
+                            </li>
+                            <li>Trusted manufacturing partner
+
+                            </li>
+                            <li>Future-ready operations</li>
+                        </ul>
+                    </h5>
+
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+    <section class="reportsanddata my-3 mb-5">
+        <div class="container">
+            <div class="header-text text-center">
+                <h2 class="section-title">Reports and Data</h2>
+                
+                <div class="d-flex gap-3 justify-content-center">
+                    <a href="./assets/images/brochure/b,_163,_3rd_Cross_Rd_SAQ_5_MainReport_certificate.pdf"
+                        target="_blank" style="text-decoration: none;">
+                        <button class="hero-button d-flex align-items-center">
+                            View Report 1<i class="fa-solid fa-arrow-right ms-2"></i>
+                        </button>
+                    </a>
+                    <a href="./assets/images/brochure/MPP SAQ_5_Certificate No.5A.pdf" target="_blank"
+                        style="text-decoration: none;">
+                        <button class="hero-button d-flex align-items-center">
+                            View Report 2<i class="fa-solid fa-arrow-right ms-2"></i>
+                        </button>
+                    </a>
+
+                </div>
+            </div>
+            <!-- <div class="data-numbers mt-5">
+                <div class="row my-3">
+                    <div class="col-md-3">
+                        <div class="p-3 num-data">
+                            <img src="./assets/images/solar-panel.png" alt="">
+                            <h4 class="mt-2 section-title">SOLAR POWER
+                            </h4>
+                            <p>Emission reduction by using solar power. Maini used 11.5 Mn units from solar power last
+                                year.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="p-3 num-data">
+                            <img src="./assets/images/paperless-factory.png" alt="">
+                            <h4 class="mt-2 section-title">PAPERLESS FACTORY
+                            </h4>
+                            <p>Paperless factory by introducing IOT (internet of things).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="p-3 num-data">
+                            <img src="./assets/images/transportation.png" alt="">
+                            <h4 class="mt-2 section-title">TRANSPORTATION
+                            </h4>
+                            <p>Optimizing the transportation by grouping the products and people
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="p-3 num-data">
+                            <img src="./assets/images/auto-lightning.png" alt="">
+                            <h4 class="mt-2 section-title">AUTO LIGHTING
+                            </h4>
+                            <p>Sensor installation in meeting room and office area
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-3">
+                    <div class="col-md-3">
+                        <div class="p-3 num-data">
+                            <img src="./assets/images/air-compressor.png" alt="">
+                            <h4 class="mt-2 section-title">AIR COMPRESSOR
+                            </h4>
+                            <p> Compressed air system audit and reduction in leakages and open usage
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="p-3 num-data">
+                            <img src="./assets/images/oil-recycling.png" alt="">
+                            <h4 class="mt-2 section-title">OIL RECYCLING
+                            </h4>
+                            <p>Oil recycling on machines using neat oil.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="p-3 num-data">
+                            <img src="./assets/images/energy-audit.png" alt="">
+                            <h4 class="mt-2 section-title">ENERGY AUDIT
+                            </h4>
+                            <p>Identify the opportunities to improve energy
+                                efficiency.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="p-3 num-data">
+                            <img src="./assets/images/packing.png" alt="">
+                            <h4 class="mt-2 section-title">PACKING
+                            </h4>
+                            <p>Reusable wooden / Plastic pallets and minimizing corrugated boxes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-3">
+                    <div class="col-md-3">
+                        <div class="p-3 num-data">
+                            <img src="./assets/images/sewage.png" alt="">
+                            <h4 class="mt-2 section-title">STP
+                            </h4>
+                            <p>Sewage Treatment Plant management.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="p-3 num-data">
+                            <img src="./assets/images/lighting.png" alt="">
+                            <h4 class="mt-2 section-title">LIGHTING
+                            </h4>
+                            <p>Replace incandescent light bulbs with LED ones.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="p-3 num-data">
+                            <img src="./assets/images/metal-recycling.png" alt="">
+                            <h4 class="mt-2 section-title">METAL RECYCLE
+                            </h4>
+                            <p>Compacted metal scrap recycling with foundries and mills.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="p-3 num-data">
+                            <img src="./assets/images/e-waste.png" alt="">
+                            <h4 class="mt-2 section-title">E-WASTE
+                            </h4>
+                            <p>Hazardous waste disposal through e-waste portal.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- <section class="co2 my-5">
+        <div class="container">
+            <div class="header-text ">
+                <h2 class="section-title">CO2 Emission Trend for Nashik BU</h2>
+                <h3>Driving Decarbonization: Our CO₂ Emission Reduction Journey</h3>
+            </div>
+
+            <div>
+                <img src="./assets/images/rpal-co2-emission.png" alt="" style="width: 100%;">
+            </div>
+
+            <div class="co2-content mt-5">
+                <p>Over the years, our Nashik BU has consistently demonstrated its commitment to sustainable
+                    manufacturing.
+                    The CO₂ Emission Trend chart paints a compelling picture of how the company is balancing growth with
+                    environmental responsibility.</p>
+                <p>In <strong>FY20</strong>, we began its sustainability journey with a CO₂ emission index of
+                    <strong>1.11
+                        MT of CO₂ per MT of raw
+                        material (RM) consumption</strong>, and <strong>12,087 MT</strong> of emissions from RM
+                    consumption.
+                    At the time, green
+                    initiatives were still nascent.
+                </p>
+                <p>Fast forward to <strong>FY24</strong>, while RM consumption increased to <strong>16,671 MT</strong>,
+                    the
+                    CO₂ emission index fell
+                    significantly to <strong>0.90</strong> a testament to our efficient operations and emission
+                    management.
+                    During this
+                    period, the company began seeing visible benefits from two key levers:</p>
+
+                <ul>
+                    <li><strong>Energy Intensity Reduction</strong>, contributing <strong>3,554 MT</strong> in CO₂
+                        savings.
+                    </li>
+                    <li><strong>Green Energy adoption</strong>, reducing emissions by <strong>1,058 MT.</strong></li>
+                </ul>
+                <p>But the most transformational shift is yet to come.</p>
+                <p>Looking ahead, our estimates for <strong>FY25 and FY26</strong> show a sharp drop in emission
+                    intensity—<strong>0.61</strong> and <strong>0.53</strong>,
+                    respectively. This decline is powered by a massive scale-up of green energy initiatives, including
+                    the
+                    launch of <strong>Open Access Solar Projects (SGD-I and SBD)</strong>. These are expected to drive
+                    CO₂
+                    savings of:</p>
+                <ul>
+                    <li><strong>4,867 MT (FY25)</strong> through energy efficiency</li>
+                    <li><strong>8,913 MT (FY26)</strong> through renewable energy</li>
+                </ul>
+                <p>What’s remarkable is that even with <strong>RM consumption decreasing slightly</strong> (from
+                    <strong>16,671 MT in FY24</strong> to <strong>13,401
+                        MT in FY26</strong> ), the emission reductions are accelerating, proving that sustainability and
+                    operational
+                    excellence can go hand in hand.
+                </p>
+                <p>Our emission trend is not just a graph—it’s a story of deliberate choices, strategic investments, and
+                    a
+                    clear vision for a greener tomorrow. Through continuous improvements and solar adoption, We are on
+                    track
+                    to cut its emission intensity by more than <strong>50%</strong> in just six years—making it a true
+                    leader in sustainable
+                    manufacturing within the JK Maini Group.</p>
+            </div>
+        </div>
+    </section> -->
+
+    <div id="popupOverlay" class="popup-overlay">
+        <div class="right-form p-4">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div>
+                <h2>Get in Touch</h2>
+                <p>Tell us what you’re building — we’ll show you how to get there, faster and smarter.
+                    Response guaranteed within 24 hours.</p>
+            </div>
+            <form action="" class="mt-4">
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="First Name">
+                    <input class="my-3" type="text" placeholder="Last Name">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Company">
+                    <input class="my-3" type="text" placeholder="Email Address">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Phone No.">
+                    <input class="my-3" type="text" placeholder="Industry">
+                </div>
+                <div class="form-group">
+                    <textarea name="" id="" placeholder="I want to know more about"></textarea>
+
+                </div>
+                <!-- <div class="d-flex gap-3">
+                    <input type="checkbox" name="" id="t&c" class="w-auto">
+                    <label class="w-auto" for="t&c">I agree to the terms and conditions*</label>
+                </div> -->
+                <button class="hero-button mt-4">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <section class="get-in-touch-section py-5 text-center">
+        <div class="container">
+            <h6 class="section-title">Get in Touch</h6>
+            <h2>Empowering Change, Sustaining Tomorrow !</h2>
+            <p class="mb-4">Our commitment to the environment, communities, and innovation drives every initiative we undertake, because sustainable progress is a shared journey.</p>
+            <div class="d-flex justify-content-center">
+                <button class="hero-button" onclick="openPopup()">Partner With Us for a Sustainable Future</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact-footer">
+        
+        <div class="line"></div>
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-location-dot mb-3"></i>
+                        <h3>Our Offices</h3>
+                        <p>View our locations and find contact details to our nearest office.</p>
+                        <a href="contact.html#office-locations">Explore Our Locations</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-envelope-open mb-3"></i>
+                        <h3>Drop us a Line</h3>
+                        <p>You can contact us by filling in this form any time you need professional support.</p>
+                        <a onclick="openPopup()" href="javascript:void(0)">Fill Our Form</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-headset mb-3"></i>
+                        <h3>Support</h3>
+                        <!-- <p>Learn more about us and find resources that will help you with all of our products</p> -->
+                        <p>Connect with us and know more about our products. Call our support executive.</p>
+                        <a href="">Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="pt-5 main-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info Column -->
+                <div class="col-md-4 mb-4">
+                    <a href="index.html"><img style="width: 220px;" class="img-fluid"
+                            src="./assets/images/jk-maini-logo.svg" alt="JK Maini Precision Technology"></a>
+
+                    <p class="mb-1"> 
+                        
+                        <strong>CIN :</strong> U25933MH2024PLC417852
+                    </p>
+                    <p  class="mb-1">
+                        <strong>Email :</strong>
+                        <a href="mailto:info@ringplusaqua.co.in" class="text-decoration-none text-dark">info@ringplusaqua.co.in</a>
+                    </p>
+                    <p  class="mb-1">
+                        <strong>Address :</strong>
+                        C/O Raymond Ltd, Jekegram Pokharan Road No. 1, Jekegram, Thane, Maharashtra, India, 400606
+                    </p>
+                    <p  class="mb-1">
+                        <strong>Phone :</strong>
+                        <a href="tel:+912261527998" class="text-decoration-none text-dark">+91
+                            2261527998</a>
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-md-4 mb-4 quick-links">
+                    <h5 class="mb-3 section-title">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a target="_blank" href="https://psychonimus.github.io/jk-maini-auto/"
+                                class="text-decoration-none">Jk Maini Precision Technology</a></li>
+                        <li class="mb-2"><a target="_blank" href="https://jksuperdrive.com/"
+                                class="text-decoration-none">JK Files and Engineering Ltd.</a></li>
+                        <li class="mb-2"><a target="_blank" href="https://anjalipophale.github.io/aersopace/index.html"
+                                class="text-decoration-none">JK Maini Global Aerospace Ltd.</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Contact Info Column -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3 section-title">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> 123 Industrial Area, City</li>
+                        <li class="mb-2"><i class="fa-solid fa-phone me-2"></i><a style="text-decoration: none;"
+                                href="tel:+912261527998">+91 2261527998</a></li>
+                        <li class="mb-2"><i class="fa-solid fa-envelope me-2"></i><a style="text-decoration: none;"
+                                href="mailto:info@ringplusaqua.co.in">info@ringplusaqua.co.in</a></li>
+                        <!-- <li class="mb-2"><i class="fa-solid fa-clock me-2"></i> Mon - Sat: 9:00 AM - 6:00 PM</li> -->
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="col-md-3 mb-4">
+                    <!-- <h5 class="mb-3 section-title">Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates and news.</p>
+                    <form class="mt-3">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn newsletter-btn" type="submit">Subscribe</button>
+                        </div>
+                    </form> -->
+                </div>
+            </div>
+        </div>
+        <div class="copyright py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <p class="m-0">© 2025 JK Maini Precision Technology Limited. All rights
+                            reserved.   ∙   Privacy 
+                             ∙   Terms of Use   ∙   Site Map</p>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="social-links">
+                            <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/lenis@1.3.7/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+
+
+        var swiper = new Swiper(".csr-swiper", {
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+
+    </script>
+
+</body>
+
+</html>
