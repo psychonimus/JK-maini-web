@@ -458,28 +458,30 @@
                 <p>Tell us what you’re building — we’ll show you how to get there, faster and smarter.
                     Response guaranteed within 24 hours.</p>
             </div>
-            <form action="" class="mt-4">
+            <form action="" class="mt-4" id="contact-form">
                 <div class="form-group d-sm-flex gap-3 ">
-                    <input class="my-3" type="text" placeholder="First Name">
-                    <input class="my-3" type="text" placeholder="Last Name">
+                    <input class="my-3" type="text" placeholder="First Name" id="FirstName">
+                    <input class="my-3" type="text" placeholder="Last Name" id="LastName">
                 </div>
                 <div class="form-group d-sm-flex gap-3 ">
-                    <input class="my-3" type="text" placeholder="Company">
-                    <input class="my-3" type="text" placeholder="Email Address">
+                    <input class="my-3" type="text" placeholder="Company" id="Company">
+                    <input class="my-3" type="text" placeholder="Email Address" id="EmailAddress">
                 </div>
                 <div class="form-group d-sm-flex gap-3 ">
-                    <input class="my-3" type="text" placeholder="Phone No.">
-                    <input class="my-3" type="text" placeholder="Industry">
+                    <input class="my-3" type="text" placeholder="Phone No." id="PhoneNo">
+                    <input class="my-3" type="text" placeholder="Industry" id="Industry">
                 </div>
                 <div class="form-group">
-                    <textarea name="" id="" placeholder="I want to know more about"></textarea>
+                    <textarea name=""  placeholder="I want to know more about" id="Inquiry"></textarea>
 
                 </div>
                 <!-- <div class="d-flex gap-3">
                     <input type="checkbox" name="" id="t&c" class="w-auto">
                     <label class="w-auto" for="t&c">I agree to the terms and conditions*</label>
                 </div> -->
-                <button class="hero-button mt-4">Submit</button>
+                <button class="hero-button mt-4" id="submit"  >Submit</button>
+                <div id="message" class="message"></div>
+                <div id="error" class="error"></div>
             </form>
         </div>
     </div>

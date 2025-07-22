@@ -298,7 +298,7 @@
     <section class="contact-form" style="margin-top: 12rem;">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-right">
                     <div class="left-content">
                         <h6 class="section-title">Get in Touch</h6>
                         <h2>Ready to Turn Your Manufacturing Vision into Reality?</h2>
@@ -327,7 +327,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-left">
                     <div class="right-form p-4">
                         <div>
                             <h2>Get in Touch</h2>
@@ -363,7 +363,7 @@
         </div>
     </section>
 
-    <section class="office-locations my-5" id="office-locations">
+    <section class="office-locations my-5" id="office-locations" data-aos="fade-up">
         <div class="container">
             <div class=" mt-5 mb-4">
                 <h6 class="section-title">Our Office Location</h6>
@@ -430,7 +430,7 @@
             </div>
         </div>
     </section>
-    <section class="office-locations my-5">
+    <section class="office-locations my-5" data-aos="fade-up">
         <div class="container">
             <div class=" mt-5 mb-4">
                 <!-- <h6 class="section-title">Our Office Location</h6> -->
@@ -500,14 +500,14 @@
 
 
 
-    <section class="get-in-touch-section py-5 text-center">
+    <section class="get-in-touch-section py-5 text-center" data-aos="fade-up">
         <div class="container">
             <h6 class="section-title">Get in Touch</h6>
             <h2>Ready to Turn Your Manufacturing Vision into Reality?</h2>
             <p class="mb-4">Whether you're looking for custom-engineered solutions or want to explore how our
                 capabilities align with your needs, we're here to help.</p>
             <div class="d-flex justify-content-center">
-                <button class="hero-button">Get Started</button>
+                <button class="hero-button" data-aos="flip-right">Get Started</button>
             </div>
         </div>
     </section>
@@ -520,28 +520,30 @@
                 <p>Tell us what you’re building — we’ll show you how to get there, faster and smarter.
                     Response guaranteed within 24 hours.</p>
             </div>
-            <form action="" class="mt-4">
+            <form action="" class="mt-4" id="contact-form">
                 <div class="form-group d-sm-flex gap-3 ">
-                    <input class="my-3" type="text" placeholder="First Name">
-                    <input class="my-3" type="text" placeholder="Last Name">
+                    <input class="my-3" type="text" placeholder="First Name" id="FirstName">
+                    <input class="my-3" type="text" placeholder="Last Name" id="LastName">
                 </div>
                 <div class="form-group d-sm-flex gap-3 ">
-                    <input class="my-3" type="text" placeholder="Company">
-                    <input class="my-3" type="text" placeholder="Email Address">
+                    <input class="my-3" type="text" placeholder="Company" id="Company">
+                    <input class="my-3" type="text" placeholder="Email Address" id="EmailAddress">
                 </div>
                 <div class="form-group d-sm-flex gap-3 ">
-                    <input class="my-3" type="text" placeholder="Phone No.">
-                    <input class="my-3" type="text" placeholder="Industry">
+                    <input class="my-3" type="text" placeholder="Phone No." id="PhoneNo">
+                    <input class="my-3" type="text" placeholder="Industry" id="Industry">
                 </div>
                 <div class="form-group">
-                    <textarea name="" id="" placeholder="I want to know more about"></textarea>
+                    <textarea name=""  placeholder="I want to know more about" id="Inquiry"></textarea>
 
                 </div>
                 <!-- <div class="d-flex gap-3">
                     <input type="checkbox" name="" id="t&c" class="w-auto">
                     <label class="w-auto" for="t&c">I agree to the terms and conditions*</label>
                 </div> -->
-                <button class="hero-button mt-4">Submit</button>
+                <button class="hero-button mt-4" id="submit"  >Submit</button>
+                <div id="message" class="message"></div>
+                <div id="error" class="error"></div>
             </form>
         </div>
     </div>

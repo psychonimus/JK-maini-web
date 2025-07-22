@@ -110,6 +110,88 @@ lenis.on('scroll', (e) => {
 });
 
 
+// the js code for email SMtp integration for enquiry form
+
+
+        function customEncodeURI(str) {
+            return str.replace(/[@]/g, '%40')
+                      .replace(/[:]/g, '%3A')
+                      .replace(/[?]/g, '%3F')
+                      .replace(/[/]/g, '%2F')
+                      .replace(/[#]/g, '%23')
+                      .replace(/[&]/g, '%26')
+                      .replace(/[=]/g, '%3D')
+                      .replace(/[+]/g, '%2B')
+                      .replace(/[ ]/g, '%20');
+        }
+
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            console.log('Form submitted');
+            const toEmail = document.getElementById('EmailAddress').value;
+            const firstname = document.getElementById('FirstName').value;
+            const lastname = document.getElementById('LastName').value;
+            const company = document.getElementById('Company').value;
+            const phoneno = document.getElementById('PhoneNo').value;
+            const industry = document.getElementById('Industry').value;
+            const email = document.getElementById('EmailAddress').value; // Same as toEmail
+            const inquiry = document.getElementById('Inquiry').value;
+            const subject = "";
+            const htmlContent ="";
+            const messageDiv = document.getElementById('message');
+            const errorDiv = document.getElementById('error');
+
+            messageDiv.textContent = '';
+            errorDiv.textContent = '';
+
+            //const url = 'http://172.21.4.191:80/api/email/sendemail?toEmail=' + customEncodeURI(toEmail) + //testing 
+
+            const url = 'https://api.jkmaini.com/api/email/sendemail?firstname=' + customEncodeURI(firstname) +
+                        '&lastname=' + customEncodeURI(lastname) +
+                        '&company=' + customEncodeURI(company) +
+                        '&phoneno=' + customEncodeURI(phoneno) +
+                        '&industry=' + customEncodeURI(industry) +
+                        '&email=' + customEncodeURI(email) +
+                        '&inquiry=' + customEncodeURI(inquiry);
+
+            console.log('URL:', url);
+            console.log('Payload:', JSON.stringify({ subject, htmlContent }));
+            // For proxy: fetch('/api/email/sendemail?toEmail=' + customEncodeURI(toEmail) + '&firstname=' + customEncodeURI(firstname) + '&lastname=' + customEncodeURI(lastname) + '&company=' + customEncodeURI(company) + '&phoneno=' + customEncodeURI(phoneno) + '&industry=' + customEncodeURI(industry) + '&email=' + customEncodeURI(email) + '&inquiry=' + customEncodeURI(inquiry), {
+            fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ subject, htmlContent })
+                // If API supports plain-text:
+                // body: JSON.stringify({ subject, htmlContent, textContent: `Hello ${firstname}! Thank you for your inquiry about ${company} services. Visit us at https://probus.co.in. To unsubscribe, visit https://probus.co.in/unsubscribe. Probus, 123 Business Street, City, Country` })
+            })
+                .then(function(response) {
+                    console.log('Response status:', response.status);
+                    return Promise.all([response.json(), response.ok, response.status]);
+                })
+                .then(function(jsonData, ok, status) {
+                    console.log('Response data:', jsonData);
+                    if (ok) {
+                        messageDiv.textContent = jsonData.message || 'Application submitted successfully.';
+                    } else {
+                        errorDiv.textContent = jsonData.error || 'Application submitted successfully.';
+                    }
+                })
+                .catch(function(error) {
+                    console.error('Fetch error:', error);
+                    errorDiv.textContent = `Error: ${error.message}`;
+                })
+                .finally(function() {
+                    document.getElementById('contact-form').reset();
+                    console.log('Form cleared');
+                });
+        // Close the popup after successful submission
+        // const popupOverlay = document.getElementById('popupOverlay');
+        // if (popupOverlay) {
+        //     popupOverlay.style.display = 'none';
+        // }
+        });
+
+
 
 
      
