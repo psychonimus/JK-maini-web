@@ -1293,7 +1293,6 @@ body {
 .facilities-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* Fixed 5 columns */
   gap: 20px;
 }
 
@@ -1305,9 +1304,7 @@ body {
     gap: 20px;
   }
 
-  /* .first-card {
-    grid-column: span 2;
-  } */
+
 }
 
 @media(max-width : 575px) {
@@ -2279,13 +2276,142 @@ body {
 /* //////////////////////////////////// */
 
 .sector-cards .tab-btn{
-  filter: grayscale(1);
+  border: 4px solid #dadada;
+  border-radius: 10px;
+  filter: grayscale(0.3);
   outline: none;
-  border: none;
+  
+  transition: 0.5s all ease;
 }
+
 .sector-cards .tab-btn.active{
   filter: none;
-  border-top: 5px solid var(--accent);
-  border-bottom: 5px solid var(--accent);
+  border: 4px solid var(--accent);
   border-radius: 10px;
+  grid-column: span 2;
 }
+
+
+  /* social button css */
+
+  
+  .social-login-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    -webkit-box-reflect: below 5px linear-gradient(transparent, #00000055);
+  }
+  .social-login-icons svg {
+    width: 40px;
+  }
+
+  .social-icon-1,
+  .social-icon-1-1,
+  .social-icon-2,
+  .social-icon-2-2,
+  .social-icon-3,
+  .social-icon-3-3,
+  .social-icon-4,
+  .social-icon-4-4 {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin: 20px 0 0px 0;
+  }
+
+  .icon svg {
+    fill: #111;
+  }
+
+  .socialcontainer {
+    height: 70px;
+    overflow: hidden;
+  }
+  .social-icon-1 {
+    transition-duration: 0.4s;
+    background-color: rgb(0, 0, 0);
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+  }
+  .social-icon-1 svg,
+  .social-icon-2 svg,
+  .social-icon-3 svg,
+  .social-icon-4 svg {
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+  }
+  .social-icon-1-1 {
+    transition-duration: 0.4s;
+    background-color: rgb(0, 0, 0, 0);
+  }
+  .socialcontainer:hover .social-icon-1 {
+    transform: translateY(-70px);
+  }
+  .socialcontainer:hover .social-icon-1 svg,
+  .socialcontainer:hover .social-icon-2 svg,
+  .socialcontainer:hover .social-icon-3 svg,
+  .socialcontainer:hover .social-icon-4 svg {
+    opacity: 1;
+  }
+  .social-icon-2 {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+    background: linear-gradient(
+      72.44deg,
+      #ff7a00 11.92%,
+      #ff0169 51.56%,
+      #d300c5 85.69%
+    );
+  }
+  .socialcontainer:hover .social-icon-2 {
+    transform: translateY(-70px);
+  }
+  .social-icon-3 {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+    background: #316ff6;
+  }
+
+  .socialcontainer:hover .social-icon-3 {
+    transform: translateY(-70px);
+  }
+  .social-icon-4 {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+
+    background: #0A66C2;
+  }
+
+  .socialcontainer:hover .social-icon-4 {
+    transform: translateY(-70px);
+  }
+
+  .sector-swiper .swiper-slide{
+    width: 60%;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  }
+
+  .sector-swiper .sector-card img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .sector-swiper .btn-next,.btn-prev{
+    background-color: var(--accent);
+    padding: 30px;
+    border-radius: 30px;
+  }
+  .sector-swiper .overlay{
+    text-align: center;
+  }
+
+  .sector-swiper .overlay .facility-title{
+    font-size: 50px;
+    line-height: normal;
+  }
