@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png"><link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -35,12 +36,15 @@
             <div class="meta-header-right">
                 <ul class="navbar-nav-right">
                     <li class="nav-item dropdown ms-2">
-                        <a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Careers
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="careersDropdown">
-                            <li><a class="dropdown-item" target="_blank" href="https://psychonimus.github.io/jk-maini-auto/careers.html">Automobile</a></li>
-                            <li><a class="dropdown-item" target="_blank" href="https://anjalipophale.github.io/aersopace/careers.html">Aerospace</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://psychonimus.github.io/jk-maini-auto/careers.html">Automobile</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://anjalipophale.github.io/aersopace/careers.html">Aerospace</a></li>
                         </ul>
                     </li>
                     <li class="nav-item ms-2 ">
@@ -116,7 +120,8 @@
                                 <div class="mega-menu-column">
                                     <h4 onclick="toggleAccordion(this)">Business Verticals</h4>
                                     <ul>
-                                        <li><a href="automotive-industrial-&-beyond.html">Automotive Industrial & Beyond</a></li>
+                                        <li><a href="automotive-industrial-&-beyond.html">Automotive Industrial &
+                                                Beyond</a></li>
                                         <li><a href="toolsAndHardware.html">Tools and Hardware</a></li>
                                         <li><a href="aerospace.html">Aerospace</a></li>
                                         <!-- <li><a href="#">Global Footprints</a></li>  -->
@@ -269,7 +274,7 @@
                             Investor Relation
                             <span class="d-lg-none">+</span>
                         </a>
-                        
+
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-md-auto">
@@ -334,28 +339,39 @@
                             <p>Tell us what you’re building — we’ll show you how to get there, faster and smarter.
                                 Response guaranteed within 24 hours.</p>
                         </div>
-                        <form action="" class="mt-4">
+                        <form action="" class="mt-4" id="contact-form">
                             <div class="form-group d-sm-flex gap-3 ">
-                                <input class="my-3" type="text" placeholder="First Name">
-                                <input class="my-3" type="text" placeholder="Last Name">
+                                <input required class="my-3" type="text" placeholder="First Name" id="FirstName">
+                                <input required class="my-3" type="text" placeholder="Last Name" id="LastName">
                             </div>
                             <div class="form-group d-sm-flex gap-3 ">
-                                <input class="my-3" type="text" placeholder="Company">
-                                <input class="my-3" type="text" placeholder="Email Address">
+                                <input required class="my-3" type="text" placeholder="Company" id="Company>
+                                <input required class=" my-3" type="text" placeholder="Email Address"
+                                    id="EmailAddress">
                             </div>
                             <div class="form-group d-sm-flex gap-3 ">
-                                <input class="my-3" type="text" placeholder="Phone No.">
-                                <input class="my-3" type="text" placeholder="Industry">
+                                <input class="my-3" type="text" placeholder="Phone No." id="PhoneNo">
+                                <input class="my-3" type="text" placeholder="Industry" id="Industry">
                             </div>
                             <div class="form-group">
-                                <textarea name="" id="" placeholder="How can we help you?"></textarea>
+                                <textarea name="" id="" placeholder="How can we help you?" id="Inquiry"></textarea>
 
                             </div>
                             <div class="d-flex gap-3">
-                                <input type="checkbox" name="" id="t&c" class="w-auto">
-                                <label class="w-auto" for="t&c">I agree to the terms and conditions*</label>
+                                <input required type="checkbox" name="" id="t&c" class="w-auto">
+                                <label class="w-auto" for="t&c">
+                                    I agree to the
+                                    <a href="privacy-policy.html" target="_blank"
+                                        class="text-decoration-underline">Privacy Policy</a>
+                                    and
+                                    <a href="terms-and-conditions.html" target="_blank"
+                                        class="text-decoration-underline">Terms &amp; Conditions</a>
+                                    <span class="text-danger">*</span>
+                                </label>
                             </div>
-                            <button class="hero-button mt-4">Submit</button>
+                            <button class="hero-button mt-4" id="submit">Submit</button>
+                            <div id="message" class="message"></div>
+                            <div id="error" class="error"></div>
                         </form>
                     </div>
                 </div>
@@ -403,7 +419,8 @@
                         </div>
                         <div class="info-text">
                             <div class="label">Our Location</div>
-                            <div class="value">C/O Raymond Ltd, Jekegram Pokharan Road No. 1, Jekegram, Thane, Maharashtra, India, 400606</div>
+                            <div class="value">C/O Raymond Ltd, Jekegram Pokharan Road No. 1, Jekegram, Thane,
+                                Maharashtra, India, 400606</div>
                         </div>
                     </div>
                     <div class="info-card mb-3">
@@ -470,7 +487,8 @@
                         </div>
                         <div class="info-text">
                             <div class="label">Our Location</div>
-                            <div class="value">C/o Raymond Limited, Pokhran Road No.1, Jekegram, Near Cadbury Junction, Thane-400606, Maharashtra</div>
+                            <div class="value">C/o Raymond Limited, Pokhran Road No.1, Jekegram, Near Cadbury Junction,
+                                Thane-400606, Maharashtra</div>
                         </div>
                     </div>
                     <div class="info-card mb-3">
@@ -522,26 +540,50 @@
             </div>
             <form action="" class="mt-4" id="contact-form">
                 <div class="form-group d-sm-flex gap-3 ">
-                    <input class="my-3" type="text" placeholder="First Name" id="FirstName">
-                    <input class="my-3" type="text" placeholder="Last Name" id="LastName">
+                    <input required class="my-3" type="text" placeholder="First Name" id="FirstName">
+                    <input required class="my-3" type="text" placeholder="Last Name" id="LastName">
                 </div>
                 <div class="form-group d-sm-flex gap-3 ">
-                    <input class="my-3" type="text" placeholder="Company" id="Company">
-                    <input class="my-3" type="text" placeholder="Email Address" id="EmailAddress">
+                    <input required class="my-3" type="text" placeholder="Company" id="Company">
+                    <input required class="my-3" type="text" placeholder="Email Address" id="EmailAddress">
                 </div>
                 <div class="form-group d-sm-flex gap-3 ">
                     <input class="my-3" type="text" placeholder="Phone No." id="PhoneNo">
                     <input class="my-3" type="text" placeholder="Industry" id="Industry">
                 </div>
                 <div class="form-group">
-                    <textarea name=""  placeholder="I want to know more about" id="Inquiry"></textarea>
+                    <textarea name="" placeholder="I want to know more about" id="Inquiry"></textarea>
 
+                </div>
+                <div class="d-flex gap-3">
+                    <input required type="checkbox" name="" id="T&C" class="w-auto">
+                    <label class="w-auto" for="T&C">
+                        I agree to the
+                        <a href="privacy-policy.html" target="_blank"
+                            class="text-decoration-underline">Privacy Policy</a>
+                        and
+                        <a href="terms-and-conditions.html" target="_blank"
+                            class="text-decoration-underline">Terms &amp; Conditions</a>
+                        <span class="text-danger">*</span>
+                    </label>
+                </div>
+                <div class="d-flex gap-3">
+                    <input required type="checkbox" name="" id="T&C" class="w-auto">
+                    <label class="w-auto" for="T&C">
+                        I agree to the
+                        <a href="privacy-policy.html" target="_blank"
+                            class="text-decoration-underline">Privacy Policy</a>
+                        and
+                        <a href="terms-and-conditions.html" target="_blank"
+                            class="text-decoration-underline">Terms &amp; Conditions</a>
+                        <span class="text-danger">*</span>
+                    </label>
                 </div>
                 <!-- <div class="d-flex gap-3">
                     <input type="checkbox" name="" id="t&c" class="w-auto">
                     <label class="w-auto" for="t&c">I agree to the terms and conditions*</label>
                 </div> -->
-                <button class="hero-button mt-4" id="submit"  >Submit</button>
+                <button class="hero-button mt-4" id="submit">Submit</button>
                 <div id="message" class="message"></div>
                 <div id="error" class="error"></div>
             </form>
@@ -576,7 +618,7 @@
                         <h3>Support</h3>
                         <!-- <p>Learn more about us and find resources that will help you with all of our products</p> -->
                         <p>Connect with us and know more about our products. Call our support executive.</p>
-                        <a href="">Call Now</a>
+                        <a href="tel:+912261527998">Call Now</a>
                     </div>
                 </div>
             </div>
@@ -611,7 +653,7 @@
                         <a href="tel:+912261527998" class="text-decoration-none text-dark">+91
                             2261527998</a>
                     </p>
-                    
+
                 </div>
 
                 <!-- Quick Links Column -->
@@ -691,12 +733,14 @@
                                 <div class="socialcontainer">
                                     <div class="icon social-icon-4-4">
                                         <svg fill="white" viewBox="0 0 448 512" height="1.6em">
-                                            <path d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.09 107.3 0 83.2 0 53.6A53.6 53.6 0 0 1 53.6 0c29.6 0 53.7 24.09 53.7 53.6 0 29.6-24.1 53.7-53.7 53.7zM447.8 448h-92.4V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 0-37.6 15.9-43.8 31.3-2.3 5.6-2.8 13.4-2.8 21.2V448h-92.5s1.2-242.1 0-267.1h92.5v37.9c12.3-19 34.3-46.1 83.5-46.1 60.9 0 106.6 39.8 106.6 125.4V448z"/>
+                                            <path
+                                                d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.09 107.3 0 83.2 0 53.6A53.6 53.6 0 0 1 53.6 0c29.6 0 53.7 24.09 53.7 53.6 0 29.6-24.1 53.7-53.7 53.7zM447.8 448h-92.4V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 0-37.6 15.9-43.8 31.3-2.3 5.6-2.8 13.4-2.8 21.2V448h-92.5s1.2-242.1 0-267.1h92.5v37.9c12.3-19 34.3-46.1 83.5-46.1 60.9 0 106.6 39.8 106.6 125.4V448z" />
                                         </svg>
                                     </div>
                                     <div class="social-icon-4">
                                         <svg fill="white" viewBox="0 0 448 512" height="1.6em">
-                                            <path d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.09 107.3 0 83.2 0 53.6A53.6 53.6 0 0 1 53.6 0c29.6 0 53.7 24.09 53.7 53.6 0 29.6-24.1 53.7-53.7 53.7zM447.8 448h-92.4V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 0-37.6 15.9-43.8 31.3-2.3 5.6-2.8 13.4-2.8 21.2V448h-92.5s1.2-242.1 0-267.1h92.5v37.9c12.3-19 34.3-46.1 83.5-46.1 60.9 0 106.6 39.8 106.6 125.4V448z"/>
+                                            <path
+                                                d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.09 107.3 0 83.2 0 53.6A53.6 53.6 0 0 1 53.6 0c29.6 0 53.7 24.09 53.7 53.6 0 29.6-24.1 53.7-53.7 53.7zM447.8 448h-92.4V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 0-37.6 15.9-43.8 31.3-2.3 5.6-2.8 13.4-2.8 21.2V448h-92.5s1.2-242.1 0-267.1h92.5v37.9c12.3-19 34.3-46.1 83.5-46.1 60.9 0 106.6 39.8 106.6 125.4V448z" />
                                         </svg>
                                     </div>
                                 </div>
@@ -721,8 +765,8 @@
                                     </div>
                                 </div>
                             </a>
-                            
-                            
+
+
                         </div>
 
 
@@ -737,7 +781,7 @@
                         <p class="m-0">© 2025 JK Maini Precision Technology Limited. All rights
                             reserved.</p>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -746,7 +790,8 @@
     <!-- Initialize Swiper -->
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>AOS.init({ duration: 1000 });</script><script src="https://unpkg.com/lenis@1.3.7/dist/lenis.min.js"></script>
+    <script>AOS.init({ duration: 1000 });</script>
+    <script src="https://unpkg.com/lenis@1.3.7/dist/lenis.min.js"></script>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
         integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
