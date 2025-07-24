@@ -75,25 +75,35 @@ body {
 /* Transparent (top of page) */
 .navbar.transparent {
   /* background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(237, 221, 83, 0) 100%); */
-  background-color: #fff !important;
+  background-color: #ffffff !important;
 }
 
-.navbar.transparent .nav-link,
-.navbar.transparent .navbar-brand {
-  color: #000 !important;
+.navbar.transparent .nav-link{
+  color: #000;
+}
+.navbar.transparent .nav-link:hover{
+  color: var(--primary);
+}
+.navbar.transparent .nav-link.active{
+  color: var(--primary);
 }
 
 
 /* Solid background (on scroll up) */
 .navbar.solid {
-  background: #fff !important;
+  background: #ffffff !important;
   /* ← override entire background, not just color */
 }
-
-.navbar.solid .nav-link,
-.navbar.solid .navbar-brand {
-  color: #000 !important;
+.navbar.solid .nav-link{
+  color: #000;
 }
+.navbar.solid .nav-link:hover{
+  color: var(--primary);
+}
+.navbar.solid .nav-link.active{
+  color: var(--primary);
+}
+
 
 /* Hidden on scroll down */
 .navbar.hidden {
@@ -105,14 +115,17 @@ body {
   margin-right: 15px;
 }
 
+
+
+
 /* Hover and active styles */
-.nav-link:hover {
-  font-weight: 500;
-}
+/* .nav-link:hover {
+  color: var(--primary);
+} */
 
 .nav-link.active {
   font-weight: 600;
-  color: var(--primary) !important;
+  color: var(--primary);
 }
 
 @media(min-width : 330px) and (max-width : 395px){
@@ -2414,7 +2427,11 @@ body {
 
 
   } 
-  
+  @media(max-width : 576px){
+    .sector-swiper .tab-btn{
+      padding: 10px 10px !important;
+    }
+  }
 
   .sector-swiper .tab-btn.active{
     padding: 10px 30px;
@@ -2464,3 +2481,51 @@ body {
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
     }
   }
+
+  /* annual reports table  */
+
+  .table-container {
+    
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+    text-align: left;
+    padding: 18px;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  tbody td {
+    padding: 20px;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  td a {
+    color: #ef233c;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  td a:hover {
+    color: #d90429;
+  }
+  
+  .fas.fa-download {
+    border: 2px solid #ef233c;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+
