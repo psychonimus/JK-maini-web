@@ -106,7 +106,7 @@ const lenis = new Lenis({
 
 // Listen for the scroll event and log the event data
 lenis.on('scroll', (e) => {
-  console.log(e);
+  // console.log(e);
 });
 
 
@@ -126,6 +126,7 @@ lenis.on('scroll', (e) => {
         }
 
         document.getElementById('contact-form').addEventListener('submit', function(e) {
+         
             e.preventDefault();
             console.log('Form submitted');
             const toEmail = document.getElementById('EmailAddress').value;
@@ -195,4 +196,18 @@ lenis.on('scroll', (e) => {
 
 
 
+// back to top button js 
+// Show/hide button on scroll
+window.addEventListener('scroll', function() {
+  var btn = document.getElementById('backToTopBtn');
+  if (window.scrollY > 200) {
+      btn.style.display = 'block';
+  } else {
+      btn.style.display = 'none';
+  }
+});
 
+// Scroll to top on click
+document.getElementById('backToTopBtn').addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
