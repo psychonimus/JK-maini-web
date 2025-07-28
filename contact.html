@@ -44,7 +44,7 @@
                 </ul>
             </div>
             <div class="meta-header-right">
-                <ul class="navbar-nav-right">
+                <ul class="navbar-nav-right d-none d-md-flex" style="list-style: none;">
                     <li class="nav-item dropdown ms-2">
                         <a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -280,7 +280,37 @@
                         </div>
                     </li> -->
                     <li class="nav-item has-mega-menu">
-                        <li><a class="nav-link" href="investor-relation.html">Investor Relation</a></li>
+                        <a class="nav-link" href="investor-relation.html">Investor Relation</a>
+                    </li><li class="nav-item has-mega-menu d-md-none">
+
+                        <a class="nav-link d-flex justify-content-between" href="#"
+                            onclick="toggleMegaMenu(event)">Careers
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Careers</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Careers</h4>
+                                    <ul>
+                                        <li><a class="dropdown-item" target="_blank"
+                                            href="https://auto.jkmaini.com/careers.html">Automobile</a></li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://aero.jkmaini.com/careers.html">Aerospace</a></li>
+                                        
+                                        
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu d-md-none">
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-md-auto">
@@ -309,7 +339,7 @@
     <section class="contact-form" style="margin-top: 12rem;">
         <div class="container">
             <div class="row">
-                <div class="col-md-6" data-aos="fade-up">
+                <div class="col-lg-6" data-aos="fade-up">
                     <div class="left-content">
                         <h6 class="section-title">Get in Touch</h6>
                         <h2>Ready to Turn Your Manufacturing Vision into Reality?</h2>
@@ -338,8 +368,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6" data-aos="fade-up">
-                    <div class="right-form p-4 mt-4 mt-md-0">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="right-form p-4 mt-4 mt-lg-0">
                         <div>
                             <h2>Get in Touch</h2>
                             <p>Tell us what you’re building — we’ll show you how to get there, faster and smarter.
@@ -399,7 +429,7 @@
 
             <div class="row g-3">
 
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="info-card mb-3">
                         <div class="icon-box">
                             <i class="fas fa-envelope"></i>
@@ -440,7 +470,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-8">
+                <div class="col-lg-8">
                     <div class="map">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.6825020812626!2d72.96214647498091!3d19.20906493202303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b914fe186931%3A0xde2bcbac688da751!2sThe%20Raymond%20Shop!5e0!3m2!1sen!2sin!4v1752140477767!5m2!1sen!2sin"
@@ -467,7 +497,7 @@
 
             <div class="row g-3">
 
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="info-card mb-3">
                         <div class="icon-box">
                             <i class="fas fa-envelope"></i>
@@ -508,7 +538,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-8">
+                <div class="col-lg-8">
                     <div class="map">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.6825020812626!2d72.96214647498091!3d19.20906493202303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b914fe186931%3A0xde2bcbac688da751!2sThe%20Raymond%20Shop!5e0!3m2!1sen!2sin!4v1752140477767!5m2!1sen!2sin"
@@ -526,7 +556,7 @@
 
     <section class="get-in-touch-section py-5 text-center" data-aos="fade-up">
         <div class="container">
-            <h6 class="section-title">Get in Touch</h6>
+            <!-- <h6 class="section-title">Get in Touch</h6> -->
             <h2>Ready to Turn Your Manufacturing Vision into Reality?</h2>
             <p class="mb-4">Whether you're looking for custom-engineered solutions or want to explore how our
                 capabilities align with your needs, we're here to help.</p>

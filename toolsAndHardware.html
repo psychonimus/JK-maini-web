@@ -41,7 +41,7 @@
                 </ul>
             </div>
             <div class="meta-header-right">
-                <ul class="navbar-nav-right">
+                <ul class="navbar-nav-right d-none d-md-flex" style="list-style: none;">
                     <li class="nav-item dropdown ms-2">
                         <a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Careers
@@ -266,7 +266,37 @@
                     </li>
                     -->
                     <li class="nav-item has-mega-menu">
-                        <li><a class="nav-link" href="investor-relation.html">Investor Relation</a></li>
+                        <a class="nav-link" href="investor-relation.html">Investor Relation</a>
+                    </li><li class="nav-item has-mega-menu d-md-none">
+
+                        <a class="nav-link d-flex justify-content-between" href="#"
+                            onclick="toggleMegaMenu(event)">Careers
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Careers</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Careers</h4>
+                                    <ul>
+                                        <li><a class="dropdown-item" target="_blank"
+                                            href="https://auto.jkmaini.com/careers.html">Automobile</a></li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://aero.jkmaini.com/careers.html">Aerospace</a></li>
+                                        
+                                        
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu d-md-none">
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-md-auto">
@@ -328,7 +358,7 @@
     <section class="about-auto my-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-6" data-aos="fade-up">
+                <div class="col-lg-6" data-aos="fade-up">
                     <div class="header">
                         <h6 class="section-title">Precision in Every Cut</h6>
                         <h2>The Tools & Hardware Legacy of JK Files
@@ -342,7 +372,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-6" data-aos="fade-up">
+                <div class="col-lg-6" data-aos="fade-up">
                     <div class="image-container">
                         <img src="./assets/images/tools-about.png" style="width: 100%;" alt="">
                     </div>

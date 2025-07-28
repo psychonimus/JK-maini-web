@@ -42,7 +42,7 @@
                 </ul>
             </div>
             <div class="meta-header-right">
-                <ul class="navbar-nav-right">
+                <ul class="navbar-nav-right d-none d-md-flex" style="list-style: none;">
                     <li class="nav-item dropdown ms-2">
                         <a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Careers
@@ -284,7 +284,37 @@
                         </div>
                     </li> -->
                     <li class="nav-item has-mega-menu">
-                        <li><a class="nav-link" href="investor-relation.html">Investor Relation</a></li>
+                        <a class="nav-link" href="investor-relation.html">Investor Relation</a>
+                    </li><li class="nav-item has-mega-menu d-md-none">
+
+                        <a class="nav-link d-flex justify-content-between" href="#"
+                            onclick="toggleMegaMenu(event)">Careers
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Careers</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Careers</h4>
+                                    <ul>
+                                        <li><a class="dropdown-item" target="_blank"
+                                            href="https://auto.jkmaini.com/careers.html">Automobile</a></li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://aero.jkmaini.com/careers.html">Aerospace</a></li>
+                                        
+                                        
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu d-md-none">
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-md-auto">
@@ -349,7 +379,7 @@
     <section class="about-auto my-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-6" data-aos="fade-up">
+                <div class="col-lg-6" data-aos="fade-up">
                     <div class="header">
                         <h6 class="section-title">JK Maini Aerospace</h6>
                         <h2>Our Aerospace Capabilities
@@ -368,7 +398,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-6" data-aos="fade-up">
+                <div class="col-lg-6" data-aos="fade-up">
                     <div class="image-container">
                         <img src="./assets/images/aerospace-about.png" style="width: 100%;" alt="">
                     </div>
@@ -426,7 +456,7 @@
     <section class="numbers my-5 py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 d-flex justify-content-around mx-lg-0 px-lg-0">
+                <div class="col-lg-6 d-flex justify-content-around mx-lg-0 px-lg-0">
                     <div class="number-card text-center">
                         <img class="mb-2" src="./assets/images/product-sku.png" alt="Product SKUs">
                         <h2>90%</h2>
@@ -434,26 +464,23 @@
                     </div>
                     <div class="number-card text-center">
                         <img class="mb-2" src="./assets/images/ring-gears.png" alt="Ring Gears">
-                        <h2>10+</h2>
-                        <p>Countries</p>
+                        <h2>25+</h2>
+                        <p>Customers</p>
                     </div>
+                    
+                </div>
+                <div class="col-lg-6 d-flex justify-content-around mt-3 mt-lg-0 mx-lg-0 px-lg-0">
                     <div class="number-card text-center">
                         <img class="mb-2" src="./assets/images/total-plants.png" alt="plants">
-                        <h2>7</h2>
+                        <h2>2</h2>
                         <p>Decades of experience</p>
                     </div>
-                </div>
-                <div class="col-lg-4 d-flex justify-content-around mt-3 mt-lg-0 mx-lg-0 px-lg-0">
                     <div class="number-card text-center">
                         <img class="mb-2" src="./assets/images/warehouse-colored.jpg" alt="warehouses">
-                        <h2>500+</h2>
-                        <p>Products</p>
+                        <h2>1200+</h2>
+                        <p>SKUs</p>
                     </div>
-                    <div class="number-card text-center">
-                        <img class="mb-2" src="./assets/images/customers.png" alt="customers">
-                        <h2>10+</h2>
-                        <p>Industry Segments</p>
-                    </div>
+                    
                 </div>
             </div>
 

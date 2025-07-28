@@ -26,18 +26,19 @@
             <div class="meta-header-left">
                 <ul class="navbar-nav-left" style="list-style: none;">
                     <li class="nav-item ms-2">
-                        <a class="nav-link active" aria-current="page" href="https://jkmaini.com/" data-bs-toggle="tooltip"
-                            data-bs-placement="bottom" title="JK Maini Group">
+                        <a class="nav-link active" aria-current="page" href="https://jkmaini.com/"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="JK Maini Group">
                             JK Maini Group</a>
                     </li>
                     <li class="nav-item ms-2">
-                        <a class="nav-link" aria-current="page" href="https://auto.jkmaini.com/" data-bs-toggle="tooltip"
-                            data-bs-placement="bottom" title="JK Maini Precision Technology Ltd.">
+                        <a class="nav-link" aria-current="page" href="https://auto.jkmaini.com/"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="JK Maini Precision Technology Ltd.">
                             JKMPTL</a>
                     </li>
                     <li class="nav-item ms-2">
-                        <a class="nav-link" aria-current="page" href="https://aero.jkmaini.com/" data-bs-toggle="tooltip"
-                            data-bs-placement="bottom" title="JK Maini Global Aerospace Ltd.">
+                        <a class="nav-link" aria-current="page" href="https://aero.jkmaini.com/"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="JK Maini Global Aerospace Ltd.">
                             JKMGAL</a>
                     </li>
 
@@ -45,7 +46,7 @@
                 </ul>
             </div>
             <div class="meta-header-right">
-                <ul class="navbar-nav-right">
+                <ul class="navbar-nav-right d-none d-md-flex" style="list-style: none;">
                     <li class="nav-item dropdown ms-2">
                         <a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -271,9 +272,41 @@
                     </li> -->
 
                     <li class="nav-item has-mega-menu">
-                    <li><a class="nav-link" href="investor-relation.html">Investor Relation</a></li>
+                        <a class="nav-link" href="investor-relation.html">Investor Relation</a>
+                    </li>
+                    <li class="nav-item has-mega-menu d-md-none">
+
+                        <a class="nav-link d-flex justify-content-between" href="#"
+                            onclick="toggleMegaMenu(event)">Careers
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Careers</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Careers</h4>
+                                    <ul>
+                                        <li><a class="dropdown-item" target="_blank"
+                                                href="https://auto.jkmaini.com/careers.html">Automobile</a></li>
+                                        <li><a class="dropdown-item" target="_blank"
+                                                href="https://aero.jkmaini.com/careers.html">Aerospace</a></li>
+
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
                     </li>
 
+                    <li class="nav-item has-mega-menu d-md-none">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    
                 </ul>
                 <ul class="navbar-nav ms-md-auto">
                     <!-- <div class="group me-2">
@@ -784,8 +817,7 @@
                                 robust processes, and an unwavering commitment to quality, we deliver precision
                                 at scale, with consistency our customers rely on.</p>
                             <div class="d-flex justify-content-center">
-                                <a target="_blank" href="https://auto.jkmaini.com"
-                                    style="text-decoration: none;">
+                                <a target="_blank" href="https://auto.jkmaini.com" style="text-decoration: none;">
                                     <button>
                                         Visit Site
                                         <i class="fa fa-arrow-right ms-2"></i>
@@ -817,8 +849,7 @@
                                 geometries to tight tolerances and advanced materials, we deliver with excellence
                                 — with precision, without compromise.</p>
                             <div class="d-flex justify-content-center">
-                                <a target="_blank" href="https://aero.jkmaini.com"
-                                    style="text-decoration: none;">
+                                <a target="_blank" href="https://aero.jkmaini.com" style="text-decoration: none;">
                                     <button>
                                         Visit Site
                                         <i class="fa fa-arrow-right ms-2"></i>
@@ -1906,7 +1937,7 @@
         </div>
     </section>
 
-  
+
 
 
     <footer class="pt-5 main-footer">
@@ -1943,7 +1974,8 @@
                     <h5 class="mb-3 section-title">Quick Links</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="about.html" class="text-decoration-none">About Us</a></li>
-                        <li class="mb-2"><a href="https://jkmaini.com" class="text-decoration-none">JK Maini Group</a></li>
+                        <li class="mb-2"><a href="https://jkmaini.com" class="text-decoration-none">JK Maini Group</a>
+                        </li>
                         <li class="mb-2"><a target="_blank" href="https://auto.jkmaini.com"
                                 class="text-decoration-none">Jk Maini Precision Technology Ltd.</a></li>
                         <li class="mb-2"><a target="_blank" href="https://jksuperdrive.com/"
@@ -1958,10 +1990,12 @@
                 <div class="col-md-2 mb-4">
                     <h5 class="mb-3 section-title">Company</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a class="text-decoration-none text-black" href="privacy-policy.html">Privacy Policy</a></li>
-                        <li class="mb-2"><a class="text-decoration-none text-black" href="terms-of-use.html">Terms of Use</a></li>
+                        <li class="mb-2"><a class="text-decoration-none text-black" href="privacy-policy.html">Privacy
+                                Policy</a></li>
+                        <li class="mb-2"><a class="text-decoration-none text-black" href="terms-of-use.html">Terms of
+                                Use</a></li>
                         <!-- <li class="mb-2">Site Map</a></li> -->
-                        
+
                         <!-- <li class="mb-2"><i class="fa-solid fa-clock me-2"></i> Mon - Sat: 9:00 AM - 6:00 PM</li> -->
                     </ul>
                 </div>
@@ -2074,10 +2108,10 @@
     <button class="btn btn-primary back-to-top" id="backToTopBtn" title="Back to top" type="button">
         <i class="fa fa-arrow-up"></i>
     </button>
-    
 
 
-    
+
+
 
     <script>
         const popup = document.getElementById("imagePopup");
