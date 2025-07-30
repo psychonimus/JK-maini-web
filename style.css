@@ -2590,6 +2590,11 @@ td a:hover {
   
 }
 .glass-card{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   background: rgba(255, 255, 255, 0.17);
   backdrop-filter: blur(13px);
   -webkit-backdrop-filter: blur(13px);
