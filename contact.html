@@ -327,8 +327,12 @@
                     </div> -->
 
                     <li class="nav-item">
-                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
-                            Enquiry</a>
+                        <a class="nav-link" onclick="openPopup()" href="javascript:void(0)">
+                            <button class="enq-btn d-flex gap-2 align-items-center"><lord-icon
+                                    src="https://cdn.lordicon.com/fpvaxfly.json" trigger="loop" colors="primary:#ffffff"
+                                    style="width:20px;height:20px">
+                                </lord-icon> Enquiry </button>
+                        </a>
                     </li>
 
                 </ul>
@@ -342,8 +346,8 @@
                 <div class="col-lg-6" data-aos="fade-up">
                     <div class="left-content">
                         <!-- <h6 class="section-title">Get in Touch</h6> -->
-                        <h2>Ready to Turn Your Manufacturing Vision into Reality?</h2>
-                        <p>Join hands with JK Maini, trusted by over 500+ global clients for precision engineering
+                        <h2 class="page-title-animate">Ready to Turn Your Manufacturing Vision into Reality?</h2>
+                        <p class="heading-animate">Join hands with JK Maini, trusted by over 500+ global clients for precision engineering
                             excellence. Our commitment to quality and innovation has made us a preferred partner for
                             leading manufacturers worldwide.</p>
                         <div class="contact-info mt-4">
@@ -377,34 +381,37 @@
                         </div>
                         <form action="" class="mt-4" id="contact-form">
                             <div class="form-group d-sm-flex gap-3 ">
-                                <input required class="my-3" type="text" placeholder="First Name" id="FirstName">
-                                <input required class="my-3" type="text" placeholder="Last Name" id="LastName">
+                                <input class="my-3" type="text" required placeholder="First Name" id="FirstName">
+                                <input class="my-3" type="text" required placeholder="Last Name" id="LastName">
                             </div>
                             <div class="form-group d-sm-flex gap-3 ">
-                                <input required class="my-3" type="text" placeholder="Company" id="Company>
-                                <input required class=" my-3" type="text" placeholder="Email Address"
-                                    id="EmailAddress">
+                                <input class="my-3" type="text" required placeholder="Company" id="Company">
+                                <input class="my-3" type="text" required  placeholder="Email Address" id="EmailAddress">
                             </div>
                             <div class="form-group d-sm-flex gap-3 ">
-                                <input class="my-3" type="text" placeholder="Phone No." id="PhoneNo">
-                                <input class="my-3" type="text" placeholder="Industry" id="Industry">
+                                <input class="my-3" type="text" required placeholder="Phone No." id="PhoneNo">
+                                <input class="my-3" type="text" required placeholder="Industry" id="Industry">
                             </div>
                             <div class="form-group">
-                                <textarea name="" id="" placeholder="How can we help you?" id="Inquiry"></textarea>
-
+                                <textarea name="" placeholder="I want to know more about" id="Inquiry"></textarea>
+            
                             </div>
                             <div class="d-flex gap-3">
-                                <input required type="checkbox" name="" id="t&c" class="w-auto">
-                                <label class="w-auto" for="t&c">
+                                <input required type="checkbox" name="" id="T&C" class="w-auto">
+                                <label class="w-auto" for="T&C">
                                     I agree to the
-                                    <a href="privacy-policy.html" target="_blank"
-                                        class="text-decoration-underline">Privacy Policy</a>
+                                    <a href="privacy-policy.html" target="_blank" class="text-decoration-underline">Privacy
+                                        Policy</a>
                                     and
-                                    <a href="terms-and-conditions.html" target="_blank"
-                                        class="text-decoration-underline">Terms &amp; Conditions</a>
+                                    <a href="terms-and-conditions.html" target="_blank" class="text-decoration-underline">Terms
+                                        &amp; Conditions</a>
                                     <span class="text-danger">*</span>
                                 </label>
                             </div>
+                            <!-- <div class="d-flex gap-3">
+                                <input type="checkbox" name="" id="t&c" class="w-auto">
+                                <label class="w-auto" for="t&c">I agree to the terms and conditions*</label>
+                            </div> -->
                             <button class="hero-button mt-4" id="submit">Submit</button>
                             <div id="message" class="message"></div>
                             <div id="error" class="error"></div>
@@ -418,8 +425,8 @@
     <section class="office-locations my-5" id="office-locations" data-aos="fade-up">
         <div class="container">
             <div class=" mt-5 mb-4">
-                <h6 class="section-title">Our Office Location</h6>
-                <h2>JK Maini Precision Technology</h2>
+                <h6 class="section-title page-title-animate">Our Office Location</h6>
+                <h2 class="page-title-animate">JK Maini Precision Technology</h2>
                 <!-- <p>
                     Our Mumbai office serves as a key point of contact for clients and partners in the region.
                     Conveniently located, it enables us to connect with businesses across western India and provide
@@ -487,7 +494,7 @@
         <div class="container">
             <div class=" mt-5 mb-4">
                 <!-- <h6 class="section-title">Our Office Location</h6> -->
-                <h2>JK Maini Global Aerospace</h2>
+                <h2 class="page-title-animate">JK Maini Global Aerospace</h2>
                 <!-- <p>
                     Our Mumbai office serves as a key point of contact for clients and partners in the region.
                     Conveniently located, it enables us to connect with businesses across western India and provide
@@ -554,9 +561,9 @@
 
 
 
-    <section class="get-in-touch-section py-5 text-center" data-aos="fade-up">
+    <!-- <section class="get-in-touch-section py-5 text-center" data-aos="fade-up">
         <div class="container">
-            <!-- <h6 class="section-title">Get in Touch</h6> -->
+            
             <h2>Ready to Turn Your Manufacturing Vision into Reality?</h2>
             <p class="mb-4">Whether you're looking for custom-engineered solutions or want to explore how our
                 capabilities align with your needs, we're here to help.</p>
@@ -564,7 +571,7 @@
                 <button class="hero-button" onclick="openPopup()" >Get Started</button>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <div id="popupOverlay" class="popup-overlay">
         <div class="right-form p-4">
@@ -576,16 +583,16 @@
             </div>
             <form action="" class="mt-4" id="contact-form">
                 <div class="form-group d-sm-flex gap-3 ">
-                    <input required class="my-3" type="text" placeholder="First Name" id="FirstName">
-                    <input required class="my-3" type="text" placeholder="Last Name" id="LastName">
+                    <input class="my-3" type="text" required placeholder="First Name" id="FirstName">
+                    <input class="my-3" type="text" required placeholder="Last Name" id="LastName">
                 </div>
                 <div class="form-group d-sm-flex gap-3 ">
-                    <input required class="my-3" type="text" placeholder="Company" id="Company">
-                    <input required class="my-3" type="text" placeholder="Email Address" id="EmailAddress">
+                    <input class="my-3" type="text" required placeholder="Company" id="Company">
+                    <input class="my-3" type="text" required  placeholder="Email Address" id="EmailAddress">
                 </div>
                 <div class="form-group d-sm-flex gap-3 ">
-                    <input class="my-3" type="text" placeholder="Phone No." id="PhoneNo">
-                    <input class="my-3" type="text" placeholder="Industry" id="Industry">
+                    <input class="my-3" type="text" required placeholder="Phone No." id="PhoneNo">
+                    <input class="my-3" type="text" required placeholder="Industry" id="Industry">
                 </div>
                 <div class="form-group">
                     <textarea name="" placeholder="I want to know more about" id="Inquiry"></textarea>
@@ -595,15 +602,14 @@
                     <input required type="checkbox" name="" id="T&C" class="w-auto">
                     <label class="w-auto" for="T&C">
                         I agree to the
-                        <a href="privacy-policy.html" target="_blank"
-                            class="text-decoration-underline">Privacy Policy</a>
+                        <a href="privacy-policy.html" target="_blank" class="text-decoration-underline">Privacy
+                            Policy</a>
                         and
-                        <a href="terms-and-conditions.html" target="_blank"
-                            class="text-decoration-underline">Terms &amp; Conditions</a>
+                        <a href="terms-and-conditions.html" target="_blank" class="text-decoration-underline">Terms
+                            &amp; Conditions</a>
                         <span class="text-danger">*</span>
                     </label>
                 </div>
-                
                 <!-- <div class="d-flex gap-3">
                     <input type="checkbox" name="" id="t&c" class="w-auto">
                     <label class="w-auto" for="t&c">I agree to the terms and conditions*</label>
@@ -614,18 +620,24 @@
             </form>
         </div>
     </div>
-    <button class="btn back-to-top" id="backToTopBtn" title="Back to top" type="button">
-        <i class="fa fa-arrow-up"></i>
+    <button class="back-to-top" id="backToTopBtn" title="Back to top" type="button">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+            <path
+                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
+            </path>
+        </svg>
     </button>
 
     <section class="contact-footer">
-
+    
         <div class="line"></div>
         <div class="container py-4">
             <div class="row">
                 <div class="col-md-4">
                     <div class="contact-box text-center p-4">
-                        <i class="fa-solid fa-location-dot mb-3"></i>
+                        <lord-icon src="https://cdn.lordicon.com/bpmglzll.json" trigger="loop" colors="primary:#ffffff"
+                            style="width:50px;height:50px">
+                        </lord-icon>
                         <h3>Our Offices</h3>
                         <p>View our locations and find contact details to our nearest office.</p>
                         <a href="contact.html#office-locations">Explore Our Locations</a>
@@ -633,7 +645,10 @@
                 </div>
                 <div class="col-md-4">
                     <div class="contact-box text-center p-4">
-                        <i class="fa-solid fa-envelope-open mb-3"></i>
+                        <lord-icon src="https://cdn.lordicon.com/vxzzdaaj.json" trigger="loop"
+                            colors="primary:#ffffff,secondary:#ebe6ef,tertiary:#e83a30,quaternary:#ffffff"
+                            style="width:50px;height:50px">
+                        </lord-icon>
                         <h3>Drop us a Line</h3>
                         <p>You can contact us by filling in this form any time you need professional support.</p>
                         <a onclick="openPopup()" href="javascript:void(0)">Fill Our Form</a>
@@ -641,7 +656,10 @@
                 </div>
                 <div class="col-md-4">
                     <div class="contact-box text-center p-4">
-                        <i class="fa-solid fa-headset mb-3"></i>
+                        <lord-icon src="https://cdn.lordicon.com/abhwievu.json" trigger="loop"
+                            colors="primary:#ffffff,secondary:#ffffff,tertiary:#ffffff,quaternary:#ebe6ef"
+                            style="width:50px;height:50px">
+                        </lord-icon>
                         <h3>Support</h3>
                         <!-- <p>Learn more about us and find resources that will help you with all of our products</p> -->
                         <p>Connect with us and know more about our products. Call our support executive.</p>
@@ -651,171 +669,209 @@
             </div>
         </div>
     </section>
-
-
-
-    <footer class="pt-5 main-footer">
-        <div class="container">
-            <div class="row">
-                <!-- Company Info Column -->
-                <div class="col-md-4 mb-4">
-                    <a href="index.html"><img style="width: 220px;" class="img-fluid"
-                            src="./assets/images/jk-maini-logo.svg" alt="JK Maini Precision Technology"></a>
-
-                    <p class="mb-1">
-
-                        <strong>CIN :</strong> U25933MH2024PLC417852
-                    </p>
-                    <p class="mb-1">
-                        <strong>Email :</strong>
-                        <a href="mailto:info@ringplusaqua.co.in"
-                            class="text-decoration-none text-dark">info@ringplusaqua.co.in</a>
-                    </p>
-                    <p class="mb-1">
-                        <strong>Address :</strong>
-                        C/O Raymond Ltd, Jekegram Pokharan Road No. 1, Jekegram, Thane, Maharashtra, India, 400606
-                    </p>
-                    <p class="mb-1">
-                        <strong>Phone :</strong>
-                        <a href="tel:+912261527998" class="text-decoration-none text-dark">+91
-                            2261527998</a>
-                    </p>
-
-                </div>
-
-                <!-- Quick Links Column -->
-                <div class="col-md-3 mb-4 quick-links">
-                    <h5 class="mb-3 section-title">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="about.html" class="text-decoration-none">About Us</a></li>
-                        <li class="mb-2"><a href="https://jkmaini.com" class="text-decoration-none">JK Maini Group</a></li>
-                        <li class="mb-2"><a target="_blank" href="https://auto.jkmaini.com"
-                                class="text-decoration-none">JK Maini Precision Technology Ltd.</a></li>
-                        <li class="mb-2"><a target="_blank" href="https://jksuperdrive.com/"
-                                class="text-decoration-none">JK Files and Engineering Ltd.</a></li>
-                        <li class="mb-2"><a target="_blank" href="https://aero.jkmaini.com"
-                                class="text-decoration-none">JK Maini Global Aerospace Ltd.</a></li>
-
-                    </ul>
-                </div>
-
-                <!-- Contact Info Column -->
-                <div class="col-md-2 mb-4">
-                    <h5 class="mb-3 section-title">Company</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a class="text-decoration-none text-black" href="privacy-policy.html">Privacy Policy</a></li>
-                        <li class="mb-2"><a class="text-decoration-none text-black" href="terms-of-use.html">Terms of Use</a></li>
-                        <!-- <li class="mb-2">Site Map</a></li> -->
-                        <!-- <li class="mb-2"><i class="fa-solid fa-clock me-2"></i> Mon - Sat: 9:00 AM - 6:00 PM</li> -->
-                    </ul>
-                </div>
-
-                <!-- Newsletter Column -->
-                <div class="col-md-3 mb-5">
-                    <div class="social-links">
-                        <h5 class="mb-3 section-title">Follow us</h5>
-
-                        <!-- From Uiverse.io by javierBarroso -->
-                        <div class="social-login-icons">
-                            <a href="" class="facebook-icon">
-                                <div class="socialcontainer">
-                                    <div class="icon social-icon-3-3">
-                                        <svg viewBox="0 0 384 512" fill="white" height="1.6em"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div class="social-icon-3">
-                                        <svg viewBox="0 0 384 512" fill="white" height="1.6em"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- <a href="" class="twitter-icon">
-                                <div class="socialcontainer">
-                                    <div class="icon social-icon-1-1">
-                                        <svg viewBox="0 0 512 512" height="1.7em" xmlns="http://www.w3.org/2000/svg"
-                                            class="svgIcontwit" fill="white">
-                                            <path
-                                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div class="social-icon-1">
-                                        <svg viewBox="0 0 512 512" height="1.7em" xmlns="http://www.w3.org/2000/svg"
-                                            class="svgIcontwit" fill="white">
-                                            <path
-                                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a> -->
-                            <a href="" class="linkedin-icon">
-                                <div class="socialcontainer">
-                                    <div class="icon social-icon-4-4">
-                                        <svg fill="white" viewBox="0 0 448 512" height="1.6em">
-                                            <path
-                                                d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.09 107.3 0 83.2 0 53.6A53.6 53.6 0 0 1 53.6 0c29.6 0 53.7 24.09 53.7 53.6 0 29.6-24.1 53.7-53.7 53.7zM447.8 448h-92.4V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 0-37.6 15.9-43.8 31.3-2.3 5.6-2.8 13.4-2.8 21.2V448h-92.5s1.2-242.1 0-267.1h92.5v37.9c12.3-19 34.3-46.1 83.5-46.1 60.9 0 106.6 39.8 106.6 125.4V448z" />
-                                        </svg>
-                                    </div>
-                                    <div class="social-icon-4">
-                                        <svg fill="white" viewBox="0 0 448 512" height="1.6em">
-                                            <path
-                                                d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.09 107.3 0 83.2 0 53.6A53.6 53.6 0 0 1 53.6 0c29.6 0 53.7 24.09 53.7 53.6 0 29.6-24.1 53.7-53.7 53.7zM447.8 448h-92.4V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 0-37.6 15.9-43.8 31.3-2.3 5.6-2.8 13.4-2.8 21.2V448h-92.5s1.2-242.1 0-267.1h92.5v37.9c12.3-19 34.3-46.1 83.5-46.1 60.9 0 106.6 39.8 106.6 125.4V448z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="instagram-icon">
-                                <div class="socialcontainer">
-                                    <div class="icon social-icon-2-2">
-                                        <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div class="social-icon-2">
-                                        <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-
-
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright py-2">
+    
+    
+    
+        <footer class="pt-5 main-footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 text-center">
-                        <p class="m-0">© 2025 JK Maini Precision Technology Limited. All rights
-                            reserved.</p>
+                    <!-- Company Info Column -->
+                    <div class="col-md-4 mb-4">
+                        <a href="index.html"><img style="width: 220px;" class="img-fluid"
+                                src="./assets/images/jk-maini-logo.svg" alt="JK Maini Precision Technology"></a>
+    
+                        <p class="mb-1">
+    
+                            <strong>CIN :</strong> U25933MH2024PLC417852
+                        </p>
+                        <p class="mb-1">
+                            <strong>Email :</strong>
+                            <a href="mailto:info@ringplusaqua.co.in"
+                                class="text-decoration-none text-dark">info@ringplusaqua.co.in</a>
+                        </p>
+                        <p class="mb-1">
+                            <strong>Address :</strong>
+                            C/O Raymond Ltd, Jekegram Pokharan Road No. 1, Jekegram, Thane, Maharashtra, India, 400606
+                        </p>
+                        <p class="mb-1">
+                            <strong>Phone :</strong>
+                            <a href="tel:+912261527998" class="text-decoration-none text-dark">+91
+                                2261527998</a>
+                        </p>
+                        
                     </div>
-
+    
+                    <!-- Quick Links Column -->
+                    <div class="col-md-3 mb-4 quick-links">
+                        <h5 class="mb-3 section-title">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="about.html" class="text-decoration-none">About Us</a></li>
+                            <li class="mb-2"><a href="https://jkmaini.com" class="text-decoration-none">JK Maini Group</a></li>
+                            <li class="mb-2"><a target="_blank" href="https://auto.jkmaini.com"
+                                    class="text-decoration-none">JK Maini Precision Technology Ltd.</a></li>
+                            <li class="mb-2"><a target="_blank" href="https://jksuperdrive.com/"
+                                    class="text-decoration-none">JK Files and Engineering Ltd.</a></li>
+                            <li class="mb-2"><a target="_blank" href="https://aero.jkmaini.com"
+                                    class="text-decoration-none">JK Maini Global Aerospace Ltd.</a></li>
+    
+                        </ul>
+                    </div>
+    
+                    <!-- Contact Info Column -->
+                    <div class="col-md-2 mb-4">
+                        <h5 class="mb-3 section-title">Company</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a class="text-decoration-none text-black" href="privacy-policy.html">Privacy Policy</a></li>
+                            <li class="mb-2"><a class="text-decoration-none text-black" href="terms-of-use.html">Terms of Use</a></li>
+                            <!-- <li class="mb-2">Site Map</a></li> -->
+                            <!-- <li class="mb-2"><i class="fa-solid fa-clock me-2"></i> Mon - Sat: 9:00 AM - 6:00 PM</li> -->
+                        </ul>
+                    </div>
+    
+                    <!-- Newsletter Column -->
+                    <div class="col-md-3 mb-5">
+                        <div class="social-links">
+                            <h5 class="mb-3 section-title">Follow us</h5>
+    
+                            <!-- From Uiverse.io by javierBarroso -->
+                            <div class="social-login-icons">
+                                <a href="" class="facebook-icon">
+                                    <div class="socialcontainer">
+                                        <div class="icon social-icon-3-3">
+                                            <svg viewBox="0 0 384 512" fill="white" height="1.6em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="social-icon-3">
+                                            <svg viewBox="0 0 384 512" fill="white" height="1.6em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- <a href="" class="twitter-icon">
+                                    <div class="socialcontainer">
+                                        <div class="icon social-icon-1-1">
+                                            <svg viewBox="0 0 512 512" height="1.7em" xmlns="http://www.w3.org/2000/svg"
+                                                class="svgIcontwit" fill="white">
+                                                <path
+                                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="social-icon-1">
+                                            <svg viewBox="0 0 512 512" height="1.7em" xmlns="http://www.w3.org/2000/svg"
+                                                class="svgIcontwit" fill="white">
+                                                <path
+                                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a> -->
+                                <a href="" class="linkedin-icon">
+                                    <div class="socialcontainer">
+                                        <div class="icon social-icon-4-4">
+                                            <svg fill="white" viewBox="0 0 448 512" height="1.6em">
+                                                <path d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.09 107.3 0 83.2 0 53.6A53.6 53.6 0 0 1 53.6 0c29.6 0 53.7 24.09 53.7 53.6 0 29.6-24.1 53.7-53.7 53.7zM447.8 448h-92.4V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 0-37.6 15.9-43.8 31.3-2.3 5.6-2.8 13.4-2.8 21.2V448h-92.5s1.2-242.1 0-267.1h92.5v37.9c12.3-19 34.3-46.1 83.5-46.1 60.9 0 106.6 39.8 106.6 125.4V448z"/>
+                                            </svg>
+                                        </div>
+                                        <div class="social-icon-4">
+                                            <svg fill="white" viewBox="0 0 448 512" height="1.6em">
+                                                <path d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.09 107.3 0 83.2 0 53.6A53.6 53.6 0 0 1 53.6 0c29.6 0 53.7 24.09 53.7 53.6 0 29.6-24.1 53.7-53.7 53.7zM447.8 448h-92.4V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 0-37.6 15.9-43.8 31.3-2.3 5.6-2.8 13.4-2.8 21.2V448h-92.5s1.2-242.1 0-267.1h92.5v37.9c12.3-19 34.3-46.1 83.5-46.1 60.9 0 106.6 39.8 106.6 125.4V448z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="instagram-icon">
+                                    <div class="socialcontainer">
+                                        <div class="icon social-icon-2-2">
+                                            <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path style="fill : #000;"
+                                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="social-icon-2">
+                                            <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                                
+                            </div>
+    
+    
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+            <div class="copyright py-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p class="m-0">© 2025 JK Maini Precision Technology Limited. All rights
+                                reserved.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <div id="cursor"></div>
+        <div id="cursor-border"></div>
+
+        <script>
+            const cursor = document.getElementById("cursor");
+            const cursorBorder = document.getElementById("cursor-border");
+        
+            let cursorPos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+            let cursorBorderPos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+        
+            window.addEventListener("mousemove", (e) => {
+                cursorPos.x = e.clientX;
+                cursorPos.y = e.clientY;
+        
+                // Center align
+                cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`;
+            });
+        
+            function animateCursor() {
+                const ease = 8;
+                cursorBorderPos.x += (cursorPos.x - cursorBorderPos.x) / ease;
+                cursorBorderPos.y += (cursorPos.y - cursorBorderPos.y) / ease;
+        
+                cursorBorder.style.transform = `translate(${cursorBorderPos.x}px, ${cursorBorderPos.y}px) translate(-50%, -50%)`;
+        
+                requestAnimationFrame(animateCursor);
+            }
+        
+            animateCursor();
+        
+        </script>
 
     <!-- Initialize Swiper -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>AOS.init({ duration: 1000 });</script>
