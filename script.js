@@ -38,7 +38,7 @@ window.addEventListener("scroll", () => {
             effect: "fade",
             loop : true,
             autoplay: {
-                delay: 13000,
+                delay: 21000,
                 disableOnInteraction: false,
               },
             navigation: {
