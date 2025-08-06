@@ -113,7 +113,7 @@ body {
 
 /* Hidden on scroll down */
 .navbar.hidden {
-  top: -160px;
+  top: -180px;
 }
 
 /* Nav item spacing */
@@ -3163,3 +3163,84 @@ td a:hover {
     left: 100%;
   }
 }
+
+/* #message p {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 50px;
+  background-color: #4BB54332;
+  position: relative;
+  padding-left: 44px;
+}
+
+#message p::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="%234BB543"/><path d="M6 10.5L9 13.5L14 8.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat center center;
+  background-size: 20px 20px;
+  content: "";
+} */
+
+#message, #error {
+  display: none;
+}
+
+
+#message p {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 50px;
+  background-color: #4BB54332;
+  position: relative;
+  padding-left: 44px;
+}
+
+#message p::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="%234BB543"/><path d="M6 10.5L9 13.5L14 8.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat center center;
+  background-size: 20px 20px;
+}
+
+#error p {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 50px;
+  background-color: #ff000032;
+  position: relative;
+  padding-left: 44px;
+}
+
+#error p::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="%23ff0000"/><path d="M6 6L14 14M14 6L6 14" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>') no-repeat center center;
+  background-size: 20px 20px;
+}
+
+.old-photo{
+  transition: 0.5s all ease;
+}
+.old-photo:hover{
+  scale: 1.04;
+}
+
+ 

@@ -1,4 +1,4 @@
- 
+
 
 const navbar = document.getElementById("navbar");
 let lastScrollTop = 0;
@@ -33,73 +33,73 @@ window.addEventListener("scroll", () => {
 });
 
 
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            effect: "fade",
-            loop : true,
-            autoplay: {
-                delay: 21000,
-                disableOnInteraction: false,
-              },
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-          });
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  effect: "fade",
+  loop: true,
+  autoplay: {
+    delay: 21000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 
-          function toggleMegaMenu(event) {
-            if (window.innerWidth < 992) {
-                event.preventDefault();
-                const megaMenu = event.currentTarget.nextElementSibling;
-                megaMenu.classList.toggle('show');
-                const plusIcon = event.currentTarget.querySelector('span');
-                plusIcon.textContent = megaMenu.classList.contains('show') ? '-' : '+';
-            }
-        }
+function toggleMegaMenu(event) {
+  if (window.innerWidth < 992) {
+    event.preventDefault();
+    const megaMenu = event.currentTarget.nextElementSibling;
+    megaMenu.classList.toggle('show');
+    const plusIcon = event.currentTarget.querySelector('span');
+    plusIcon.textContent = megaMenu.classList.contains('show') ? '-' : '+';
+  }
+}
 
-        function toggleAccordion(header) {
-            if (window.innerWidth < 992) {
-                const ul = header.nextElementSibling;
-                if (!ul) return; // Guard clause if ul doesn't exist
+function toggleAccordion(header) {
+  if (window.innerWidth < 992) {
+    const ul = header.nextElementSibling;
+    if (!ul) return; // Guard clause if ul doesn't exist
 
-                const isActive = header.classList.contains('active');
+    const isActive = header.classList.contains('active');
 
-                // Close all other accordions in the same mega-menu
-                const parentMegaMenu = header.closest('.mega-menu');
-                const allHeaders = parentMegaMenu.querySelectorAll('h4');
-                const allUls = parentMegaMenu.querySelectorAll('ul');
+    // Close all other accordions in the same mega-menu
+    const parentMegaMenu = header.closest('.mega-menu');
+    const allHeaders = parentMegaMenu.querySelectorAll('h4');
+    const allUls = parentMegaMenu.querySelectorAll('ul');
 
-                allHeaders.forEach(h => h.classList.remove('active'));
-                allUls.forEach(u => u.classList.remove('active'));
+    allHeaders.forEach(h => h.classList.remove('active'));
+    allUls.forEach(u => u.classList.remove('active'));
 
-                if (!isActive) {
-                    header.classList.add('active');
-                    ul.classList.add('active');
-                }
-            }
-        }
+    if (!isActive) {
+      header.classList.add('active');
+      ul.classList.add('active');
+    }
+  }
+}
 
-        function openPopup() {
-          document.getElementById("popupOverlay").style.display = "flex";
-      }
+function openPopup() {
+  document.getElementById("popupOverlay").style.display = "flex";
+}
 
-      function closePopup() {
-          document.getElementById("popupOverlay").style.display = "none";
-      }
+function closePopup() {
+  document.getElementById("popupOverlay").style.display = "none";
+}
 
-      window.onclick = function (event) {
-          const popup = document.getElementById("popupOverlay");
-          if (event.target == popup) {
-              popup.style.display = "none";
-          }
-      }
+window.onclick = function (event) {
+  const popup = document.getElementById("popupOverlay");
+  if (event.target == popup) {
+    popup.style.display = "none";
+  }
+}
 
-      // Initialize Lenis
+// Initialize Lenis
 const lenis = new Lenis({
   autoRaf: true,
 });
@@ -113,84 +113,105 @@ lenis.on('scroll', (e) => {
 // the js code for email SMtp integration for enquiry form
 
 
-        function customEncodeURI(str) {
-            return str.replace(/[@]/g, '%40')
-                      .replace(/[:]/g, '%3A')
-                      .replace(/[?]/g, '%3F')
-                      .replace(/[/]/g, '%2F')
-                      .replace(/[#]/g, '%23')
-                      .replace(/[&]/g, '%26')
-                      .replace(/[=]/g, '%3D')
-                      .replace(/[+]/g, '%2B')
-                      .replace(/[ ]/g, '%20');
-        }
+function customEncodeURI(str) {
+  return str.replace(/[@]/g, '%40')
+    .replace(/[:]/g, '%3A')
+    .replace(/[?]/g, '%3F')
+    .replace(/[/]/g, '%2F')
+    .replace(/[#]/g, '%23')
+    .replace(/[&]/g, '%26')
+    .replace(/[=]/g, '%3D')
+    .replace(/[+]/g, '%2B')
+    .replace(/[ ]/g, '%20');
+}
 
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-         
-            e.preventDefault();
-            console.log('Form submitted');
-            const toEmail = document.getElementById('EmailAddress').value;
-            const firstname = document.getElementById('FirstName').value;
-            const lastname = document.getElementById('LastName').value;
-            const company = document.getElementById('Company').value;
-            const phoneno = document.getElementById('PhoneNo').value;
-            const industry = document.getElementById('Industry').value;
-            const email = document.getElementById('EmailAddress').value; // Same as toEmail
-            const inquiry = document.getElementById('Inquiry').value;
-            const subject = "";
-            const htmlContent ="";
-            const messageDiv = document.getElementById('message');
-            const errorDiv = document.getElementById('error');
+document.getElementById('contact-form').addEventListener('submit', function (e) {
 
-            messageDiv.textContent = '';
-            errorDiv.textContent = '';
+  e.preventDefault();
+  console.log('Form submitted');
+  const toEmail = document.getElementById('EmailAddress').value;
+  const firstname = document.getElementById('FirstName').value;
+  const lastname = document.getElementById('LastName').value;
+  const company = document.getElementById('Company').value;
+  const phoneno = document.getElementById('PhoneNo').value;
+  const industry = document.getElementById('Industry').value;
+  const email = document.getElementById('EmailAddress').value; // Same as toEmail
+  const inquiry = document.getElementById('Inquiry').value;
+  const subject = "";
+  const htmlContent = "";
+  const messageDiv = document.getElementById('message');
+  const errorDiv = document.getElementById('error');
 
-            //const url = 'http://172.21.4.191:80/api/email/sendemail?toEmail=' + customEncodeURI(toEmail) + //testing 
+  messageDiv.style.display = 'none';
+errorDiv.style.display = 'none';
+messageDiv.innerHTML = '';
+errorDiv.innerHTML = '';
 
-            const url = 'https://api.jkmaini.com/api/email/sendemail?firstname=' + customEncodeURI(firstname) +
-                        '&lastname=' + customEncodeURI(lastname) +
-                        '&company=' + customEncodeURI(company) +
-                        '&phoneno=' + customEncodeURI(phoneno) +
-                        '&industry=' + customEncodeURI(industry) +
-                        '&email=' + customEncodeURI(email) +
-                        '&inquiry=' + customEncodeURI(inquiry);
+  // messageDiv.textContent = '';
+  // errorDiv.textContent = '';
 
-            console.log('URL:', url);
-            console.log('Payload:', JSON.stringify({ subject, htmlContent }));
-            // For proxy: fetch('/api/email/sendemail?toEmail=' + customEncodeURI(toEmail) + '&firstname=' + customEncodeURI(firstname) + '&lastname=' + customEncodeURI(lastname) + '&company=' + customEncodeURI(company) + '&phoneno=' + customEncodeURI(phoneno) + '&industry=' + customEncodeURI(industry) + '&email=' + customEncodeURI(email) + '&inquiry=' + customEncodeURI(inquiry), {
-            fetch(url, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ subject, htmlContent })
-                // If API supports plain-text:
-                // body: JSON.stringify({ subject, htmlContent, textContent: `Hello ${firstname}! Thank you for your inquiry about ${company} services. Visit us at https://probus.co.in. To unsubscribe, visit https://probus.co.in/unsubscribe. Probus, 123 Business Street, City, Country` })
-            })
-                .then(function(response) {
-                    console.log('Response status:', response.status);
-                    return Promise.all([response.json(), response.ok, response.status]);
-                })
-                .then(function(jsonData, ok, status) {
-                    console.log('Response data:', jsonData);
-                    if (ok) {
-                        messageDiv.textContent = jsonData.message || 'Application submitted successfully.';
-                    } else {
-                        errorDiv.textContent = jsonData.error || 'Application submitted successfully.';
-                    }
-                })
-                .catch(function(error) {
-                    console.error('Fetch error:', error);
-                    errorDiv.textContent = `Error: ${error.message}`;
-                })
-                .finally(function() {
-                    document.getElementById('contact-form').reset();
-                    console.log('Form cleared');
-                });
-        // Close the popup after successful submission
-        // const popupOverlay = document.getElementById('popupOverlay');
-        // if (popupOverlay) {
-        //     popupOverlay.style.display = 'none';
-        // }
-        });
+  //const url = 'http://172.21.4.191:80/api/email/sendemail?toEmail=' + customEncodeURI(toEmail) + //testing 
+
+  const url = 'https://api.jkmaini.com/api/email/sendemail?firstname=' + customEncodeURI(firstname) +
+    '&lastname=' + customEncodeURI(lastname) +
+    '&company=' + customEncodeURI(company) +
+    '&phoneno=' + customEncodeURI(phoneno) +
+    '&industry=' + customEncodeURI(industry) +
+    '&email=' + customEncodeURI(email) +
+    '&inquiry=' + customEncodeURI(inquiry);
+
+  console.log('URL:', url);
+  console.log('Payload:', JSON.stringify({ subject, htmlContent }));
+  // For proxy: fetch('/api/email/sendemail?toEmail=' + customEncodeURI(toEmail) + '&firstname=' + customEncodeURI(firstname) + '&lastname=' + customEncodeURI(lastname) + '&company=' + customEncodeURI(company) + '&phoneno=' + customEncodeURI(phoneno) + '&industry=' + customEncodeURI(industry) + '&email=' + customEncodeURI(email) + '&inquiry=' + customEncodeURI(inquiry), {
+  fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ subject, htmlContent })
+    // If API supports plain-text:
+    // body: JSON.stringify({ subject, htmlContent, textContent: `Hello ${firstname}! Thank you for your inquiry about ${company} services. Visit us at https://probus.co.in. To unsubscribe, visit https://probus.co.in/unsubscribe. Probus, 123 Business Street, City, Country` })
+  })
+    .then(function (response) {
+      debugger
+      console.log('Response status:', response.status);
+      console.log('Response headers:', [...response.headers.entries()]);
+      console.log('Response ok:', response.ok);
+      return Promise.all([response.json(), response.ok, response.status]);
+    })
+    .then(function ([jsonData, ok, status]) {
+      debugger
+      console.log('Response data:', jsonData);
+      // if (ok) {
+      //     debugger
+      //     messageDiv.textContent = jsonData.message || 'Application submitted successfully.';
+      // } else {
+      //     errorDiv.textContent = jsonData.error || `Application not submitted successfully. Status: ${status}`;
+      // }
+      if (ok) {
+        messageDiv.style.display = 'block';
+        messageDiv.innerHTML = `<p>${jsonData.message || 'Response submitted successfully.'}</p>`;
+        errorDiv.style.display = 'none';
+        errorDiv.innerHTML = '';
+      } else {
+        errorDiv.style.display = 'block';
+        errorDiv.innerHTML = `<p>${jsonData.error || 'Responce not Submitted.'}</p>`;
+        messageDiv.style.display = 'none';
+        messageDiv.innerHTML = '';
+      }
+    })
+    .catch(function (error) {
+      console.error('Fetch error:', error);
+      // errorDiv.textContent = `Error: ${error.message}`;
+      errorDiv.style.display = 'block';
+      errorDiv.innerHTML = `<p>Error: ${error.message}</p>`;
+      messageDiv.style.display = 'none';
+      messageDiv.innerHTML = '';
+    })
+    .finally(function () {
+      document.getElementById('contact-form').reset();
+      console.log('Form cleared');
+    });
+
+});
 
 
 
@@ -198,17 +219,17 @@ lenis.on('scroll', (e) => {
 
 // back to top button js 
 // Show/hide button on scroll
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   var btn = document.getElementById('backToTopBtn');
   if (window.scrollY > 200) {
-      btn.style.display = 'block';
+    btn.style.display = 'block';
   } else {
-      btn.style.display = 'none';
+    btn.style.display = 'none';
   }
 });
 
 // Scroll to top on click
-document.getElementById('backToTopBtn').addEventListener('click', function() {
+document.getElementById('backToTopBtn').addEventListener('click', function () {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
@@ -234,7 +255,7 @@ document.querySelectorAll('.heading-animation-1').forEach((el) => {
       trigger: el,
       start: "top 90%",
       toggleActions: "play none none none",
-      once : true
+      once: true
     }
   });
 });
@@ -287,7 +308,7 @@ document.querySelectorAll(".scale-blur-heading").forEach(el => {
     scrollTrigger: {
       trigger: el,
       start: "top 95%",
-      scrub : true,
+      scrub: true,
     }
   });
 });
@@ -300,7 +321,7 @@ document.querySelectorAll('.heading-clip-reveal span').forEach(el => {
     scrollTrigger: {
       trigger: el,
       start: "top 98%",
-      scrub : true,
+      scrub: true,
     }
   });
 });
@@ -332,7 +353,7 @@ document.querySelectorAll('.heading-skew').forEach(el => {
     scrollTrigger: {
       trigger: el,
       start: "top 80%",
-      scrub : true
+      scrub: true
     }
   });
 });
@@ -355,8 +376,8 @@ gsap.from('[animate] .word', {
   scrollTrigger: {
     trigger: '[animate]',
     start: 'top 85%',
-    toggleActions: 'play none none reset', 
-    
+    toggleActions: 'play none none reset',
+
   }
 });
 
@@ -376,8 +397,8 @@ gsap.from('[animate-3] .word', {
   scrollTrigger: {
     trigger: '[animate-3]',
     start: 'top 85%',
-    toggleActions: 'play none none reset', 
-    
+    toggleActions: 'play none none reset',
+
   }
 });
 
@@ -396,8 +417,8 @@ gsap.from('[vmv] .word', {
   scrollTrigger: {
     trigger: '[vmv]',
     start: 'top 85%',
-    toggleActions: 'play none none reset', 
-    
+    toggleActions: 'play none none reset',
+
   }
 });
 
@@ -420,8 +441,8 @@ gsap.from('[animate-2] .word', {
   scrollTrigger: {
     trigger: '[animate-2]',
     start: 'top 85%',
-    toggleActions: 'play none none reset', 
-    
+    toggleActions: 'play none none reset',
+
   }
 });
 
