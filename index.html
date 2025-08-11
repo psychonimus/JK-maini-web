@@ -905,23 +905,23 @@
                     <div class="explore-card h-100 d-flex flex-column justify-content-between">
                         <div>
                             <img src="./assets/images/sustainability.png" alt="">
-                        <div class="p-3">
-                            <h2>Sustainability</h2>
-                            <p class="heading-animate">At JK Maini, sustainability isn't an initiative, it's
-                                engineered
-                                into
-                                everything we do. From optimizing resources to minimizing
-                                environmental impact, we are committed to responsible innovation,
-                                cleaner manufacturing, and building a more sustainable supply
-                                chain.
-                                We engineer with purpose, delivering precision today while
-                                protecting the world for tomorrow.
-                            </p>
-                        </div>
+                            <div class="p-3">
+                                <h2>Sustainability</h2>
+                                <p class="heading-animate">At JK Maini, sustainability isn't an initiative, it's
+                                    engineered
+                                    into
+                                    everything we do. From optimizing resources to minimizing
+                                    environmental impact, we are committed to responsible innovation,
+                                    cleaner manufacturing, and building a more sustainable supply
+                                    chain.
+                                    We engineer with purpose, delivering precision today while
+                                    protecting the world for tomorrow.
+                                </p>
+                            </div>
                         </div>
                         <div class="p-3">
                             <a href="sustainability.html"><button
-                                     class="download-button d-flex gap-2 align-items-center">
+                                    class="download-button d-flex gap-2 align-items-center">
                                     Explore our Sustainability Efforts
                                 </button></a>
                         </div>
@@ -931,25 +931,24 @@
                     <div class="explore-card h-100 d-flex flex-column justify-content-between">
                         <div>
                             <img src="./assets/images/careers.png" alt="Careers">
-                        <div class="p-3">
-                            <h2>Career</h2>
-                            <p class="heading-animate">Precision is built by people, those who challenge limits,
-                                innovate with purpose, and deliver with excellence.
-                                Across engineering, design, operations, and beyond,
-                                we offer opportunities where talent is valued, ideas are
-                                encouraged, and careers are built to last.
-                                Shape the future of manufacturing. Build your future
-                                with us.
+                            <div class="p-3">
+                                <h2>Career</h2>
+                                <p class="heading-animate">Precision is built by people, those who challenge limits,
+                                    innovate with purpose, and deliver with excellence.
+                                    Across engineering, design, operations, and beyond,
+                                    we offer opportunities where talent is valued, ideas are
+                                    encouraged, and careers are built to last.
+                                    Shape the future of manufacturing. Build your future
+                                    with us.
 
-                            </p>
+                                </p>
 
-                        </div>
+                            </div>
                         </div>
                         <div class="p-3">
-                            <a href="careers.html"><button
-                                class="download-button d-flex gap-2 align-items-center">
-                               Explore Job opportunities
-                           </button></a>
+                            <a href="careers.html"><button class="download-button d-flex gap-2 align-items-center">
+                                    Explore Job opportunities
+                                </button></a>
                         </div>
                     </div>
                 </div>
@@ -973,8 +972,20 @@
                         spans decades of innovation, resilience, and growth. Each milestone reflects our unwavering
                         commitment to excellence, quality, and the pursuit of engineering solutions that shape the
                         future. Join us as we look back on the achievements that have defined who we are today.</p>
-                    <img src="./assets/images/old-photo.jpg" class="popup-image old-photo" alt=""
-                        style="width: 100%; border-radius: 20px;">
+
+
+                    <div class="swiper journey-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/images/old-photo.jpg" class="popup-image old-photo" alt=""
+                                    style="width: 100%; border-radius: 20px;">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/old-photo-2.jpeg" class="popup-image old-photo" alt=""
+                                    style="width: 100%; border-radius: 20px;">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-8">
                     <div class="timeline-box" data-lenis-prevent>
@@ -1537,6 +1548,18 @@
             loop: true,
             autoplay: {
                 delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+
+        var swiper = new Swiper(".journey-swiper", {
+            loop: true,
+            autoplay: {
+                delay: 3000,
                 disableOnInteraction: false,
             },
             pagination: {
