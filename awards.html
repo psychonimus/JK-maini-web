@@ -19,7 +19,7 @@
 <body>
 
     <nav id="navbar" class="navbar navbar-expand-lg bg-transparent fixed-top flex-column">
-        <div class="container d-flex justify-content-between">
+        <div class="container-fluid container-lg d-flex justify-content-between">
             <div class="meta-header-left">
                 <ul class="navbar-nav-left" style="list-style: none;">
                     <li class="nav-item ms-2">
@@ -30,12 +30,16 @@
                     <li class="nav-item ms-2">
                         <a class="nav-link" aria-current="page" href="https://auto.jkmaini.com/" data-bs-toggle="tooltip"
                             data-bs-placement="bottom" title="JK Maini Precision Technology Ltd.">
-                            JKMPTL</a>
+                            Precision Engineering</a>
                     </li>
                     <li class="nav-item ms-2">
                         <a class="nav-link" aria-current="page" href="https://aero.jkmaini.com/" data-bs-toggle="tooltip"
                             data-bs-placement="bottom" title="JK Maini Global Aerospace Ltd.">
-                            JKMGAL</a>
+                            Aerospace & Defence</a>
+                    </li><li class="nav-item ms-2">
+                        <a class="nav-link" aria-current="page" href="https://jksuperdrive.com/" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="JK Superdrive">
+                            Tools & Hardware</a>
                     </li>
 
 
@@ -60,7 +64,7 @@
                 </ul>
             </div>
         </div>
-        <div class="container">
+        <div class="container-fluid container-lg">
             <a class="navbar-brand" href="index.html"><img style="width: 350px;" class="img-fluid"
                     src="./assets/images/jk-maini-logo.svg" alt="JK Maini Precision Technology"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -244,8 +248,8 @@
                             </div>
                         </div>
                     </li> -->
-                    <!-- <li class="nav-item has-mega-menu">
-                        <a class="nav-link d-flex justify-content-between active" href="#" onclick="toggleMegaMenu(event)">
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link active d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
                             Beyond Business
                             <span class="d-lg-none">+</span>
                         </a>
@@ -253,9 +257,10 @@
                             <div class="mega-menu-content">
                                 <div class="mega-menu-column d-none d-lg-block">
                                     <h4 onclick="toggleAccordion(this)">Beyond Business</h4>
+
                                 </div>
                                 <div class="mega-menu-column">
-                                    <h4 onclick="toggleAccordion(this)">Purpose & Progress</h4>
+                                    <h4 onclick="toggleAccordion(this)">JKMPTL</h4>
                                     <ul>
                                         <li><a href="sustainability.html">Sustainability</a></li>
                                         <li><a href="awards.html">Awards</a></li>
@@ -264,15 +269,18 @@
                                     </ul>
                                 </div>
                                 <div class="mega-menu-column">
-                                    <h4 onclick="toggleAccordion(this)">Resources</h4>
+                                    <h4 onclick="toggleAccordion(this)">JKMGAL</h4>
                                     <ul>
-                                        <li><a href="resources.html">Brochure</a></li>
-                                        <li><a href="resources.html#blogs">Blogs</a></li>
+                                        <li><a href="sustainability.html">Sustainability & ESG</a></li>
+                                        <li><a href="csr.html">CSR & Impact</a></li>
+                                        <li><a href="events.html">News & Events</a></li>
+                                        <li><a href="awards.html">Awards</a></li>
                                     </ul>
                                 </div>
+                                
                             </div>
                         </div>
-                    </li> -->
+                    </li>
                     <li class="nav-item has-mega-menu">
                         <a class="nav-link" href="investor-relation.html">Investor Relation</a>
                     </li><li class="nav-item has-mega-menu d-md-none">
@@ -321,8 +329,12 @@
                     </div> -->
 
                     <li class="nav-item">
-                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
-                            Enquiry</a>
+                        <a class="nav-link" onclick="openPopup()" href="javascript:void(0)">
+                            <button class="enq-btn d-flex gap-2 align-items-center"><lord-icon
+                                    src="https://cdn.lordicon.com/fpvaxfly.json" trigger="loop" colors="primary:#ffffff"
+                                    style="width:20px;height:20px">
+                                </lord-icon> Enquiry </button>
+                        </a>
                     </li>
 
                 </ul>
@@ -339,9 +351,9 @@
                             <img src="./assets/images/awards-bg.png" alt="">
                         </div>
                         <div class="container swiper-content">
-                            <div class="text-center mt-5">
-                                <h1>Awards and Recognition</h1>
-                                <p class="mt-3 mb-4">
+                            <div class="text-center mt-5" data-aos="fade-up">
+                                <h1 class="page-title">Awards and Recognition</h1>
+                                <p class="mt-3 mb-4 text-center heading-animate">
                                     At JK Maini, our commitment to excellence has been recognized through numerous
                                     awards and accolades over the years. These honors reflect our dedication to quality,
                                     innovation, and sustainable business practices. We take pride in being acknowledged
@@ -363,53 +375,14 @@
         </div>
     </div>
 
-    <!-- <section class="gallary my-5" id="life-at-jk-maini">
-        <div class="container-fluid">
-
-
-            <div class="container-fluid">
-                <div class="photos">
-                    <div class="photo_items">
-                        <img src="./assets/images/gallary/1.png">
-                        <img src="./assets/images/gallary/2.png">
-                        <img src="./assets/images/gallary/3.png">
-                        <img src="./assets/images/gallary/4.png">
-                        <img src="./assets/images/gallary/5.png">
-                        <img src="./assets/images/gallary/6.png">
-                        <img src="./assets/images/gallary/7.png">
-                        <img src="./assets/images/gallary/8.png">
-                        <img src="./assets/images/gallary/9.png">
-                        <img src="./assets/images/gallary/10.png">
-
-
-
-                    </div>
-                    <div class="photo_items">
-                        <img src="./assets/images/gallary/1.png">
-                        <img src="./assets/images/gallary/2.png">
-                        <img src="./assets/images/gallary/3.png">
-                        <img src="./assets/images/gallary/4.png">
-                        <img src="./assets/images/gallary/5.png">
-                        <img src="./assets/images/gallary/6.png">
-                        <img src="./assets/images/gallary/7.png">
-                        <img src="./assets/images/gallary/8.png">
-                        <img src="./assets/images/gallary/9.png">
-                        <img src="./assets/images/gallary/10.png">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    </section> -->
+    
 
     <section class="featured-awards mb-5" style="background-color: #F7F8FC;">
         <div class="container py-5">
-            <div class="header-text">
-                <h5 class="section-title">Featured Awards</h5>
-                <h2>Our Recognitions & Achievements</h2>
-                <p class="lead mb-4">
+            <div class="header-text" data-aos="fade-up">
+                <h5 class="section-title" data-aos="fade-up">Featured Awards</h5>
+                <h2 class="page-title-animate">Our Recognitions & Achievements</h2>
+                <p class="lead mb-4 heading-animate">
                     Over the years, JK Maini has been honored with numerous awards and accolades that reflect our
                     commitment to excellence, innovation, and quality in precision engineering. Our dedication to
                     delivering world-class solutions has earned us recognition from industry leaders, partners, and
@@ -417,66 +390,66 @@
                 </p>
 
             </div>
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="swiper awards-swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <div class="swiper-slide p-4 p-md-0">
                             <div class="award-card p-4">
                                 <img src="./assets/images/certifications/AEO.png" alt="">
                                 <h4 class="mt-3">AEO Indian Customs</h4>
                                 <!-- <p>Award by manifest for the most number of client reviews</p> -->
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide p-4 p-md-0">
                             <div class="award-card p-4">
                                 <img src="./assets/images/certifications/AS9100D certified.png" alt="">
                                 <h4 class="mt-3">AS9100D</h4>
                                 <!-- <p>Award by manifest for the most number of client reviews</p> -->
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide p-4 p-md-0">
                             <div class="award-card p-4">
                                 <img src="./assets/images/certifications/bureau-veritas.png" alt="">
                                 <h4 class="mt-3">Bureau Veritas</h4>
                                 <!-- <p>Award by manifest for the most number of client reviews</p> -->
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide p-4 p-md-0">
                             <div class="award-card p-4">
                                 <img src="./assets/images/certifications/IATF-16949.png" alt="">
                                 <h4 class="mt-3">IATF-16949</h4>
                                 <!-- <p>Award by manifest for the most number of client reviews</p> -->
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide p-4 p-md-0">
                             <div class="award-card p-4">
                                 <img src="./assets/images/certifications/ISO-14001.png" alt="">
                                 <h4 class="mt-3">ISO-14001</h4>
                                 <!-- <p>Award by manifest for the most number of client reviews</p> -->
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide p-4 p-md-0">
                             <div class="award-card p-4">
                                 <img src="./assets/images/certifications/ISO-18001.png" alt="">
                                 <h4 class="mt-3">ISO-18001</h4>
                                 <!-- <p>Award by manifest for the most number of client reviews</p> -->
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide p-4 p-md-0">
                             <div class="award-card p-4">
                                 <img src="./assets/images/certifications/ISO-45001.png" alt="">
                                 <h4 class="mt-3">ISO-45001</h4>
                                 <!-- <p>Award by manifest for the most number of client reviews</p> -->
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide p-4 p-md-0">
                             <div class="award-card p-4">
                                 <img src="./assets/images/certifications/ISO-9001.png" alt="">
                                 <h4 class="mt-3">ISO-9001</h4>
                                 <!-- <p>Award by manifest for the most number of client reviews</p> -->
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide p-4 p-md-0">
                             <div class="award-card p-4">
                                 <img src="./assets/images/certifications/Nadcap.png" alt="">
                                 <h4 class="mt-3">Nadcap</h4>
@@ -490,21 +463,21 @@
                                 
                             </div>
                         </div> -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide p-4 p-md-0">
                             <div class="award-card p-4">
                                 <img src="./assets/images/certifications/SA-8000.png" alt="">
                                 <h4 class="mt-3">SA-8000</h4>
                                 <!-- <p>Award by manifest for the most number of client reviews</p> -->
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <!-- <div class="swiper-slide p-4 p-md-0">
                             <div class="award-card p-4">
                                 <img src="./assets/images/certifications/TUV-bord.png" alt="">
                                 <h4 class="mt-3">TUV Nord</h4>
-                                <!-- <p>Award by manifest for the most number of client reviews</p> -->
+                               
                             </div>
-                        </div>
-                        
+                        </div> -->
+
                     </div>
                     <!-- <div class="swiper-pagination"></div> -->
                 </div>
@@ -516,16 +489,16 @@
 
     <section class="csr awards my-5" id="csr">
         <div class="container mt-5">
-            <div class="text-center mt-5">
-                <h6 class="section-title">Featured Awards</h6>
-                <h2>Our Recognitions & Achievements</h2>
-                <p>Over the years, JK Maini has been honored with numerous awards and accolades that reflect our
+            <div class="text-center mt-5" data-aos="fade-up">
+                <h6 class="section-title" data-aos="fade-up" >Featured Awards</h6>
+                <h2 class="page-title-animate">Our Recognitions & Achievements</h2>
+                <p class="heading-animate text-center">Over the years, JK Maini has been honored with numerous awards and accolades that reflect our
                     commitment to excellence, innovation, and quality in precision engineering. Our dedication to
                     delivering world-class solutions has earned us recognition from industry leaders, partners, and
                     global organizations.</p>
             </div>
 
-            <div class="row mt-5 p-4 grey-bg skoda-recognized-for-agility">  
+            <div class="row mt-5 p-4 grey-bg skoda-recognized-for-agility" data-aos="fade-up">
 
                 <div class="col-md-6">
                     <div class="csr-img">
@@ -544,16 +517,17 @@
 
                 <div class="col-md-6">
                     <div class="csr-text mt-4">
-                        <h6 class="section-title"><i class="fas fa-trophy" style="color: #FFD700; margin-right: 8px;"></i>Recognized for Agility in Crisis</h6>
-                        <h3>Skoda Auto Commendation for Supply Chain Excellence</h3>
+                        <h6 class="section-title" data-aos="fade-up"><i class="fas fa-trophy"
+                                style="color: #FFD700; margin-right: 8px;"></i>Recognized for Agility in Crisis</h6>
+                        <h3 class="page-title-animate">Skoda Auto Commendation for Supply Chain Excellence</h3>
 
-                        <p>
+                        <p class="heading-animate">
                             In a testament to our commitment to operational resilience and global supply chain
                             excellence, <strong>J K Maini (formerly Ring Plus Aqua Ltd.)</strong> was recognized by
                             <strong>SKODA Auto Volkswagen
                                 India</strong> for swiftly stepping in during a critical supply disruption.
                         </p>
-                        <p>In August, catastrophic floods in Slovenia halted production at a key European supplier of
+                        <p class="heading-animate">In August, catastrophic floods in Slovenia halted production at a key European supplier of
                             ring gears for dual-mass flywheels—essential components in internal combustion engine (ICE)
                             vehicles. Faced with a potential production bottleneck impacting brands like Audi, ŠKODA,
                             Porsche, and Volkswagen, the procurement teams at ŠKODA Auto turned to trusted Indian
@@ -561,7 +535,7 @@
                         <!-- <p>Through rapid collaboration and dedication, J K Maini ramped up capacity and restored supply
                             continuity within weeks. Our ability to <strong>mobilize teams, scale operations, and
                                 maintain
-                                quality standards under pressure</strong> was instrumental in safeguarding ŠKODA’s
+                                quality standards under pressure</strong> was instrumental in safeguarding ŠKODA's
                             global production
                             commitments.</p>
                         <p>This acknowledgment from SKODA Auto highlights our <strong>strategic agility, reliability,
@@ -570,33 +544,35 @@
                     </div>
                 </div>
 
-                
+
 
             </div>
 
-            <div class="row mt-5 p-4 grey-bg valeo-best-performer-award">
+            <div class="row mt-5 p-4 grey-bg valeo-best-performer-award" data-aos="fade-up">
 
                 <div class="col-md-6">
                     <div class="csr-text mt-4">
-                        <h6 class="section-title"><i class="fas fa-trophy" style="color: #FFD700; margin-right: 8px;"></i>Best Performance Award – Project Management</h6>
+                        <h6 class="section-title" data-aos="fade-up"><i class="fas fa-trophy"
+                                style="color: #FFD700; margin-right: 8px;"></i>Best Performance Award – Project
+                            Management</h6>
                         <!-- <h3>Excellence in Export – Large Turnover Category</h3> -->
                         <ul>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Awarded by</strong> : Valeo India
                                 </h6>
                             </li>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Event</strong> : Valeo India Supplier Convention 2025 – Accelerate India
                                 </h6>
                             </li>
 
                         </ul>
-                        <p>
+                        <p class="heading-animate">
                             We are proud to be recognized as the <strong>Best Supplier for Project Management</strong>
                             by <strong>Valeo India</strong> at
                             the prestigious <strong>Valeo India Supplier Convention 2025</strong>.
                             This award is a testament to our team's dedication to delivering complex projects with
-                            precision, speed, and excellence. Our ability to consistently meet Valeo’s high
+                            precision, speed, and excellence. Our ability to consistently meet Valeo's high
                             standards—from planning to execution—reflects our strong project governance,
                             cross-functional collaboration, and a culture of operational excellence.
                             We thank Valeo India for this honor and remain committed to driving innovation, agility, and
@@ -611,7 +587,8 @@
                         <div class="swiper csr-swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="./assets/images/awards/valeo award.png" class="popup-image" alt="" style="width: 100%;">
+                                    <img src="./assets/images/awards/valeo award.png" class="popup-image" alt=""
+                                        style="width: 100%;">
                                 </div>
 
                             </div>
@@ -622,7 +599,7 @@
 
             </div>
 
-            <div class="row mt-5 grey-bg p-4 schaeffler-innovation-and-value-creation">
+            <div class="row mt-5 grey-bg p-4 schaeffler-innovation-and-value-creation" data-aos="fade-up">
 
                 <div class="col-md-6">
                     <div class="csr-img">
@@ -642,24 +619,26 @@
                 </div>
                 <div class="col-md-6">
                     <div class="csr-text mt-4">
-                        <h6 class="section-title"><i class="fas fa-trophy" style="color: #FFD700; margin-right: 8px;"></i>Innovation & Value Creation Award – Schaeffler India</h6>
+                        <h6 class="section-title" data-aos="fade-up"><i class="fas fa-trophy"
+                                style="color: #FFD700; margin-right: 8px;"></i>Innovation & Value Creation Award –
+                            Schaeffler India</h6>
                         <!-- <h3>EEPC Export Excellence Award – Recognizing Global Leadership in Engineering Exports</h3> -->
                         <ul>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Awarded by</strong> : Schaeffler India
                                 </h6>
                             </li>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Recipient</strong> : Ring Plus Aqua Ltd.
                                 </h6>
                             </li>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Category</strong> : Excellence in Innovation & Value Contribution
                                 </h6>
                             </li>
 
                         </ul>
-                        <p>
+                        <p class="heading-animate">
                             We are proud to share that <strong>Ring Plus Aqua Ltd</strong>. has been honored with the
                             <strong>Innovation & Value
                                 Creation Award by Schaeffler India</strong>, in recognition of our outstanding
@@ -667,7 +646,7 @@
                             product innovation, engineering excellence, and collaborative value generation.
 
                         </p>
-                        <p>
+                        <p class="heading-animate">
                             This award reflects our commitment to going beyond conventional supplier roles—delivering
                             tailored, high-performance solutions that drive efficiency, reliability, and long-term value
                             for our partners. Recognition from a global technology leader like Schaeffler reinforces our
@@ -678,30 +657,31 @@
 
             </div>
 
-            <div class="row mt-5 p-4 grey-bg suzuki-certificate-of-appreciation">
-                
+            <div class="row mt-5 p-4 grey-bg suzuki-certificate-of-appreciation" data-aos="fade-up">
+
                 <div class="col-md-6">
                     <div class="csr-text mt-4">
-                        <h6 class="section-title"><i class="fas fa-trophy" style="color: #FFD700; margin-right: 8px;"></i>Certificate of Appreciation </h6>
-                        <h3>Quality Performance (Zero Defect)</h3>
+                        <h6 class="section-title" data-aos="fade-up"><i class="fas fa-trophy"
+                                style="color: #FFD700; margin-right: 8px;"></i>Certificate of Appreciation </h6>
+                        <h3 class="page-title-animate">Quality Performance (Zero Defect)</h3>
                         <ul>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Awarded by</strong> : Suzuki Motor Gujarat Private Limited</h6>
                             </li>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Recipient</strong> : Ring Plus Aqua Ltd.</h6>
                             </li>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Year</strong> : 2023–24</h6>
                             </li>
                         </ul>
-                        
 
-                        <p>We are honored to receive the Certificate of Appreciation from Suzuki Motor Gujarat Private
+
+                        <p class="heading-animate">We are honored to receive the Certificate of Appreciation from Suzuki Motor Gujarat Private
                             Limited for our superior quality performance and zero-defect delivery in the year 2023–24.
                             This recognition is a testament to our unwavering commitment to manufacturing excellence,
                             precision engineering, and quality-first culture.</p>
-                        <p>Delivering defect-free components to a global automotive leader like Suzuki reaffirms our
+                        <p class="heading-animate">Delivering defect-free components to a global automotive leader like Suzuki reaffirms our
                             capabilities as a trusted supplier and motivates us to continue setting benchmarks in
                             quality and reliability.</p>
                     </div>
@@ -721,11 +701,11 @@
                     </div>
                 </div>
 
-                
+
 
             </div>
 
-            <div class="row mt-5 grey-bg p-4 eepc-india-quality-award">
+            <div class="row mt-5 grey-bg p-4 eepc-india-quality-award" data-aos="fade-up">
 
                 <div class="col-md-6">
                     <div class="csr-img">
@@ -736,10 +716,12 @@
                                         style="width: 100%;">
                                 </div>
                                 <div class="swiper-slide d-flex justify-content-center">
-                                    <img src="./assets/images/awards/EEPC award.png" alt="" style="width: 100%;" class="popup-image">
+                                    <img src="./assets/images/awards/EEPC award.png" alt="" style="width: 100%;"
+                                        class="popup-image">
                                 </div>
                                 <div class="swiper-slide d-flex justify-content-center">
-                                    <img src="./assets/images/awards/EEPC.png" alt="" style="width: 60%;" class="popup-image">
+                                    <img src="./assets/images/awards/EEPC.png" alt="" style="width: 60%;"
+                                        class="popup-image">
                                 </div>
 
 
@@ -750,21 +732,23 @@
                 </div>
                 <div class="col-md-6">
                     <div class="csr-text mt-4">
-                        <h6 class="section-title"><i class="fas fa-trophy" style="color: #FFD700; margin-right: 8px;"></i>EEPC India Quality Awards – Gold Winner</h6>
+                        <h6 class="section-title" data-aos="fade-up"><i class="fas fa-trophy"
+                                style="color: #FFD700; margin-right: 8px;"></i>EEPC India Quality Awards – Gold Winner
+                        </h6>
                         <!-- <h3>Excellence in Export – Large Turnover Category</h3> -->
                         <ul>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Category</strong> : Medium Organization
                                 </h6>
                             </li>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Presented by</strong> : EEPC India | Date: 18 February 2025 | Venue: New
                                     Delhi
                                 </h6>
                             </li>
 
                         </ul>
-                        <p>
+                        <p class="heading-animate">
                             We are proud to announce that <strong>Ring Plus Aqua Ltd.</strong> has been honored with the
                             prestigious <strong>Gold
                                 Award</strong> at the <strong>4th Edition of the EEPC India Quality Awards</strong>,
@@ -775,7 +759,7 @@
                             our unwavering commitment to quality excellence, global competitiveness, and best-in-class
                             manufacturing practices. The award is a testament to our robust systems, continuous
                             improvement culture, and customer-first mindset that guide our export quality initiatives.
-                            Receiving this accolade among India’s most respected engineering exporters underscores our
+                            Receiving this accolade among India's most respected engineering exporters underscores our
                             relentless pursuit of precision, consistency, and innovation across global markets.
 
                         </p>
@@ -783,28 +767,33 @@
                 </div>
 
             </div>
-            
-            <div class="row mt-5 p-4 grey-bg eepc-india-green-award">
+
+            <div class="row mt-5 p-4 grey-bg eepc-india-green-award" data-aos="fade-up">
 
                 <div class="col-md-6">
                     <div class="csr-text mt-4">
-                        <h6 class="section-title"><i class="fas fa-trophy" style="color: #FFD700; margin-right: 8px;"></i>EEPC India Green Awards </h6>
-                        <h3>Certificate of Appreciation</h3>
+                        <h6 class="section-title" data-aos="fade-up"><i class="fas fa-trophy"
+                                style="color: #FFD700; margin-right: 8px;"></i>EEPC India Green Awards </h6>
+                        <h3 class="page-title-animate">Certificate of Appreciation</h3>
                         <ul>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Category</strong> : Medium Enterprise</h6>
                             </li>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Awarded by</strong> : Engineering Export Promotion Council (EEPC) India</h6>
                             </li>
                         </ul>
-                        
 
 
-                        <p>Ring Plus Aqua Ltd. was honored with a <strong>Certificate of Appreciation</strong> at the <strong>EEPC India Green
-                            Awards</strong>, recognizing our proactive commitment to sustainability and green manufacturing
-                            practices in the <strong>Medium Enterprise</strong> category.</p>
-                        <p>This award reflects our ongoing efforts in integrating <strong>environmentally responsible processes</strong>,
+
+                        <p class="heading-animate">Ring Plus Aqua Ltd. was honored with a <strong>Certificate of Appreciation</strong> at the
+                            <strong>EEPC India Green
+                                Awards</strong>, recognizing our proactive commitment to sustainability and green
+                            manufacturing
+                            practices in the <strong>Medium Enterprise</strong> category.
+                        </p>
+                        <p class="heading-animate">This award reflects our ongoing efforts in integrating <strong>environmentally responsible
+                                processes</strong>,
                             reducing our carbon footprint, and promoting eco-conscious operations across our value
                             chain. Our presentation at the awards platform showcased innovative practices in energy
                             efficiency, waste management, and sustainable resource utilization—reinforcing our pledge to
@@ -813,7 +802,7 @@
                             upcoming editions by continuously raising the bar for sustainability in the manufacturing
                             sector.
 
-                            <strong>Sustainability isn’t just a goal—it’s how we manufacture the future.</strong>
+                            <strong>Sustainability isn't just a goal—it's how we manufacture the future.</strong>
                         </p> -->
                     </div>
                 </div>
@@ -833,12 +822,10 @@
                     </div>
                 </div>
 
-                
+
             </div>
 
-            <div class="row mt-5 p-4 grey-bg acma-export-excellence-award">
-
-                
+            <div class="row mt-5 p-4 grey-bg acma-export-excellence-award" data-aos="fade-up">
 
                 <div class="col-md-6">
                     <div class="csr-img">
@@ -856,34 +843,36 @@
                 </div>
                 <div class="col-md-6">
                     <div class="csr-text mt-4">
-                        <h6 class="section-title"><i class="fas fa-trophy" style="color: #FFD700; margin-right: 8px;"></i>ACMA Export Excellence Awards</h6>
+                        <h6 class="section-title" data-aos="fade-up"><i class="fas fa-trophy"
+                                style="color: #FFD700; margin-right: 8px;"></i>ACMA Export Excellence Awards</h6>
                         <!-- <h3>Skoda Auto Commendation for Supply Chain Excellence</h3> -->
                         <ul>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Category</strong> : Silver</h6>
                             </li>
-                            <li>
-                                <h6><strong>Awarded by</strong> : Automotive Component Manufacturers Association of India (ACMA)</h6>
+                            <li data-aos="fade-up">
+                                <h6><strong>Awarded by</strong> : Automotive Component Manufacturers Association of
+                                    India (ACMA)</h6>
                             </li>
                         </ul>
 
-                        <p>We are honored to announce that <strong>Ring Plus Aqua Ltd. (RPAL)</strong> has been
+                        <p class="heading-animate">We are honored to announce that <strong>Ring Plus Aqua Ltd. (RPAL)</strong> has been
                             recognized with the
                             <strong>Silver Award for Excellence in Export</strong> at the prestigious <strong>ACMA
                                 Excellence Awards 2024</strong>.
                         </p>
-                        <p>Presented by the <strong>Automotive Component Manufacturers Association of India</strong>,
+                        <p class="heading-animate">Presented by the <strong>Automotive Component Manufacturers Association of India</strong>,
                             this accolade
                             celebrates our strong export performance, global market presence, and unwavering commitment
                             to delivering precision-engineered components to leading international OEMs and Tier 1
                             suppliers.</p>
-                        <p>The award was presented by <strong>Mr. Vinod Aggarwal, MD and CEO of VE Commercial Vehicles
+                        <p class="heading-animate">The award was presented by <strong>Mr. Vinod Aggarwal, MD and CEO of VE Commercial Vehicles
                                 Ltd.</strong> (a
                             <strong>Volvo Group and Eicher Motors JV</strong> ) and <strong>former President of
                                 SIAM</strong> (Society of Indian Automobile
                             Manufacturers).
                         </p>
-                        <p>This recognition reaffirms RPAL’s role as a key contributor to India's global mobility
+                        <p class="heading-animate">This recognition reaffirms RPAL's role as a key contributor to India's global mobility
                             leadership, driven by advanced manufacturing, sustainable practices, and customer-centric
                             innovation.</p>
                     </div>
@@ -891,24 +880,25 @@
 
             </div>
 
-            
-            <div class="row mt-5 grey-bg p-4 acma-excellence-award">
+
+            <div class="row mt-5 grey-bg p-4 acma-excellence-award" data-aos="fade-up">
                 <div class="col-md-6">
                     <div class="csr-text mt-4">
-                        <h6 class="section-title"><i class="fas fa-trophy" style="color: #FFD700; margin-right: 8px;"></i>ACMA Excellence Award</h6>
-                        <h3>Excellence in Export – Large Turnover Category</h3>
-                        <h5>Awarded at : India’s Road to Global Mobility Excellence Summit
+                        <h6 class="section-title" data-aos="fade-up"><i class="fas fa-trophy"
+                                style="color: #FFD700; margin-right: 8px;"></i>ACMA Excellence Award</h6>
+                        <h3 class="page-title-animate">Excellence in Export – Large Turnover Category</h3>
+                        <h5 class="page-title-animate">Awarded at : India's Road to Global Mobility Excellence Summit
                             Category: Turnover ₹250–750 Cr
                         </h5>
 
-                        <p>We are proud to have been honored with the <strong>‘Excellence in Export’</strong> award
+                        <p class="heading-animate">We are proud to have been honored with the <strong>'Excellence in Export'</strong> award
                             under the <strong>Large
-                                Turnover category</strong> at the prestigious India’s Road to Global Mobility Excellence
+                                Turnover category</strong> at the prestigious India's Road to Global Mobility Excellence
                             Summit. This
                             recognition affirms our commitment to delivering world-class precision components that power
                             mobility solutions across global markets.
                         </p>
-                        <p>This milestone stands as a testament to our vision <strong>placing India at the heart of
+                        <p class="heading-animate">This milestone stands as a testament to our vision <strong>placing India at the heart of
                                 global
                                 mobility transformation</strong> through engineering that is innovative, reliable, and
                             future-ready.
@@ -931,17 +921,19 @@
                 </div>
             </div>
 
-            <div class="row mt-5 grey-bg p-4 amf-cluster-star">
+            <div class="row mt-5 grey-bg p-4 amf-cluster-star" data-aos="fade-up">
 
                 <div class="col-md-6">
                     <div class="csr-img">
                         <div class="swiper csr-swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide d-flex justify-content-center">
-                                    <img src="./assets/images/awards/acma (1).jpeg" alt="" style="width: 100%;" class="popup-image">
+                                    <img src="./assets/images/awards/acma (1).jpeg" alt="" style="width: 100%;"
+                                        class="popup-image">
                                 </div>
                                 <div class="swiper-slide d-flex justify-content-center">
-                                    <img src="./assets/images/awards/acma (2).jpeg" alt="" style="width: 50%;" class="popup-image">
+                                    <img src="./assets/images/awards/acma (2).jpeg" alt="" style="width: 50%;"
+                                        class="popup-image">
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -951,24 +943,26 @@
 
                 <div class="col-md-6">
                     <div class="csr-text mt-4">
-                        <h6 class="section-title"><i class="fas fa-trophy" style="color: #FFD700; margin-right: 8px;"></i>AMF Cluster Star Performer Award 2025</h6>
+                        <h6 class="section-title" data-aos="fade-up"><i class="fas fa-trophy"
+                                style="color: #FFD700; margin-right: 8px;"></i>AMF Cluster Star Performer Award 2025
+                        </h6>
                         <!-- <h3>Excellence in Export – Large Turnover Category</h3> -->
                         <ul>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Awarded by</strong> : ACMA Mobility Foundation
                                 </h6>
                             </li>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Recognized Unit</strong> : JK Files & Engineering Ltd, Chiplun
                                 </h6>
                             </li>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h5><strong>Category</strong> : Lean Manufacturing Program
                                 </h5>
                             </li>
                         </ul>
 
-                        <p>
+                        <p class="heading-animate">
                             We are proud to announce that JK Maini <strong>(formerly JK Files & Engineering Ltd) –
                                 Chiplun Unit</strong>
                             has been honored with the prestigious <strong>AMF Cluster Star Performer Award 2025</strong>
@@ -991,30 +985,29 @@
 
             </div>
 
-            
-
-            <div class="row mt-5 grey-bg p-4 eepc-export-excellence-award">
+            <div class="row mt-5 grey-bg p-4 eepc-export-excellence-award" data-aos="fade-up">
 
                 <div class="col-md-6">
                     <div class="csr-text mt-4">
-                        <h6 class="section-title"><i class="fas fa-trophy" style="color: #FFD700; margin-right: 8px;"></i>EEPC Export Excellence Award</h6>
-                        <h3>EEPC Export Excellence Award – Recognizing Global Leadership in Engineering Exports</h3>
+                        <h6 class="section-title" data-aos="fade-up"><i class="fas fa-trophy"
+                                style="color: #FFD700; margin-right: 8px;"></i>EEPC Export Excellence Award</h6>
+                        <h3 class="page-title-animate">EEPC Export Excellence Award – Recognizing Global Leadership in Engineering Exports</h3>
                         <ul>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Awarded by</strong> : Engineering Export Promotion Council (EEPC India)
                                 </h6>
                             </li>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Recipient</strong> : J K Maini (Ring Plus Aqua Ltd.)
                                 </h6>
                             </li>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Category</strong> : Export Excellence – Gold
                                 </h6>
                             </li>
 
                         </ul>
-                        <p>
+                        <p class="heading-animate">
                             We are proud to share that <strong>Ring Plus Aqua Ltd.</strong> has been honored with the
                             prestigious <strong>EEPC
                                 Export Excellence Award – Gold Category</strong>, a recognition that celebrates our
@@ -1052,19 +1045,19 @@
                         </div>
                     </div>
                 </div>
-                
 
-            </div>        
 
-            <div class="row mt-5 grey-bg p-4 acma-excellence-award-striving">
+            </div>
+
+            <div class="row mt-5 grey-bg p-4 acma-excellence-award-striving" data-aos="fade-up">
 
                 <div class="col-md-6">
                     <div class="csr-img">
                         <div class="swiper csr-swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide d-flex justify-content-center align-items-center">
-                                    <img src="./assets/images/awards/ACMA Excellence Awards 2024 striving.png"
-                                        alt="" style="width: 80%;" class="popup-image">
+                                    <img src="./assets/images/awards/ACMA Excellence Awards 2024 striving.png" alt=""
+                                        style="width: 80%;" class="popup-image">
                                 </div>
 
 
@@ -1076,36 +1069,37 @@
                 </div>
                 <div class="col-md-6">
                     <div class="csr-text mt-4">
-                        <h6 class="section-title"><i class="fas fa-trophy" style="color: #FFD700; margin-right: 8px;"></i>ACMA Excellence Awards 2024</h6>
-                        <h3>Certificate of Merit (Striving Category)</h3>
+                        <h6 class="section-title" data-aos="fade-up"><i class="fas fa-trophy"
+                                style="color: #FFD700; margin-right: 8px;"></i>ACMA Excellence Awards 2024</h6>
+                        <h3 class="page-title-animate">Certificate of Merit (Striving Category)</h3>
                         <ul>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Awarded by</strong> : Automotive Component Manufacturers Association of
                                     India (ACMA)
                                 </h6>
                             </li>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Recognized Unit</strong> : Ring Plus Aqua Ltd., SBD Plant, Nashik
                                 </h6>
                             </li>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Category</strong> : Excellence in Manufacturing – Large Enterprises
                                     (Turnover > INR 250 to 750 Cr)
                                 </h6>
                             </li>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Presented at</strong> : 59th ACMA Excellence Awards & 10th Technology Summit
                                     2025
                                 </h6>
                             </li>
-                            <li>
+                            <li data-aos="fade-up">
                                 <h6><strong>Theme</strong> : Viksit Bharat: Innovating for an Inclusive, Sustainable &
                                     Resilient Manufacturing Future
                                 </h6>
                             </li>
 
                         </ul>
-                        <p>
+                        <p class="heading-animate">
                             We are proud to share that <strong>Ring Plus Aqua Ltd. – SBD Plant</strong> was conferred
                             the <strong>Certificate of
                                 Merit</strong> in the <strong>Striving Category</strong> at the prestigious <strong>ACMA
@@ -1115,19 +1109,411 @@
                             <strong>operational resilience.</strong>
 
                         </p>
-                        <p>
+                        <p class="heading-animate">
                             Being recognized on a national platform that emphasizes sustainability and innovation is a
                             powerful validation of our dedicated efforts to drive world-class practices in precision
                             manufacturing. We remain committed to pushing boundaries, embracing digital transformation,
-                            and contributing meaningfully to India’s growth as a global manufacturing hub.
+                            and contributing meaningfully to India's growth as a global manufacturing hub.
                         </p>
                     </div>
                 </div>
 
             </div>
 
-           
+            <div class="row mt-5 grey-bg p-4 global-research-award" data-aos="fade-up">
 
+                <div class="col-md-6">
+                    <div class="csr-text mt-4">
+                        <h6 class="section-title" data-aos="fade-up"><i class="fas fa-trophy"
+                                style="color: #FFD700; margin-right: 8px;"></i>Global Reach Award – 2024</h6>
+                        <!-- <h3>EEPC Export Excellence Award – Recognizing Global Leadership in Engineering Exports</h3> -->
+                        <ul>
+                            <li data-aos="fade-up">
+                                <h6><strong>Presented by</strong> : Danfoss
+                                </h6>
+                            </li>
+
+
+                        </ul>
+                        <p class="heading-animate">
+                            We are proud to share that Maini Precision Products Ltd. has been honored with the Global
+                            Reach Award by Danfoss.
+                        </p>
+                        <p class="heading-animate">
+                            This award recognizes our expanding global footprint and consistent excellence in delivering
+                            world-class engineering solutions across international markets. It reflects our commitment
+                            to building trusted partnerships and powering progress on a global scale.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="csr-img">
+                        <div class="swiper csr-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/awards/global-reach-award.jpeg" alt="" style="width: 50%;"
+                                        class="popup-image">
+                                </div>
+                                <div class="swiper-slide d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/awards/global-reach-2.jpg" alt="" style="width: 100%;"
+                                        class="popup-image">
+                                </div>
+
+
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row mt-5 grey-bg p-4 certificate-of-appreciation-global-reach" data-aos="fade-up">
+
+                <div class="col-md-6">
+                    <div class="csr-img">
+                        <div class="swiper csr-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/awards/cert-of-appreciation-global-reach.jpeg" alt=""
+                                        style="width: 60%;" class="popup-image">
+                                </div>
+
+
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="csr-text mt-4">
+                        <h6 class="section-title" data-aos="fade-up"><i class="fas fa-trophy"
+                                style="color: #FFD700; margin-right: 8px;"></i>Certificate of Appreciation – Global
+                            Reach 2024</h6>
+                        <!-- <h3>Certificate of Merit (Striving Category)</h3> -->
+                        <ul>
+                            <li data-aos="fade-up">
+                                <h6><strong>Presented by</strong> : Danfoss Power Solutions
+                                </h6>
+                            </li>
+
+
+                        </ul>
+                        <p class="heading-animate">
+                            We are proud to share that Maini Precision Products Ltd. received a Certificate of
+                            Appreciation from Danfoss Power Solutions for Global Reach.
+
+                        </p>
+                        <p class="heading-animate">
+                            This recognition highlights our exceptional service across multiple regions, our commitment
+                            to high standards, and our ability to deliver seamless support across global supply
+                            locations.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mt-5 grey-bg p-4 best-process-control-award" data-aos="fade-up">
+
+
+                <div class="col-md-6">
+                    <div class="csr-text mt-4">
+                        <h6 class="section-title" data-aos="fade-up"><i class="fas fa-trophy"
+                                style="color: #FFD700; margin-right: 8px;"></i>Best Process Control Award – 2022</h6>
+                        <!-- <h3>Certificate of Merit (Striving Category)</h3> -->
+                        <ul>
+                            <li data-aos="fade-up">
+                                <h6><strong>Presented by</strong> : Stanley Black & Decker
+                                </h6>
+                            </li>
+
+
+                        </ul>
+                        <p class="heading-animate">
+                            We are proud to share that Maini Precision Products Limited has received the Best Process
+                            Control Award 2022 from Stanley Black & Decker.
+
+                        </p>
+                        <p class="heading-animate">
+                            This recognition celebrates our outstanding commitment to robust process control, consistent
+                            quality, and operational excellence. It reflects the strength of our systems and the
+                            dedication of our teams to exceed global expectations in every delivery.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="csr-img">
+                        <div class="swiper csr-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/awards/best-process-control-award.jpeg" alt=""
+                                        style="width: 80%;" class="popup-image">
+                                </div>
+
+
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mt-5 grey-bg p-4 excellent-quality-delivery" data-aos="fade-up">
+
+
+                <div class="col-md-6">
+                    <div class="csr-img">
+                        <div class="swiper csr-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/awards/excellence-quality-delivery.jpeg" alt=""
+                                        style="width: 50%;" class="popup-image">
+                                </div>
+
+
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="csr-text mt-4">
+                        <h6 class="section-title" data-aos="fade-up"><i class="fas fa-trophy"
+                                style="color: #FFD700; margin-right: 8px;"></i>Excellent Quality Delivery Performance
+                            2022</h6>
+                        <!-- <h3>EEPC Export Excellence Award – Recognizing Global Leadership in Engineering Exports</h3> -->
+                        <ul>
+                            <li data-aos="fade-up">
+                                <h6><strong>Presented by</strong> : Cummins
+                                </h6>
+                            </li>
+
+
+                        </ul>
+                        <p class="heading-animate">
+                            We are proud to share that Maini Precision Products Ltd. received the Excellent Quality
+                            Delivery Performance Award from Cummins in 2022.
+                        </p>
+                        <p class="heading-animate">
+                            This award recognizes our consistent commitment to delivering top-quality components on
+                            time, every time. It reflects our dedication to operational excellence, strong customer
+                            focus, and uncompromising quality standards.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mt-5 grey-bg p-4 india-supplier-conference" data-aos="fade-up">
+
+
+                <div class="col-md-6">
+                    <div class="csr-text mt-4">
+                        <h6 class="section-title" data-aos="fade-up"><i class="fas fa-trophy"
+                                style="color: #FFD700; margin-right: 8px;"></i>India Supplier Conference - 2022</h6>
+                        <!-- <h3>Certificate of Merit (Striving Category)</h3> -->
+                        <ul>
+                            <li data-aos="fade-up">
+                                <h6><strong>Presented by</strong> : Wabtec Corporation
+                                </h6>
+                            </li>
+
+
+                        </ul>
+                        <p class="heading-animate">
+                            We are proud to share that Maini Precision Products Ltd. was recognized at the India
+                            Supplier Conference 2022 hosted by Wabtec Corporation.
+
+                        </p>
+                        <p class="heading-animate">
+                            The award acknowledges our role as a trusted partner in driving sustainable growth,
+                            innovation, and excellence in collaboration with global industry leaders.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="csr-img">
+                        <div class="swiper csr-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/awards/india-supplier-conference.jpeg" alt=""
+                                        style="width: 50%;" class="popup-image">
+                                </div>
+
+
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mt-5 grey-bg p-4 india-supplier-conference-cummins" data-aos="fade-up">
+
+
+                <div class="col-md-6">
+                    <div class="csr-img">
+                        <div class="swiper csr-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/awards/india-supplier-conference-cummins.jpeg" alt=""
+                                        style="width: 50%;" class="popup-image">
+                                </div>
+
+
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="csr-text mt-4">
+                        <h6 class="section-title" data-aos="fade-up"><i class="fas fa-trophy"
+                                style="color: #FFD700; margin-right: 8px;"></i>India Suppliers Conference – 2022
+                        </h6>
+                        <!-- <h3>EEPC Export Excellence Award – Recognizing Global Leadership in Engineering Exports</h3> -->
+                        <ul>
+                            <li data-aos="fade-up">
+                                <h6><strong>Presented by</strong> : Cummins India
+                                </h6>
+                            </li>
+
+
+                        </ul>
+                        <p class="heading-animate">
+                            We are honored to receive the Best Supplier Innovation Award – Direct Sourcing from Cummins
+                            at the India Suppliers Conference 2022.
+                        </p>
+                        <p class="heading-animate">
+                            This recognition highlights our commitment to innovation, excellence, and continuous
+                            improvement in direct sourcing.
+                            At Maini Precision Products Ltd., we remain driven by a spirit of partnership and progress.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mt-5 grey-bg p-4 cert-of-cong" data-aos="fade-up">
+
+
+                <div class="col-md-6">
+                    <div class="csr-text mt-4">
+                        <h6 class="section-title" data-aos="fade-up"><i class="fas fa-trophy"
+                                style="color: #FFD700; margin-right: 8px;"></i>Certificate of Congratulations – Plant
+                            Inauguration</h6>
+                        <!-- <h3>Certificate of Merit (Striving Category)</h3> -->
+                        <ul>
+                            <li data-aos="fade-up">
+                                <h6><strong>Presented by</strong> : Volvo Group Purchasing
+                                </h6>
+                            </li>
+
+
+                        </ul>
+                        <p class="heading-animate">
+                            We are proud to share that Maini Precision Products Ltd. was congratulated by Volvo Group
+                            Purchasing on the successful inauguration of our new plant in Nashik.
+
+                        </p>
+                        <p class="heading-animate">
+                            This recognition marks a significant milestone in our growth journey, reflecting our
+                            continued focus on expanding capabilities, strengthening partnerships, and driving forward
+                            with purpose and progress.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="csr-img">
+                        <div class="swiper csr-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/awards/cert-of-cong.jpeg" alt="" style="width: 70%;"
+                                        class="popup-image">
+                                </div>
+
+
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mt-5 grey-bg p-4 eepc-india-star-performer-award" data-aos="fade-up">
+
+
+                <div class="col-md-6">
+                    <div class="csr-img">
+                        <div class="swiper csr-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d-flex justify-content-center align-items-center">
+                                    <img src="./assets/images/awards/eepc-india-star.jpeg" alt=""
+                                        style="width: 50%;" class="popup-image">
+                                </div>
+
+
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="csr-text mt-4">
+                        <h6 class="section-title" data-aos="fade-up"><i class="fas fa-trophy"
+                                style="color: #FFD700; margin-right: 8px;"></i>EEPC India Star Performer Award – Large
+                            Enterprise
+                        </h6>
+                        <!-- <h3>EEPC Export Excellence Award – Recognizing Global Leadership in Engineering Exports</h3> -->
+                        <ul>
+                            <li data-aos="fade-up">
+                                <h6><strong>Category</strong> : Defence Related Equipment and Parts
+                                </h6>
+                            </li>
+                            <li data-aos="fade-up">
+                                <h6><strong>Presented by</strong> : EEPC India
+                                </h6>
+                            </li>
+                            <li data-aos="fade-up">
+                                <h6><strong>Location</strong> : Bengaluru
+                                </h6>
+                            </li>
+
+
+                        </ul>
+                        <p class="heading-animate">
+                            We are proud to share that Maini Precision Products Ltd. has received the Star Performer
+                            Award from EEPC India in the Large Enterprise category for Defence Related Equipment and
+                            Parts.
+                        </p>
+                        <p class="heading-animate">
+                            This esteemed recognition reflects our contribution to India's defence exports and our
+                            continued focus on precision, quality, and innovation in advanced manufacturing.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
 
         </div>
     </section>
@@ -1180,24 +1566,40 @@
                     <input type="checkbox" name="" id="t&c" class="w-auto">
                     <label class="w-auto" for="t&c">I agree to the terms and conditions*</label>
                 </div> -->
-                <button class="hero-button mt-4" id="submit">Submit</button>
+                <button href="#" class="button mt-4" id="submit">
+                    <span class="button__icon-wrapper">
+                        <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg"
+                            width="10">
+                            <path
+                                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                fill="currentColor"></path>
+                        </svg>
+
+                        <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
+                            class="button__icon-svg button__icon-svg--copy">
+                            <path
+                                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </span>
+                    Submit
+                </button>
                 <div id="message" class="message"></div>
                 <div id="error" class="error"></div>
             </form>
         </div>
     </div>
 
-    <button class="btn back-to-top" id="backToTopBtn" title="Back to top" type="button">
-        <i class="fa fa-arrow-up"></i>
-    </button>
     <section class="contact-footer">
-        
+    
         <div class="line"></div>
         <div class="container py-4">
             <div class="row">
                 <div class="col-md-4">
                     <div class="contact-box text-center p-4">
-                        <i class="fa-solid fa-location-dot mb-3"></i>
+                        <lord-icon src="https://cdn.lordicon.com/bpmglzll.json" trigger="loop" colors="primary:#ffffff"
+                            style="width:50px;height:50px">
+                        </lord-icon>
                         <h3>Our Offices</h3>
                         <p>View our locations and find contact details to our nearest office.</p>
                         <a href="contact.html#office-locations">Explore Our Locations</a>
@@ -1205,7 +1607,10 @@
                 </div>
                 <div class="col-md-4">
                     <div class="contact-box text-center p-4">
-                        <i class="fa-solid fa-envelope-open mb-3"></i>
+                        <lord-icon src="https://cdn.lordicon.com/vxzzdaaj.json" trigger="loop"
+                            colors="primary:#ffffff,secondary:#ebe6ef,tertiary:#e83a30,quaternary:#ffffff"
+                            style="width:50px;height:50px">
+                        </lord-icon>
                         <h3>Drop us a Line</h3>
                         <p>You can contact us by filling in this form any time you need professional support.</p>
                         <a onclick="openPopup()" href="javascript:void(0)">Fill Our Form</a>
@@ -1213,7 +1618,10 @@
                 </div>
                 <div class="col-md-4">
                     <div class="contact-box text-center p-4">
-                        <i class="fa-solid fa-headset mb-3"></i>
+                        <lord-icon src="https://cdn.lordicon.com/abhwievu.json" trigger="loop"
+                            colors="primary:#ffffff,secondary:#ffffff,tertiary:#ffffff,quaternary:#ebe6ef"
+                            style="width:50px;height:50px">
+                        </lord-icon>
                         <h3>Support</h3>
                         <!-- <p>Learn more about us and find resources that will help you with all of our products</p> -->
                         <p>Connect with us and know more about our products. Call our support executive.</p>
@@ -1223,168 +1631,208 @@
             </div>
         </div>
     </section>
-
-
-
+    
     <footer class="pt-5 main-footer">
-        <div class="container">
-            <div class="row">
-                <!-- Company Info Column -->
-                <div class="col-md-4 mb-4">
-                    <a href="index.html"><img style="width: 220px;" class="img-fluid"
-                            src="./assets/images/jk-maini-logo.svg" alt="JK Maini Precision Technology"></a>
-
-                    <p class="mb-1">
-
-                        <strong>CIN :</strong> U25933MH2024PLC417852
-                    </p>
-                    <p class="mb-1">
-                        <strong>Email :</strong>
-                        <a href="mailto:info.jkmaini@raymond.in"
-                            class="text-decoration-none text-dark">info.jkmaini@raymond.in</a>
-                    </p>
-                    <p class="mb-1">
-                        <strong>Address :</strong>
-                        C/O Raymond Ltd, Jekegram Pokharan Road No. 1, Jekegram, Thane, Maharashtra, India, 400606
-                    </p>
-                    <p class="mb-1">
-                        <strong>Phone :</strong>
-                        <a href="tel:+912261527998" class="text-decoration-none text-dark">+91
-                            2261527998</a>
-                    </p>
-                    
-                </div>
-
-                <!-- Quick Links Column -->
-                <div class="col-md-3 mb-4 quick-links">
-                    <h5 class="mb-3 section-title">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="about.html" class="text-decoration-none">About Us</a></li>
-                        <li class="mb-2"><a href="https://jkmaini.com" class="text-decoration-none">JK Maini Group</a>
-                        </li>
-                        <li class="mb-2"><a target="_blank" href="https://auto.jkmaini.com"
-                                class="text-decoration-none">JK Maini Precision Technology Ltd.</a></li>
-                        <li class="mb-2"><a target="_blank" href="https://jksuperdrive.com/"
-                                class="text-decoration-none">JK Files and Engineering Ltd.</a></li>
-                        <li class="mb-2"><a target="_blank" href="https://aero.jkmaini.com"
-                                class="text-decoration-none">JK Maini Global Aerospace Ltd.</a></li>
-
-                    </ul>
-                </div>
-
-                <!-- Contact Info Column -->
-                <div class="col-md-2 mb-4">
-                    <h5 class="mb-3 section-title">Company</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a class="text-decoration-none text-black" href="privacy-policy.html">Privacy Policy</a></li>
-                            <li class="mb-2"><a class="text-decoration-none text-black" href="terms-of-use.html">Terms of Use</a></li>
-                        <!-- <li class="mb-2">Site Map</a></li> -->
-                        <!-- <li class="mb-2"><i class="fa-solid fa-clock me-2"></i> Mon - Sat: 9:00 AM - 6:00 PM</li> -->
-                    </ul>
-                </div>
-
-                <!-- Newsletter Column -->
-                <div class="col-md-3 mb-5">
-                    <div class="social-links">
-                        <h5 class="mb-3 section-title">Follow us</h5>
-
-                        <!-- From Uiverse.io by javierBarroso -->
-                        <div class="social-login-icons">
-                            <a href="" class="facebook-icon">
-                                <div class="socialcontainer">
-                                    <div class="icon social-icon-3-3">
-                                        <svg viewBox="0 0 384 512" fill="white" height="1.6em"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div class="social-icon-3">
-                                        <svg viewBox="0 0 384 512" fill="white" height="1.6em"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- <a href="" class="twitter-icon">
-                                <div class="socialcontainer">
-                                    <div class="icon social-icon-1-1">
-                                        <svg viewBox="0 0 512 512" height="1.7em" xmlns="http://www.w3.org/2000/svg"
-                                            class="svgIcontwit" fill="white">
-                                            <path
-                                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div class="social-icon-1">
-                                        <svg viewBox="0 0 512 512" height="1.7em" xmlns="http://www.w3.org/2000/svg"
-                                            class="svgIcontwit" fill="white">
-                                            <path
-                                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a> -->
-                            <a href="" class="linkedin-icon">
-                                <div class="socialcontainer">
-                                    <div class="icon social-icon-4-4">
-                                        <svg fill="white" viewBox="0 0 448 512" height="1.6em">
-                                            <path d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.09 107.3 0 83.2 0 53.6A53.6 53.6 0 0 1 53.6 0c29.6 0 53.7 24.09 53.7 53.6 0 29.6-24.1 53.7-53.7 53.7zM447.8 448h-92.4V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 0-37.6 15.9-43.8 31.3-2.3 5.6-2.8 13.4-2.8 21.2V448h-92.5s1.2-242.1 0-267.1h92.5v37.9c12.3-19 34.3-46.1 83.5-46.1 60.9 0 106.6 39.8 106.6 125.4V448z"/>
-                                        </svg>
-                                    </div>
-                                    <div class="social-icon-4">
-                                        <svg fill="white" viewBox="0 0 448 512" height="1.6em">
-                                            <path d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.09 107.3 0 83.2 0 53.6A53.6 53.6 0 0 1 53.6 0c29.6 0 53.7 24.09 53.7 53.6 0 29.6-24.1 53.7-53.7 53.7zM447.8 448h-92.4V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 0-37.6 15.9-43.8 31.3-2.3 5.6-2.8 13.4-2.8 21.2V448h-92.5s1.2-242.1 0-267.1h92.5v37.9c12.3-19 34.3-46.1 83.5-46.1 60.9 0 106.6 39.8 106.6 125.4V448z"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="instagram-icon">
-                                <div class="socialcontainer">
-                                    <div class="icon social-icon-2-2">
-                                        <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div class="social-icon-2">
-                                        <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                            
-                            
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright py-2">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 text-center">
-                        <p class="m-0">© 2025 JK Maini Group. All rights
-                            reserved.</p>
+                    <!-- Company Info Column -->
+                    <div class="col-md-4 mb-4">
+                        <a href="index.html"><img style="width: 220px;" class="img-fluid"
+                                src="./assets/images/jk-maini-logo.svg" alt="JK Maini Precision Technology"></a>
+    
+                        <p class="mb-1">
+    
+                            <strong>CIN :</strong> U25933MH2024PLC417852
+                        </p>
+                        <p class="mb-1">
+                            <strong>Email :</strong>
+                            <a href="mailto:info.jkmaini@raymond.in"
+                                class="text-decoration-none text-dark">info.jkmaini@raymond.in</a>
+                        </p>
+                        <p class="mb-1">
+                            <strong>Address :</strong>
+                            C/O Raymond Ltd, Jekegram Pokharan Road No. 1, Jekegram, Thane, Maharashtra, India, 400606
+                        </p>
+                        <p class="mb-1">
+                            <strong>Phone :</strong>
+                            <a href="tel:+912261527998" class="text-decoration-none text-dark">+91
+                                2261527998</a>
+                        </p>
+                        
                     </div>
-                    
+    
+                    <!-- Quick Links Column -->
+                    <div class="col-md-3 mb-4 quick-links">
+                        <h5 class="mb-3 section-title">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="about.html" class="text-decoration-none">About Us</a></li>
+                            <li class="mb-2"><a href="https://jkmaini.com" class="text-decoration-none">JK Maini Group</a></li>
+                            <li class="mb-2"><a target="_blank" href="https://auto.jkmaini.com"
+                                    class="text-decoration-none">JK Maini Precision Technology Ltd.</a></li>
+                            <li class="mb-2"><a target="_blank" href="https://jksuperdrive.com/"
+                                    class="text-decoration-none">JK Files and Engineering Ltd.</a></li>
+                            <li class="mb-2"><a target="_blank" href="https://aero.jkmaini.com"
+                                    class="text-decoration-none">JK Maini Global Aerospace Ltd.</a></li>
+    
+                        </ul>
+                    </div>
+    
+                    <!-- Contact Info Column -->
+                    <div class="col-md-2 mb-4">
+                        <h5 class="mb-3 section-title">Company</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a class="text-decoration-none text-black" href="privacy-policy.html">Privacy Policy</a></li>
+                            <li class="mb-2"><a class="text-decoration-none text-black" href="terms-of-use.html">Terms of Use</a></li>
+                            <!-- <li class="mb-2">Site Map</a></li> -->
+                            <!-- <li class="mb-2"><i class="fa-solid fa-clock me-2"></i> Mon - Sat: 9:00 AM - 6:00 PM</li> -->
+                        </ul>
+                    </div>
+    
+                    <!-- Newsletter Column -->
+                    <div class="col-md-3 mb-5">
+                        <div class="social-links">
+                            <h5 class="mb-3 section-title">Follow us</h5>
+    
+                            <!-- From Uiverse.io by javierBarroso -->
+                            <div class="social-login-icons">
+                                <a href="" class="facebook-icon">
+                                    <div class="socialcontainer">
+                                        <div class="icon social-icon-3-3">
+                                            <svg viewBox="0 0 384 512" fill="white" height="1.6em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="social-icon-3">
+                                            <svg viewBox="0 0 384 512" fill="white" height="1.6em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- <a href="" class="twitter-icon">
+                                    <div class="socialcontainer">
+                                        <div class="icon social-icon-1-1">
+                                            <svg viewBox="0 0 512 512" height="1.7em" xmlns="http://www.w3.org/2000/svg"
+                                                class="svgIcontwit" fill="white">
+                                                <path
+                                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="social-icon-1">
+                                            <svg viewBox="0 0 512 512" height="1.7em" xmlns="http://www.w3.org/2000/svg"
+                                                class="svgIcontwit" fill="white">
+                                                <path
+                                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a> -->
+                                <a href="" class="linkedin-icon">
+                                    <div class="socialcontainer">
+                                        <div class="icon social-icon-4-4">
+                                            <svg fill="white" viewBox="0 0 448 512" height="1.6em">
+                                                <path d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.09 107.3 0 83.2 0 53.6A53.6 53.6 0 0 1 53.6 0c29.6 0 53.7 24.09 53.7 53.6 0 29.6-24.1 53.7-53.7 53.7zM447.8 448h-92.4V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 0-37.6 15.9-43.8 31.3-2.3 5.6-2.8 13.4-2.8 21.2V448h-92.5s1.2-242.1 0-267.1h92.5v37.9c12.3-19 34.3-46.1 83.5-46.1 60.9 0 106.6 39.8 106.6 125.4V448z"/>
+                                            </svg>
+                                        </div>
+                                        <div class="social-icon-4">
+                                            <svg fill="white" viewBox="0 0 448 512" height="1.6em">
+                                                <path d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.09 107.3 0 83.2 0 53.6A53.6 53.6 0 0 1 53.6 0c29.6 0 53.7 24.09 53.7 53.6 0 29.6-24.1 53.7-53.7 53.7zM447.8 448h-92.4V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 0-37.6 15.9-43.8 31.3-2.3 5.6-2.8 13.4-2.8 21.2V448h-92.5s1.2-242.1 0-267.1h92.5v37.9c12.3-19 34.3-46.1 83.5-46.1 60.9 0 106.6 39.8 106.6 125.4V448z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="instagram-icon">
+                                    <div class="socialcontainer">
+                                        <div class="icon social-icon-2-2">
+                                            <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path style="fill : #000;"
+                                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="social-icon-2">
+                                            <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                                
+                            </div>
+    
+    
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="copyright py-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p class="m-0">© 2025 JK Maini Group. All rights
+                                reserved.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
     </footer>
+
+    <button class="back-to-top" id="backToTopBtn" title="Back to top" type="button">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+            <path
+                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
+            </path>
+        </svg>
+    </button>
+
+    <div id="cursor"></div>
+        <!-- <div id="cursor-border"></div> -->
+
+
+
+    <!-- script for cursor animation  -->
+    <script>
+        const cursor = document.getElementById("cursor");
+        const cursorBorder = document.getElementById("cursor-border");
+
+        let cursorPos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+        let cursorBorderPos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+
+        window.addEventListener("mousemove", (e) => {
+            cursorPos.x = e.clientX;
+            cursorPos.y = e.clientY;
+
+            // Center align
+            cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`;
+        });
+
+        function animateCursor() {
+            const ease = 8;
+            cursorBorderPos.x += (cursorPos.x - cursorBorderPos.x) / ease;
+            cursorBorderPos.y += (cursorPos.y - cursorBorderPos.y) / ease;
+
+            cursorBorder.style.transform = `translate(${cursorBorderPos.x}px, ${cursorBorderPos.y}px) translate(-50%, -50%)`;
+
+            requestAnimationFrame(animateCursor);
+        }
+
+        animateCursor();
+
+    </script>
 
     <script>
         const popup = document.getElementById("imagePopup");
@@ -1411,14 +1859,25 @@
         });
     </script>
 
+<script src="https://cdn.lordicon.com/lordicon.js"></script>
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://unpkg.com/lenis@1.3.7/dist/lenis.min.js"></script>
+<script src="https://unpkg.com/split-type"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+    integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>AOS.init({ duration: 1000 });</script><script src="https://unpkg.com/lenis@1.3.7/dist/lenis.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
-        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+<script>AOS.init({ duration: 1000 });</script>
+<script src="https://unpkg.com/lenis@1.3.7/dist/lenis.min.js"></script>
+<script src="animation.js"></script>
+<script src="script.js"></script>
 
     <script>
 
