@@ -3291,4 +3291,263 @@ td a:hover {
   border-color: #fff;
 }
 
+/* new css for aero page  */
+/* latest css */
+.facility-features-clean {
+  list-style: none;
+  padding-left: 0;
+}
+
+.facility-features-clean li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: start;
+}
+@media (max-width: 1024px) {
+  .brochure .row > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .brochure .brochure-content {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .facility-features-clean {
+    text-align: left;
+    padding: 0 1rem;
+  }
+
+  .hero-button {
+    margin: 1rem auto;
+  }
+}
+
+.csr-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 10px;
+  /* margin-bottom: 20px; */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  border-top: 4px solid #f48220;
+}
+.csr-card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0; /* Top & bottom space */
+}
+
+.csr-card-icon img {
+  width: 60px;
+  height: auto;
+}
+.csr-list {
+  list-style: none;       /* removes black bullets */
+  padding-left: 0;        /* removes default left padding */
+  margin: 0;
+}
+.csr-list li {
+  position: relative;
+  padding-left: 32px; 
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.csr-list li::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-image: url('./assets/images/plane.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .csr-card-icon {
+    margin: 12px 0;
+  }
+
+  .csr-card-icon img {
+    width: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .csr-card-icon {
+    margin: 10px 0;
+  }
+
+  .csr-card-icon img {
+    width: 45px;
+  }
+}
+
+.gallery-section {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 images per row */
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.eye-icon {
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  flex-direction: column;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+.lightbox .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  font-size: 40px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transform: translateY(-50%);
+  padding: 0 15px;
+  z-index: 10000;
+}
+
+.prev-btn {
+  left: 20px;
+}
+
+.next-btn {
+  right: 20px;
+}
+/* RESPONSIVE GRID BREAKPOINTS */
+
+@media (max-width: 992px) {
+.gallery-grid {
+grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+}
+}
+
+@media (max-width: 768px) {
+.gallery-grid {
+grid-template-columns: repeat(2, 1fr); /* 2 columns for small tablets/large phones */
+}
+
+.eye-icon {
+font-size: 24px;
+}
+}
+
+@media (max-width: 480px) {
+.gallery-grid {
+grid-template-columns: 1fr; /* 1 column for mobile */
+}
+
+.eye-icon {
+font-size: 20px;
+}
+
+.lightbox .close-btn,
+.nav-btn {
+font-size: 30px;
+}
+}
+
+/* ///////////////////////////////////////////////////////////////////  */
+
+.aeroindia-gallery{
+  padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
  
