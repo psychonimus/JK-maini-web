@@ -423,8 +423,11 @@
                 </div>
                 <div class="col-lg-6" data-aos="fade-up">
                     <div class="image-container">
-                        <img src="./assets/images/about-auto.png" style="width: 100%;" alt="">
+                        <img class="image" src="./assets/images/about-auto.png" style="width: 100%;" alt="">
+
                     </div>
+                    <div class="loupe"></div>
+
                 </div>
             </div>
         </div>
@@ -496,7 +499,7 @@
                     <div class="swiper-slide">
                         <div class="sector-card first-card">
                             <img src="./assets/images/commercial-vehicles.png" alt="Design Engineering">
-                            <div class="overlay pb-2 pb-md-4">
+                            <div class="overlay-content pb-2 pb-md-4">
                                 <div class="facility-title">Commercial Vehicles
                                 </div>
                                 <button class="tab-btn active" data-tab="commercial">
@@ -509,7 +512,7 @@
                     <div class="swiper-slide">
                         <div class="sector-card">
                             <img src="./assets/images/passanger-vehicles.png" alt="Tool & Die">
-                            <div class="overlay  pb-2 pb-md-4">
+                            <div class="overlay-content pb-2 pb-md-4">
                                 <div class="facility-title">Passanger Vehicles</div>
                                 <button class="tab-btn" data-tab="passenger">View Products
                                     <i class="fa-solid fa-angle-down ms-2"></i>
@@ -520,7 +523,7 @@
                     <div class="swiper-slide">
                         <div class="sector-card">
                             <img src="./assets/images/electric-vehicles.png" alt="Forging">
-                            <div class="overlay  pb-2 pb-md-4">
+                            <div class="overlay-content pb-2 pb-md-4">
                                 <div class="facility-title">Electric & Hybrid</div>
                                 <button class="tab-btn" data-tab="ev">View Products
                                     <i class="fa-solid fa-angle-down ms-2"></i>
@@ -532,7 +535,7 @@
                     <div class="swiper-slide">
                         <div class="sector-card">
                             <img src="./assets/images/off-highway.png" alt="Testing">
-                            <div class="overlay  pb-2 pb-md-4">
+                            <div class="overlay-content pb-2 pb-md-4">
                                 <div class="facility-title">Off Highway & Industrial Applications</div>
                                 <button class="tab-btn" data-tab="off-highway">View Products
                                     <i class="fa-solid fa-angle-down ms-2"></i>
@@ -543,7 +546,7 @@
                     <div class="swiper-slide">
                         <div class="sector-card">
                             <img src="./assets/images/power-tools-sector.png" alt="Testing">
-                            <div class="overlay  pb-2 pb-md-4">
+                            <div class="overlay-content pb-2 pb-md-4">
                                 <div class="facility-title">Tools, Hardware & Powertools</div>
                                 <button class="tab-btn" data-tab="tools">View Products
                                     <i class="fa-solid fa-angle-down ms-2"></i>
@@ -554,7 +557,7 @@
                     <div class="swiper-slide">
                         <div class="sector-card">
                             <img src="./assets/images/loco-marine.png" alt="Testing">
-                            <div class="overlay  pb-2 pb-md-4">
+                            <div class="overlay-content pb-2 pb-md-4">
                                 <div class="facility-title">Locomotive & Marine</div>
                                 <button class="tab-btn" data-tab="locomotive">View Products
                                     <i class="fa-solid fa-angle-down ms-2"></i>
@@ -565,7 +568,7 @@
                     <div class="swiper-slide">
                         <div class="sector-card">
                             <img src="./assets/images/agriculture-sector.png" alt="Testing">
-                            <div class="overlay  pb-2 pb-md-4">
+                            <div class="overlay-content pb-2 pb-md-4">
                                 <div class="facility-title">Agriculture</div>
                                 <button class="tab-btn" data-tab="agriculture">View Products
                                     <i class="fa-solid fa-angle-down ms-2"></i>
@@ -576,7 +579,7 @@
                     <div class="swiper-slide">
                         <div class="sector-card">
                             <img src="./assets/images/defence-sector.png" alt="Testing">
-                            <div class="overlay  pb-2 pb-md-4">
+                            <div class="overlay-content pb-2 pb-md-4">
                                 <div class="facility-title">Defence</div>
                                 <button class="tab-btn" data-tab="defence">View Products
                                     <i class="fa-solid fa-angle-down ms-2"></i>
@@ -640,14 +643,12 @@
 
                                     <div class="flex-basis-30 part-img-container overlay-container">
                                         <img src="./assets/images/automobile-parts/cv/Engine/Hub Idler.png"
-                                            class="img-fluid popup-image" 
-                                            data-gallery='[
+                                            class="img-fluid popup-image" data-gallery='[
                                                 "./assets/images/automobile-parts/cv/Engine/Hub Idler.png",
                                                 "./assets/images/automobile-parts/cv/Engine/Flange Shaft.png",
                                                 "./assets/images/automobile-parts/cv/Engine/Flinger Sleeve.png",
                                                 "./assets/images/automobile-parts/cv/Engine/Water Pump Bearings.png"
-                                            ]'
-                                            alt="">
+                                            ]' alt="">
                                         <div class="custom-overlay-text">
                                             Hub Idler
                                         </div>
@@ -1832,6 +1833,8 @@
             </div>
         </div>
     </footer>
+    <div class="loupe"></div>
+
 
     <div id="cursor"></div>
     <!-- <div id="cursor-border"></div> -->
@@ -1841,6 +1844,9 @@
         <div class="popup-content">
             <img id="mainPopupImg" src="" alt="Main Product Image">
             <div class="thumbnail-container" id="thumbnailContainer"></div>
+        </div>
+        <div id="zoom">
+            <img id="zoom-img" />
         </div>
     </div>
 
@@ -1875,31 +1881,6 @@
     </script>
 
 
-
-    <!-- <script>
-        const popup = document.getElementById("imagePopup");
-        const popupImg = document.getElementById("popupImg");
-        const images = document.querySelectorAll(".popup-image");
-        const closeBtn = document.querySelector(".close-popup");
-
-        images.forEach(img => {
-            img.addEventListener("click", () => {
-                popupImg.src = img.src;
-                popup.style.display = "flex";
-            });
-        });
-
-        closeBtn.addEventListener("click", () => {
-            popup.style.display = "none";
-        });
-
-        // Close when clicking outside the image
-        popup.addEventListener("click", e => {
-            if (e.target === popup) {
-                popup.style.display = "none";
-            }
-        });
-    </script> -->
     <script>
         const popup = document.getElementById("imagePopup");
         const mainImg = document.getElementById("mainPopupImg");
