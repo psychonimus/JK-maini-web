@@ -632,9 +632,10 @@
                                         <img src="./assets/images/automobile-parts/cv/Engine/Hand Primer.png"
                                             class="img-fluid popup-image" data-gallery='[
                                                 "./assets/images/automobile-parts/cv/Engine/Hand Primer.png",
-                                                "./assets/images/automobile-parts/cv/Engine/Flange Shaft.png",
-                                                "./assets/images/automobile-parts/cv/Engine/Flinger Sleeve.png",
-                                                "./assets/images/automobile-parts/cv/Engine/Water Pump Bearings.png"
+                                                "./assets/images/automobile-parts/cv/Engine/Hand Primer part-1.png",
+                                                "./assets/images/automobile-parts/cv/Engine/Hand Primer part-2.png",
+                                                "./assets/images/automobile-parts/cv/Engine/Hand Primer part-3.png"
+                                                
                                             ]' alt="">
                                         <div class="custom-overlay-text">
                                             Hand Primer
@@ -1842,13 +1843,19 @@
     <div class="image-popup" id="imagePopup">
         <span class="close-popup">&times;</span>
         <div class="popup-content">
-            <img id="mainPopupImg" src="" alt="Main Product Image">
-            <div class="thumbnail-container" id="thumbnailContainer"></div>
+            <div class="text-center mainPopupImgContainer">
+                <img id="mainPopupImg" src="" alt="Main Product Image">
+            </div>
+            <div>
+                <div class="thumbnail-container" id="thumbnailContainer"></div>
+            </div>
         </div>
-        <div id="zoom">
-            <img id="zoom-img" />
-        </div>
+        
     </div>
+    <!-- <div class="image-popup" id="imagePopup">
+        <span class="close-popup">&times;</span>
+        <img src="" alt="Popup Image" id="popupImg" style="background-color: #fff;">
+    </div> -->
 
     <!-- script for cursor animation  -->
     <script>
@@ -1879,6 +1886,30 @@
         animateCursor();
 
     </script>
+    <!-- <script>
+        const popup = document.getElementById("imagePopup");
+        const popupImg = document.getElementById("popupImg");
+        const images = document.querySelectorAll(".popup-image");
+        const closeBtn = document.querySelector(".close-popup");
+
+        images.forEach(img => {
+            img.addEventListener("click", () => {
+                popupImg.src = img.src;
+                popup.style.display = "flex";
+            });
+        });
+
+        closeBtn.addEventListener("click", () => {
+            popup.style.display = "none";
+        });
+
+        
+        popup.addEventListener("click", e => {
+            if (e.target === popup) {
+                popup.style.display = "none";
+            }
+        });
+    </script> -->
 
 
     <script>
@@ -1912,7 +1943,7 @@
             });
         });
 
-        // Close popup
+        
         closeBtn.addEventListener("click", () => popup.style.display = "none");
         popup.addEventListener("click", (e) => {
             if (e.target === popup) popup.style.display = "none";
