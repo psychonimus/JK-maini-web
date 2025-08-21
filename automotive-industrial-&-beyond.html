@@ -1840,7 +1840,7 @@
     <div id="cursor"></div>
     <!-- <div id="cursor-border"></div> -->
 
-    <div class="image-popup" id="imagePopup">
+    <!-- <div class="image-popup" id="imagePopup">
         <span class="close-popup">&times;</span>
         <div class="popup-content">
             <div class="text-center mainPopupImgContainer">
@@ -1851,11 +1851,80 @@
             </div>
         </div>
         
-    </div>
-    <!-- <div class="image-popup" id="imagePopup">
-        <span class="close-popup">&times;</span>
-        <img src="" alt="Popup Image" id="popupImg" style="background-color: #fff;">
     </div> -->
+    <div class="image-popup" id="imagePopup">
+        <span class="close-popup">&times;</span>
+        <div class="magnifier-container">
+            <img src="" alt="Popup Image" id="popupImg" class="magnifier-img">
+            <div class="magnifier-lens" id="magnifier-lens"></div>
+        </div>
+    </div>
+    <script>
+        const popup = document.getElementById("imagePopup");
+        const popupImg = document.getElementById("popupImg");
+        const images = document.querySelectorAll(".popup-image");
+        const closeBtn = document.querySelector(".close-popup");
+        const lens = document.getElementById("magnifier-lens");
+        const zoom = 2;
+      
+        // Open popup
+        images.forEach(img => {
+          img.addEventListener("click", () => {
+            popupImg.src = img.src;
+            popup.style.display = "flex";
+            initMagnifier();
+          });
+        });
+      
+        // Close popup
+        closeBtn.addEventListener("click", () => popup.style.display = "none");
+        popup.addEventListener("click", e => {
+          if (e.target === popup) popup.style.display = "none";
+        });
+      
+        // Magnifier logic
+        function initMagnifier() {
+          function getCursorPos(e) {
+            const rect = popupImg.getBoundingClientRect();
+            let x = e.touches ? e.touches[0].clientX : e.clientX;
+            let y = e.touches ? e.touches[0].clientY : e.clientY;
+            x = x - rect.left;
+            y = y - rect.top;
+            return {x: x, y: y};
+          }
+      
+          function moveLens(e) {
+            e.preventDefault();
+            const pos = getCursorPos(e);
+            let x = pos.x;
+            let y = pos.y;
+      
+            const lensRadius = lens.offsetWidth / 2;
+            if (x < lensRadius / zoom) x = lensRadius / zoom;
+            if (x > popupImg.width - lensRadius / zoom) x = popupImg.width - lensRadius / zoom;
+            if (y < lensRadius / zoom) y = lensRadius / zoom;
+            if (y > popupImg.height - lensRadius / zoom) y = popupImg.height - lensRadius / zoom;
+      
+            lens.style.left = (x - lensRadius) + "px";
+            lens.style.top = (y - lensRadius) + "px";
+      
+            lens.style.backgroundImage = `url('${popupImg.src}')`;
+            lens.style.backgroundSize = (popupImg.width * zoom) + "px " + (popupImg.height * zoom) + "px";
+            lens.style.backgroundPosition =
+              `-${(x * zoom - lensRadius)}px -${(y * zoom - lensRadius)}px`;
+          }
+      
+          function showLens() { lens.style.opacity = 1; }
+          function hideLens() { lens.style.opacity = 0; }
+      
+          popupImg.addEventListener("mousemove", moveLens);
+          popupImg.addEventListener("mouseenter", showLens);
+          popupImg.addEventListener("mouseleave", hideLens);
+          popupImg.addEventListener("touchmove", moveLens, {passive: false});
+          popupImg.addEventListener("touchstart", showLens, {passive: false});
+          popupImg.addEventListener("touchend", hideLens, {passive: false});
+        }
+    </script>
 
     <!-- script for cursor animation  -->
     <script>
@@ -1903,7 +1972,7 @@
             popup.style.display = "none";
         });
 
-        
+
         popup.addEventListener("click", e => {
             if (e.target === popup) {
                 popup.style.display = "none";
@@ -1912,7 +1981,7 @@
     </script> -->
 
 
-    <script>
+    <!-- <script>
         const popup = document.getElementById("imagePopup");
         const mainImg = document.getElementById("mainPopupImg");
         const thumbnailContainer = document.getElementById("thumbnailContainer");
@@ -1920,16 +1989,16 @@
 
         document.querySelectorAll(".popup-image").forEach(img => {
             img.addEventListener("click", () => {
-                // Get the gallery array from the data attribute
+                
                 const gallery = JSON.parse(img.getAttribute("data-gallery"));
 
-                // Set the main image to the first one
+                
                 mainImg.src = gallery[0];
 
-                // Clear old thumbnails
+                
                 thumbnailContainer.innerHTML = "";
 
-                // Create thumbnail images
+                
                 gallery.forEach((src, index) => {
                     const thumb = document.createElement("img");
                     thumb.src = src;
@@ -1948,7 +2017,7 @@
         popup.addEventListener("click", (e) => {
             if (e.target === popup) popup.style.display = "none";
         });
-    </script>
+    </script> -->
 
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <!-- Bootstrap Bundle with Popper -->
