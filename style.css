@@ -1568,6 +1568,11 @@ body {
 .award-card img {
   width: 60%;
 }
+/* @media(max-width : 768px){
+  .award-card img {
+    width: 100px;
+  }
+} */
 
 .right-form {
   background-color: #f5f5f5;
