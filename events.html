@@ -388,7 +388,7 @@
         </div>
     </nav>
 
-    <section class="upcoming-events" style="margin-top: 11rem;">
+    <section class="upcoming-events" style="margin-top: 12rem;">
         <div class="container">
             <div class="header text-center" data-aos="fade-up">
                 <h6 class="section-title" data-aos="fade-up">Upcoming Events</h6>
@@ -398,14 +398,24 @@
             <div class="row mt-4">
 
                 <div class="col-md-4" data-aos="fade-up">
-                    <div class="event-card text-center h-100">
-                        <img src="./assets/images/event-2.png" alt="ADMS Summit, Taj Yeshwantpur - Bengaluru">
+                    <div class="event-card text-center">
+                        
+                        <div class="swiper event-swiper" >
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/nacional-1.png" alt="ADMS Summit, Taj Yeshwantpur - Bengaluru">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/nacional-2.png" alt="ADMS Summit, Taj Yeshwantpur - Bengaluru">
+                                </div>
+                            </div>
+                        </div>
                         <div class="py-4 px-3">
-                            <h3>ADMS Summit, Taj Yeshwantpur - Bengaluru</h3>
-                            <p>6th August, 2025</p>
+                            <h3>Expo Nacional Ferretera – México 2025</h3>
+                            <p>4th – 6th September 2025</p>
                             <div class="d-flex justify-content-center mb-2">
                                 <a target="_blank"
-                                    href="https://manufacturing.economictimes.indiatimes.com/aerospace-defence-manufacturing-summit?ag=events_listing&utm_source=events_listing&utm_medium=eventListing">
+                                    href="https://www.expoferretera.com.mx/en-gb.html">
 
                                     <button class="download-button d-flex gap-2 align-items-center">
                                         More about this event
@@ -482,46 +492,46 @@
             <div class="tab-content active" id="internal">
                 <div class="row mt-5" data-aos="fade-up">
                     <div class="event-title">
-                        <h2 >New Plant Launch at Sinnar</h2>
+                        <h2 >New Plant Launch at Nashik</h2>
                         <!-- <h5>Courtyard by Marriott, International Airport, Mumbai</h5> -->
                         <p>28th Jan 2025</p>
                     </div>
                     <div class="img-grid">
                         <div class="img-box box1">
-                            <img src="./assets/images/events/RPAL event/DSC_0440.webp" alt="New Plant Launch at Sinnar"
+                            <img src="./assets/images/events/RPAL event/DSC_0440.jpg" alt="New Plant Launch at Sinnar"
                                 class="popup-image">
                         </div>
                         <div class="img-box box2">
-                            <img src="./assets/images/events/RPAL event/DSC_0536.webp" alt="New Plant Launch at Sinnar"
+                            <img src="./assets/images/events/RPAL event/DSC_0536.jpg" alt="New Plant Launch at Sinnar"
                                 class="popup-image">
 
                         </div>
                         <div class="img-box box3">
-                            <img src="./assets/images/events/RPAL event/DSC_0262.webp" alt="New Plant Launch at Sinnar"
+                            <img src="./assets/images/events/RPAL event/DSC_0262.jpg" alt="New Plant Launch at Sinnar"
                                 class="popup-image">
                         </div>
                         <div class="img-box box4">
-                            <img src="./assets/images/events/RPAL event/DSC_0287.webp" alt="New Plant Launch at Sinnar"
+                            <img src="./assets/images/events/RPAL event/DSC_0287.jpg" alt="New Plant Launch at Sinnar"
                                 class="popup-image">
 
                         </div>
                         <div class="img-box box5">
-                            <img src="./assets/images/events/RPAL event/DSC_0350.webp" alt="New Plant Launch at Sinnar"
+                            <img src="./assets/images/events/RPAL event/DSC_0350.jpg" alt="New Plant Launch at Sinnar"
                                 class="popup-image">
 
                         </div>
                         <div class="img-box box6">
-                            <img src="./assets/images/events/RPAL event/DSC_0264.webp" alt="New Plant Launch at Sinnar"
+                            <img src="./assets/images/events/RPAL event/DSC_0264.jpg" alt="New Plant Launch at Sinnar"
                                 class="popup-image">
 
                         </div>
                         <div class="img-box box7">
-                            <img src="./assets/images/events/RPAL event/DSC_0276.webp" alt="New Plant Launch at Sinnar"
+                            <img src="./assets/images/events/RPAL event/DSC_0276.jpg" alt="New Plant Launch at Sinnar"
                                 class="popup-image">
 
                         </div>
                         <div class="img-box box8">
-                            <img src="./assets/images/events/RPAL event/DSC_0370.webp" alt="New Plant Launch at Sinnar"
+                            <img src="./assets/images/events/RPAL event/DSC_0370.jpg" alt="New Plant Launch at Sinnar"
                                 class="popup-image">
 
                         </div>
@@ -1142,6 +1152,19 @@
             subBtn.classList.add("active");
             document.getElementById(subBtn.dataset.subtab).classList.add("active");
           });
+        });
+      </script>
+      <script>
+        var swiper = new Swiper(".event-swiper", {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
         });
       </script>
 
