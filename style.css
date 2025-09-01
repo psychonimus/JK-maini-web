@@ -3716,6 +3716,29 @@ font-size: 30px;
   outline: 0;
   box-shadow: none;
 }
+.csr-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.csr-list li {
+  position: relative;
+  padding-left: 32px; 
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.csr-list li::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-image: url('./assets/images/plane.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 
  
